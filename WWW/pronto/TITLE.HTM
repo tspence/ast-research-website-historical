@@ -1,0 +1,46 @@
+<html><head>
+<title>NAVIGATION</title>
+<base target="MAIN">
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function test() { var agentInfo=navigator.userAgent.substring(0, 11); if(agentInfo == "Mozilla/2.0") { return 0 } else { return 1 } }
+function unselect(butnum) {if (test()==1) {document.images[butnum-1].src = "images/buttn"+butnum+"a.gif"} else { } }
+function select(butnum) {if (test()==1) {document.images[butnum-1].src= "images/buttn"+butnum+"b.gif"} else { } }
+
+</SCRIPT>
+</head>
+<body bgcolor="BFBFBF" text="#000000" topmargin="2" leftmargin="3" rightmargin="3">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <TR>
+	<A HREF="SYSMNU.ASP" TARGET="MNUCOL" onMouseOut="unselect(1)" onMouseOver="select(1)">
+	<IMG SRC="IMAGES/BUTTN1A.GIF" width='68' height='51' ALT="AST's Products Menu" BORDER="0"></A>
+
+	<A HREF="BIOSMNU.HTM" TARGET="MNUCOL" onMouseOut="unselect(2)" onMouseOver="select(2)">
+	<IMG SRC="IMAGES/BUTTN2A.GIF" width='61' height='51' ALT="BIOS Table" BORDER="0"></A>
+
+	<A HREF="ASCMNU.HTM" TARGET="MNUCOL" onMouseOut="unselect(3)" onMouseOver="select(3)">
+	<IMG SRC="IMAGES/BUTTN3A.GIF" width='61' height='51' ALT="ASC Handbook" BORDER="0"></A>
+
+	<A HREF="TREFMNU.HTM" TARGET="MNUCOL" onMouseOut="unselect(4)" onMouseOver="select(4)">
+	<IMG SRC="IMAGES/BUTTN4A.GIF" width='61' height='51' ALT="Technical Reference" BORDER="0"></A>
+
+	
+	<A HREF="TOLMNU.htm" TARGET="MNUCOL" onMouseOut="unselect(5)" onMouseOver="select(5)">
+	<IMG SRC="IMAGES/BUTTN5A.GIF" width='61' height='51' ALT="Links to helpful online Tools" BORDER="0"></A>
+
+	<A HREF="HELPBAR.HTM" TARGET="MNUCOL" onMouseOut="unselect(6)" onMouseOver="select(6)">
+	<IMG SRC="IMAGES/BUTTN6A.GIF" width='61' height='51' ALT="How dose this thingy work?" BORDER="0"></A>
+
+	<A HREF="FEED.HTM" TARGET="MAIN" onMouseOut="unselect(7)" onMouseOver="select(7)">
+	<IMG SRC="IMAGES/BUTTN7A.GIF" width='61' height='51' ALT="Feedback, tell us what you think" BORDER="0"></A>
+
+	<A HREF="START.ASP" TARGET="_parent" onMouseOut="unselect(8)" onMouseOver="select(8)">
+	<IMG SRC="IMAGES/BUTTN8A.GIF" width='130' height='51' ALT="Pronto! Pro Home Page" BORDER="0"></A>
+
+        </center>
+    </TR>
+
+
+</table>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" width="570"><tr><td>
+<h3><i>Software</i> </h3>
+
+<form method="POST" action="../../scripts/faqd.asp">
+  <p>I want to search through server FAQs about <select name="faqd" size="1">
+    <option value="sfaq1.htm">Hardware Upgrade</option>
+    <option value="sfaq2.htm">Configuration</option>
+    <option selected value="sfaq3.htm">Software</option>
+    <option value="sfaq4.htm">BIOS and Driver</option>
+    <option value="sfaqa.htm">All</option>
+  </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+</form>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="50%"><ul>
+      <b>
+      <li><h5><b><a href="#4"><b>I upgraded the memory in my Manhattan server. Why doesn&#146;t
+        the operating system recognize the new memory?</b></a></h5>
+        </b></li>
+      <li><h5><a href="#9">Do I need to make any changes to the server before the year 2000?</a></h5>
+      </li>
+      <li><h5><a href="#10">Why does Windows NT&#153; 3.51 fail to install on a Manhattan P / V
+        system?</a></h5>
+      </li>
+      </b>
+    </ul>
+    </td>
+    <td valign="top" width="50%"><ul>
+      <b>
+      <li><h5><a href="#11">What version of EISA Configuration Utility should I use?</a></h5>
+      </li>
+      <li><h5><a href="#13">How do I install ArcServe 5.01g on the Manhattan P, V, and G Series? </a></h5>
+      </li>
+      <li><h5><a href="#15">How do I access System (CMOS) Setup on my server?</b></a></h5>
+        <b></li>
+      </b>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<p><a name="4"><b>I upgraded the memory in my Manhattan server. Why doesn&#146;t the
+operating system recognize the new memory?</b></a> </p>
+
+<p>If you have an EISA-based system and there is an EISA card installed or you have run
+the EISA Configuration Utility, you need to run the EISA Configuration Utility again to
+configure the new memory. The amount of memory shown in the EISA Configuration Utility
+should be modified to reflect the amount of physical memory in the system. The amount of
+memory can be set higher than the actual physical memory; it just can&#146;t be less than
+then the amount.</p>
+
+<p>Consider the following steps for updating the memory in the EISA Configuration Utility:
+
+<ol>
+  <li>Boot using the EISA configuration diskette and choose menu options Configure Computer,
+    View and Edit Details.</li>
+  <li>Press &lt;F6&gt; in order to edit the amount of memory installed.</li>
+  <li>Press &lt;10&gt; after you enter the desired amount of memory, </li>
+  <li>Save and Exit the configuration utility.</li>
+</ol>
+
+<p>Set the memory location of the NCR chipset well above physical memory. To do so, follow
+this procedure: 
+
+<ol>
+  <li>Locate the View and Edit Details section. Scroll to the bottom of the screen marked
+    Embedded PCI Controller. </li>
+  <li>Highlight PCI Function and press &lt;F6&gt;.</li>
+  <li>Change the memory address range to at least 20 megabyte higher than the total physical
+    memory installed in the server.</li>
+  <li>Change the memory address for all Embedded PCI controllers listed.</li>
+  <li>Press &lt;F10&gt; to save and exit the configuration utility.</li>
+</ol>
+<b>
+
+<hr>
+
+<p></b><strong><a name="9">Do I need to make any changes to the server before the year
+2000?</a> </strong></p>
+
+<p>You can refer to the following table for the flash BIOS update you need to make before
+the year 2000:</p>
+
+<table border="1" align="DEFAULT" width="100%">
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan P</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE
+    Manhattan P/V Flash BIOS Update, v1.13 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan V</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE
+    Manhattan P/V Flash BIOS Update, v1.13</a> </td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S6200</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05573038.EXE">05573038.EXE
+    Manhattan S6200, CommercePro BIOS v3.80 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan Commerce Pro</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05573038.EXE">05573038.EXE
+    Manhattan S6200, CommercePro BIOS v3.80 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S 6200 U</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Commerce Pro U</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan Presence Pro</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan D</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+</table>
+
+<p>All other servers manufactured by AST will require a manual year 2000 rollover. On
+January 1, 2000, DOS and Windows customers can: 
+
+<ul>
+  <li>Change the date via the DATE command at the MS-DOS prompt.<br>
+    or</li>
+  <li>Change the date via the DATE icon in the Windows Control Panel.</li>
+</ul>
+
+<p>The century byte in CMOS will be updated and the correct date will be kept through the
+year 2099. This update has been verified with DOS 6.2, Windows® 3.1, Windows® 95,
+Windows NT&#153; 3.51, and Windows NT&#153; 4.0.Customers that use OS/2 Warp will find
+that the system automatically adjusts for the year 2000.</p>
+<b>
+
+<hr>
+
+<p><a name="10">Why does Windows NT&#153; 3.51 fail to install on a Manhattan P / V
+system?</a> </p>
+</b>
+
+<p>When you install Windows NT 3.51 from a CD-ROM/floppy disk package, the Windows NT 3.51
+installation and setup programs may fail on the Manhattan P/V servers. The failure may
+exhibit itself in three ways: 
+
+<ul>
+  <li>After the setup program has copied the three (3) setup disks and the system performs its
+    first re-boot to load the operating system, the system will hang at the Windows NT blue
+    screen. You will see a fatal error message warning indicating that a hard disk error has
+    occurred.</li>
+  <li>While copying files from the third setup floppy, a message will indicate that a number
+    of files could not be copied. The files will have *.DLL extensions. If you continue the
+    installation by pressing the IGNORE button at each file-copy error, the installation will
+    indicate that it has completed successfully. When the system reboots, an error indicating
+    that GINA.DLL could not be found, and the Windows NT blue screen will appear with a fatal
+    error.</li>
+  <li>During the setup portion of installation, when Windows NT 3.51 attempts to begin copying
+    files to the hard disk, the system may issue an error indicating that a hard disk could
+    not be accessed. The system will instruct you that the installation has not been
+    successful.</li>
+</ul>
+
+<p>A temporary workaround is available, and is documented below. The workaround installs
+Windows NT 3.51 from the CD-ROM only. A floppyless installation may be done from the
+standard Windows NT 3.51 CD-ROM.</p>
+
+<p>You can follow this procedure to complete a floppyless installation of Windows NT 3.51:
+
+<ol>
+  <li>Boot from a DOS boot diskette, loading the NCR SCSI drivers in the CONFIG.SYS file of
+    the boot floppy. The NCR drivers are essential to access the CD-ROM drive attached to the
+    NCR controller.</li>
+  <li>For the Manhattan BIOS version 1.13 and older, load the NCR drivers (p/n 911283-313) for
+    CD-ROM support in the following order:</li>
+  <li>DOSCAM.SYS<br>
+    SCSIDISK.SYS<br>
+    CDROM.SYS /D:name<br>
+    ASPICAM.SYS<br>
+    <em>name=name of CD-ROM drive (ex: drive1)</em><br>
+    <br>
+    These drivers are contained in the DOS subdirectory of the NCR PCI SCSI device drivers
+    diskette. If you do not have the NCR driver diskette, download <a
+    href="ftp://ftp.ast.com/S-OTHER/283313.EXE">283313.EXE Manhattan P/V/G NCR SCSI Drivers
+    V.1.06 </a><br>
+    <br>
+    For Manhattan BIOS version 1.14 and later, obtain the new drivers from Symbios Logic for
+    the 4.0 SDMS PCI SCSI chipset. If you fail to use the updated drivers for BIOS version
+    1.14, you may corrupt or lose data. You can download these drivers from the Symbios Logic
+    Web site:<br>
+    <a href="ftp://www.symbios.com/pub/symchips/scsi/drivers" target="target"><img border="0"
+    src="../../images/Symbios.jpg" width="87" height="84"></a></li>
+  <li>Load the NCR drivers for CD-ROM support in the following order:<br>
+    ASPI8XX.SYS<br>
+    SYMDISK.SYS<br>
+    SYMCD.SYS /D:name<br>
+    <em>name=name of CD-ROM drive (ex: drive1)</em></li>
+  <li>Add the following DOS file to the AUTOEXEC.BAT on the boot disk:<br>
+    MSCDEX /D:name<em><br>
+    name=name of CD-ROM drive</em>. <em>Name must match name given in CONFIG.SYS file entry
+    for CDROM.SYS or SYMCD.SYS.</em></li>
+  <li>Make sure that the boot disk contains the following DOS files:<br>
+    FDISK.EXE<br>
+    FORMAT.EXE</li>
+  <li>Create a partition on the hard disk using FDISK. We recommend that the boot partition
+    for the first Windows NT drive be 500MB or less.</li>
+  <li>Format the partition.</li>
+  <li>Change to the CD-ROM drive and change directories to I386.</li>
+  <li>Enter the following command:<br>
+    WINNT /X /B</li>
+</ol>
+
+<p>This command will start a floppyless installation of Windows NT. The system should
+detect the DPT (if installed) and NCR controllers at the appropriate stage of the
+installation. </p>
+<b>
+
+<hr>
+
+<p><a name="11">What version of EISA Configuration Utility should I use?</a> </p>
+</b>
+
+<table border="1" align="DEFAULT" width="100%">
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan P/V</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/11371040.EXE">11371040.EXE
+    EISACU For Manhattan P/V,v1.09</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan SMP</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10603032.EXE">10603032.EXE
+    EISACU for Manhattan SMP v2.81</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Commerce Pro</td>
+    <td align="LEFT" valign="TOP"><a href="http://www.ast.com/support/suplines.htm">AMI
+    Configuration Utility Contact an AST Technical Representative</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S</td>
+    <td align="LEFT" valign="TOP"><a href="http://www.ast.com/support/suplines.htm">AMI
+    Configuration Utility Contact an AST Technical Representative</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premmia SE (BIOS version previous to 2.00)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10522036.EXE">10522036.EXE
+    EISA Configuration Utility, v2.63 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premmia SE (BIOS version 2.00 or later)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10918031.EXE">10918031.EXE
+    EISACU 2.84 Non-PCI Systems w/BIOS &gt;= 2.0 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premium SE (BIOS version previous to 2.00)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10522036.EXE">10522036.EXE
+    EISA Configuration Utility, v2.63 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premium SE (BIOS version 2.00 or later)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10918031.EXE">10918031.EXE
+    EISACU 2.84 Non-PCI Systems w/BIOS &gt;= 2.0 </a></td>
+  </tr>
+</table>
+<b>
+
+<hr>
+
+<p></b><strong><a name="13">How do I install ArcServe 5.01g on the Manhattan P, V, and G
+Series?</a> </strong></p>
+
+<p>Follow the ArcServe installation procedures as documented by Cheyenne. When prompted
+for the tape driver that you want to load, choose &quot;Adaptec ASPI SCSI Manager&quot;
+from the list. <font color="Red">Do not specify any of the optional parameters that the
+installation provides.</font> <b>
+
+<ol>
+  <li><b></b></b>Make sure that NCRSDMS?.DSK is loaded first in your STARTUP.NCF. &quot;where
+    ?&quot; denotes the version of NetWare you are using (e.g., NCRSDMS3.DSK, NCRSDMS4.DSK).
+    The DSK drivers should be dated 09/24/94 or later. </li>
+  <li>Load ASPICAM?.NLM after your DSK driver. &quot;where the ?&quot; denotes the version of
+    NetWare you are using (e.g., ASPICAM3.NLM, ASPICAM4.NLM). Do not load any Adaptec SCSI
+    drivers and do not load TAPEDAI.DSK. They are unnecessary for proper usage of ArcServe on
+    the AST Manhattan Series. </li>
+  <li>Edit the ASTART.NCF file created by the ArcServe installation program and: <br>
+    After ARCSERVE.NLM, insert a 10 second delay <br>
+    After ASPI50.NLM, insert a 20 second delay <br>
+    After TAPESVR.NLM, insert a 30 second delay <br>
+    The following is a sample ASTART.NCF from a Manhattan server: <br>
+    Search Add SYS:\ARCSERVE\NLM <br>
+    LOAD SYS:\SYSTEM\STREAMS <br>
+    LOAD SYS:\SYSTEM\CLIB <br>
+    LOAD SYS:\SYSTEM\TLI <br>
+    LOAD SYS:\SYSTEM\SPXS <br>
+    LOAD SYS:\SYSTEM\NWSNUT <br>
+    LOAD BTRIEVE -p-4090 -f-20 -h-60 -l-20 -t-15 -u-0 -s-30 -m-512 <br>
+    LOAD BSPXCOM -d-8192 -s-15 -w-3 <br>
+    LOAD SYS:\ARCSERVE\NLM\ASDB <br>
+    LOAD SYS:\ARCSERVE\NLM\FAXLIB <br>
+    LOAD SYS:\ARCSERVE\NLM\ARCSERVE <br>
+    LOAD DELAYCMD 10 &quot;LOAD SYS:\ARCSERVE\NLM\ASPI50 HOST-0&quot; <br>
+    LOAD DELAYCMD 20 &quot;LOAD SYS:\ARCSERVE\NLM\TAPESVR&quot; <br>
+    LOAD DELAYCMD 30 &quot;LOAD SYS:\ARCSERVE\NLM\CLIENTS&quot; <b></li>
+</ol>
+</b>
+
+<p>You need to obtain DELAY.ZIP to get DELAYCMD.NLM. This file is distributed by Cheyenne:</p>
+
+<p align="center"><a href="http://www.cheyenne.com/TestDrive/#public"><img border="0"
+src="../../images/Cheyenne.jpg" width="128" height="30"></a> </p>
+
+<p align="left">DELAY.ZIP is contained within the PUB directory on the FTP site. You can
+also obtain the file from their BBS: </p>
+
+<p>(516) 484-3445 File Area #12, Miscellaneous File Area </p>
+
+<hr>
+
+<p><strong><a name="15">How do I access System (CMOS) Setup on my server?</a> </strong></p>
+
+<p>On most AST systems, you should see a message during a cold boot that prompts you for a
+keystroke or a series of keystrokes allowing you to access the System Setup. On some AST
+systems, this feature is available on warm and cold boots. You can refer to the following
+table as a reference guide:</p>
+
+<table border="1" align="DEFAULT" width="240">
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan G</td>
+    <td align="LEFT" valign="TOP" width="120">&lt;Ctrl+Alt+Esc&gt;</td>
+  </tr>
+  <tr>
+    <td width="120">Premium SE</td>
+    <td width="120">&lt;Ctrl+Alt+Esc&gt;</td>
+  </tr>
+  <tr>
+    <td width="120">Premmia SE </td>
+    <td width="120">&lt;Ctrl+Alt+Esc&gt;</td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan P</td>
+    <td width="120">&lt;F2&gt;</td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan V</td>
+    <td width="120">&lt;F2&gt;</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan S</td>
+    <td align="LEFT" valign="TOP" width="120">&lt;Delete&gt;</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Commerce Pro</td>
+    <td align="LEFT" valign="TOP" width="120">&lt;Delete&gt;</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan D</td>
+    <td align="LEFT" valign="TOP" width="120">&lt;F1&gt;</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Presence Pro</td>
+    <td align="LEFT" valign="TOP" width="120">&lt;F1&gt;<b></td>
+  </tr>
+</table>
+</b>
+</td></tr></table>
+</body>
+</html>

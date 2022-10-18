@@ -1,0 +1,415 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="9" align="DEFAULT" width="100%">
+  <tr>
+    <td><hr>
+    <h3>AT Command Reference Table </h3>
+    <table border="0" align="DEFAULT" width="100%">
+      <tr>
+        <td align="LEFT" valign="TOP"><b><a href="#Dial Commands">Dial Commands</a></b></td>
+        <td align="LEFT" valign="TOP"><b><a href="#Ampersand Commands">Ampersand Commands</a></b></td>
+        <td align="LEFT" valign="TOP"><b><a href="#S-Registers">S-Registers</a></b></td>
+      </tr>
+    </table>
+    <font size="5"><b><hr>
+    <p align="center"><a name="Dial Commands">Dial Commands</b></font></a> </p>
+    <div align="center"><center><table border="1" align="center" width="50%">
+      <tr>
+        <td align="LEFT" valign="TOP" width="10%">0-9</td>
+        <td align="LEFT" valign="TOP" width="50%">Dialable digits</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">*</td>
+        <td align="LEFT" valign="TOP" width="50%">Auxillary tone-dial digit</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">#</td>
+        <td align="LEFT" valign="TOP" width="50%">Auxillary tone-dial digit</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">T</td>
+        <td align="LEFT" valign="TOP" width="50%">Tone dialing</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">P</td>
+        <td align="LEFT" valign="TOP" width="50%">Pulse dialing </td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">R</td>
+        <td align="LEFT" valign="TOP" width="50%">Call an originate-only modem</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">,</td>
+        <td align="LEFT" valign="TOP" width="50%">Pause</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">;</td>
+        <td align="LEFT" valign="TOP" width="50%">Remain in command mode after dialing</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">&quot;</td>
+        <td align="LEFT" valign="TOP" width="50%">Dial Alpha Phone #s</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">W</td>
+        <td align="LEFT" valign="TOP" width="50%">Wait for second dial tone</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="5%">@</td>
+        <td align="LEFT" valign="TOP" width="50%">Wait for answer</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP" width="2%">!</td>
+        <td align="LEFT" valign="TOP" width="50%">Flash switch hook</td>
+      </tr>
+    </table>
+    </center></div><p align="left">&nbsp;</p>
+    <font size="5"><b><hr>
+    <p><a name="Ampersand Commands">Ampersand Commands</b></font></a> <b></b> </p>
+    <table border="0" align="DEFAULT" width="100%">
+      <tr>
+        <td align="LEFT" valign="TOP" width="50%"><table border="1" align="DEFAULT" width="100%">
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;An</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">Disable ARQ Result Codes</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">Enable ARQ Result Codes</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=2</td>
+            <td align="LEFT" valign="TOP">Modulation Codes</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=3</td>
+            <td align="LEFT" valign="TOP">Extra Result Codes</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Bn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">Floating DTE Speed</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&nbsp;</th>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">DTE Speed fixed when ARQ</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=2</td>
+            <td align="LEFT" valign="TOP">CD Always On</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Cn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">Modem Controls CD</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Dn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">Ignore DTR</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>n=1</td>
+            <td>Reserved</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>n=2</td>
+            <td>DTE Controls DTR</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;F</th>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">Load Factory Configuration</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Gn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">No Guard Tone</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">550Hz Guard Tone</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=2</td>
+            <td align="LEFT" valign="TOP">1800Hz Guard Tone</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Hn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">Disable TX Flow Controler</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">CTS</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>n=2</td>
+            <td>Xon/Xoff</td>
+          </tr>
+        </table>
+        </td>
+        <td align="LEFT" valign="TOP" width="50%"><table border="1" align="DEFAULT" width="100%">
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Pn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">N. American Pulse Dial </td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">U.K. Pulse Dial</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Rn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">CTS follows RTS</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">Ignore RTS</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=2</td>
+            <td align="LEFT" valign="TOP">RX to DTE/RTS high</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Sn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">DSR Always on</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">Modem Controls DSR</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=2</td>
+            <td align="LEFT" valign="TOP">Pulse DSR CTS=CD</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=3</td>
+            <td align="LEFT" valign="TOP">Pulse DSR</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Tn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">End Test</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=1</td>
+            <td align="LEFT" valign="TOP">Analog Loopback</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=3</td>
+            <td align="LEFT" valign="TOP">Digital Loopback</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=4</td>
+            <td align="LEFT" valign="TOP">Grant Remote DLB</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=5</td>
+            <td align="LEFT" valign="TOP">Deny Remote DLB</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=6</td>
+            <td align="LEFT" valign="TOP">Remote Digital Loopback </td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=7</td>
+            <td align="LEFT" valign="TOP">Remote DLB with Self Test</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">n=8</td>
+            <td align="LEFT" valign="TOP">ALB with Self Test </td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;W</th>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">Store Configuration</td>
+          </tr>
+          <tr>
+            <th align="LEFT" valign="TOP">&amp;Xn</th>
+            <td align="LEFT" valign="TOP">n=0</td>
+            <td align="LEFT" valign="TOP">DCE Synchronous Clock</td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <font size="5"><b><hr>
+    <p><a name="S-Registers">S-Registers</b></font></a> </p>
+    <table border="0" align="DEFAULT" width="100%">
+      <tr>
+        <td align="LEFT" valign="TOP" width="50%"><table border="1" align="DEFAULT" width="100%">
+          <tr>
+            <td align="LEFT" valign="TOP">S0</td>
+            <td align="LEFT" valign="TOP">Ring to answer on</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S1</td>
+            <td align="LEFT" valign="TOP">Counts # of rings</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S2</td>
+            <td align="LEFT" valign="TOP">Escape character</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S3</td>
+            <td align="LEFT" valign="TOP">Carriage Return</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S4</td>
+            <td align="LEFT" valign="TOP">Line Feed</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S5</td>
+            <td align="LEFT" valign="TOP">Backspace</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S6</td>
+            <td align="LEFT" valign="TOP">Wait Time/Dial Tone (seconds)</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S7</td>
+            <td align="LEFT" valign="TOP">Wait Time/Carrier (seconds)</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S8</td>
+            <td align="LEFT" valign="TOP">Comma time</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S9</td>
+            <td align="LEFT" valign="TOP">Carrier Detect Time</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S10</td>
+            <td align="LEFT" valign="TOP">Carrier Loss Time</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S11</td>
+            <td align="LEFT" valign="TOP">Dial Tone Spacing</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S12</td>
+            <td align="LEFT" valign="TOP">Escape Code Time</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">S13</td>
+            <td align="LEFT" valign="TOP">Bit Mapped</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">1 = Reset on DTR Loss</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">2 = Do Originate in Auto Answer</td>
+          </tr>
+        </table>
+        </td>
+        <td align="LEFT" valign="TOP" width="50%"><table border="1" align="DEFAULT" width="100%">
+          <tr>
+            <td align="LEFT" valign="TOP">19</td>
+            <td align="LEFT" valign="TOP">Inactivity Timeout</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">20</td>
+            <td align="LEFT" valign="TOP">Reserved</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">21</td>
+            <td align="LEFT" valign="TOP">Break Length</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">22</td>
+            <td align="LEFT" valign="TOP">Xon Character</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">23</td>
+            <td align="LEFT" valign="TOP">Xoff Character</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">24</td>
+            <td align="LEFT" valign="TOP">DSR Pulse Time </td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">25</td>
+            <td align="LEFT" valign="TOP">Reserved</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">26</td>
+            <td align="LEFT" valign="TOP">RTS/CTS Delay Time</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">27</td>
+            <td align="LEFT" valign="TOP">Bit Mapped</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">1 = V21 Mode</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">2 = Disable TCM</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">4 = Diable V32</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">8 = Disable 2100Hz</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">16 = Disable MNP Handshake</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">32 = Disable V.42 Detect Phase</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">&nbsp;</td>
+            <td align="LEFT" valign="TOP">64 = Reserved</td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="570">
+  <tr>
+    <td><h3><i>Networking</i></h3>
+    <form method="POST" action="../../../scripts/faqdrop.asp">
+      <p>I want to search through desktop FAQs <br>
+      about<select name="faqdrop" size="1">
+        <option>System Setup (CMOS and BIOS)</option>
+        <option>Upgrade and Configuration</option>
+        <option>Video</option>
+        <option>Troubleshooting</option>
+        <option selected>Networking</option>
+        <option>All</option>
+      </select>issues.<input type="submit" value="Go!" name="Portables"></p>
+    </form>
+    <ul>
+      <li><h5><b><a href="#13">What do I need to do to use the integrated network interface on my
+        Premmia GX system?</a></b></h5>
+      </li>
+      <li><h5><b><a href="#24">I am having problems installing a Token Ring card in an AST
+        business desktop system. What do I need to do to make this card work?</a></b></h5>
+      </li>
+    </ul>
+    <b><hr>
+    <p><a name="13">What do I need to do to use the integrated network interface on my Premmia
+    GX system?</a></p>
+    </b><p>Make sure the integrated ethernet controller is enabled and configured correctly in
+    System Setup. The AMD Ethernet controller should be configured for IRQ 9, DMA 7, and I/O
+    address 300. The AMD Ethernet controller can be configured in the Ethernet section of
+    System Setup. Make sure no other installed devices are using the aforementioned settings.</p>
+    <p>Listed below are the available drivers for the AMD Ethernet controller:</p>
+    <p><a href="ftp://ftp.ast.com/D-OTHER/11265315.EXE">11265315.EXE PCNet Drv v2.52
+    NDIS,NDIS3,ODI,Packet Drivers</a><br>
+    <a href="ftp://ftp.ast.com/D-OTHER/11265316.EXE">11265316.EXE PCNet Drv v2.52
+    Novell/Packet/Generic Boot ROM</a><br>
+    <a href="ftp://ftp.ast.com/D-OTHER/11265317.EXE">11265317.EXE PCNet Drv v2.52 SCO UNIX
+    Driver</a></p>
+    <p>The only AMD drivers that are available are the drivers that ship with Windows NT&#153;
+    4.0. The AMD 2100/1500 driver is the correct driver. Check the resource settings in the
+    BIOS and make sure that the IRQ, I/O Address and DMA settings are not used by other
+    devices.</p>
+    <p>Windows® 95 should automatically detect the ethernet controller as an AMD1500/2100T.</p>
+    <b><hr>
+    <p><a name="24">I am having problems installing a Token Ring card in an AST business
+    desktop system. What do I need to do to make this card work?</a></p>
+    </b><p>If are installing a token ring card in a desktop that has an integrated audio
+    chipset, then make sure the card uses an interrupt other than IRQ5. AST uses this IRQ
+    setting for the audio chipset in all of our systems that have an integrated audio chipset.
+    If it is essential to use this IRQ, then your option is to disable the integrated audio
+    chipset.</p>
+    <p>Additionally, all token ring cards use the default I/O address, A20. In our desktop
+    systems that ship with an ATI mach64 video chipset, you need to change this address to
+    A24. This change will eliminate any conflicts with the I/O addresses used by the video
+    chipset.</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>What is SCSI</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<B><FONT FACE="Arial" SIZE=7><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">SCSI </P>
+<P ALIGN="CENTER">vs.</P>
+<P ALIGN="CENTER">EIDE UltraDMA-33</P>
+</B></FONT><FONT SIZE=2><P>&nbsp;</P>
+</FONT><B><I><FONT FACE="Arial" SIZE=4><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">White Paper</P>
+</B><P ALIGN="CENTER">July 16, 1997</P>
+</I></FONT><FONT SIZE=2><P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>For years we have known about the bottleneck inside the computer that is caused by slow (16.6MB/sec) transfer rates of disk drives and controllers typically transferring data somewhere around 3MB/sec. To speed things up you had to buy a Cyborg and use your existing Fast ATA or EIDE drives or buy a SCSI controller card and the more expensive SCSI disk drives.</P>
+<P>&nbsp;</P>
+<P>The industry finally felt the need to do something about it by developing a new standard in data transfer. A joint project between Intel and Quantum Corporation has produced a new interface, which enables an UltraDMA-33 protocol. It doubles the current burst data transfer rate from 16.6MB/sec to 33MB/sec.</P>
+</FONT><B><FONT FACE="Arial"><P>What is SCSI?</P>
+</B></FONT><FONT SIZE=2><P>SCSI is a separate bus structure rather than a connector like IDE, so it offers many features that IDE cannot. First, SCSI is extremely flexible in the type and timing of the devices attached. Everything from disks and other storage media to scanners and printers can be attached to the same SCSI host adapter. In fact up to seven devices can be connected to each adapter...</P>
+</FONT><B><FONT FACE="Arial"><P>What is UltraDMA-33?</P>
+</B></FONT><FONT SIZE=2><P>This technology was designed for the new generation of advanced operating systems, real-time video, multimedia and any Internet based application. Ultra DMA is a new protocol for the ATA/IDE hard disk drive interface that doubles the current burst data transfer rate to 33 megabytes (MB) per second, supports  Command Tag Queuing and Bus Mastering. UltraDMA-33 can only have up to two EIDE devices on one bus.</P>
+</FONT><B><FONT FACE="Arial"><P>What’s changed today?</P>
+</B></FONT><FONT SIZE=2><P>The traditional strengths of the SCSI sub systems are throughput, expandability, and flexibility. EIDE has had performance boosts, recently that significantly diminish the areas in which SCSI has typically been superior. Below is a detailed look at these traditional SCSI strengths to show hoe EIDE has significantly closed the gap.</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P>Throughput</P>
+</B></FONT><FONT SIZE=2><P>The industry claims throughput rates such as 40MB (SCSI) and 33MB (Ultra DMA.)  However it is important to realize that these speeds are only valid in burst cache modes no in true hard drive data streaming modes.  When you look at the streaming throughput on SCSI or EIDE the numbers are dramatically different – 2 to 3 Mbytes per second! SCSI hard drives, also come in variable speeds, high RPM drives can get very expensive. In the older EIDE hardware architecture hard drives had to execute commands in serial therefore having to wait for the hard drive to finish the process until it could issue another command – basically EDIE was interrupt driven. SCSI, on the other hand uses a technology called Command Tag Queuing to issue multiple commands at the same time!  Ultra DMA now also uses Command Tag Queuing, which is essentially how they were able to improve the throughput rate on these hard drives, to 33 megabytes (MB) per second </P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P>Expandability &amp; Flexibility</P>
+</B></FONT><FONT SIZE=2><P>SCSI still has an advantage here. Systems more than 2 hard drives will see a performance improvement when using SCSI. It also has the flexibility to add a RAID card and use raid striping on the hard drives. This feature is not supported in EIDE yet, as desktop users typically do not require this type of redundancy. Customers who have these requirements are normally looking for a workstation or server class product.</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Arial"><P>Performance: A Toss-Up</P>
+</B></FONT><FONT SIZE=2><P>Using WinBench 96 to subject the disks to read and write activity typical of word-processing, spreadsheet, database, and graphics applications run one at a time. On this test, conducted under Windows 95 by PC Magazine, the EIDE disk turned in the best Disk Winmark 96 results--but by a margin of less than 10 percent. They also tested using Winstone 96 and Winstone 32. These benchmarks exercise not just disk subsystems but all of the major components in a PC, the minor differential was diluted further, and the final results proved to be effectively identical for all of the disk interfaces.</P>
+<P><IMG SRC="Image3.gif" WIDTH=716 HEIGHT=549></P>
+<P>A more complex test scenario, one designed to take advantage of SCSI's advanced features the results favored the SCSI disks, but only by a small margin. Two disk-intensive AutoCad sessions running simultaneously on one Windows NT system using two different disk drives, dedicating one disk to each AutoCad session (This test is not representative of typical usage but did allow PC Magazine to test SCSI's theoretically superior performance in multi-tasking, multi-disk environments.) </P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Arial"><P><IMG SRC="Image4.gif" WIDTH=592 HEIGHT=404></P>
+</B></FONT><FONT SIZE=2><P>An additional set of tests we run to characterize performance when simultaneously performing heavy disk access and streaming video off of a CD-ROM drive was performed. In theory, SCSI's ability to handle multiple accesses concurrently would give it an advantage over EIDE in such an environment. The results bear out this conclusion: a 6x SCSI CD-ROM drive paired with a SCSI hard disk yielded fewer dropped frames (thus smoother video playback) than a 6x ATAPI (EIDE) CD-ROM drive paired with an EIDE drive disk or a SCSI drive paired with an ATAPI CD ROM. While we don't believe this scenario is necessarily representative of common user activities, it demonstrates that SCSI can provide benefits in specialized scenarios.</P>
+<P>&nbsp;</P>
+<P><IMG SRC="Image5.gif" WIDTH=605 HEIGHT=414></P>
+<P>&nbsp;</P>
+<P>One of SCSI's traditional advantages--its ability to minimize CPU overhead—is now challenged by bus-mastering EIDE interfaces, which are built into chip sets such as Intel’s Triton and Triton II chipsets using the 82371FB and 82371SB PCI/ICS IDE Xcelerator chips, respectively. Note that a software driver or a Windows 95 service pack update is required to enable bus-master EIDE on newer systems with bus-master EIDE hardware support.</P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Arial"><P>Summary</P>
+</B></FONT><FONT SIZE=2><P>SCSI dates from a time when a small computer was roughly the size of a 1950 Oldsmobile. Its adaptation to the personal computer market has been slowed by complexity, independent standards development, and relatively low demand for its special features. Only on the Mac has SCSI been a great success, mainly because Apple rigorously controls every aspect of the development of peripherals for the Mac. The SCSI experience on PCs has been quite the opposite, with different vendors implementing their own version of SCSI communication.</P>
+<P>&nbsp;</P>
+<P>In a single-user environment using a mainstream Pentium 166MHz test system, there is no significant across-the-board performance advantage for SCSI disks over comparable EIDE models--even in a multitasking environment. Some caveats do apply to this assertion. If you compare dissimilar disks--such as a 7,200-rpm SCSI model versus a 5,400-rpm EIDE model—the results could be different. If you set up a machine as a file server, which is subject to unusually extensive disk activity, SCSI's multitasking support (and superior expandability) would prove be a viable option. </P>
+</FONT><B><FONT FACE="Arial"><P>Reference Links</P>
+</B></FONT><FONT SIZE=2><P></FONT><A HREF="http://www8.zdnet.com/pcmag/pclabs/report/r960702a.htm"><FONT SIZE=2>http://www8.zdnet.com/pcmag/pclabs/report/r960702a.htm</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://www.byte.com/art/9403/SEC6/ART6.HTM"><FONT SIZE=2>http://www.byte.com/art/9403/SEC6/ART6.HTM</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://www.blitzsoft.com/ultrata.html"><FONT SIZE=2>http://www.blitzsoft.com/ultrata.html</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://www.quantum.com/products/whitepapers/ultraata/"><FONT SIZE=2>http://www.quantum.com/products/whitepapers/ultraata/</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://developer.intel.com/design/pcisets/busmastr/bmfaq.htm"><FONT SIZE=2>http://developer.intel.com/design/pcisets/busmastr/bmfaq.htm</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://websvr1.adaptec.com/deskpcon/promo/scsieide.html"><FONT SIZE=2>http://websvr1.adaptec.com/deskpcon/promo/scsieide.html</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://www1.zdnet.com/adverts/eprints/adaptec/wins/dc1196.html"><FONT SIZE=2>http://www1.zdnet.com/adverts/eprints/adaptec/wins/dc1196.html</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://www.promise.com/html/sales/ultra33/Ultra33Spec.html"><FONT SIZE=2>http://www.promise.com/html/sales/ultra33/Ultra33Spec.html</FONT></A></P>
+<FONT SIZE=2><P>&nbsp;</P></FONT></BODY>
+</HTML>

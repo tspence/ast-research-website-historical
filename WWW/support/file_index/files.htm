@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<title>File List</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" align="default" width="570">
+  <tr>
+    <td><h3><em>File Index</em></h3>
+    <form action="../scripts/webfiles.asp" method="POST">
+      <input type="hidden" name="FirstVar" value="1"><input type="hidden" name="LastVar"
+      value="25"><!-- ******************************************** -->
+<!--  Begin hidden variable input for list count  -->
+<!-- ******************************************** -->
+<!-- ******************************************** -->
+<!--   End hidden variable input for list count   -->
+<!-- ******************************************** -->
+<table border="0" align="DEFAULT" width="100%" bgcolor="White">
+        <tr>
+          <td align="CENTER" valign="TOP" width="160"><b><u>Select a Model</u></b></td>
+          <td align="CENTER" valign="TOP"><b><u>Select a File Category</u></b></td>
+        </tr>
+        <tr bgcolor="#fff4f2">
+<!-- ********************************************* -->
+<!-- Begin Form for SysVar variable list box input -->
+<!-- ********************************************* -->
+          <td align="CENTER" valign="TOP" width="160"><select name="SYSVAR" size="1">
+            <option selected value="All Products">All Products</option>
+            <option value="Advantage! Adventure!">Advantage! Adventure!</option>
+            <option value="Advantage! Desktop">Advantage! Desktop</option>
+            <option value="Advantage! Notebook">Advantage! Notebook</option>
+            <option value="Adventure!">Adventure!</option>
+            <option value="Ascentia">Ascentia</option>
+            <option value="Bravo Desktop">Bravo Desktop</option>
+            <option value="Bravo Notebook">Bravo Notebook</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="PowerExec">PowerExec</option>
+            <option value="Power Premium">Power Premium</option>
+            <option value="Premium">Premium</option>
+            <option value="Premium Exec">Premium Exec</option>
+            <option value="Premmia">Premmia</option>
+            <option value="Tandy and Grid">Tandy and Grid</option>
+            <option value="Vintage Products">Vintage Products</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+          </select> </td>
+<!-- ******************************************* -->
+<!-- End Form for SysVar variable list box input -->
+<!-- ******************************************* -->
+<!-- ********************************************** -->
+<!-- Begin Radio Button for FileType variable input -->
+<!-- ********************************************** -->
+          <td align="CENTER" valign="TOP"><table border="0" align="DEFAULT" width="100%">
+            <tr>
+              <td align="CENTER" valign="TOP"><input type="radio" name="FileType" value="CD"><br>
+              <b>CD</b> </td>
+              <td align="CENTER" valign="TOP"><input type="radio" name="FileType" value="Modem"><br>
+              <b>Modem</b> </td>
+              <td align="CENTER" valign="TOP"><input type="radio" name="FileType" value="BIOS"><br>
+              <b>BIOS</b> </td>
+              <td align="CENTER" valign="TOP"><input type="radio" name="FileType" value="Sound"><br>
+              <b>Sound</b> </td>
+              <td align="CENTER" valign="TOP"><input type="radio" name="FileType" value="Video"><br>
+              <b>Video</b> </td>
+              <td align="CENTER" valign="TOP"><input type="radio" name="FileType" value="Misc"><br>
+              <b>Misc</b> </td>
+              <td align="CENTER" valign="TOP"><input type="radio" name="FileType" value="All"
+              checked=" CHECKED"><br>
+              <b>All</b> </td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table>
+      <table border="0" align="DEFAULT" width="100%">
+        <tr bgcolor="WHITE">
+          <td align="LEFT" valign="TOP"><input type="SUBMIT" name="Button" value="List Files"> </td>
+          <td align="CENTER" valign="TOP"></td>
+          <td align="RIGHT" valign="TOP">List <input type="TEXT" name="NumofHits" size="3"
+          maxlength="3" value="25"> hits at a time. </td>
+        </tr>
+      </table>
+<!-- ******************************************** -->
+<!-- End Radio Button for FileType variable input -->
+<!-- ******************************************** -->
+      <hr>
+      <h4><em><b>OR</b></em> <input type="SUBMIT" name="Button" value="Search For --&gt;"> <input
+      type="text" name="NameofFile" size="20"> </h4>
+      <hr>
+      <table border="0" width="100%">
+        <tr>
+          <td valign="top" width="16%"><strong><a href="fileg.htm"><img border="0"
+          src="../images/disk.gif" width="63" height="55"></a></strong></td>
+          <td valign="top" width="84%">You can also view <strong><a href="fileg.htm">all the files</a></strong> in the index,
+          or you can view the <strong><a href="Biostbls.htm">BIOS tables</a></strong> by part
+          number.</td>
+        </tr>
+      </table>
+      <ul>
+        <li>The Files Index contains downloadable files such as BIOS upgrades, video drivers, and
+          miscellaneous utility programs for AST computer systems. To find a file, make a selection
+          from the &quot;Select a Model&quot; drop down box, and then choose one of the &quot;Select
+          a File Category&quot; option buttons to display a specific type of file.&nbsp;&nbsp; </li>
+        <li>The Misc field contains general utilities that do not apply to any other category. </li>
+        <li>Please contact <strong><a href="techasst.htm">AST On-Line Services</a></strong> with
+          questions about this section.</li>
+        <li>If you know the name or a keyword for the file that you need, enter the full or partial
+          filename or the keyword in the &quot;Search For --&gt;&quot; box, and then click on the
+          &quot;Search For --&gt;&quot; button.</li>
+        <li>If you still cannot find the desired file, you may want to check the FTP site at <strong><a
+          href="ftp://ftp.ast.com">ftp.ast.com</a></strong>. When connecting to the FTP site, set
+          the username to &quot;anonymous&quot; and use your E-mail address as the password.</li>
+      </ul>
+    </form>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

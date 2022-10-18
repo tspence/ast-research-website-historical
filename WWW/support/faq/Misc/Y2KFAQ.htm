@@ -1,0 +1,140 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" align="DEFAULT">
+  <tr>
+    <td><table border="0" align="DEFAULT">
+      <tr>
+        <td align="LEFT" valign="TOP"><h3><font>Year 2000 FAQs</font></h3>
+        <ul>
+          <li><h5><a href="#1"><font><b>Why is the Year 2000 an issue for PC operation?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#2"><font><b>How does this problem manifest itself?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#3"><font><b>What is "Year 2000 compliance?"</b></font></a></h5>
+          </li>
+          <li><h5><a href="#4"><font><b>How is "Year 2000 compliance" measured?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#5"><font><b>What aspects of the computer's functionality are examined?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#6"><font><b>My computer fails Y2K compliance testing package "X." What can I do?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#7"><font><b>Will my computer be damaged or will all my data be lost?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#8"><font><b>Can I still use my non-compliant PC in the year 2000 and beyond?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#9"><font><b>My computer is connected to a network. How will this affect me?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#10"><font><b>How can I ensure my file server date is correct?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#11"><font><b>What about my software?</b></font></a></h5>
+          </li>
+          <li><h5><a href="#12"><font><b>Is there a magic bullet fix?</b></font></a></h5>
+          </li>
+        </ul>
+        </td>
+      </tr>
+    </table>
+    <table border="0">
+      <tr>
+        <td><hr>
+        <p><b><font><a name="1">Why is the Year 2000 an issue for PC operation?</a></font></b></p>
+        <p><font>The original IBM AT Personal Computer, developed in the mid 1980s, was the blueprint for 
+	today's PC designs. This design included a "Century Byte" which indicates the current century. The problem is 
+	that the way in which the Century Byte is changed was never defined clearly. Consequently, the many PC designs that 
+	have evolved from the AT may not all behave in the same way at the roll-over into the next century.</font></p>
+        <hr>
+        <p><b><font><a name="2">How does this problem manifest itself?</a></font></b></p>
+        <p><br>
+        <font>The Century Byte is not rolled over automatically by the computer's hardware clock. The result is
+	that after the millennium rollover the computer will store the year in its non-volatile memory as 1900 rather than 
+	2000. Operating systems such as DOS and Windows 95 do not recognise dates prior to 4th January 1980 and will display 
+	this date instead. If the computer's BIOS (Basic Input Output System) is not "Year 2000 compliant," this will cause 
+	problems for software that requests the date from the computer hardware.</font></p>
+        <hr>
+        <p><b><font><a name="3">What is "Year 2000 compliance?"</a></font></b></p>
+        <p><font>This term is in use to indicate the way in which computers should perform before, during, and 
+	after the millennium rollover from 1999 to 2000.</font></p>
+        <hr>
+        <p><b><font><a name="4">How is "Year 2000 compliance" measured?</a></font></b></p>
+        <p><font>Several software packages exist to test personal computer hardware for year 2000 compliance.
+	Unfortunately, these packages often measure different aspects of the computer's functionality, all of which may or 
+	may not have a bearing on the computer's behavior during the roll-over period. Therefore, a computer that is 
+	classed as 'Year 2000 Compliant' by one test may be failed by another. This situation has not helped the general 
+	confusion surrounding the Year 2000 issue.</font></p>
+        <hr>
+        <p><b><font><a name="5">What aspects of the computer's functionality are examined?</a></font></b></p>
+        <p><font>All compliance-testing software should check the following:
+<UL>
+	<LI>Operating system date rollover from 23:59, December 31, 1999 to 00:01, January 1, 2000.</LI>
+	<LI>Hardware clock date (obtained via the BIOS) rollover from 23:59, December 31, 1999 to 00:01, January 1, 2000.</LI>
+	<LI>The computer's ability to recognize Year 2000 as a leap year.</LI>
+</UL>
+	<P>Additionally, some testing packages test for the following:</P>
+<UL>
+	<LI>Hardware clock date (obtained directly from the Real Time Clock) rollover from 23:59, December 31, 1999 to 00:01, 
+	January 1, 2000.</LI>
+	<LI>The computer's ability to recognize Year 2001 as NOT being a leap year.</LI></font>
+</UL>
+        <hr>
+
+        <p><b><font><a name="6">My computer fails Y2K compliance testing package "X." What can I do?</a></font></b> </p>
+        <p><font>Your PC may have the ability to correct the hardware clock when it boots up. Check the 
+	"Actions Required" matrix in this document and locate your particular AST model. If there is a check mark in the box
+	marked "Powered off rollover," then your PC will "correct" the problem on boot up. All you need to do is power the 
+	machine off and back on again, any time after midnight January 1, 2000.</p></font>
+	<p><font>If there is a check mark in the "Manual Update Required" box, you will need to type in the 
+	correct date at the DOS prompt. This is a one-time operation which does not need to be repeated. Your AST PC will 
+	correctly increment the date thereafter, including the ability to recognise the Year 2000 as a leap year.</font></p>
+
+        <hr>
+        <p><b><font><a name="7">Will my computer be damaged or will all my data be lost?</a></font></b></p>
+        <p><font>Your computer will not be damaged by an incorrect millennium rollover and you shouldn't 
+	lose any existing data. However if you are "burning the midnight oil" on New Year's Eve around midnight inputting 
+	date sensitive data, you could potentially have bad new data. This is dependent upon whether the program you 
+	are using gets the current date from the operating system or from the BIOS.</font></p>
+
+        <hr>
+        <p><b><font><a name="8">Can I still use my non-compliant PC in the year 2000 and beyond?</a></font></b></p>
+        <p><font>Yes. Once your AST computer has been updated by either of the above operations, your hardware 
+	will continue to operate correctly with respect to the date in the year 2000 and beyond.</font></p>
+
+        <hr>
+        <p><b><font><a name="9">My computer is connected to a network. How will this affect me?</a></font></b></p>
+        <p><font>If you are connected to a Novel or a Windows NT server, the time and date are automatically 
+	downloaded from the server when you log on. Provided your file server is "Year 2000 compliant," your networked 
+	computer will be updated correctly even if your networked computer itself is "non-compliant." </font></p>
+
+        <hr>
+        <p><b><font><a name="10">How can I ensure my file server date is correct?</a></font></b></p>
+        <p><font>If you have an AST file server then check the "Action Required" matrix in this document. 
+	Most AST file servers manufactured since 1995 are "Year 2000 compliant" with the correct revision of BIOS.</font></p>
+
+        <hr>
+        <p><b><font><a name="11">What about my software?</a></font></b></p>
+        <p><font>You should be more concerned about your software than your hardware as there are no easy 
+	fixes for software. There are software testing programs available but these will tend only to give information 
+	regarding the major releases of commercial software that you may have installed on your machine. It is possible that there is a problem in 
+	each individual spreadsheet because of the variety of ways in which you can format and calculate with the date.</font></p>
+
+        <hr>
+        <p><b><font><a name="12">Is there a magic bullet fix?</a></font></b></p>
+        <p><font>For personal computer hardware, there are programs available that run in background and "fix" 
+	the hardware year 2000 problem. However these programs do not run under all operating systems and have an associated 
+	cost in terms of memory used and a financial cost.</font></p>
+	<p><font>For software, there is no "magic bullet" and each package and its data files must be examined 
+	individually for potential problems.</font></p>
+
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

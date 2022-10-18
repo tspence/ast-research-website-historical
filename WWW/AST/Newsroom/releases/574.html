@@ -1,0 +1,8 @@
+<HTML><HEAD><TITLE>HTML Bulk Mail Record</TITLE></HEAD><BODY bgcolor=ffffff><TABLE WIDTH=570 border=0 cellspacing=0><TR><TD><PRE>     Requester: 3149
+     Submitter:  
+       Subject: Premium GS correction
+       Project: Premium GS correction
+   Green Sheet: S092
+Return Address:  
+         Query: SELECT O.name, L.location_name, C.salutation, C.first_name, C.middle_initial, C.last_name, C.title, C.email_addr FROM contact C INNER JOIN location L ON L.location_id=C.location_id INNER JOIN company O on O.company_id=L.company_id LEFT OUTER JOIN undeliverable U ON U.contact_id=C.contact_id WHERE ltrim(C.email_addr) IS NOT NULL AND U.email_addr IS NULL AND C.broad_email='Y'  AND L.ovation IN (35,36,37)
+</PRE><P><HR><P>                                             Minor OOPS!<BR><BR>You all should have received the announcements of our latest members to the AST Premium server family: the AST Premium KS and Premium GS.<BR><BR>There was a minor error  in the Premium GS announcement.  The Premium GS does not have RAID/Ethernet, but rather 10/100 Ethernet. <BR><BR>We apologize for the error.<BR><BR>IF YOU HAVE ANY QUESTIONS, PLEASE CONTACT YOUR AST SALES REPRESENTATIVE!<BR><BR></TD></TR></TABLE></BODY></HTML>

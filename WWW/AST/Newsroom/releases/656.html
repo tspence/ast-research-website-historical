@@ -1,0 +1,81 @@
+/**************************************************************
+  DBA set of queries to display owners and use.
+
+  The following are included:
+	- Display Subject Area Owners
+	- Display Field Owners
+	- Display Table Use
+
+**************************************************************/
+SET NOCOUNT ON
+
+---------------------------------------------------------------
+-- Display Subject Area Owners
+---------------------------------------------------------------
+PRINT '** Subject Area Owners **'
+PRINT ''
+
+SELECT	'Bus. Area' = CONVERT(VARCHAR(25), mba.bus_area_long_name)
+,	'Subject' = CONVERT(VARCHAR(25), msa.subj_area_long_name)
+,	owner = CONVERT(VARCHAR(25), (me.emp_first_name + ' ' + me.emp_last_name))
+,	dept = CONVERT(VARCHAR(15), me.emp_dept_name)
+,	'own beg' = msao.eff_date
+,	'own end' = msao.exp_date
+FROM	met_bus_area mba
+,	met_subj_area msa
+,	met_emp me
+,	met_subj_area_owner msao
+WHERE	mba.bus_area_key = msao.bus_area_key
+AND	msa.subj_area_key = msao.subj_area_key
+AND	me.emp_key = msao.owner_key
+
+PRINT ''
+PRINT ''
+
+
+---------------------------------------------------------------
+-- Display Field Owners
+---------------------------------------------------------------
+PRINT '** Field Owners **'
+PRINT ''
+
+SELECT	field = mf.field_name
+,	owner = CONVERT(VARCHAR(25), (me.emp_first_name + ' ' + me.emp_last_name))
+,	dept = CONVERT(VARCHAR(15), me.emp_dept_name)
+,	'own beg' = mfo.eff_date
+,	'own end' = mfo.exp_date
+FROM	met_field mf
+,	met_emp me
+,	met_field_owner mfo
+WHERE	mfo.field_key = mf.field_key
+AND	mfo.owner_key = me.emp_key
+
+PRINT ''
+PRINT ''
+
+
+---------------------------------------------------------------
+-- Display Table Use
+---------------------------------------------------------------
+PRINT '** Table Use **'
+PRINT ''
+
+SELECT	'Bus. Area' = CONVERT(VARCHAR(25), mba.bus_area_long_name)
+,	'Subject' = CONVERT(VARCHAR(25), msa.subj_area_long_name)
+,	'Table' = CONVERT(VARCHAR(20), mt.table_name)
+,	'use beg' = mtu.eff_date
+,	'use end' = mtu.exp_date
+FROM	met_bus_area mba
+,	met_subj_area msa
+,	met_table mt
+,	met_table_use mtu
+,	met_subj_area_owner msao
+WHERE	mtu.table_key = mt.table_key
+AND	mtu.subj_area_key = msao.subj_area_key
+AND	msao.bus_area_key = mba.bus_area_key
+
+PRINT ''
+PRINT ''
+
+
+SET NOCOUNT OFF

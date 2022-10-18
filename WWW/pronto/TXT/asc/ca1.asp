@@ -1,0 +1,89 @@
+<HTML><HEAD>
+<html><TITLE>US ASC</TITLE>
+</HEAD>
+<body bgcolor='ffffff' text='000000' LINK="#0000FF" ALINK="#0000FF" VLINK="#0000FF">
+<b>Pronto! Pro <i>OnLine</I> Text Version</b>
+<CENTER>
+<!-- #INCLUDE FILE="TITLE.INC" -->
+</CENTER>
+<P>
+
+<H1><A NAME="TAC">1. Training and Certification</A>
+<HR>
+</H1>
+<H2>1.1 Introduction</A></H2>
+<BR>
+AST wishes to assure customers of the highest possible
+quality product - an extension of this is to have only qualified
+technical staff carrying out warranty repairs and modifications.
+<BR>
+
+<P>
+<B>Every ASC central location will have a minimum
+of two AST certified technicians on duty, and every remote location
+will have a minimum of one certified technician available - in
+both cases the technicians will have to meet the service response
+/delivery parameters agreed to within the ASC Agreement.<BR>
+</B>
+<P>
+There are two levels of training certification. 
+AST recognized A+ Certification as the pre-requisite to becoming
+service authorized.  Following A+ certification, in order to maintain
+AST Service Authorization, AST specific classroom training is
+required..  From time to time AST will make available, at a cost,
+Computer Based Training modules, which will enable Authorized
+Service Centres to train on new products prior to classroom training.
+<BR>
+<HR>
+<H2><A NAME="toc12">1.2 Training Media &amp; Contents</A>
+</H2>
+<BR>
+Ongoing training is provided by computer based training
+programs, or by attending a classroom course.  
+<P><HR>
+Classroom courses are one or two days..
+<H2><A NAME="toc13">1.3 Training Locations</A></H2>
+<BR>
+AST Training is offered on a regular basis in the
+Greater Toronto Area.  Training will be available in other major
+cities across Canada.<BR>
+
+<HR><H2><A NAME="toc14">1.4 Training Fees</A></H2>
+<BR>
+Prices for individual Computer Based Training modules
+are established as the CBT becomes available and publisehd in
+the AST Parts Kit list..  Additional copies of the training packages
+can be ordered as service parts ( see section 4.2 ).<BR>
+
+<P>
+Classroom courses cost $425 per student per day plus
+taxes applicable at the delivery location.  Course fees are payable
+in advance.  The ASC is responsible for all training costs, employee
+salary, all transportation to and from the facility, room &amp;
+meals, and any incidental employee expenses.<BR>
+
+<P>
+Future training dates will be faxed on a regular
+basis.  If you have any further questions, contact (705) 712-6000
+regarding course dates, locations and available spaces.<BR>
+
+<HR><H2><A NAME="toc15">1.5 Certification Process</A></H2>
+<BR>
+ASC's are certified on a specific product list based
+on their Reseller Agreements with AST and the technician's certification.
+ Copies of all A+ certificates must be sent to AST Service to
+be included in our files.<BR>
+
+<HR><H2><A NAME="toc16">1.6 Referral Centres</A></H2>
+<BR>
+In order to be on the AST Referral list, ASCs must
+be willing to service any customer who comes as a referral, have
+training on all AST product and perform both on-site and depot
+warranty service.  ASCs meeting these criteria are welcome to
+request placement on the AST ASC referral list.
+
+<br><br><br>
+
+</BODY>
+
+</HTML>

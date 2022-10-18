@@ -1,0 +1,171 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0 width="570"><tr><td>
+<h3><i>Video</i></h3>
+
+<form method="POST" action="../../scripts/faqd.asp">
+  <p>I want to search through portable FAQs about <select name="faqd" size="1">
+        <option>Configuration and Upgrade</option>
+        <option>Troubleshooting</option>
+        <option>Mouse/Pointer</option>
+        <option>Modem/Network</option>
+        <option selected>Video</option>
+        <option>Software</option>
+        <option>Power</option>
+        <option>Docking Stations</option>
+        <option>Multimedia</option>
+        <option>All</option>
+      </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+</form>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="50%"><ul>
+      <li><h5><a href="#7"><b>Why do I see double images on my AST PowerExec in DOS or Windows?</b></a></h5>
+      </li>
+      <li><h5><b><a href="#22">What is the maximum resolution for the Ascentia 910N?</a></b></h5>
+      </li>
+      <li><h5><b><a href="#26">Running in 800x600 resolution, my mouse stays about 1 inch above
+        the bottom of the screen on my Ascentia 950; what do I need to do?</a></b></h5>
+      </li>
+    </ul>
+    </td>
+    <td valign="top" width="50%"><ul>
+      <li><h5><b><a href="#28">My Ascentia 950N does not have a full display in DOS mode; what
+        should I do?</a></b></h5>
+      </li>
+      <li><h5><b><a href="#34">My Ascentia P does not display a full screen using 640x480
+        resolution, why?</a></b></h5>
+      </li>
+    </ul></td></tr></table>
+
+<hr>
+
+<p><a name="7"><b>Why do I see double images on my AST PowerExec in DOS or Windows?</b> </a></p>
+
+<p>You may see double or mirrored images in DOS or Windows if your system is does not use
+the proper video drivers. You can use the PowerExec Video Drivers disk to correct this
+problem. If you do not have the PowerExec Video Drivers disk, you can create it by
+downloading the following file:</p>
+
+<p><a href="ftp://ftp.ast.com/P-VIDEO/PEVID1.EXE">PEVID1.EXE </a>PowerExec Video Drivers
+v1.01<a href="ftp://ftp.ast.com/P-VIDEO/PEVID1.EXE"> </a></p>
+
+<p>Follow this procedure to change the video drivers: 
+
+<ol>
+  <li>Exit all software, including Windows. </li>
+  <li>Enter the following command to get into the WINDOWS directory: <br>
+    CD\WINDOWS </li>
+  <li>Enter the following command: <br>
+    SETUP </li>
+  <li>After SETUP determines your system configuration, use the arrow keys to select the
+    Display Type field and press &lt;Enter&gt;.</li>
+  <li>Use the arrow keys to scroll to the last selection, &quot;Other video driver (Requires
+    disk from OEM).&quot; Insert your video driver disk and press &lt;Enter&gt;. <br>
+    <em>NOTE: Make sure the System field has &quot;MS-DOS' or &quot;MS-DOS with APM.&quot;
+    Sometimes Windows will select &quot;AST Cupid 386 System.&quot; Your portable system is
+    NOT a Cupid system, and this setting will cause problems. </em></li>
+  <li>Choose one of the AST PowerExec video drivers from the list of drivers that appear on
+    the screen. Your system will support 640x480x256 colors. </li>
+  <li>Follow the on-screen directions to complete the video driver installation.<b> </b></li>
+</ol>
+
+<hr>
+
+<p><a name="22"><b>What is the maximum resolution for the Ascentia 910N?</b></a> </p>
+
+<table border="1" align="DEFAULT" width="50%">
+  <tr>
+    <th align="LEFT" valign="TOP">Display Type</th>
+    <th align="LEFT" valign="TOP">Resolution</th>
+    <th align="LEFT" valign="TOP"># of colors</th>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Color STN</td>
+    <td align="LEFT" valign="TOP">640x480</td>
+    <td align="LEFT" valign="TOP">256 colors</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Color TFT</td>
+    <td align="LEFT" valign="TOP">640x480</td>
+    <td align="LEFT" valign="TOP">64K colors*</td>
+  </tr>
+</table>
+
+<p>*the unit goes into panning mode</p>
+
+<hr>
+
+<p><a name="26"><b>Running in 800x600 resolution, my mouse stays about 1 inch above the
+bottom of the screen on my Ascentia 950; what do I need to do?</b></a> </p>
+
+<p>Follow these steps to resolve this issue:
+
+<ol>
+  <li>Choose Display in Control Panel. </li>
+  <li>Select the Settings tab.</li>
+  <li>Select Change Monitor Type.</li>
+  <li>Select &#147;Standard Monitor Type Laptop Display Panel (800x600).&#148; </li>
+  <li>Choose OK, and then click Close.</li>
+  <li>Choose 800x600 pixels on the Change Display Settings Screen,. </li>
+  <li>Choose OK.</li>
+</ol>
+
+<p>If the display doesn't change after you complete these steps, shut down the computer,
+reboot the computer, and then repeat steps 6 and 7.</p>
+
+<p>These changes should resize the screen, and the mouse should function properly.</p>
+
+<hr>
+
+<p><a name="28"><b>My Ascentia 950N does not have a full display in DOS mode; what should
+I do?</b></a> </p>
+
+<p>By default, the video display will have a reduced font in text mode that will produce a
+screen that uses the center portion of the display with a one inch margin on all sides.
+You can enable font expand in CMOS that will allow the computer to use a text screen that
+takes advantage of the full display area in DOS. Follow this procedure:
+
+<ol>
+  <li>Press &lt;Fn+F2&gt; from any screen.</li>
+  <li>Tab to the Boot Option sub menu.</li>
+  <li>Arrow to the Font Expand option.</li>
+  <li>Use the left or right arrow keys to change the field to Enable.</li>
+  <li>Press &lt;Esc&gt; to return to the Main Menu.</li>
+  <li>Press &lt;Enter&gt; to save the changes and Exit.</li>
+  <li>Close all open applications, and reboot the computer.</li>
+</ol>
+
+<p>The change takes effect once the computer reboots.</p>
+
+<hr>
+
+<p><a name="28a"><b>Why does the clock not keep the correct time when I resume from
+suspend on my Ascentia J?</b></a></p>
+
+<p>Enable Advanced Power Management in Windows 95. If you use Windows for Workgroups, then
+install the DOS Advanced Power Management driver. </p>
+
+<hr>
+
+<p><a name="34"><b>My Ascentia P does not display a full screen using 640x480 resolution,
+why?</b></a> </p>
+
+<p>Update the Ascentia P BIOS to version 1.02. Listed below is the file you can download:</p>
+
+<p><a href="ftp://ftp.ast.com/P-BIOS/05584033.EXE">05584033.EXE</a> Ascentia P System
+BIOS, Version 1.02 </p>
+
+<p>This BIOS incorporates the font expand feature. Press &lt;Fn+F10&gt;, from any window,
+to turn font expand on or off.</p>
+</td></tr></table>
+</body>
+</html>
+
+

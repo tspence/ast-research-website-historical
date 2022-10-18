@@ -1,0 +1,57 @@
+<!--- Template: stndsrcp.hts --->
+<HTML>
+<HEAD>
+<TITLE>SEARCH'97 Information Server V3.0 - Standard Query Form</TITLE>
+</HEAD>
+<<BODY BGCOLOR="#FFFFFF" LINK="#00698C" VLINK="#3A4D52" ALINK="#FFA600">
+<CENTER>
+<TABLE BORDER=1 WIDTH=520>
+<TR>
+<TD>
+	<CENTER>
+	<IMG SRC="/search97img/qbanner.gif">
+	<FONT SIZE=5><B>AST Research, Inc.</B></FONT>
+	<HR>
+	Standard Query Form
+	<HR>
+	</CENTER>
+            <FORM METHOD="GET" ACTION="/search97cgi/s97_cgi.exe">
+	   <INPUT TYPE=HIDDEN NAME="Action" VALUE="Search">
+	   <INPUT TYPE=HIDDEN NAME="AdminImagePath" VALUE="">
+	   <INPUT TYPE=HIDDEN NAME="ServerKey" VALUE="Primary">
+	   <INPUT TYPE=HIDDEN NAME="ResultTemplate" VALUE="stndrslp.hts">
+	   <INPUT TYPE=HIDDEN NAME="Theme" VALUE="">
+	   <INPUT TYPE=HIDDEN NAME="Company" VALUE="AST Research, Inc.">
+                <DD><H4>Collections:</H4>
+                                                                  <CENTER>
+                  <TABLE BORDER=0 WIDTH=100%>
+                                                                                                                                                                        <TR>
+                              <TD WIDTH=25%></TD>
+                              <TD><INPUT TYPE="checkbox" NAME="collection" VALUE="C1" CHECKED>Documentation Collection</TD>
+                                                                                                                                                                                                                                                  <TD><INPUT TYPE="checkbox" NAME="collection" VALUE="newindex" CHECKED>newindex</TD>
+                            </TR>
+                                                                                                                                  </TABLE>
+                  </CENTER>
+                              <BR>
+              <BR>
+              <CENTER>
+                <TABLE BORDER=0>
+                  <TR>
+                    <TD COLSPAN=2><b>Enter words or phrases, separated by commas:</b></TD>
+                  </TR>
+                  <TR>
+                    <TD COLSPAN=2><TEXTAREA NAME="QueryText" ROWS=2 COLS=50></TEXTAREA></TD>
+                  </TR>
+                  <TR>
+                    <TD><INPUT TYPE="image" SRC="/search97img/search.gif" NAME="SEARCH-97" ALT="Search" BORDER=0></TD>
+                    <TD ALIGN=RIGHT><INPUT TYPE="reset" VALUE=" Clear "></TD>
+                  </TR>
+                </TABLE>
+              </CENTER>
+            </FORM>
+          </TD>   
+        </TR>
+      </TABLE>
+    </CENTER>
+  </BODY>
+</HTML>

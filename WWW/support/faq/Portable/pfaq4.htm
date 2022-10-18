@@ -1,0 +1,140 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" width="570"><tr><td>
+<h3><i>Modem/Network</i></h3>
+
+<form method="POST" action="../../scripts/faqd.asp">
+  <p>I want to search through portable FAQs about <select name="faqd" size="1">
+        <option>Configuration and Upgrade</option>
+        <option>Troubleshooting</option>
+        <option>Mouse/Pointer</option>
+        <option selected>Modem/Network</option>
+        <option>Video</option>
+        <option>Software</option>
+        <option>Power</option>
+        <option>Docking Stations</option>
+        <option>Multimedia</option>
+        <option>All</option>
+      </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+</form>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="50%"><ul>
+      <li><h5><a href="#5"><b>Why does the modem on my Premium Exec or Advantage! NB 386 not work?</b></a></h5>
+      </li>
+      <li><h5><b><a href="#11">How do I get a 3Com 3C509B Network Card to work in the PowerStation
+        III or PowerStation Pro. The configuration program for the adapter says that &quot;ALL THE
+        PORTS ARE BEING USED&quot; or &quot;THIS INTERRUPT IS IN USE, WOULD YOU STILL LIKE TO USE
+        IT?&quot;</a></b></h5>
+      </li>
+    </ul>
+    </td>
+    <td valign="top" width="50%"><ul>
+      <li><h5><b><a href="#14">Can I upgrade the internal modem for the Advantage! NB 486SX/33 to
+        a 14.4Kbps or higher?</a></b></h5>
+      </li>
+      <li><h5><b><a href="#20">I have Windows 95 on an Ascentia 910N and my PCMCIA Ethernet card
+        is hanging; what should I do? </a></b></h5>
+      </li>
+      <li><h5><b><a href="#29a">I can&#146;t get the internal modem to work on my Ascentia J10;
+        what should I do?</a></b></h5>
+      </li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<p><a name="5"><b>Why does the modem on my Premium Exec or Advantage! NB 386 not work?</b>
+</a></p>
+
+<p>Make sure that you enable the Internal Adapter/Modem field in System Setup. In most
+cases, you can enter System Setup by pressing the &lt;Ctrl+Alt+Esc&gt; combination during
+boot. </p>
+
+<hr>
+
+<p><a name="11"><b>How do I get a 3Com 3C509B Network Card to work in the PowerStation III
+or PowerStation Pro?</b></a> </p>
+
+<p>The configuration program for the adapter says that &quot;ALL THE PORTS ARE BEING
+USED&quot; or &quot;THIS INTERRUPT IS IN USE, WOULD YOU STILL LIKE TO USE IT?&quot; If you
+answer Yes to either of these errors and then run diagnostics on the card, the interrupt
+will fail. </p>
+
+<p>Consider the following procedure to resolve the problem: 
+
+<ol>
+  <li>Choose the port addressing and interrupt (IRQ) you would like to use. In general, port
+    address 300 and IRQ 9 work best. </li>
+  <li>Save the setup and DO NOT run diagnostics on the card! </li>
+  <li>Exit the program and reboot the system. </li>
+  <li>Reenter the configuration program, and run the diagnostics on the card. It should now
+    pass all the tests.<b> </b></li>
+</ol>
+
+<hr>
+
+<p><a name="14"><b>Can I upgrade the internal modem for the Advantage! NB 486SX/33 to a
+14.4Kbps or higher?</b></a> </p>
+
+<p>This notebook uses an 8250 UART chip. The 8250 UART limits the speed of the serial port
+to a maximum baud rate of 9600bps in Windows, and will not allow a 14.4Kbps or faster
+external modem to operate reliably at a speed faster than 9600bps. The fastest modem AST
+recommends is a 9600bps modem.</p>
+
+<hr>
+
+<p><a name="20"><b>I have Windows 95 on an Ascentia 910N and my PCMCIA Ethernet card is
+hanging; what should I do?</b></a> </p>
+
+<p>Random data may be received when Windows 95 polls the VLSI controller for power
+management status. This random data may lock up the system. To resolve this issue, disable
+power status polling. Follow the steps below to disable power status polling: 
+
+<ol>
+  <li>Click the Start button, point to Settings, and then click Control Panel.</li>
+  <li>Double-click the System icon.</li>
+  <li>Click the Device Manager tab.</li>
+  <li>Double-click the plus sign to expand the System Devices branch.</li>
+  <li>Click Advanced Power Management, Properties, and Settings.</li>
+  <li>Place a check in the box labeled &#147;Disable Power Status Polling.&#148;</li>
+  <li>Click OK until you return to the Control Panel.</li>
+  <li>Click Yes if prompted to restart your computer.</li>
+  <li><hr>
+  </li>
+</ol>
+
+<p><a name="29a"><b>I can&#146;t get the internal modem to work on my Ascentia J10; what
+should I do?</b></a> </p>
+
+<p>Download the RPI driver from Rockwell's Web site:</p>
+
+<p><a href="http://www.nb.rockwell.com/ref/rpi/" target="_new">http://www.nb.rockwell.com/ref/rpi/</a></p>
+
+<p>The files you can download are listed below:</p>
+
+<p>Windows 95 RPI driver: 95RPI115.ZIP</p>
+
+<p>Windows 3.1x RPI driver: WRPI_226.ZIP</p>
+
+<p>After you download the files, extract the file onto a floppy disk, and follow
+directions in the README.TXT file.</p>
+
+<p>How do I get the internal modem to work on my Ascentia J20?</p>
+
+<p>The Ascentia J-20 does not have a built in modem. You need to purchase and install a
+PCMCIA card or external modem.<font face="ARIAL"></p>
+</font>
+</td></tr></table>
+</body>
+</html>
+
+

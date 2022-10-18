@@ -1,0 +1,244 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="570">
+  <tr>
+    <td><h3><i>Troubleshooting</i> </h3>
+    <form method="POST" action="../../scripts/faqdrop.asp">
+      <p>I want to search through desktop FAQs <br>
+      about <select name="faqdrop" size="1">
+        <option>System Setup (CMOS and BIOS)</option>
+        <option>Upgrade and Configuration</option>
+        <option>Video</option>
+        <option selected>Troubleshooting</option>
+        <option>Networking</option>
+        <option>All</option>
+      </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+    </form>
+    <table border="0" width="100%">
+      <tr>
+        <td width="50%"><ul>
+          <li><h5 align="left"><a href="#10"><b>When I turn my system on there is no video and I hear
+            two long beeps followed by three short beeps. What does this mean?</b></a></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#11">My system issues three short beeps followed by five
+            long beeps (possibly another series of short beeps). What is the problem?</a></b></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#15">Device Manager in Windows® 95 shows that there is
+            some sort of conflict with the CMD IDE controller. What do I need to do to resolve this
+            issue?</a></b></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#16">Device Manager in Windows® 95 displays a conflict for
+            the primary IDE controller (secondary IDE controller). What do I need to do to resolve
+            this conflict?</a></b></h5>
+          </li>
+        </ul>
+        </td>
+        <td width="50%"><ul>
+          <li><h5 align="left"><b><a href="#17">I installed Windows® 95 on my Bravo MS/MS-T 6180/6200
+            system, and then Windows failed to recognize the CD-ROM drive. What is the problem?</a></b></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#18">I received a 10.01 text-error message when I boot the
+            computer. What is wrong?</a></b></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#19">My AST desktop system does not recognize a second hard
+            drive I added to the system. What is the problem?</a></b></h5>
+          </li>
+        </ul>
+        <p align="left">&nbsp;</p>
+        <p align="left">&nbsp;</td>
+      </tr>
+    </table>
+    <b><hr>
+    <p><a name="10">When I turn my system on there is no video and I hear two long beeps
+    followed by three short beeps. What does this mean?</a></p>
+    </b><p>The two long beeps followed by three short beeps often indicates that the CMOS is
+    corrupted. Often this issue occurs with systems that have a flash BIOS. To resolve the
+    issue, reflash the system&#146;s BIOS. If you require assistance with this procedure, or
+    are uncertain which file to use, check the <a href="biostbls.htm">flash BIOS tables</a> or
+    contact a <a href="suplines.htm">technical support representative</a> for assistance.</p>
+    <b><hr>
+    <p><a name="11">My system issues three short beeps followed by five long beeps (possibly
+    another series of short beeps). What is the problem?</a></p>
+    </b><p>This beep code generally indicates bad or incompatible memory in the system. If you
+    recently added memory to the system, try removing it. Does the problem go away? What
+    happens if you install the additional memory only? Does the system function normally?</p>
+    <p>Check your system&#146;s memory specifications. Do you have the correct memory
+    installed? Does your system use tin-lead or gold-lead RAM? It is typically not a good idea
+    to mix gold-lead and tin-lead SIMMs (DIMMs). When you mix two different conductors
+    together in the same computer you can cause galvanization to areas on the system board.</p>
+    <p>Also, check your system&#146;s memory configuration tables. You can usually find this
+    table with the system's User's Manual. Some system boards require that you install memory
+    using specific configurations (e.g., install the largest SIMMs first, etc). If you are
+    uncertain as to which type of memory your system requires, or cannot find the correct
+    configuration table, contact a <a href="suplines.htm">technical support representative</a>
+    for assistance.</p>
+    <b><hr>
+    <p><a name="15">Device Manager in Windows® 95 shows that there is some sort of conflict
+    with the CMD IDE controller. What do I need to do to resolve this issue?</a></p>
+    </b><p>If the conflict is on the CMD controller itself, you will need to follow the
+    procedure outlined below: <ol>
+      <li>Click on the Start button, select Programs, and MS-DOS Prompt to open up a DOS box. </li>
+      <li>Change directories so that you are in the \WINDOWS\SYSTEM directory.</li>
+      <li>Rename the PCI.VXD file.</li>
+      <li>Copy the PCIIDE.VXD file from the Windows 95 CD-ROM into the \WINDOWS\SYSTEM directory.</li>
+      <li>Rename the PCIIDE.VXD file to PCI.VXD.</li>
+      <li>Close the DOS box.</li>
+      <li>Access the Device Manager.</li>
+      <li>Remove each and every controller from Device Manager by clicking on Properties, and then
+        remove the check from the box labeled Original Configuration. Return to Device Manager,
+        highlight the device, and click on the Remove button.</li>
+      <li>Exit Windows 95, and then shut down your computer. </li>
+      <li>Reboot the computer.</li>
+    </ol>
+    <p>Windows 95 should properly recognize the primary IDE controller, and 32-bit disk access
+    should be re-enabled.</p>
+    <b><hr>
+    <p><a name="16">Device Manager in Windows® 95 displays a conflict for the primary IDE
+    controller (secondary IDE controller). What do I need to do to resolve this conflict?</a></p>
+    </b><p>There are two articles in Microsoft&#146;s Knowledge Base that offer interesting
+    insights to the possible cause of the conflict. </p>
+    <p><b>If the conflict is not with the CMD controller, as described in the previous
+    question, then the first article may be helpful: </b></p>
+    <p><a href="http://www.microsoft.com/kb/articles/q151/9/11.htm" target="_new">http://www.microsoft.com/kb/articles/q151/9/11.htm</a></p>
+    <p>As an additional note to the aforementioned article, if the NOIDE entry returns after
+    you remove the NOIDE entry in the Registry and reboot the system, then the Registry may be
+    corrupt. You need to reinstall Windows 95 to resolve the issue.</p>
+    <p><b>If the computer hangs when you re-enable the CMD PCI IDE controller, consider the
+    following article:</b><br>
+    <br>
+    <a href="http://www.microsoft.com/kb/articles/q136/1/06.htm" target="_new">http://www.microsoft.com/kb/articles/q136/1/06.htm</a></p>
+    <b><hr>
+    <p><a name="17">I installed Windows® 95 on my Bravo MS/MS-T 6180/6200 system, and then
+    Windows failed to recognize the CD-ROM drive. What is the problem?</a></p>
+    </b><p>The retail version of Windows® 95 did not ship with the driver for the Intel
+    82371SB PIIX3 IDE controller used in these systems. The following document on Intel&#146;s
+    Web site addresses the issue in depth:</p>
+    <p><a href="http://developer.intel.com/design/motherbd/IDEINFUP.HTM" target="_new">http://developer.intel.com/design/motherbd/IDEINFUP.HTM</a></p>
+    <p>Intel also provides a link to a utility that will install the correct driver for the
+    IDE controller. Alternatively, you can download <a
+    href="ftp://ftp.ast.com/D-OTHER/MSHDC.INF">MSHDC.INF</a>, and use the following procedure
+    to resolve this issue: <ol>
+      <li>Open the Device Manager, expand the Hard Drive Controllers entry, and remove all
+        controllers from the list. </li>
+      <li>Insert the diskette with MSHDC.INF in the floppy drive.</li>
+      <li>Double-click on the My Computer icon.</li>
+      <li>Double-click on the icon for the floppy drive.</li>
+      <li>Right-click on MSHDC.INF and click on INSTALL. </li>
+      <li>Shutdown the system, and then turn it off.</li>
+      <li>Open the cover for the computer, and then clear the CMOS Setup by changing the jumper
+        located at J6D1. You will need to remove the jumper that is set to pins 20-22, and
+        reinstall it on pins 18-20. Leave the cover off. </li>
+      <li>Turn on the computer. You will see an error message that indicates the CMOS has been
+        cleared.</li>
+      <li>Turn off the computer, and then reset jumper J6D1 back to pins 20-22. Return the cover
+        to the system.</li>
+    </ol>
+    <p>After you turn the system on, the new MSHDC.INF should correctly identify the
+    controller. It may respond with a message that Windows 95 has detected new hardware and
+    ask you to install a driver for it. Do not install the default driver; this is what you
+    just removed. You need to inform Windows to install the driver from your floppy diskette,
+    and then install the Intel 82371SB driver for the primary IDE controller. Reboot the
+    system again; it should now detect the secondary controller and the CD-ROM drive. If
+    Windows fails to recognize the drive, then you may need to repeat the procedure.</p>
+    <b><hr>
+    <p><a name="18">I received a 10.01 text-error message when I boot the computer. What is
+    wrong?</a></p>
+    </b><p>The 10.01 error message indicates the bootable partition is not active. The Primary
+    DOS Partition was not set as an active partition</p>
+    <p>Follow these steps to make the bootable partition on your system active: <ol>
+      <li>Boot the computer from a bootable DOS diskette.</li>
+      <li>Enter FDISK at the DOS prompt .</li>
+      <li>Choose &quot;2. Set active partition.&quot;</li>
+      <li>Choose &quot;partition one,&quot; the Primary DOS Partition. FDISK will activate the
+        partition and return to the FDISK menu options screen.</li>
+      <li>Press <b>&lt;Esc&gt;</b> to exit FDISK.</li>
+      <li>Turn off the computer, and take the bootable DOS diskette out of the drive. Reboot the
+        computer and your hard drive should be recognized properly.</li>
+    </ol>
+    <b><hr>
+    <p><a name="19">My AST desktop system does not recognize a second hard drive I added to
+    the system. What is the problem?</a></p>
+    </b><p>If the system has two IDE controllers (primary and secondary), you will need to
+    determine the best configuration for your needs. Typically, the optimal drive performance
+    configuration will have both hard drives installed on the primary controller and the
+    CD-ROM drive (if present) on the secondary controller. </p>
+    <p>Make sure that you configure the appropriate &quot;Master&quot; and &quot;Slave&quot;
+    jumper settings on both drives. If either drive is jumpered to be a Single, or both are
+    jumped as Master (or Slave), the system will not correctly recognize the drives. Most hard
+    drive manufacturers silk screen a jumper setting diagram or include a sticker on the drive
+    that will help you set the appropriate jumper setting.</p>
+    <p>Make sure the drives are properly identified in System Setup. Unless you have an older
+    286 or 386 AST desktop system, you should set the hard disk to &quot;Auto.&quot; This
+    setting will allow the BIOS to detect and configure most hard drives using Logical Block
+    Addressing (LBA). <i>Note: LBA does not use the same drive parameters as ECHS (Enhanced
+    Cylinders Heads and Sectors). The numbers of cylinders, sectors and heads in System Setup
+    will not match the ECHS parameters recommended by the drive&#146;s manufacturer. That is
+    not a problem; in fact, most drive manufacturers recommend using LBA if it is available.</i></p>
+    <p>Another issue you may encounter is drive incompatabilities. A drive from one
+    manufacturer may not function with a drive from another manufacturer when attached to the
+    same IDE controller. Some drives will work with only one configuration. If you use hard
+    drives from different drive manufacturers, contact the manufacturers and find out if there
+    are any known issues between the two drives you own. Listed below are some links to some
+    common drive manufacturers:</p>
+    <table border="0" align="DEFAULT" width="100%">
+      <tr>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.digital.com/"
+        target="_new"><img border="0" src="../../images/Digital.jpg" width="82" height="26"></a></td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.fujitsu.com/"
+        target="_new"><img border="0" src="../../images/Fujitsu.jpg" width="70" height="35"></a></td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://hpcc920.external.hp.com/"
+        target="_new"><img border="0" src="../../images/HP.jpg" width="110" height="31"></a></td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.maxtor.com/"
+        target="_new"><img border="0" src="../../images/Maxtor.jpg" width="100" height="19"></a></td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.microp.com/"
+        target="_new"><img border="0" src="../../images/MICROPOLIS1.jpg" width="100" height="25"></a></td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.nec.com/"
+        target="_new"><img border="0" src="../../images/Nec.jpg" width="83" height="28"></a></td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.quantum.com/"
+        target="_new"><img border="0" src="../../images/Quantum.jpg" width="100" height="21"></a></td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.samsung.com/"
+        target="_new"><img border="0" src="../../images/Samsung.jpg" width="78" height="29"></a></td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.seagate.com/"
+        target="_new"><img border="0" src="../../images/Seagate.jpg" width="83" height="25"></a></td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.teac.com/dsp/dsp.html"
+        target="_new"><img border="0" src="../../images/TEAC.jpg" width="100" height="35"></a> </td>
+        <td align="LEFT" valign="TOP"><p align="center"><a href="http://www.wdc.com/"
+        target="_new"><img border="0" src="../../images/WDIG.jpg" width="83" height="25"></a></td>
+        <td align="LEFT" valign="TOP"></td>
+      </tr>
+    </table>
+    <p>Make sure that you cable the drives properly. You may want to keep an extra cable
+    handy; often a faulty IDE cable can be mistaken for a bad hard drive. It is less expensive
+    to purchase another IDE cable than it is to buy or replace a hard drive.</p>
+    <p>Be aware of any operating system limitations. MS-DOS and early versions of Windows® 95
+    use a FAT 16 file system. This file system will recognize up to a 2GB partition. If the
+    drive you install is larger than 2GB, then you need to partition the drive accordingly.
+    Depending on the file system (FAT or NTFS) that you use with the Windows NT&#153; Server
+    and Windows NT&#153; Workstation operating systems, the size of the drive and partitions
+    you can use will vary. For more information, check Article IDs: Q114841, Q119497, Q155615,
+    Q153941 on the <a href="http://www.microsoft.com/kb/" target="_new">Microsoft Knowledge
+    Base</a>. For more information about FAT, HPFS, and NTFS, refer to article Q100108 on the <a
+    href="http://www.microsoft.com/kb/" target="_new">Microsoft Knowledge Base</a>.</p>
+    <p>Do not forget to format the drive! The majority of most drive manufacturers require
+    that you format the new drive when you first install it in the system. Often the drive
+    will not be accessible, or you will see an error message stating &quot;The device is not
+    functioning properly!&quot; until you format the drive. Be sure that you specify the
+    correct drive letter or you may format the original drive that came with the system. </td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+

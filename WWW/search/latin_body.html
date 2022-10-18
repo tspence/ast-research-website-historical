@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+
+	function setorder ()
+	{
+		if (document.CGISearch.SortField.options[document.CGISearch.SortField.options.selectedIndex].value == "Score")
+			document.CGISearch.SortOrder.value = "Desc";
+			
+		else if (document.CGISearch.SortField.options[document.CGISearch.SortField.options.selectedIndex].value == "Title")
+			document.CGISearch.SortOrder.value = "Asc";
+	
+		else if (document.CGISearch.SortField.options[document.CGISearch.SortField.options.selectedIndex].value == "URL")
+			document.CGISearch.SortOrder.value = "Asc";
+	}
+
+</SCRIPT>
+
+	<META NAME="GENERATOR" Content="Visual Page 1.0 for Windows">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<TITLE>untitled</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#00698C" VLINK="#3A4D52" ALINK="#FFA600">
+
+<FORM ACTION="/search97cgi/s97_cgi.exe" METHOD="GET" NAME="CGISearch">
+<P><BR>
+
+<TABLE BORDER="0" WIDTH="570">
+	<TR>
+		<TD ALIGN="LEFT"> <INPUT TYPE="HIDDEN" NAME="Action" SIZE="-1" VALUE="Search"> <INPUT TYPE="HIDDEN" NAME="AdminImagePath" SIZE="-1">
+			<INPUT TYPE="HIDDEN" NAME="ServerKey" SIZE="-1" VALUE="Primary"> <INPUT TYPE="HIDDEN" NAME="ResultTemplate" SIZE="-1"
+			VALUE="ast_results.hts"> <INPUT TYPE="HIDDEN" NAME="QueryMode" SIZE="-1" VALUE="Simple"> <INPUT TYPE="HIDDEN" NAME="SortOrder"
+			SIZE="-1" VALUE="Desc"> <BR>
+			
+			<TABLE BORDER="0">
+				<TR>
+					<TD ALIGN="LEFT">Resultados:&nbsp;&nbsp;<INPUT TYPE="TEXT" NAME="ResultCount" SIZE="5" VALUE="10"></TD>
+					<TD ALIGN="LEFT">Clasificar por:&nbsp; 						<SELECT NAME="SortField" onChange="setorder()">
+						<OPTION VALUE="Score" SELECTED>Score </OPTION>
+						<OPTION VALUE="Title">Title </OPTION>
+						<OPTION VALUE="URL">URL </OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD COLSPAN="2">&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD COLSPAN="2"><B>Palabras claves a buscar:</B></TD>
+				</TR>
+				<TR>
+					<TD COLSPAN="2"><TEXTAREA NAME="QueryText" ROWS="2" COLS="60"></TEXTAREA></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" COLSPAN="2">
+						<DIV ALIGN="RIGHT">
+						<P><INPUT TYPE="SUBMIT" NAME="SEARCH-97" VALUE="Search">&nbsp;&nbsp; <INPUT TYPE="RESET" VALUE=" Clear ">
+</DIV>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD>&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="LEFT">
+			<P><B>Reglas para especificar B&uacute;squedas:</B></P>
+
+			<P>El buscador no distingue entre may&uacute;sculas o min&uacute;sculas.  As&iacute;, la palabra, &quot;AST&quot;
+			en una pregunta emparejar&aacute; con cualquiera ocurrencia en un documento como &quot;ast&quot;.  El caracter
+			comod&iacute;n y las expresiones comunes no son aceptadas como b&uacute;squeda.</P>
+
+			<P>Puede buscar cualquier palabra o frase, excepto las palabras que se encuentran en la lista de excepci&oacute;n
+			la cual incluye palabras muy comunes como un, una, y, de, etc. las cuales son ignoradas.  Puede usar Operadores
+			l&oacute;gicos o Booleanos o una combinaci&oacute;n de palabras y frases.</P>
+
+			<P>Puede buscar una palabra o una frase que contenga comillas.   Para buscar una palabra o una frase que contiene
+			comillas, escriba la frase completa entre comillas y despu&eacute;s escriba dos comillas alrededor de la palabra
+			o palabras que desee rodear con comillas.   A menudo desear&aacute; buscar sobre una familia de palabras relacionadas,
+			por ejemplo en la palabra: junta directiva (sin doble comilla), la herramienta de b&uacute;squeda buscar&aacute;
+			las frases 'junta directiva', 'juntas directivas', etc.  <BR>
+			<BR>
+			Puede utilizar operadores booleanos, (en orden de prioridad) para crear combinaciones l&oacute;gicas de palabras
+			y frases:
+			<OL>
+				<LI>Not - El operador NOT se puede utilizar s&oacute;lo tras un operador AND en consultas de contenido.
+				<LI>And - Interpretado como el operador AND.
+				<LI>Or - interpretado como el operador l&oacute;gico OR.
+			</OL>
+			<P><B>Uso de la forma de b&uacute;squeda (Search Form)</B><BR>
+			Esta forma le permite controlar la manera en que la b&uacute;squeda se realiza (Search Options), as&iacute; como
+			la forma en que los resultados se despliegan al final (Display Options).  Use de &quot;Search Options&quot; para
+			determinar las palabras a buscar
+			<UL>
+				<LI><B>Match any term (OR)</B> Por default la b&uacute;squeda encontrar&aacute; todos los documentos con cualquiera
+				de las palabras que Ud. teclee en la caja del query.
+				<LI><B>Match all terms (AND)</B> Para encontrar s&oacute;lo los documentos que contengan TODAS las palabras tecleadas,
+				utilice esta opci&oacute;n.
+			</UL>
+			<P><BR>
+			Por ejemplo, para buscar documentos que contengan las palabras 'premium' y 'server', use la expresi&oacute;n:<BR>
+			<BR>
+				premium and server<BR>
+			<BR>
+			Esta expresi&oacute;n buscar&aacute; todos los documentos que contengan las palabras 'premium' y 'server', localizado
+			en cualquier lugar de la p&aacute;gina.  Si la b&uacute;squeda deseada es 'premium and server', entonces teclee:<BR>
+			<BR>
+			Premium &quot;and&quot; server<BR>
+			<BR>
+			Esta expresi&oacute;n le mostrar&aacute; todos los documentos que contienen la frase 'premium and server'.  Utilice
+			comillas dobles (&quot;) para indicar que un operador booleano se debe pasar por alto en su consulta.  Por ejemplo:<BR>
+			<BR>
+				Training or premium and server<BR>
+			<BR>
+			Significa que el documento debe contener ambas palabras 'premium' y 'server, o &uacute;nicamente contener la palabra
+			'training'.  A la vez, la expresi&oacute;n:<BR>
+			<BR>
+				(training or premium) and server<BR>
+			<BR>
+			significa que el documento debe contener la palabra 'server', as&iacute; como tambi&eacute;n cualquiera de las
+			dos palabras 'training' o 'premium'.  Se permite usar cualquier n&uacute;mero de combinaciones de operadores booleano
+			y par&eacute;ntesis.<BR>
+			
+		</TD>
+	</TR>
+</TABLE>
+
+</FORM>
+
+</BODY>
+
+</HTML>

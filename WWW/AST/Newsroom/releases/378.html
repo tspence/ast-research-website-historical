@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Introduction to PC 98 Audio</TITLE>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=5><P ALIGN="CENTER"><A NAME="_Toc391194158"><A NAME="_Toc391428341"><A NAME="_Toc391468679"><A NAME="_Toc395071184">Audio Technology for 1998 Products</P>
+</B></FONT><FONT SIZE=3><P>&nbsp;</P>
+</FONT><FONT SIZE=2><P>Overview:</P>
+<P>PC98 comes into effect on 7/1/98.  Feedback from vendors has led to the delay of the &quot;no-ISA&quot; requirement.  It has been rolled back to 1/1/99.  I contacted ESS and Creative Labs for detailed roadmap info for this project.   They both have a very similar approach towards meeting the industry’s audio requirements in ’98.  The roadmaps call out three basic products:</P>
+<P>&nbsp;</P>
+<OL>
+
+<LI>16-bit ISA Codec (Creative Vibra 16C / ESS 1869)</LI>
+<LI>PCI Codec w/ AC97 – maintaining 16-bit SoundBlaster compatibility (Creative EMU8008 / ESS Maestro)</LI>
+<LI>PCI &quot;PC98 Digital Ready&quot; audio – makes the SB compatibility break (Creative EMU8010 / ESS Maestro 3)</LI></OL>
+
+</FONT><FONT SIZE=3><P>&nbsp;</P>
+<P>There are six key PCI audio requirements:</P>
+</FONT><B><FONT SIZE=2><P>&nbsp;</P>
+<P>Advanced</P>
+
+<UL>
+</B><LI>Advanced wavetable synthesis</LI>
+<LI>DirectSound acceleration</LI>
+<LI>64 channel multistream processing</LI>
+<LI>high fidelity audio</LI></UL>
+
+</FONT><FONT SIZE=3><P>&nbsp;</P>
+<B><P>Flexible</P>
+
+<UL>
+</B></FONT><FONT SIZE=2><LI>Same Architecture must fit desktop motherboard, notebook, and add-in card segments</LI>
+<LI>Architecture longevity into 1999 and onwards</LI></UL>
+
+</FONT><FONT SIZE=3><P>&nbsp;</P>
+<B><P>Integrated</P>
+
+<UL>
+</B></FONT><FONT SIZE=2><LI>2 chip audio solution (AC ’97)</LI>
+<LI>Small footprint</LI>
+<LI>Only one PCI bus load, no ISA</LI></UL>
+
+</FONT><FONT SIZE=3><P>&nbsp;</P>
+<B><P>Compatible</P>
+
+<UL>
+</B></FONT><FONT SIZE=2><LI>Complete DOS and Sound Blaster Pro compatibility over PCI</LI>
+<LI>No ISA bus required</LI>
+<LI>Legacy compatibility regardless of core logic</LI>
+<LI>PC97, PC98 compliant</LI>
+<LI>Very low risk</LI></UL>
+
+</FONT><FONT SIZE=3><P>&nbsp;</P>
+<B><P>Comm Ready</P>
+
+<UL>
+</B></FONT><FONT SIZE=2><LI>33.6 &amp; 56K</LI>
+<LI>HSP &amp; DSP modem options</LI>
+<LI>Easy and inexpensive modem upgrade</LI></UL>
+
+</FONT><FONT SIZE=3><P>&nbsp;</P>
+<B><P>Cost Effective</P>
+
+<UL>
+</B></FONT><FONT SIZE=2><LI>High-order features integration</LI></UL>
+
+</FONT><FONT SIZE=3><P>&nbsp;</P>
+<P>&nbsp;</P>
+</FONT><FONT SIZE=2><P>Vendor roadmaps are virtually dictated by the PC98 draft specification.  The following information is the introduction to the audio section:</P>
+</FONT><FONT SIZE=5><P>Introduction to PC 98 Audio</A></A></A></A></P>
+</FONT><FONT SIZE=3><P>The PC 98 audio basic requirements are designed to identify the baseline operating system and hardware audio support available for existing and emerging multimedia applications. They are also designed to ensure that a minimum audio capability exists across a majority of platforms. </P>
+<P>The advanced recommendations describe additional software and hardware features beyond the minimum requirements. These recommendations support vertical applications and provide scalability above the baseline audio capabilities by offering higher compatibility, performance, concurrency, or quality.</P>
+<B><P><A NAME="_Toc389878287">WDM and PC Audio</A>. </B>One key to the successful advancement of audio in the PC is WDM Audio class support. The architecture performs all audio processing in kernel mode, which significantly improves latency. WDM provides a method for non-Microsoft code to run in kernel mode, facilitating the development of host algorithms from multiple vendors.</P>
+<P>WDM also provides a more complete architecture than previous generations. Code common to all audio hardware on a given bus is now part of the operating system, making for faster development with more consistent results. WDM promises to streamline development through the integration of the Windows and Windows&nbsp;NT driver models. Now, the same driver will work under both operating systems.</P>
+<B><P><A NAME="_Toc390230416"><A NAME="_Toc389878288">Advanced Features Enabled by PCI</A>. </B>Once an audio device moves beyond the basic playback and recording functions of low bandwidth material, a more advanced bus interface is required. Simple audio sample transport over the ISA bus can consume a significant portion of system bandwidth. Features that require more than two streams of audio will overload the ISA bus. Because features such as 3-D positioning use as many as eight streams of audio, a shift to PCI is necessary.</P>
+<P>PCI audio accelerators offer another powerful feature because of the high bus bandwidth available. In the digital-ready architecture, PCI devices can perform audio processing and output either to a built-in codec or back into memory for delivery to an external digital audio device. In the external case, the host can perform final mixing and sample rate conversion (SRC) if necessary, and then can send the audio to an external USB or IEEE&nbsp;1394 device.</P>
+<P>In addition, the PCI architecture with a separate audio codec targets high-quality audio, that is, with a dynamic range of greater than 85&nbsp;dB.</P>
+<B><P><A NAME="_Toc390230417"></A>External Digital Audio</A>. </B>USB and IEEE 1394 provide excellent mechanisms for delivering digital audio to external peripherals for high-quality conversion (greater than 85&nbsp;dB dynamic range) to and from analog. In the near term, the popularity of USB makes it a natural choice. In the long term, the consumer-electronics industry envisions IEEE 1394 transporting audio and video among many devices in a simple, high-performance manner.</P>
+</FONT><FONT SIZE=5><P><A NAME="_Toc389878290"><A NAME="_Toc390230418"><A NAME="_Toc391194159"><A NAME="_Toc391428342"><A NAME="_Toc391468680"><A NAME="_Toc395071185">PC Audio Transitions</A></A></A></A></A></A></P>
+</FONT><FONT SIZE=3><P>Throughout 1997 and 1998, audio in the PC will offer a wide array of possibilities as a number of transitions take place. Perhaps the most significant transition is the continuing shift from where hardware exclusively processes audio to where the host processor shares some if not all of the burden. To provide the flexibility and performance that is required, a new architecture is needed to connect audio hardware and software. WDM will serve as the support mechanism for the next generation of PC audio.</P>
+<P>As the PC is increasingly called upon to play the part of a consumer-electronics device (for example, video-disc playback), sound quality becomes more important. A number of initiatives are underway to achieve optimal sound quality. Another implication of this trend is the need for simpler operation and hardware configuration.</P>
+<P>The state of audio functionality is far from stagnant, presenting a challenge for the industry to maximize performance and simplicity, and to add more advanced features. This chapter will focus on how and when this can be done.</P>
+<P>The shift to higher quality and support for external digital connectivity will not happen overnight. One objective of PC 98 Audio is to facilitate the transition over the next few years. The remainder of this section is a summary of the projected evolution of PC audio.</P>
+<P>The following figure demonstrates that by mid-1998, four viable audio solutions will exist in the PC marketplace. The figure also projects the estimated market share for each solution over the next three years. </P>
+</FONT><FONT SIZE=4><P>                      <IMG SRC="Image6.gif" WIDTH=574 HEIGHT=430></P>
+</FONT><B><FONT SIZE=3><P>Digital Audio Migration</P>
+</B><P>The following explains the marketplace options illustrated in the previous figure:</P>
+
+<UL>
+<B><LI>ISA—Legacy MS-DOS–compatible.</B> These are mature, low-cost, single-chip implementations that deliver support for Sound Blaster registers and mixing, Yamaha OPL-compatible frequency modulation (FM) synthesis, MPU 401 MIDI UART, and game port. Each is fully Plug and Play-compatible. </LI>
+<B><LI>PCI—Legacy MS-DOS–compatible.</B> The majority of current PCI implementations are two-chip split digital/analog system-board or add-on designs based on Audio Codec ’97 architecture. Many of these designs incorporate hardware support for legacy ISA devices using PC/PCI DMA, distributed DMA (DDMA), or other similar techniques, and are fully Plug and Play-compatible. Many also support high-quality wave table MIDI synthesis and DirectX acceleration. </LI>
+<B><LI>PCI—Digital-ready.</B> The next generation of PCI-based designs have the potential to deliver WDM-compatible audio acceleration that can be part of a filter graph targeting either a built-in audio codec or an external USB codec for output. These designs have the option of leveraging the WDM legacy emulation capabilities or incorporating hardware legacy compatibility. A digital-ready PC can support mixed configuration of analog and/or digital peripherals.</LI>
+<B><LI>USB—Digital-only. </B>These systems eliminate all built-in audio rendering resources and use external USB speakers and microphones for audio I/O. Hardware acceleration can be provided by WDM-compatible PCI devices.</LI></UL>
+
+</FONT><FONT SIZE=1><P ALIGN="RIGHT">&nbsp;</P>
+</FONT><FONT SIZE=3><P>The following factors will determine which of the previously listed audio solutions are suitable in 1998: </P>
+
+<UL>
+<LI>Cost. The total bill of materials for ISA, PCI, and USB solutions, including microphone and speakers.</LI>
+<LI>Compatibility. The desired level of legacy MS-DOS–based game compatibility.</LI>
+<LI>Quality. The system output dynamic range and total harmonic distortion plus noise (THD+N) performance necessary to meet specific market requirements. </LI>
+<LI>Features. Support for 48-kHz sample rate operation, which is necessary for DVD.</LI>
+<LI>Performance. Dependent on the choice of host processor, audio bus (ISA, PCI, or USB), and system audio hardware acceleration features, such as Downloadable Samples (DLS) wave-table MIDI synthesis and multistream Head Related Transfer Function (HRTF) 3-D.</LI>
+<LI>Connectivity. Internal analog mixer connectivity for legacy CD audio, analog television tuner, line input, or video capture audio input.</LI></UL>
+
+</FONT><FONT SIZE=1><P ALIGN="RIGHT">&nbsp;</P>
+</FONT><FONT SIZE=3><P>Three audio applications merit more detailed discussion and are described in the following sections:</P>
+
+<UL>
+<LI>Scalable audio for 3-D games</LI>
+<LI>CD and DVD media playback</LI>
+<LI>Full-duplex H.323/H.324 video and audio conferencing</LI></UL>
+
+</FONT><FONT SIZE=2><P>&nbsp;</P></FONT></BODY>
+</HTML>

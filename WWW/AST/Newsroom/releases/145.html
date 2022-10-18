@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+content="Microsoft Visual Database Tools ReadMe ">
+<title>Microsoft Visual Database Tools Readme </title>
+</head>
+
+<BODY BGCOLOR=#FFFFFF LINK=#0033CC LEFTMARGIN=20 TOPMARGIN=15>
+<FONT FACE="ARIAL, HELVETICA" SIZE=2>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+<td></font><font color="#800000" size="5" face="Arial"><br>Microsoft
+        Visual Database Tools Readme</b></font> </td>
+        <td align="right">&nbsp;</td>
+    </tr>
+</table>
+
+<p>(c) Copyright Microsoft Corporation, 1997. All rights reserved.
+</p>
+
+<p>This document provides late-breaking or other information that
+supplements the Microsoft&reg; Visual Database Tools documentation. </p>
+
+<P><B>Contents</B>
+
+<P>
+<A HREF="readmeDT.htm#TofC_1">Database Designer</A>
+<P>
+<A HREF="readmeDT.htm#TofC_2">Query Designer</A>
+<P>
+<A HREF="readmeDT.htm#TofC_3">Installation Issues</A>
+<P>
+<A HREF="readmeDT.htm#TofC_4">Handling Communication and TDS Protocol errors in Microsoft SQL Server</A>
+
+
+
+<A NAME="TofC_1"></A><h3>Database Designer </h3>
+<p>
+<B>Printing a Database Diagram</B>
+<p>
+You can print a database diagram on any printer that supports raster graphics.
+Diagrams print at the current zoom level. If you want to enlarge or reduce your diagram, select a different zoom setting.
+<p>
+<B>To print a database diagram</B>
+<OL>
+<P><LI>From the <B>File</B> menu, choose <B>Print.</B>
+<P><LI>In the <B>Print</B> dialog box, select a printer from the <B>Name</B> list.
+ You can also set any of the other available print options. For information about each option, click the <B>What’s This</B> button in the top-right corner of the dialog box, and then click the field that you want to see information about.
+<P><LI>Choose <B>OK.</B>
+</OL>
+<p>
+The tables and relationships that appear in your diagram will print exactly as shown on the screen with one exception: all of the tables in your diagram appear in their selected state in your printout for better contrast.
+
+<p>
+<A NAME="TofC_2"></A><h3>Query Designer </h3>
+<p>
+You can update data in the Results Pane of the Query Designer if:
+
+<ul>
+    <li>The primary key column(s) have been included in your query for output.<br><br>
+Caution: If a table in your query uses a compound key (more than one column is used to make up the unique key for each row), you must include all parts of the key in the query. If the result set does not include all columns required for the compound key, any updates that you make in the Results pane might change more than one row in the table without warning.<br><br>
+        </li>
+    <li>The ODBC driver for the data source you're querying against supports SQLPrimaryKeys().  Such drivers include Microsoft SQL Server&#153;, Microsoft Access, Microsoft Visual FoxPro&trade; v. 3.0 and later, and Oracle.<br>
+        </li>
+    </ul>
+
+<p></p>
+
+<A NAME="TofC_3"></A><h3>Installation Issues</h3>
+
+<p>You must install the Microsoft&reg SQL Server&#153 6.5 Service Pack 1 or later to run the Database Designer. For best performance, we recommend Service Pack 2.</p>
+
+<p>
+<A NAME="TofC_4"></A><h3>Handling Communication and TDS Protocol Errors in Microsoft SQL Server</h3>
+You can get a TDS Protocol error or a Communications Link Failure when you're working against Microsoft&reg SQL Server&#153 under certain conditions, including running SQL Trace against the server.
+<p>
+If such a problem occurs, right-click the data connection in Data View and choose Refresh from the shortcut menu. If you find that the problem is caused by SQL Trace, close SQL Trace and then refresh the connection.
+
+<p>
+
+</font>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Thursday, January 15, 1998 10:43 AM -->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<META NAME="Author" Content="AST Computer, Inc.">
+	<TITLE>Sales Help Form</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#00698C" VLINK="#3A4D52" ALINK="#FFA600">
+
+<FORM ACTION="order.asp" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded" NAME="configurator">
+<P>
+<TABLE BORDER="0" WIDTH="500">
+	<TR>
+		<TD>
+			<P><IMG SRC="../ascentia/images/ascentia_lead.GIF" WIDTH="387" HEIGHT="128" ALIGN="BOTTOM" ALT="Ascentia heading"
+			BORDER="0" HSPACE="10" VSPACE="10"><B><I><BR>
+			<BR>
+			</I></B>The Ascentia™ M notebook from AST &reg; is the smartest mobile computing solution on the market. With the
+			most advanced security features in the industry, the Ascentia M provides peace of mind by protecting your system
+			and its data. Plus, with bundled software, warranty options and enhanced customer programs, the Ascentia M combines
+			ease-of-use features with a unique platform solution that meets the widest range of configurations. This mobile
+			computing powerhouse provides common docking, accessories and peripherals, making the Ascentia M astonishingly
+			simple to integrate into virtually any company's mobile force. And that's just the beginning The Ascentia M also
+			offers the fastest Intel&reg; Pentium&reg;; processors with MMX™ technology, Intel 430TX chipset and 512 KB Level-2
+			cache. There's no doubt that this latest notebook from AST can easily increase your productivity while lowering
+			your cost of ownership.</P>
+			<CENTER>
+			<P><BR>
+			<IMG SRC="../../images/border_lines_3.GIF" WIDTH="470" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"> <INPUT TYPE="HIDDEN"
+			NAME="brand" SIZE="-1" VALUE="ascentia"></P>
+</CENTER>
+			<P>I'd like information on an Ascentia with the following features:<BR>
+			&nbsp;<BR>
+			
+			<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="3">
+				<TR BGCOLOR="#E0E0A0">
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Model</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF">						<SELECT NAME="Model" onchange="FlowChanges(this.form)">
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Processor</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF"><INPUT TYPE="TEXT" NAME="processor" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Display Size and Type</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF"><INPUT TYPE="TEXT" NAME="display" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Operating System</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF"><INPUT TYPE="TEXT" NAME="OS" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Cache</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF"><INPUT TYPE="TEXT" NAME="cache" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Memory</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF"><INPUT TYPE="TEXT" NAME="memory" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF"></TD>
+					<TD BGCOLOR="#F9FCCF"><FONT SIZE="2"><I>additional</I></FONT> <FONT SIZE="2"><I>memory</I></FONT> 						<SELECT NAME="plusmemory">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Hard Disk Size</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF"><INPUT TYPE="TEXT" NAME="disk" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF"></TD>
+					<TD BGCOLOR="#F9FCCF"><FONT SIZE="2"><I>extra Hard Drive</I></FONT> 						<SELECT NAME="plusdisk">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>CD-ROM speed</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF"><INPUT TYPE="TEXT" NAME="cdrom" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" VALIGN="TOP" BGCOLOR="#CBAE0E">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Accessories</B></FONT>
+					</TD>
+					<TD BGCOLOR="#F9FCCF">						<SELECT NAME="accessories">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+					<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD COLSPAN="2" BGCOLOR="#CBAE0E">
+						<P ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>Additional Features / comments</B></FONT>
+					</TD>
+				</TR>
+				<TR BGCOLOR="#E0E0A0">
+					<TD ALIGN="RIGHT" COLSPAN="2" BGCOLOR="#F9FCCF">
+						<CENTER>
+						<P><TEXTAREA NAME="additional" ROWS="7" COLS="45"></TEXTAREA>
+</CENTER>
+					</TD>
+				</TR>
+			</TABLE>
+</P>
+			<P ALIGN="CENTER"><BR>
+			<IMG SRC="../../images/border_lines_3.GIF" WIDTH="470" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"></P>
+			<P><BR>
+			Press &quot;Request Quote&quot; to request a quote or further information on this computer. Further details on
+			AST's Ascentia line of laptop computers can be obtained at <A HREF="../ascentia/main.html" target="body">http://www.ast.com/products/ascentia</A>.</P>
+			<CENTER>
+			<P><IMG SRC="../../welcome/images/spacer.gif" WIDTH="1" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"></P>
+
+			<P><INPUT TYPE="SUBMIT" VALUE="Request Quote"><BR>
+			<IMG SRC="../../welcome/images/spacer.gif" WIDTH="1" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"></P>
+
+			<P><FONT SIZE="4"><B>Thank you for contacting AST Sales!</B></FONT></P>
+</CENTER>
+			<P ALIGN="CENTER"><FONT SIZE="2">For further information, call AST Research, Inc. at 1-800-876-4278;<BR>
+			international inquiries call (+1) (714) 727-9292.</FONT></P>
+			<P ALIGN="CENTER">&nbsp;</P>
+
+			<P ALIGN="CENTER"><FONT SIZE="2">1998 AST Corporate Sales - </FONT><A HREF="mailto:sales.corporate@ast.com"><FONT
+			SIZE="2">sales.corporate@ast.com</FONT></A>
+		</TD>
+	</TR>
+</TABLE>
+</P>
+
+<P><SCRIPT>
+
+var systemlist = new Array(new Array("M","Intel Pentium w/MMX 233Mhz","Ascentia M - M5230X","503433-L01","13.3 XGA TFT","4.0 GB","64 MB","20X Max.","Windows 95 "),
+  new Array("M","Intel Pentium w/MMX 233Mhz","Ascentia M - M5230X","503433-M01","13.3 XGA TFT","4.0 GB","64 MB","20X Max.","Windows NT"),
+  new Array("M","Intel Pentium w/MMX 233Mhz","Ascentia M - M5230T","503432-801","12.1 SVGA TFT","3.0 GB","32 MB","20X Max.","Windows 95 "),
+  new Array("M","Intel Pentium w/MMX 233Mhz","Ascentia M - M5230T","503432-901","12.1 SVGA TFT","3.0 GB","32 MB","20X Max.","Windows NT"),
+  new Array("M","Intel Pentium w/MMX 166Mhz","Ascentia M - M5160X","503431-501","13.3 XGA TFT","2.1 GB","32 MB","20X Max.","Windows 95 "),
+  new Array("M","Intel Pentium w/MMX 166Mhz","Ascentia M - M5160X","503431-601","13.3 XGA TFT","2.1 GB","32 MB","20X Max.","Windows NT"),
+  new Array("M","Intel Pentium w/MMX 200Mhz","Ascentia M - M5200T","503430-501","12.1 SVGA TFT","2.1 GB","32 MB","20X Max.","Windows 95"),
+  new Array("M","Intel Pentium w/MMX 200Mhz","Ascentia M - M5200T","503430-601","12.1 SVGA TFT","2.1 GB","32 MB","20X Max.","Windows NT"),
+  new Array("M","Intel Pentium w/MMX 166Mhz","Ascentia M - M5160T","503429-201","12.1 SVGA TFT","1.6 GB","32 MB","20X Max.","Windows 95 "),
+  new Array("M","Intel Pentium w/MMX 166Mhz","Ascentia M - M5160T","503429-301","12.1 SVGA TFT","1.6 GB","32 MB","20X Max.","Windows NT"),
+  new Array("M","Intel Pentium w/MMX 133Mhz","Ascentia M - M5130S","503428-201","12.1 SVGA DS-STN","1.6 GB","32 MB","20X Max.","Windows 95"),
+  new Array("M","Intel Pentium w/MMX 133Mhz","Ascentia M - M5130S","503428-301","12.1 SVGA DS-STN","1.6 GB","32 MB","20X Max.","Windows NT"),
+  new Array("P","Intel Pentium w/MMX 166Mhz","Ascentia P80 P166M - CTS12","503302-501","12.1 SVGA TFT","3.0 GB","32 MB","10X Max.","Windows 95 "),
+  new Array("P","Intel Pentium w/MMX 166Mhz","Ascentia P80 P166M - CTS12 NT","503302-601","12.1 SVGA TFT","3.0 GB","32 MB","10X Max.","Windows NT"),
+  new Array("P","Intel Pentium w/MMX 150Mhz","Ascentia P70 P150M - CTS12","503252-201","12.1 SVGA TFT","2.1 GB","32 MB","10X Max.","Windows 95 "),
+  new Array("P","Intel Pentium w/MMX 150Mhz","Ascentia P70 P150M - CTS12 NT ","503252-301","12.1 SVGA TFT","2.1 GB","32 MB","10X Max.","Windows NT"),
+  new Array("A","Intel Pentium w/MMX 150Mhz","Ascentia A70 Plus P150M - CTS12","503377-801","12.1 SVGA TFT","1.44 GB","16 MB","10X Max.","Windows 95 "),
+  new Array("A","Intel Pentium w/MMX 150Mhz","Ascentia A70 Plus P150M - CTS12","503377-L01","12.1 SVGA TFT","2.1 GB","16 MB","10X Max.","Windows 95 ")
+)
+
+var optionlist = new Array(new Array("1","8 MB Module","503013-001","P"),
+  new Array("1","16 MB Module ","503013-002","P"),
+  new Array("1","32 MB Module ","503013-003","P"),
+  new Array("1","8 MB Module","503185-001","MA"),
+  new Array("1","16 MB Module","503185-002","MA"),
+  new Array("1","32 MB Module","503185-003","MA"),
+  new Array("1","64 MB Module","503185-004","MA"),
+  new Array("2","2.0 GB HDD Upgrade","503344-001","M"),
+  new Array("2","3.0 GB HDD Upgrade","503344-002","M"),
+  new Array("2","4.0 GB HDD Upgrade","503344-003","M"),
+  new Array("2","2.0 GB Secondary HDD (SmartBay)","503345-001","M"),
+  new Array("2","3.0 GB Secondary HDD (SmartBay)","503345-002","M"),
+  new Array("2","4.0 GB Secondary HDD (SmartBay)","503345-003","M"),
+  new Array("2","2.1 GB HDD Upgrade (N/A for P80s & P70s) (1/98) *","503016-002","P"),
+  new Array("3","Windows NT® Upgrade Kit ","503448-001","P"),
+  new Array("3","Lithium Ion Battery **","503468-001","MA"),
+  new Array("3","Primary Lithium Ion Battery Pack **","503012-001","P"),
+  new Array("3","Secondary Battery Module **","503020-001","P"),
+  new Array("3","External Charger Cradle","503183-001","MA"),
+  new Array("3","AC Adapter (M)","503341-001","M"),
+  new Array("3","AC Adapter (P)","503015-001","P"),
+  new Array("3","AC Adapter (A)","503170-001","A"),
+  new Array("3","Auto/Airline Adapter","503343-001","M"),
+  new Array("3","Auto Adapter (P)","503014-001","P"),
+  new Array("3","Auto Adapter (A)","503184-001","A"),
+  new Array("3","Port Replicator (M)","503469-001","M"),
+  new Array("3","Port Replicator (P) (AC Adapter not included)","503017-001","P"),
+  new Array("3","Asc II Docking Station","503471-001","M"),
+  new Array("3","Docking Station (Integrated Ethernet)","503174-001","P"),
+  new Array("3","Mini Docker","503187-001","MA"),
+  new Array("3","External Floppy Adapter","503046-001","P"),
+  new Array("3","External Floppy Adapter","503186-001","A"),
+  new Array("3","Monitor Stand","503442-001","MPA"),
+  new Array("3","External Keyboard (Pearl White-Windows® 95/NT)","501911-001","MPA"),
+  new Array("3","Numeric Keypad","503096-001","MPA"),
+  new Array("3","Nylon Carrying Case PORT","503423-001","MPA"),
+  new Array("3","Kensington Security Cable Lock","500994-001","P"),
+  new Array("3","Mini-Dock: Dock, AC Adapter, ext. floppy","503128-001","P")
+)
+
+function Populate(inForm)
+{
+  var someoptions = new Array(systemlist.length);
+  
+  for (var i = 0;i < systemlist.length;i++) {
+    someoptions[i] = new Option(systemlist[i][2], systemlist[i][3] + ": " + systemlist[i][2]);
+    eval("inForm.Model.options[i]=someoptions[" + i + "]");
+    if (i == 0) {
+      inForm.Model.options[i].selected=true;
+    }
+  }
+}
+
+
+function Refill(listbox,optiontype,code)
+{
+  var i;
+  var j = 1;
+  var someoptions = new Array(10);
+
+  for (i=1;i < listbox.options.length;i++) {
+    listbox.options[i] = null;
+  }
+  listbox.options[0].selected=true;
+  
+  for (i = 0;i < optionlist.length;i++) {
+    if (optionlist[i][0] == optiontype) {
+      if (optionlist[i][3].indexOf(code) != -1) {
+        someoptions[j] = new Option(optionlist[i][1],optionlist[i][2] + ": " + optionlist[i][1]);
+        eval("listbox.options[" + j + "]=someoptions[" + j + "]");
+        j = j + 1;
+      }
+    }
+  }
+}
+
+function FlowChanges(inForm)
+{
+  var system = inForm.Model.selectedIndex;
+  
+  inForm.processor.value=systemlist[system][1];
+  inForm.OS.value=systemlist[system][8];
+  inForm.cache.value=systemlist[system][5];
+  inForm.memory.value=systemlist[system][6];
+  inForm.display.value=systemlist[system][4];
+  inForm.disk.value=systemlist[system][5];
+  inForm.cdrom.value=systemlist[system][7];
+  
+  system = systemlist[system][0];
+  
+  Refill(inForm.plusmemory,"1",system)
+  Refill(inForm.plusdisk,"2",system)
+  Refill(inForm.accessories,"3",system)
+  
+  inForm.Model.focus();
+}
+
+Populate(document.forms["configurator"])
+FlowChanges(document.forms["configurator"])
+
+</SCRIPT>
+</FORM>
+
+</BODY>
+
+</HTML>

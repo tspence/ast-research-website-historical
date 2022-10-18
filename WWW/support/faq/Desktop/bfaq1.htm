@@ -1,0 +1,137 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="570">
+  <tr>
+    <td><h3><i>System Setup (CMOS &amp; BIOS)</i></h3>
+    <form method="POST" action="../../scripts/faqdrop.asp">
+      <p>I want to search through desktop FAQs <br>
+      about <select name="faqdrop" size="1">
+        <option selected>System Setup (CMOS and BIOS)</option>
+        <option>Upgrade and Configuration</option>
+        <option>Video</option>
+        <option>Troubleshooting</option>
+        <option>Networking</option>
+        <option>All</option>
+      </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+    </form>
+    <ul>
+      <li><h5 align="left"><b><a href="#1">The hard drive field is not present in System (CMOS)
+        Setup on my EISA-based system. How do I access this field?</a></b></h5>
+      </li>
+      <li><h5 align="left"><b><a href="#6">How do I access System (CMOS) Setup on my Premium 286
+        system?</a></b></h5>
+      </li>
+      <li><h5 align="left"><b><a href="#7">How do I access System (CMOS) Setup on my AST computer?</a></b></h5>
+      </li>
+      <li><h5 align="left"><b><a href="#8">I downloaded a BIOS update; how do I use it?</a></b></h5>
+      </li>
+    </ul>
+    <table width="100%">
+      <tr>
+        <td align="LEFT" valign="TOP"><b><hr>
+        <p><a name="1">The hard drive field is not present in System (CMOS) Setup on my EISA-based
+        system. How do I access this field?</a></p>
+        </b><p>When you first run the EISA Configuration Utility, several fields are extracted
+        from System Setup that are only accessible when you run the EISACU program. If the hard
+        drive field is not present in your system&#146;s CMOS Setup program, you will need to run
+        EISACU to access that field.</p>
+        <hr>
+        <p><a name="6"><b>How do I access System (CMOS) Setup on my Premium 286 system?</b></a> </p>
+        <p>AST used two different BIOS chips with Premium/286 systems. Early versions of this
+        system shipped with a Phoenix BIOS, while the later systems shipped with an AST BIOS. Each
+        of these different BIOS versions require different utility diskettes to access the CMOS
+        Setup utility, &quot;ASTSETUP.&quot; Premium/286 systems that use the Phoenix BIOS do not
+        offer the setup routine within the ROM BIOS. You must access ASTSETUP from the utility
+        diskette. </p>
+        <p>Change to the drive containing the diskette and enter ASTSETUP. </p>
+        <p><b>If your AST system has an older Phoenix BIOS, you can download <a
+        href="ftp://ftp.ast.com/D-OTHER/DIAGS35.ARC">DIAGS35.ARC</a>. You will need to use the
+        ARC600.EXE file to unzip the DIAGS35.ARC file. Both of these files can be downloaded from
+        our BBS. <br>
+        The phone number for our BBS is:</b></p>
+        <p>(817) 230-6850</p>
+        <p>After you enter your account information, type F (for Files) on the first screen, and D
+        (for Download) on the second. Enter the name of the file that you want to download;
+        download the file via Z-Modem.</p>
+        <p><b>If your Premium/286 has an AST BIOS, then there are two methods to access ASTSETUP. </b></p>
+        <p>To access ASTSETUP from the Utility diskette, change to the drive containing the
+        diskette and enter ASTSETUP. If you need a copy of the utility diskette, download the
+        following file:</p>
+        <p><a href="ftp://ftp.ast.com/D-OTHER/PR286.ZIP">PR286.ZIP</a></p>
+        <p>You can use an alternate method to access ASTSETUP without diskette on a system that
+        has the AST BIOS. Reboot the computer and hold down any key on the keyboard to force a
+        keyboard error. The system will respond with a message that should prompt you to press
+        either &lt;F1&gt; or &lt;Ctrl+Alt+Esc&gt; for Setup.</p>
+        <b><hr>
+        <p><a name="7">How do I access System (CMOS) Setup on my AST computer?</a></p>
+        </b><p>On most AST systems, you should see a message during a cold boot that prompts you
+        for a series of keystrokes allowing you to access the System Setup. The majority of AST
+        systems use the <b>&lt;Ctrl</b>+<b>Alt</b>+<b>Esc&gt;</b> keystrokes. On some AST systems,
+        this feature is available on both warm and cold boots. The following table outlines the
+        other exceptions to this rule:</p>
+        <table border="1" align="DEFAULT" width="60%">
+          <tr>
+            <th align="LEFT" valign="TOP" width="60%">System</th>
+            <th align="LEFT" valign="TOP" width="20%">Keystroke</th>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">Premmia LX</td>
+            <td align="LEFT" valign="TOP">&lt;F1&gt;</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">Bravo MS/MS-T systems with part numbers beginning 50192?-???
+            and 50189?-???</td>
+            <td align="LEFT" valign="TOP">&lt;F1&gt;</td>
+          </tr>
+          <tr>
+            <td align="LEFT" valign="TOP">Bravo MT P/60</td>
+            <td align="LEFT" valign="TOP">&lt;Delete&gt;</td>
+          </tr>
+        </table>
+        <b><hr>
+        <p><a name="8">I downloaded a BIOS update; how do I use it? </a></p>
+        </b><p>Before you install a BIOS update, you should always make sure you downloaded the
+        appropriate file. Always consult the <a href="biostbls.htm">flash BIOS tables</a> for the
+        latest BIOS update. If you are unsure about a BIOS update, then contact a <a
+        href="/suplines.htm">technical support representative </a>for more information. Listed
+        below is a procedure you should follow once you download a BIOS update: </p>
+        <p><i>Note: This procedure refers to the root directory of the hard drive as C:/&gt; . If
+        applicable, substitute a different drive letter.</i></p>
+        <p><i>Note: Not all BIOS updates follow this exact procedure. Always check the README.TXT
+        file contained within the compressed BIOS file for any information about the BIOS update.</i><ol>
+          <li>Create a /TEMP directory on your hard drive. </li>
+          <li>Copy the BIOS update file that you downloaded to this empty directory. </li>
+          <li>Enter the following command at the DOS prompt: <br>
+            CD/TEMP </li>
+          <li>Enter the name of the file that you downloaded at the C:/TEMP&gt; prompt. When you enter
+            this command you will extract the files contained within this compressed file. </li>
+          <li>Enter &quot;EXTRACT&quot; or double click on the EXTRACT icon. You will see instructions
+            to place a formatted 3.5&quot; floppy diskette in your A: drive. </li>
+          <li>Follow the on-screen procedures to extract the flash BIOS update to the diskette in
+            drive A:. </li>
+          <li>Remove the new BIOS update diskette, reboot the computer, and enter System (CMOS) Setup.
+          </li>
+          <li>Insert the BIOS diskette in the A: drive, and then select the &quot;Update BIOS&quot;
+            from the Advanced Options menu. </li>
+          <li>Select &quot;Save changes, exit, and update BIOS.&quot; This option will reboot the
+            computer and read the flash diskette in the A: drive. Following the beep codes, the BIOS
+            will update and then the system should reboot, saving the changes. </li>
+        </ol>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+

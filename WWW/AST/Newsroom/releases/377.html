@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>What are the main differences between PCI and AGP</TITLE>
+</HEAD>
+<BODY LINK="#0000ff">
+
+<B><FONT FACE="Arial" SIZE=7><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">What is AGP?</P>
+</B></FONT><FONT SIZE=2><P>&nbsp;</P>
+</FONT><B><I><FONT FACE="Arial" SIZE=4><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">White Paper</P>
+</B></I><P ALIGN="CENTER">Abizar Vakharia</P>
+<P ALIGN="CENTER">October 29, 1997</P>
+</FONT><FONT FACE="Arial"><P>&nbsp;</P>
+<P>What are the main differences between PCI and AGP?</P>
+</FONT><FONT SIZE=2><P>The PCI (Peripheral Component Interface) bus' bandwidth is shared by all peripheral devices, ranging from SCSI adapters to sound and graphics accelerators. In comparison, AGP (Accelerated Graphics Port) is a dedicated graphics connection used only by the graphics accelerator. AGP has a higher bandwidth than PCI. Specifically, the AGP bus operates at a minimum clock rate of 66MHz (equivalent to a peak bandwidth of 266MB/second) while the PCI bus operates at 33MHz (or a peak bandwidth of 133MB/second.) In addition, the AGP architecture implements special features, such as pipelining, side band signaling and Direct Memory Execute (DIME) designed to increase 3D texture mapping performance with applications &amp; operating systems developed to take advantage of AGP. Finally, while the PCI bus mostly operates in slave mode, AGP is a full bus mastering device. </P>
+</FONT><FONT FACE="Arial"><P>How does AGP Work?</P>
+</FONT><FONT SIZE=2><P>The AGP solution moves the graphics off the PCI bus altogether and detours the traffic onto a dedicated point-to-point channel between the graphics controller and the system chip set.  AGP isn’t a bus, because it’s not shared by anything but the graphics controller.  The controller will have the whole 32-bit channel to itself. </P>
+<P>&nbsp;</P>
+<P><IMG SRC="Image7.gif" WIDTH=709 HEIGHT=272></P>
+</FONT><FONT FACE="Arial"><P>What are the principal benefits of AGP?</P>
+</FONT><FONT SIZE=2><P>The AGP architecture improves overall system performance. Having a dedicated connection for graphics means the available bandwidth does not have to be shared with other devices. Isolating graphics operations on the AGP bus off-loads the PCI bus bandwidth from all data intensive graphics operations. All available PCI bus bandwidth is therefore available for other operations such as I/O accesses and networking. The resulting additional PCI bandwidth might also lead to future performance enhancements in PCI devices. </P>
+<P>&nbsp;</P>
+<P>AGP's increased bus bandwidth also allows for faster graphics operations in real-world applications such as 2D design and 3D rendering. AGP increases 2D and 3D speed by providing the graphics accelerator with higher bandwidth and direct access to system memory. The graphics accelerator can access system memory faster, resulting in better performance. Performance in 2D will mostly benefit from the higher bus bandwidth, which results in faster image loads or other similar operations. Performance in 3D applications should improve significantly, allowing applications to use larger or more textures and Z-buffering in high resolutions, for better graphics quality. </P>
+</FONT><FONT FACE="Arial"><P>&nbsp;</P>
+<P>Who will use AGP systems?</P>
+</FONT><FONT SIZE=2><P>The forecasted AGP systems in 1997 are expected to be sold in both the corporate and consumer markets. While it might be difficult to initially measure the performance gains, over time AGP will benefit all graphics applications and increase overall system performance. Corporate users will benefit from the added bandwidth of AGP for faster overall system performance and increased PCI capabilities, such as networking. </P>
+<P>&nbsp;</P>
+<P>Consumers will benefit from the added bandwidth and the special features of AGP for faster performance in 3D games. It is important to note that every AGP solution is not necessarily a gaming solution. AGP graphics accelerators, like PCI graphics cards, are engineered and designed to serve particular needs for different markets. Understanding the users' needs is therefore important when evaluating whether an AGP system or board is appropriate for a given market. </P>
+</FONT><FONT FACE="Arial"><P>What is DMA?</P>
+</FONT><FONT SIZE=2><P>DMA stands for Direct Memory Access. DMA allows direct access to system memory without involvement of the CPU. In a 3D application, DMA can be used to retrieve larger or infrequently used textures from system memory to be stored into the local frame buffer for display. Textures are "swapped" back and forth between the system memory and the local frame buffer as needed. This technique is commonly used by today's games via the PCI bus, but will benefit from the direct port provided by AGP, allowing quicker access to system memory.</P>
+</FONT><FONT FACE="Arial"><P>What is DIME?</P>
+</FONT><FONT SIZE=2><P>DIME stands for Direct Memory Execute. While DMA is simply a way to use system memory as extra texture storage space, DIME allows texture transformations to be performed directly from system memory before the texture is mapped to the frame buffer. This would completely eliminate the need to store textures in off-screen graphics memory. Future 3D games are examples of applications that might use DIME because they will benefit from the larger amounts of texture memory available. However, today's  games typically use an average of 2MB of memory to store textures for a given scene, which fits easily into the graphics memory. Business applications, such as Word, Excel and Web browsing rely mostly on fast 2D performance. In the instances where these applications might use textured 3D images, like 3D charts or VRML objects, the textures would typically not exceed the available graphics memory. Most games to be introduced in Q4 of 1997 and Q1 of 1998 will not likely be designed specifically for AGP and will continue to use smaller amounts of texture memory.</P>
+</FONT><FONT FACE="Arial"><P>Is using DIME faster than using graphics memory? </P>
+</FONT><FONT SIZE=2><P>DIME isn't necessarily more efficient than executing operations from graphics memory for several reasons. First, the local graphics bus between the graphics chip and the on-board memory is between one and two times faster than the AGP bus. This means transfer rates between off-screen and display buffer are quicker than between system memory and display buffer.</P>
+<P>&nbsp;</P>
+<P>Second, the system memory is between four and six times slower than graphics memory. This means that using system memory to perform texture transformations will be slower than using the graphics memory. As texture size increases in future games, executing textures through system memory might affect performance negatively. Since graphics memory is becoming increasingly inexpensive and faster, storing and executing textures in the local frame buffer may be more efficient and result in better texture mapping performance than operating through DIME. As graphics accelerators with 8MB or 16 MB become broadly available, larger amounts of textures can be stored in the faster graphics memory rather than using DIME. </P>
+</FONT><FONT FACE="Arial"><P>What are the advantages of pipelining?</P>
+</FONT><FONT SIZE=2><P>Pipelining allows the AGP device to queue several requests to the CPU without having to wait for actual data to be sent back before making the next request. By contrast, PCI protocol requires requests to be immediately followed with data from the host. However, the performance benefit will depend on the quality of the implementation of pipelining from the graphics device. </P>
+</FONT><FONT FACE="Arial"><P>What is side band signaling? </P>
+</FONT><FONT SIZE=2><P>Side band signaling refers to the use of dedicated circuitry added to the AGP bus, allowing for "two-way" communication. In addition to the 32 bits of the bus, a dedicated 8-bit side band signal allows new commands to be sent by the AGP device while data is being received from the host. Specifically, as the system is busy transferring textures from system memory to the local frame buffer, for example, side band signaling could be used by the AGP device to request the next set of textures.</P>
+</FONT><FONT FACE="Arial"><P>What is GART?</P>
+</FONT><FONT SIZE=2><P>GART stands for Graphic Address Remapping Table. GART is a device that works with the AGP controller to map a linear address that is recognized by the graphics chip to an actual, physical location in the system memory. GART facilitates features like DIME, side band signaling and pipelining since they require allocation of system memory to operate.</P>
+<P><IMG SRC="Image8.gif" WIDTH=244 HEIGHT=213></P>
+</FONT><FONT FACE="Arial"><P>What does 2x performance really mean?</P>
+</FONT><FONT SIZE=2><P>This refers to the capability of hardware to transfer data at both the rising and falling edge of the 66MHz clock cycle. Traditionally, a data transfer only happens at each rising peak. This 2x performance is achieved using a strobe within the AGP controller which is sent using one of the extra bits of side band signaling. The strobe matches the mode of operations (1x or 2x) of the AGP chipset and graphics device so they can synchronize. This would translate into a clock cycle of 133MHz, or a peak bandwidth of 532MB per second. Depending on the efficiency of the implementation, however, a 1x AGP solution can be as fast as 2x by managing the amount of information sent at each clock cycle more efficiently.</P>
+</FONT><FONT FACE="Arial"><P>How many AGP devices can I have in my system?</P>
+</FONT><FONT SIZE=2><P>There is only one AGP "port" on each motherboard. This means if the AGP device is integrated on the motherboard, it cannot be upgraded with another AGP graphics board. The only option for upgrading an AGP motherboard design is through a PCI board. If the AGP device is not integrated on the motherboard, but comes as an add-in card, it can be removed and upgraded with a newer AGP card.</P>
+</FONT><FONT FACE="Arial"><P>Does AGP offer multiple monitor support?</P>
+</FONT><FONT SIZE=2><P>Yes, AGP supports multiple monitors. However, since there is only one AGP device per motherboard, the additional monitors will be driven by add-in PCI cards, which might impact overall performance. </P>
+</FONT><FONT FACE="Arial"><P>What operating systems offer optimized performance of AGP</P>
+</FONT><FONT SIZE=2><P>There is currently AGP support under Windows 95 using the new VgartD driver and upcoming native support with the new Windows 98 (Memphis) operating system. The current release of Windows NT operating system will support AGP devices but not the AGP-specific performance enhancements. Full AGP optimization under NT will be implemented in with version 5.0 in Q3 '98.</P>
+</FONT><FONT FACE="Arial"><P>Additional Information:</P>
+</FONT><FONT SIZE=2><P></FONT><A HREF="http://www.intel.com/pc-supp/platform/agfxport/"><FONT SIZE=2>http://www.intel.com/pc-supp/platform/agfxport/</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://developer.intel.com/drg/news/class5/"><FONT SIZE=2>http://developer.intel.com/drg/news/class5/</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://www.agpforum.org/"><FONT SIZE=2>http://www.agpforum.org/</FONT></A></P>
+<FONT SIZE=2><P></FONT><A HREF="http://www.microsoft.com/hwdev/devdes/msagp.htm"><FONT SIZE=2>http://www.microsoft.com/hwdev/devdes/msagp.htm</FONT></A></P>
+<FONT SIZE=2><P>&nbsp;</P>
+<P>&nbsp;</P></FONT></BODY>
+</HTML>

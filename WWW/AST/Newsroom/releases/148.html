@@ -1,0 +1,2183 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Vcread</TITLE>
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\HTML.DOT">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+<FONT FACE="Arial,Helvetica" SIZE=2>
+
+<P><!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><!--DocHeaderStart--></P>
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=624>
+<TR><TD VALIGN="MIDDLE">
+
+<P><FONT FACE="Arial,Helvetica" SIZE=2 COLOR="#800080">Visual Studio '97</FONT><BR>
+<B><FONT FACE="Arial,Helvetica" SIZE=5 COLOR="#800080">Microsoft Visual C++ Development System Version 5.0 Readme</FONT></B> </TD>
+</TR>
+</TABLE>
+
+
+<P><!--DocHeaderEnd--><!-- This is a PANDA Generated HTML file. The source is a WinWord Document. --></P>
+
+<P>&copy; 1997 Microsoft Corporation </P>
+
+<P>Other product and company names herein may be the trademarks of their respective owners. </P>
+
+<P>This document includes updated information for the documentation provided with the Microsoft&reg; Visual C++&reg; development system, version 5.0. The information in this document and in the Help system is more up-to-date than that in the online documentation. Many of the issues outlined in this document will be corrected in upcoming releases. </P>
+<B>
+<P>Contents</P>
+</B>
+<P><A HREF="vcread.htm#TofC_2">Setup Issues</A> </P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_3">Do Not Install Visual C++ 5.0 Over an Installation of Visual C++ 4.<I>x</I></A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_99">Protected-Mode CD-ROM Driver Required Under Windows 95 for Visual C++ Installation</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_98">Use Knowledge Base Articles to Solve Setup and Operating Problems</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_4">Applications Built with OLEAUT32.LIB Require AXDIST.EXE and/or NT SP5a</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_5">DAO Setup Requires OLEAUT32.dll 2.20.4054 or Later</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_7">Viewing "ANSI Character Code Chart" in InfoView Requires an English System</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_6">Accessing Online Help Brings Up MSN Dialog Box</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_8">Special Instructions for Installing Visual C++ 5.0 on Far East Operating Systems</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_8a">ODBC Setup.exe is Not in REDIST Directory</A> </BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#TofC_9">Build Issues </A></P>	
+	
+<BLOCKQUOTE><A HREF="vcread.htm#TofC_11">Reducing the Size of Header Files for Faster Builds</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_12">Several Project System and Debugger Methods are Disabled When the BuildFinish Event is Fired</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_12a">Building ATL Projects from the Command Line Can Generate NMAKE Error</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_13">Help File Names With European Characters Do Not Copy Correctly On Windows 95</A> </BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#Documentation_Issues">Documentation Issues </A></P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_13">Inactive Links in the Online Documentation </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_14">Avoid Disc Swapping During Full-Text Search of the Documentation </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_14a">ODBC 3.0 Programmer's Reference and SDK Guide</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_16">Error in the Scribble MDI Drawing Application Documentation</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_17">The Properties Menu Item is Now Located on the View Menu</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_18">Microsoft Oracle ODBC Driver is Missing from the "ODBC Driver List" Topic</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_19">HCW.EXE 4.01 Does Not Support Office 97</a></blockquote>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_19a">Typographical Error in Circle Tutorial</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_20">Documentation Errors in ATL Tutorial</a></blockquote>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_21">Missing Help Topic for "Ignore Export Library" Check Box</a></blockquote>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_22">Changes to ATL Stock Property Macros</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Documentation_Issues_23">Changes to the MFC Reference Documentation</A></BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#activex_control_issues">ActiveX Control Issues</A> </P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#activex_control_issues_1">Visual C++ Support for Authenticode</a></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#activex_control_issues_3">Some ActiveX Controls Created with Visual Basic Generate Error in ActiveX Test Container on Resize</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#activex_control_issues_4">Oracle Joins and MSRDC20.OCX (Remote Data Control V2)</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#activex_control_issues_5">Current, Localized ActiveX Redistributable Components</A> </BLOCKQUOTE>
+
+<A HREF="vcread.htm#language_issues">Language Issues </A>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#language_issues_2">Member Templates Not Supported by the Compiler </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#language_issues_3">Addendums to the __declspec Documentation </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#language_issues_4">Behavior of In-Constructor Exception Handling Not Correctly Documented </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#language_issues_7">Size Mismatch for Type bool in Visual C++ 4.2 Programs Built with Visual C++ 5.0</a></BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#MFC_and_Libraries">MFC and Other Libraries </A></P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_1">Coexistence of Visual C++ 4.2 and 5.0</A></BLOCKQUOTE>
+
+	 <BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_1a">Visual Basic 5.0 Controls in Visual C++ 5.0</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_2">Incomplete Documentation for CWnd::RepositionBars</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_3">I/O Streams Now Exist in the "std" Namespace </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_4">Example Code in the CArchive::MapObject Member Function is Incorrect </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_4a">ATL Registrar Fails to Insert Keys Starting with Curly Brace</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_4aa">Some ATL Object Stock Properties Must Be Initialized Before Use in Visual Basic 5.0 Containers</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_5">ATL.DLL Replaces REGISTER.DLL </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_5a">ATL Font and Picture Properties May Require Changes to the IDL File</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_6">ON_WM_SETTINGCHANGE</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_7">TN024 Doesn't Identify all Custom MFC Resource Types </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_8">MFC DAO Classes will Work with Either DAO 3.0 or DAO 3.5</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_9">Using DAO with a Secure Database </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_10">The Hewlett Packard Standard Template Library </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_12">Incorrect Information in the "_spawn, _wspawn Functions" Topic</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_13">MFC Loads Wrong Resource in Extension .dll </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_14">Call _findclose After Using _findfirst or _findnext </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_15">_wgetcwd and _getcwd </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_16">_wtmpnam</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_17">Incorrect Use of TZ Environment Variable </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_18">Using the _popen Function with a Windows Program </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_19">C Runtime _expand Function Returns NULL Upon Failure </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_20">Format Specification Not Supported in COleDateTime and COleDateTimeSpan Classes </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_21">IsBadHugeReadPtr, IsBadHugeWritePtr, IsBadStringPtr, IsBadWritePtr, and Access Violations </A></BLOCKQUOTE>
+	
+	<BLOCKQUOTE><A HREF="vcread.htm#MFC_and_Libraries_22">ATL IPropertyPageImpl::Help is implemented incorrectly.</BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#Wizards_and UI">Wizard and other User-Interface Issues</A> </P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_0">Use the ATL Object Wizard to Create ATL Objects</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_0a">ATL Proxy Generator May Not Properly Destroy VARIANTARGs</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_1">Two New Template Variables Available to Custom AppWizards</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_2">Problems with ClassWizard Generated Wrapper Classes for Visual Basic 5.0 ActiveX Servers </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_3">Newly Added Classes May Not be Displayed in the ClassView</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_5">ATL Controls in Visual Basic 5.0 Containers</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_6">Development Environment is Unresponsive While Processing a VBScript Macro</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_7">Add Microsoft Transaction Server Libraries to your Proxy/Stub Makefile</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Wizards_and UI_8">ClassView's Add Method and Add Property Dialogs Sometimes Allow Illegal Return Types for Custom Interfaces</A> </BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#transaction_server">Microsoft Transaction Server Issues</A> </P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_27">Read Microsoft Transaction Server (MTS) Readme </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_28">MTS Doesn't Install on Windows 95 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_29">Disable Transaction Time-out While Debugging </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_30">Run Transaction Explorer Before Running Components </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_31">No Proxy/Stubs with Dual Interfaces </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_32">SQL Debugging with Visual C++ 5.0 and Microsoft Transaction Server</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_33">ATL Object Wizard Generates Extra Release for Microsoft Transaction Server Code</A> </BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#V_Data_Tools">Microsoft Visual Data Tools</A> </P>
+
+<P><A HREF="vcread.htm#Sample_Program_Issues">Sample Program Issues </A></P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_1">New Visual C++ 5.0 Samples </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_2">Updated Samples</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_1a">ATL Samples COMMAP, CONNECT, and DRAWSERV Do Not Register Correctly When Path Contains Spaces</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_2a">CUSTOMWZ Sample Missing Files</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_2b">Get Sendtime and Settime Samples From the Compact Disc</A></BLOCKQUOTE>
+	
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_2bc">ATL CIRC Sample Fails in Some Containers</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_2c">ATLCON Sample Fails Under MinCRT Configurations</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_2d">ATLBUTTON Sample Returns Incorrect Property Values</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_4">ATL POLYGON Sample Does Not Build in Release Mode </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_4a">Link Error in Debug Build of COM Sample acdual/mfcctrl </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_5">Typo in tan and tanh Sample </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_6">BINDENRL Sample Fails to Copy STDREG32.MDB</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_6a">Access Violation in Visual Basic 5 When Running COMEXCEL Sample</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_6b">Running OLE SDK Samples</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Sample_Program_Issues_6c">Running InOLE2 SDK Samples</A></BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#TofC_38">OLE DB SDK Issues </A></P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_39">OLE DB SDK</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_40">ADO, OLE DB, and Visual C++ </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_41">Remove UUID2.LIB from link line of OLE DB SDK TableCopy Sample </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#TofC_42">TableCopy Faults with Oracle Data Connections</A></BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#SQL">SQL and SQL Debugging </A><p>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#SQL_1">Enabling SQL Debugging </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#SQL_2">One or More Breakpoints are Disabled Upon Starting Direct Database Debugging </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#SQL_2a">SQL Server Service Pack 2 Bug May Cause a Failure in CRecordset::Edit Mode</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#SQL_2b">SQL Debugging Will Be Disabled Following a Lost Server Connection</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#SQL_2C">SQL Debugging  a Disconnected Data Connection May Produce Unexpected Results</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#SQL_3">Remote SQL Debugging with Automation Manager Registered as Interactive User </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#SQL_4">Visual C++ Starts Automation Manager but Doesn't Shut It Down</A></BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#Compiler">Compiler, Linker, Debugger, and MIDL Compiler </A></P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_1">Windbg Cannot Use Visual C++ 5.0 Debugging Information. </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_1a">_declspec(novtable) </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_1b">_ATL_MIN_CRT and Link Error "unresolved external symbol _main" </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_1c">DCOM95 Available for Distributed Applications</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_2">/WS:AGGRESSIVE (Aggressively Trim Process Memory) </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_3">/FD (Generate File Dependencies) </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_4">_MSC_EXTENSIONS Compiler Macro </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_5">Option Precedence and the CL Environment Variable </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_6">/Zm (Specify Memory Allocation Limit) </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_7">Compiler Now Documents Type Library Dependencies </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_8">Keywords _emul and _emulu Not Documented </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_9">New Linker Error: Linker Tools Error LNK1189 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_10">Benefit of Using the Linker's /OPT:ICF Option </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_11">Debugging Windows API Functions with NT Symbols Loaded </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_12">If Screen Flashes During Build or the Wrong Code Page Is Used When Debugging a Console Application </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_14">Incorrect Documentation for the Clean Menu Command </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_15">MIDL2020: error generating type library: save all changes failed </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_16">Error RC2104 : undefined keyword or key name: MFT_STRING </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_17">Error Command Line Warning MIDL1009:unknown argument ignored</A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_18">Additional Information on the C2065 Compiler Error </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_19">Documentation for Error C2712 Incomplete </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_20">Compiler Warning (level 4) C2498 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_21">Compiler Warning (level 4) C4238 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_22">Compiler Warning (level 3) C4800 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_23">Compiler Warning (level 1) C4804 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_24">Compiler Warning (level 1) C4805 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_25">Compiler Warning (level 1) C4806 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_26">Compiler Warning (level 1) C4807 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_27">Compiler Warnings (level 1) C4808 </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#Compiler_28">Compiler Warning (level 1) C4809 </A></BLOCKQUOTE>
+
+<P><A HREF="vcread.htm#VSS">Visual SourceSafe Issues </A></P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#VSS_1">Converting a Project Directly From Source Control </A></BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#VSS_2">Using Visual SourceSafe With Keyword Expansion Disables the Ability to Check In Multiple Files</A></BLOCKQUOTE>
+
+<P><A NAME="TofC_72"></A><A HREF="vcread.htm#EE">Enterprise Edition Issues</A></P>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#EE_1a">Change in Terminology for Data View and SQL Debugging</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#EE_1b">Database Projects</A> </BLOCKQUOTE>
+	
+	<BLOCKQUOTE><A HREF="vcread.htm#EE_1c">Default or Identity Values Are Not Displayed When You Enter New Records into a Table</A> </BLOCKQUOTE>
+
+	<BLOCKQUOTE><A HREF="vcread.htm#EE_1d">Converting VC 4.2 Projects When the Data Connection is Offline</A> </BLOCKQUOTE>
+	
+<P>&nbsp;</P>
+
+<P><A NAME="TofC_2"></A><!--TOC=3--></P>
+<H3>Setup Issues</H3>
+
+<P><!--TOCEnd--><A NAME="TofC_3"></A><!--TOC=5--><B>Do Not Install Visual C++ 5.0 Over an Installation of Visual C++ 4.<I>x</B></I> </P>
+
+<P><!--TOCEnd-->Installing Visual C++ 5.0 on top of Visual C++ 4.<I>x</I> will render the 4.<I>x</I> tools unusable. Install Visual C++ 5.0 into a directory separate from your Visual C++ 4.<I>x</I> installation. Visual C++ 5.0 can co-exist with a 4.x installation, as long as both versions reside in different directories. </P>
+<B>
+<P><A NAME="TofC_99">Protected-Mode CD-ROM Driver Required Under Windows 95 for Visual C++ Installation</A></P>
+</B>
+<P>To install Visual C++ 5.0 under Windows 95, you must be running a protected-mode CD-ROM driver. You can verify this by checking the Device Manager. If you are currently using a real-mode CD-ROM driver, contact your CD-ROM drive manufacturer for an updated driver for Windows 95 before installing Visual C++ 5.0.</P>
+
+<P><A NAME="TofC_98"><!--TOC=5--><B>Use Knowledge Base Articles to Solve Setup and Operating Problems</B> </A></P>
+
+<P><!--TOCEnd-->You can use the Knowledge Base articles in the MSDN documentation to resolve known installation and operating problems. Select the <B>Search</B> command from the <B>Help</B> menu and search for error message or related keywords to find a problem description and resolution. </P>
+
+<P>Knowledge Base articles, which are written by Microsoft Technical Support Engineers, are available by connecting to http:// www.microsoft.com/kb/. Choose Visual C++ in the <B>Choose a Microsoft product or technology</B> drop-down list. Enter the article number in the <B>Enter a Search Phrase</B> text box, then click <B>Begin Search</B>. </P>
+
+<P><A NAME="TofC_4"><B>Applications Built with OLEAUT32.LIB Require AXDIST.EXE and/or NT SP5a </A></P>
+</B>
+<P>Visual C++ 5.0 ships with the latest OLEAUT32.LIB from the ActiveX SDK which exposes entry points into the OLEAUT32.DLL which are not present in the OLEAUT32.DLL that ships with the original NT and Windows 95 operating systems. If you build an OLE-enabled application or component with Visual C++ 5.0, and link with OLEAUT32.DLL, you will need to install the newer OLEAUT32.DLL via the AXDist.exe applet located in the DevStudio\VC\Redist\AXRedist directory on the Visual C++ 5.0 CD-Rom. </P>
+
+<P>If you are targeting Windows NT 3.51, you will need to ensure that NT Service Pack 5a is installed on the target machine. </P>
+
+<P><A NAME="TofC_5"></A><!--TOC=5--><B>DAO Setup Requires OLEAUT32.dll 2.20.4054 or Later </P>
+
+<P><!--TOCEnd--></B>The redistributable DAO Setup program that ships with Visual C++ will not run successfully unless OLEAUT32.dll build 2.20.4045 or later is installed and registered on the target computer. The newer version of OLEAUT32.dll must be copied to the target machine's SYSTEM directory, and registered with REGSVR32.exe. An up-to-date version of OLEAUT32.dll can be found on the first disc of Visual C++, in the DevStudioVC\Redist directory. </P>
+<B>
+<P><A NAME="TofC_7">Viewing "ANSI Character Code Chart" in InfoView Requires an English System</A></P>
+</B>
+<P>The character codes displayed in the "ANSI Character Code Chart" topic will only display correctly if viewed on English systems using an "ANSI-compatible" codepage. </A></P>
+<B>
+<P><A NAME="TofC_6">Accessing Online Help Brings Up MSN Dialog Box</A></P>
+</B>
+<P>When accessing online help you may get a dialog box asking about your dial-up connection for your online service provider. This occurs because Internet Explorer, which has an option to automatically connect to the online service, is used to display the online documentation. The best way around this is to choose <B>Cancel</B> when asked to connect. You can disable automatic dialup.</P>
+
+<P>To turn off the automatic dialup:</P>
+<OL>
+
+<LI>Right click on the IE to get the <B>Context</B> menu. Select the <B>Properties</B>.</LI>
+<LI>In the dialog, choose the <B>Connection</B> tab.</LI>
+<LI>In the Dialing group, uncheck the "Connect to the Internet as needed". This will turn off the Auto dialup.</LI>
+<LI>Click on <B>Apply</B> and OK to close the dialog.<!--TOC=3--></LI></OL>
+
+<B>
+<P><A NAME="TofC_8">Special Instructions for Installing Visual C++ 5.0 on Far East Operating Systems</A></P>
+</B>
+<P>The Visual C++ installation does not copy over the localized versions of RICHED32.DLL, GAPI32.DLL, and HLP95EN.DLL on machines running a DBCS enabled Operating System. These 3 files are required by some of the ActiveX Controls installed by Visual C++.</P>
+
+<P>If you install this version of Visual C++ on a Far East Operating System, be sure to copy these 3 files from the directory on the Visual C++ CD indicated below into your System directory:</P>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=638>
+<TR><TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>Chinese (PRC)</font></TD>
+<TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>DevStudio\VC\Redist\Ocx\chs</font></TD>
+</TR>
+<TR><TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>Chinese (Taiwan)</font></TD>
+<TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>DevStudio\VC\Redist\Ocx\cht</font></TD>
+</TR>
+<TR><TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>Japanese</font></TD>
+<TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>DevStudio\VC\Redist\Ocx\jpn</font></TD>
+</TR>
+<TR><TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>Korean</font></TD>
+<TD WIDTH="50%" VALIGN="TOP"><font size=2>
+
+<P>DevStudio\VC\Redist\Ocx\kor</font></TD>
+</TR>
+</TABLE>
+
+<B><A NAME="TofC_8a">ODBC Setup.exe is Not in REDIST Directory</A>
+</B>
+<P>In ODBC 3.0 several of the ODBC Installer functions have been removed, and others have been redesigned.
+Therefore this Setup program would not work with ODBC 3.0. </P>
+
+<P>The Installer API has been changed to make it more platform independent.
+For example, functions in the Installer API (such as <B>SQLInstallODBC</B>) that duplicated the work of the Windows SDK Setup program have been removed. 
+In general, it is now the responsibility of the Setup program to copy files during installation.
+</P>
+<P>For more information about creating setup programs that install ODBC 3.0 components and drivers, please refer to Part 3 in the ODBC 3.0 Programmers Reference. To access the ODBC 3.0 Programmers' Reference, open ODBC.hlp which can be found in DevStudio\SharedIDE\Help.
+</P>
+
+<P>&nbsp;</P>
+
+<A NAME="TofC_9"></A><H3>Build Issues</H3>
+
+<B>
+<P><A NAME="TofC_11">Reducing the Size of Header Files for Faster Builds</A></P>
+</B>
+<P>To speed the build process, Visual C++ 5.0 provides the following new defines. Use them to reduce the size of the Win32 header files.</P>
+
+<UL>
+<LI>VC_EXTRALEAN </LI>
+<LI>WIN32_LEAN_AND_MEAN</LI></UL>
+
+
+<P>Newly generated Visual C++ AppWizard applications automatically benefit from <B>VC_EXTRALEAN</B>. You can also manually define <B>VC_EXTRALEAN</B> to speed the build process of many legacy MFC applications. </P>
+
+<P>Non-MFC C++ and C applications can define WIN32_EXTRA_LEAN and any applicable NO<I>service</I> defines, such as NOSOUND (see DevStudio\Vc\include\Windows.h), to reduce their build times.</P>
+
+<P>To add these defines, from the <B>Project</B> menu, choose <B>Settings</B>. The <B>Projects settings</B> dialog box appears. Click the <B>C/C++</B> tab. In the <B>Category</B> list, select <B>Preprocessor</B>. Add the desired definitions to the <B>Preprocessor Definitions</B> box.</P>
+
+<P><A NAME="TofC_12"></a><b>Several Project System and Debugger Methods are Disabled when the  BuildFinish Event is Fired</b> </P>
+
+<P>&nbsp;Consider the following VBScript event handler: </P>
+<pre><font face="courier">
+Sub Application_BuildFinish(nNumErrors, nNumWarnings)
+
+if nNumErrors+nNumWarnings = 0 then
+&#9;ExecuteCommand "ToggleOutputWindow"
+&#9;ExecuteConfiguration
+end if
+
+End Sub
+
+</font></pre>
+
+<P><B>ExecuteConfiguration</B> fails because the <B>BuildFinish</B> event is fired before several project system and debugger commands have been re-enabled. The methods that invoke these commands, like <B>ExecuteConfiguration</B>, will remain disabled between the time that the event is fired and the time the event handler returns. After the <B>Application_BuildFinish</B> event handler returns, these methods will be re-enabled.</P>
+<B>
+<P>Workaround</P>
+</B>
+<P>1. Create a new macro, for example, MyBuild, with the following code:</P>
+<pre><font face="courier">
+Sub MyBuild
+
+&#9;Build
+
+&#9;' Add other method calls here that can't appear in the BuildFinish
+
+&#9;' event handler, such as "ExecuteConfiguration"
+
+End Sub
+
+</font></pre>
+<P>2. Always invoke a build by using this new macro instead of using the default <B>Build</B> menu command or toolbar. Note that you can create a custom menu command or toolbar button for your new MyBuild macro by going to the <B>Tools</B> menu, choosing <B>Customize</B>, and using the <B>Commands</B> tab of the dialog.</P>
+
+<P>The <B>Application_BuildFinish</B> VBScript event handler now becomes:</P>
+<pre><font face="courier">
+Sub Application_BuildFinish(nNumErrors, nNumWarnings)
+
+if nNumErrors+nNumWarnings = 0 then
+
+&#9;ExecuteCommand "ToggleOutputWindow"
+
+end if
+
+End Sub
+</font></pre>
+
+<P>In this case <B>Build</B> will fire the <B>BuildFinish</B> event and return control to the MyBuild subroutine at which time the <B>ExecuteConfiguration</B> will be enabled. You can see what other methods are disabled simply by looking at the disabled menu items when a build is in progress.<!--TOC=3--></P>
+
+<P><A NAME="TofC_12a"></a><b>Building ATL Projects from the Command Line Can Generate NMAKE Error</b></p>
+
+<P>Building an ATL program from the command line can generate NMAKE error U1073. (This problem does not occur when building ATL samples from within the integrated development environment.)
+</P>
+<P>For example, the following command line: </P>
+<pre><font face="courier">
+&nbsp;&nbsp;&nbsp;NMAKE /f beeper.mak CFG="beeper - Win32 Release"
+</font></pre>
+
+<P>will generate this error:</P>
+
+<pre><font face="courier">
+&nbsp;&nbsp;&nbsp;NMAKE : fatal error U1073: don't know how to make '".\beeper.h"'
+</font></pre>
+
+<P>From the command line, ATL projects require two passes to build. The first pass directs MIDL to create a header file that is required for the second pass. 
+</P>
+<B>Workaround
+</B>
+<P>Use the following commands to work around this problem:
+</P>
+<pre><font face="courier">
+&nbsp;&nbsp;&nbsp;nmake /f beeper.mak CFG="beeper - Win32 Release" beeper.h
+&nbsp;&nbsp;&nbsp;nmake /f beeper.mak CFG="beeper - Win32 Release"
+</font></pre>
+
+<P><A NAME="TofC_13"></a><b>Help File Names with European Characters Do Not Copy Correctly on Windows 95</b></p>
+
+<P>The Help compiler converts the name of the Help file into upper case characters. On Windows 95, this causes problems when the Visual Studio Build System tries to copy a name that contains European characters (such as umlauted characters) to the output directory for the rest of the project build. This is not a problem on Windows NT.
+</P>
+<B>Workaround</B>
+<P>Add a copy step with the name of the Help file, in upper case, to the custom build rule on the .hpj file in the project.
+</P>
+
+<P>&nbsp;</P>
+<A NAME="Documentation_Issues"></A>
+<H3>Documentation Issues</H3>
+
+<P><!--TOCEnd--><A NAME="Documentation_Issues_13"></A><!--TOC=5--><B>Inactive Links in the Online Documentation</B> </P>
+
+<P><!--TOCEnd-->Certain types of links in the online documentation do not work. They look like links, but if you click them, nothing happens. </P>
+
+<P><!--TOCEnd-->Such inactive links may be due to a setting in your Internet Explorer 3.0 that prevents ActiveX scripts from running. </P>
+
+<P><!--TOCEnd-->To enable the links, do the following: </P>
+<OL>
+
+<LI>Open Internet Explorer 3.0. </LI>
+<LI>From the <B>View</B> menu, select <B>Options</B>. </LI>
+<LI>In the <B>Options</B> dialog box, select the <B>Security</B> tab. </LI>
+<LI>Under <B>Active content</B>, check the <B>Run ActiveX scripts</B> check box. </LI>
+<LI>Click <B>Apply</B>. </LI>
+<LI>Click <B>Okay</B>. </LI></OL>
+
+<B>
+<P><A NAME="Documentation_Issues_14"></A>Avoid Disc Swapping During Full-Text Search of the Documentation</P>
+</B>
+<P>The MSDN CD contains all of the online documentation for all products in Visual Studio 97. If you install MSDN and leave it in the CD drive, you will not have to swap discs to search online content.</P>
+
+<P>If you chose the CD-ROM installation option when you installed Visual C++, you will need to have the Visual C++ CD in your CD ROM drive most of the time. To avoid looking for on-line content that is not on the Visual C++ CD, use the <B>Define Subsets</B> command from the <B>Help</B> menu to create a restricted search subset of the following Visual C++ documentation:</P>
+
+<UL>
+<LI>Welcome to Visual C++ (vcedit) </LI>
+<LI>Visual C++ Tutorials (vctutor) </LI>
+<LI>Visual C++ Programmer's Guide (vccore) </LI>
+<LI>Microsoft Foundation Class Reference (vcmfc) </LI>
+<LI>C/C++ Language and C++ Libraries (vclang) </LI>
+<LI>Visual C++ Samples (vcsample)</LI></UL>
+
+
+<P>Use this subset when doing most full-text searches. Use the "Entire Contents" subset when you need to search all of the online documentation and don't care about disc swapping.</P>
+<P>&nbsp;</P>
+
+<B>
+<P><A NAME="Documentation_Issues_14a"></A>ODBC 3.0 Programmer's Reference and SDK Guide</B></P>
+
+<P>The ODBC 3.0 documentation was not available for integration into Visual C++ 5.0 Infoviewer at the time of manufacture. (The ODBC documentation that you can find in the InfoViewer is for ODBC 2.5)</P>
+
+<P>However, the following Windows Help files (WinHlp32.exe) are installed during setup in the DevStudio\SharedIDE\Help directory:</P>
+
+<UL>
+<LI>ODBC.HLP	-- ODBC 3.0 Programmer's Reference
+<LI>SDKGUIDE.HLP	-- ODBC 3.0 SDK Guide
+<LI>ODBCJET.HLP  -- ODBC Microsoft Desktop Database Drivers Help
+<LI>ODBCJTNW.HLP  -- ODBC Desktop Database Drivers - What's New Help
+</UL>
+
+<P>Use the following procedure to add them to the <B>Tools</B> menu:</P>
+<OL>
+<LI>From the <B>Tools</B> menu, select <B>Customize</B>.</LI>
+<LI>Choose the <B>Tools</B> tab.
+<LI>Scroll to the bottom of the <B>Menu contents</B> grid, add a string to represent launching one of the Help files. For example, type "ODBC 3.0 Programmer's Reference".
+<LI>In the <B>Command</B> edit box, type "WinHlp32.exe".
+<LI>In the <B>Arguments</B> edit box, type the location of ODBC.hlp. For example, type "C:\Program Files\DevStudio\SharedIDE\Help\ODBC.hlp".
+<LI>Click <B>Close</B>.
+<LI>Repeat for each Help file you wish to use.
+</OL>
+<BR>
+<B><P><A NAME="Documentation_Issues_16"></A>Error in the Scribble MDI Drawing Application Documentation</P>
+</B>
+<P>In the topic "Create the Dialog Box," in the procedure, "To create the Pen Widths dialog box," Step 3 suggests that you double-click the dialog box to bring up the dialog box property page. To bring up the property page, right-click the dialog box, and then click <B>Properties</B> from the menu.</P>
+<B>
+<P><A NAME="Documentation_Issues_17"></A>The Properties Menu Item is Now Located on the View Menu</P>
+</B>
+<P>In the topics "Associating the Toolbar Button with a Command ID" and "Adding a Tool Tip" in the Scribble MDI Drawing Application, you are instructed to click <B>Properties</B> from the <B>Edit</B> menu. The <B>Properties</B> item is now located on the <B>View</B> menu.</P>
+<B>
+<P><A NAME="Documentation_Issues_18"></A>Microsoft Oracle ODBC Driver is Missing From the "ODBC Driver List" Topic</P>
+</B>
+<P>The list of ODBC drivers, found in the "ODBC Driver List" topic, should include the Microsoft Oracle ODBC driver.</P>
+
+<p><A name="Documentation_Issues_19"></a><b>HCW.EXE 4.01 Does Not Support Office 97</b></p>
+
+<p>The version of Microsoft Help Workshop (HCW.exe) that is installed by Visual C++ 5 does not support .rtf files created using Office '97. If you are an Office '97 user creating .rtf files for use with the Microsoft Help Workshop, you can do one of the following:
+
+<ul><li>Use Word '97 and save the file in Word 6.0 format. (Make sure "Word6.0/95" is in the Save As Type field in the Word '97 Save As dialog.)
+<li>Install version 4.02 of the Microsoft Help Workshop, located in the \DevStudio\VC\Unsupported Tools\HCW directory. This directory is on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.)
+</ul>
+<B><P><A NAME="Documentation_Issues_19a"></A>Typographical Error in Circle Tutorial</P>
+</B>
+<P>In the topic "Creating the Basic Control," the first class name in the table that describes the class templates created by ControlWizards is incorrect. The correct class name is CCircApp.</P>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=529>
+<TR><TD WIDTH="20%" VALIGN="TOP"><font size=2>
+
+<P><B>Class</B></font></TD>
+<TD WIDTH="27%" VALIGN="TOP"><font size=2>
+<B>
+<P>Files</B></font></TD>
+<TD WIDTH="53%" VALIGN="TOP"><font size=2>
+<B>
+<P>Comments</B></font></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP"><font size=2>
+
+<P>CCircApp</font></TD>
+<TD WIDTH="27%" VALIGN="TOP"><font size=2>
+
+<P>CIRC.H<BR>
+CIRC.CPP</font></TD>
+<TD WIDTH="53%" VALIGN="TOP"><font size=2>
+
+<P>Implements the main DLL source. Typically, there is no need to modify this code.</font></TD>
+</TR>
+</TABLE>
+
+<p><A name="Documentation_Issues_20"></a><b>Documentation Errors in ATL Tutorial</b></p>
+<P>The ATL Tutorial contains the following two errors:<P>
+<UL>
+<LI>Step 4 includes instructions for removing the <B>DllMain</B> entry point. Because the ATL COM AppWizard no longer sets <B>DllMain</B> as the entry point, this step is unnecessary.
+<LI>In Step 6, the statement, <pre><font face="courier">#include Polygon.h
+</font></pre>
+should be replaced by <pre><font face="courier">#include "Polygon.h"
+</font></pre>
+</UL>
+
+<p><A name="Documentation_Issues_21"></a><b>Missing Help Topic for "Ignore Export Library" Check Box</b></p>
+
+<P>On the <B>Link</B> tab, <B>General</B> category, when a DLL project (/DLL is one of the link options) is selected in the file tree, there is a new check box, <B>Ignore export library</B>. The context-sensitive Help for this check box is not available. The Help text for the Ignore export library check box is as follows:</P>
+
+<P>When the <B>Ignore export library box</B> is checked, the parent project will not automatically attempt to link to the export library of the subproject. Select this setting when building a resource-only DLL as a subproject of an EXE.</P>
+
+<P><B><A NAME="Documentation_Issues_22"></A>Changes to ATL Stock Property Macros</P></B>
+
+<P>The macro IMPLEMENT_SMARTPTR_STOCKPROP has been removed from ATL. The macro IMPLEMENT_BOOL_STOCKPROP has been added and should be used for all stock properties that are boolean values, such as the standard AUTOSIZE, BORDERVISIBLE, ENABLED, TABSTOP, and VALID stock properties.
+</P>
+
+<P><B><A NAME="Documentation_Issues_23"></A>Changes to the MFC Reference Documentation</b></p>
+<P>Three changes to the MFC Reference documentation are included below.</P>
+<ol>
+    <li>Details about<B>COleDateTime</B><br>
+        If you create a <B>COleDateTime</B> object with a date less than
+        100, the date will be accepted, but subsequent calls to
+        <B>GetYear</B>, <B>GetMonth</B>, <B>GetDay</B>, <B>GetHour</B>, <B>GetMinute</B>, and
+        <B>GetSecond</B> will fail and return -1.<br>
+        Previously, you could use two-digit dates, but dates must
+        be 100 or greater in VC++ 4.2.To avoid problems, specify
+        a four-digit date. For example:<br>
+        COleDateTime.mytime(1996,1,1,0,0,0); 
+        </li><BR>
+    <li>A new override of <B>GetHttpConnection </B>was added:<br>
+        CHttpConnection* GetHttpConnection(LPCTSTR pstrServer,
+        DWORD dwFlags, INTERNET_PORT nPort =
+        INTERNET_INVALID_PORT_NUMBER, LPCTSTR pstrUserName =
+        NULL, LPCTSTR pstrPassword = NULL); </li>
+<li> The following replacement topic for <B>CInternetSession::OpenURL</B>.</li>
+</ol>
+
+<p><B>CInternetSession::OpenURL</B><br>
+<P>CStdioFile* OpenURL( LPCTSTR pstrURL, DWORD dwContext = 1,<br>
+<P>DWORD dwFlags = 0, LPCTSTR pstrHeaders = NULL, DWORD<br>
+<P>dwHeadersLength = 0 );<br>
+<P>Throw ( CInternetException ); </p>
+
+<p><B>Return Value</B></P>
+<P>Returns a file handle for FTP, GOPHER, HTTP, and FILE-type
+Internet services only. Returns <B>NULL</B> if parsing was unsuccessful.
+The pointer that <B>OpenURL</B> returns depends on pszURL's type of
+service. The table below illustrates the possible pointers
+<B>OpenURL</B> can return. </p>
+
+<p><B>URL type Returns</B></p>
+<P>file://CStdioFile*</p>
+<P>http://CHttpFile*</p>
+<P>gopher://CGopherFile*</p>
+<P>ftp://CInternetFile*</p>
+<P><B>Parameters</B> </p>
+
+<p><B>pstrURL</B>&nbsp;&nbsp;&nbsp;A pointer to the name of the URL to begin reading.
+Only URLs beginning with file:, ftp:, gopher:, or http: are
+supported. ASSERTS if pszURL is NULL. </p>
+<P><B>dwContext</B>&nbsp;&nbsp;&nbsp;An application-defined value passed with the returned
+handle in callback.</p>
+<P><B>dwFlags</B>&nbsp;&nbsp;&nbsp;The flags describing how to handle this connection. The
+valid flags, which can be combined with the bitwise OR operator
+(|), are: </p>
+
+<ul>
+    <li>INTERNET_FLAG_TRANSFER_ASCII&nbsp;&nbsp;&nbsp;The file is transferred as a
+        text file. </li>
+    <li>INTERNET_FLAG_TRANSFER_BINARY&nbsp;&nbsp;&nbsp;The file is transferred as
+        a binary file. </li>
+    <li>INTERNET_FLAG_RELOAD&nbsp;&nbsp;&nbsp;Get the data from the wire even if
+        it is locally cached. </li>
+    <li>INTERNET_FLAG_DONT_CACHE&nbsp;&nbsp;&nbsp;Do not cache the data, either
+        locally or in any gateways. </li>
+    <li>INTERNET_FLAG_SECURE&nbsp;&nbsp;&nbsp;This flag is applicable to HTTP
+        requests only. It requests secure transactions on the
+        wire with Secure Sockets Layer or PCT. </li>
+    <li>INTERNET_OPEN_FLAG_USE_EXISTING_CONNECT&nbsp;&nbsp;&nbsp;If possible,
+        reuse the existing connections to the server for new
+        requests generated by OpenURL instead of creating a new
+        session for each connection request. </li>
+    <li>INTERNET_FLAG_PASSIVE&nbsp;&nbsp;&nbsp;Used for an FTP site. Uses passive
+        FTP semantics. Used with <B>CInternetConnection</B> of <B>OpenURL</B>.</LI>
+        </UL>
+<P><B>pstrHeaders</B> A pointer to a string containing the headers
+        to be sent to the HTTP server.</P>
+        <P><B>dwHeadersLength</B> The length, in characters, of the
+        additional headers. If this is -1L and <B>pstrHeaders</B> is
+        non-NULL, then <B>pstrHeaders</B> is assumed to be zero
+        terminated and the length is calculated. </P>
+<p><B>Remarks</B> </P>
+<P>Call this member function to send the specified request to the
+        HTTP server and allow the client to specify additional
+        RFC822, MIME, or HTTP headers to send along with the
+        request. <B>OpenURL</B>, which wraps the Win32 function
+        <B>InternetOpenURL</B>, allows only downloading, retrieving, and
+        reading the data from an Internet server. <B>OpenURL</B> allows
+        no file manipulation on a remote location, so it requires
+        no <B>CInternetConnection </B>object. To use connection-specific
+        (that is, protocol-specific) functions, such as writing
+        to a file, you must open a session, then open a
+        particular kind of connection, then use that connection
+        to open a file in the desired mode. See
+        <B>CInternetConnection</B> for more information about
+        connection-specific functions. </p>
+  
+
+<P>&nbsp;</P>
+
+<a name="activex_control_issues"></a>
+<H3>ActiveX Control Issues</H3>
+
+<P><B><a name="activex_control_issues_1"></a>Visual C++ Support for Authenticode</B></P>
+
+<P>To find the tools necessary for packaging your ATL and MFC controls into cabinet (.cab) files and signing the resulting .cab files, look in the CAB&Sign directory. This directory is on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.) 
+<P>For more information on how to use these tools, see <A HREF="http://www.microsoft.com/visualc/reference/cab.htm">http://www.microsoft.com/visualc/reference/cab.htm</A>.</P>
+
+
+<B>
+<P><a name="activex_control_issues_3"></A>Some ActiveX Controls Created with Visual Basic Generate Error in ActiveX Test Container on Resize</P>
+</B>
+<P>Microsoft Visual Basic 5.0 supports the creation of ActiveX Controls (OCX's). Some controls that are created with Visual Basic set the OLEMISC_NOUIACTIVATE bit. If the control is inserted into the ActiveX Test Container and then is resized, the ActiveX Test Container attempts a DoVerb (OLEIVERB_UIACTIVATE) call that results in the following error:</P>
+
+<P>&#9;"Failed to connect. Link may be broken."</P>
+
+<P>This problem is being investigated. This does not impede hosting the control in Visual C++.</P>
+
+
+
+<B>
+<P><a name="activex_control_issues_4"></A>Oracle Joins and MSRDC20.OCX (Remote Data Control V2)
+</P>
+</B>
+<P>If you use the Microsoft ODBC Driver for Oracle with the Microsoft Remote Data Control (MRDC20.OCX) and your SQL statement contains a join (or includes a reference to a view that contains a join), you may encounter the following driver error:<BR>
+
+"SC100: [Microsoft][ODBC Driver for Oracle]Driver not capable"</P>
+
+<P><B>Workaround</P></B>
+<P>Change the <B>CursorDriver</B>, <B>LockType</B>, and <B>ResultsetType</B> properties. The following settings will work:</P><BR>
+<P>&#9;CursorDriver = 'ODBC Cursor'</P>
+
+<P>&#9;LockType = ' Optimistic Concurrency'</P>
+
+<P>&#9;ResultsetType = 'Create a Static Cursor'</P>
+<BR>
+<B>
+<P><a name="activex_control_issues_5"></A>Current, Localized ActiveX Redistributable Components</P></B>
+The ActiveX redistributable components that ship with Visual C++ 5.0 were current when the product was released to manufacturing. You can always check <A HREF="http://www.microsoft.com/intdev/sdk/" TARGET="_top">http://www.microsoft.com/intdev/sdk/</A> for the most current components.
+
+<P><B>Note</B>&NBSP;&NBSP;   If your Internet application will be used in an Internet Explorer localized environment, your application should use the localized ActiveX components that are available from this site, otherwise the components contained on this CD may overwrite Internet Explorer localized components.</P>
+
+<P>&nbsp;</P>
+
+<a name="language_issues"></A><H3>Language Issues</H3>
+<B>
+<P><A NAME="language_issues_2"></A>Member Templates Not Supported by the Compiler</P>
+</B>
+<P>Simple member templates may not generate a compiler error. Use of member templates can result in undefined behavior.</P>
+
+<P><B><!--TOCEnd--><A NAME="language_issues_3"></A><!--TOC=5-->Addendums to the __declspec Documentation</P>
+</B>
+<P>The documentation for the <B>__declspec</B> keyword is missing the following information:</P>
+<B>
+<P>Addendum One</P>
+</B>
+<P>The <B>__declspec</B> keywords should be placed at the beginning of a simple declaration. <B>__declspec</B> keywords placed after * or &amp; and in front of the variable identifier in a declaration will be ignored by the compiler without error message or warnings. See the <B>__declspec</B> topic in Language Quick Reference for more information about using the <B>__declspec</B> attributes. </P>
+<B>
+<P>Addendum Two</B> </P>
+
+<P><!--TOCEnd-->The following three declarations are equivalent: </P>
+<PRE><font face="courier">#define WINAPI __declspec(nothrow) __stdcall 
+
+void WINAPI foo1();
+
+void __declspec(nothrow) __stdcall foo2();
+
+void __stdcall foo3() throw();
+</font></PRE>
+
+<P>Using "void <B>__declspec</B>(nothrow) <B>__stdcall</B> foo2();" has the advantage that you can use an API definition, such as the illustrated by the <B>#define</B> statement, to easily specify <B>nothrow</B> on a set of functions. The third declaration, "<B>void __stdcall</B> foo3() <B>throw</B>();" is the syntax defined by the C++ standard. </P>
+
+<P><A NAME="language_issues_4"></A><!--TOC=5--><B>Behavior of In-Constructor Exception Handling Not Correctly Documented</B> </P>
+
+<P><!--TOCEnd-->If you use the operator <B>new</B> without any extra arguments, and compile with the /GX, /EHs, or /EHa option, the compiler will generate code to call operator <B>delete</B> if the constructor throws an exception. </P>
+
+<P>If you use the placement new form of the <B>new</B> operator, the form with arguments in addition to the size of the allocation, the compiler does not support a placement form of the <B>delete</B> operator if the constructor throws an exception. </P>
+<B>
+<P>Example</B> </P>
+
+<P><!--TOCEnd--></P>
+<PRE><font face="courier">
+class A {
+
+public:
+
+    A(int) { throw "Fail!"; }
+
+};
+
+void foo(void)
+
+{
+
+    try {
+
+        // heap memory pointed to by pa1 will be deallocated
+
+        // by calling ::operator delete(void*).
+
+        A* pa1 = new A(10);
+
+    } catch (...) {
+
+    }
+
+    try {
+
+        // This will call ::operator new(size_t, char*, int).
+
+        // When A::A(int) does a throw, we should call
+
+        // ::operator delete(void*, char*, int) to deallocate
+
+        // the memory pointed to by pa2, but that's something
+
+        // we don't support yet, so we'll leak memory.
+
+        A* pa2 = new(__FILE__, __LINE__) A(20);
+
+    } catch (...) {
+
+    }
+
+}
+</font></PRE>
+
+
+<P>&nbsp;</P>
+
+<P><B><A NAME="language_issues_7"></A>Size Mismatch for Type bool in Visual C++ 4.2 Programs Built with Visual C++ 5.0</B></P>
+
+<P>In Visual C++4.2,  the Standard C++ header files contained a <b>typedef</b> that equated <b>bool</b> with <b>int</b>. In
+Visual C++ 5.0, <b>bool</b> is implemented as a built-in type with a size of 1 <b>byte</b>.  That means that  for Visual C++ 4.2, a call of sizeof(bool) yields 4, while in Visual C++ 5.0, the same call yields 1.  This can cause memory corruption problems if you have defined structure members of type <b>bool</b> in Visual C++ 4.2 and are mixing object files (OBJ)  and/or DLLs built with the 4.2 and 5.0 compilers.
+<P>&nbsp;</P>
+<P><A NAME="MFC_and_Libraries"></A><!--TOC=3--></P>
+<H3>MFC and Other Libraries</H3>
+
+<B><P><!--TOCEnd--><A NAME="MFC_and_Libraries_1"></A><!--TOC=5-->Coexistence of Visual C++ 4.2 and 5.0</B></P>
+
+<P>The Visual C++ 4.2 and 5.0 library DLLs have the same names. Setup for Visual C++ 5.0 will overwrite your 4.2 system files. Debug information has changed in Visual C++ 5.0 and is not compatible with the Visual C++ 4.2 debugger. Because of this, the Visual C++ 4.2 debugger will not be able to step into the source code of the Microsoft Visual C++ 5.0 MFC or CRT debug libraries. This issue will not affect Visual C++ 4.0 or 4.1 users and does not affect your ability to debug your own source code. </P>
+
+<P>Affected files:
+<UL>
+	<B><LI>Standard C Run-Time</LI></B>
+	<LI>MSVCRTd.DLL</LI>
+	<LI>MSVCRTd.PDB</LI>
+	<LI>MSVCIRTd.DLL</LI>
+	<LI>MSVCIRTd.PDB</LI><BR>
+
+	<B><LI>MFC</LI></B>
+	<LI>MFC42d.DLL</LI>
+	<LI>MFC42d.PDB</LI>
+	<LI>MFC42u.pdb</LI>
+	<LI>MFC42ud.dll</LI>
+	<LI>MFC42ud.pdb</LI>
+	<LI>MFCd42d.dll</LI>
+	<LI>MFCd42d.pdb</LI>
+	<LI>MFCd42ud.dll</LI>
+	<LI>MFCd42ud.pdb</LI>
+	<LI>MFCn42d.dll</LI>
+	<LI>MFCn42d.pdb</LI>
+	<LI>MFCn42ud.dll</LI>
+	<LI>MFCn42ud.pdb</LI>
+	<LI>MFCo42d.dll</LI>
+	<LI>MFCo42d.pdb</LI>
+	<LI>MFCo42ud.dll</LI>
+	<LI>MFCo42ud.pdb</LI>
+</UL><BR>
+<P><B>Workarounds</B>
+
+<UL>
+<LI>The best solution is to run Visual C++ 4.2 and 5.0 on separate machines, or operating system installations on the same machine.</LI>
+<LI>You can use the Visual C++ 5.0 debugger to debug into the MFC or CRT DLLs.</LI>
+<LI>You can copy the relevant files, listed above, into your Visual C++ 4.2 project's Debug directory.</LI>
+</UL>
+<P>These files are on your Visual C++ 4.2 compact disc in the \MSDEV\DEBUG directory.</P>
+
+<P>None of these workarounds allows debugging of Release Builds with 4.2 debugger.</P>
+
+<P>NOTE to MFC42b (patch) customers.  If you need to recreate the patched MFC DLLs, we have provided the MFC4.2B patch (MFC42B.EXE ) in the \DevStudio\Vc\Debug directory. This directory is on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.) You can patch the MFC files by copying them into a temporary directory and running the patch on them. You can ignore the errors about missing files.</P>
+
+<P>The Visual C++ 5.0 files will not otherwise affect the operation of Visual C++ 4.2. Under no circumstances do we recommend replacing the new versions of mfc42.dll, mfc42u.dll, and msvcrt.dll with the versions from 4.2 as you may break other applications dependent on the new versions of these DLL's. The Visual C++ 5.0 Developer Studio will not run with the Visual C++ 4.2 version of mfc42.dll.</P>
+
+<B>
+<P><A NAME="MFC_and_Libraries_1a"></A>Visual Basic 5.0 Controls in Visual C++ 5.0</P></B>
+
+<P>Below is a list of Visual Basic 5.0 controls provided for your use.  Please be aware that many of these controls contain interfaces and behavior that are supported only in Visual Basic 5.0 container applications and are not supported by MFC container applications.</P>
+
+<P>If you have any problems with these controls, please report them at the Web site http://www.microsoft.com/VisualCSupport/report/.</P>
+
+<P>Please note that the controls that shipped with Visual C++ 4.0 and have replacements in Visual C++ 5.0 will no longer be supported by Microsoft's technical support.</P>
+
+<P>The Visual C++ Component Gallery displays all the controls registered on your system.  Many of your controls may not have been tested with Visual C++.  If you encounter problems with a non-Microsoft control, we encourage you to check with the control vendor for more information.  </P>
+<table border="1" width="90%">
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=2><B>Filename</B></font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=2><B>Description</B></font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>COMCT232.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>UpDown and Animation
+        controls, version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>COMCTL32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Common Controls
+        (treeview, imageview, etc.), version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>COMDLG32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Common Dialogs control
+        (File.Open, Choose.Color, etc.), version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>DBGRID32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>DataBound Grid control</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>DBLIST32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>DataBound Combo and
+        List controls, version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MCI32.OCX </font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Multimedia control,
+        version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSCAL.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Calendar control,
+        version 8.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSCOMM32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Communications
+        control, version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSMASK32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Masked edit control,
+        version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSFLXGRD.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Read-only DataBound
+        Grid control, version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSINET.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>FTP and HTTP controls,
+        version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSMAPI32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>MAPI Message and
+        Session controls, version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSRDC20.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>RemoteData control</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>MSWINSCK.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>WinSock control (FTP
+        and HTTP protocols only), version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>PICCLP32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>PictureClip control,
+        version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>RICHTX32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Rich Edit control,
+        version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>SYSINFO.OCX </font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>System Information
+        control, version 5.0</font></td>
+    </tr>
+    <tr>
+        <td width="10%"><FONT FACE="Arial,Helvetica" SIZE=1>TABCTL32.OCX</font></td>
+        <td width="75%"><FONT FACE="Arial,Helvetica" SIZE=1>Tabbed Dialog control,
+        version 5.0</font></td>
+    </tr>
+</table>
+<P>&nbsp;</P>
+
+
+<B>
+<P><A NAME="MFC_and_Libraries_2"></A>Incomplete Documentation for CWnd::RepositionBars</P>
+</B>
+<P>The documentation for <B>CWnd::RepositionBars</B> is missing the parameter bStretch. The prototype should read:</P>
+
+<P>void RepositionBars( UINT nIDFirst, UINT nIDLast, UINT nIDLeftOver, UINT nFlag = reposDefault, LPRECT lpRectParam = NULL, LPCRECT lpRectClient = NULL, BOOL bStretch = TRUE );</P>
+
+<P>bStretch indicates whether the bar should be stretched to the size of the frame.</P>
+
+<P><A NAME="MFC_and_Libraries_3"></A><!--TOC=5--><B>I/O Streams Now Exist in the "std" Namespace</B> </P>
+
+<P><!--TOCEnd-->Per Section 27 of the new ANSI draft, streams are now defined within the <B>std</B> namespace. This means that any program that uses I/O streams must reference the streams within the scope of <B>std</B>. </P>
+
+<P>For example, the following sample will fail to compile, because <B>cout</B> is defined in the <B>std</B> namespace, unless the third line is uncommented: </P>
+<PRE><font face="courier">
+// file Test.cpp
+
+#include &lt;iostream&gt;
+
+// using namespace std;
+
+void main()
+
+{
+
+     cout &lt;&lt; "Hello ANSI Committee" &lt;&lt; endl;
+
+}
+
+// end file Test.cpp</PRE>
+</font></pre>
+
+<P><B><A NAME="MFC_and_Libraries_4"></A>Example Code in the CArchive::MapObject Member Function is Incorrect</P>
+</B>
+<P>In the section SubItem.cpp of the code, nonexistent overloaded <B>CDocument</B> operators (&lt;&lt; and &gt;&gt;) are used in two places. This code section should be replaced with the following code: </P>
+<pre><font face="courier">
+//SubItem.cpp
+
+void CSubItem::Serialize(CArchive&amp; ar)
+
+{
+if (ar.IsStoring( ) )
+{
+
+// will serialize a reference 
+// to the "mapped" document pointer
+
+ar &lt;&lt; (CObject *)m_pDoc;
+ar &lt;&lt; m_l;
+}
+
+else
+
+{
+
+// Will load a reference to
+// the "mapped" document pointer
+
+ar &gt;&gt; (CObject *&amp;) m_pDoc;
+ar &gt;&gt; m_l;
+}
+}
+</font></pre>
+<P><A NAME="MFC_and_Libraries_4a"></A><B>ATL Registrar Fails to Insert Keys Starting with Curly Brace</P>
+</B>
+<P>The ATL registrar does not correctly interpret two consecutive key names that both start with a curly brace ({).  For example, the second "Implemented Categories" key name fails in the following registry script (rgs):</P>
+<pre><font face="courier">
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {333C7BC4-460F-11D0-BC04-0080C7055A83} = s 'Tabular Data Control'
+		{
+			'Implemented Categories'
+			{
+				'{7DD95801-9882-11CF-9FA9-00AA006C42C4}'
+				'{7DD95802-9882-11CF-9FA9-00AA006C42C4}'
+			}
+		}
+	}
+}
+</font></pre>
+<P><B>Workaround</B></P>
+
+<P>Break out each key name as shown in this example:</P>
+<pre><font face="courier">
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {333C7BC4-460F-11D0-BC04-0080C7055A83} = s 'Tabular Data Control'
+		{
+			'Implemented Categories'
+			{
+				'{7DD95801-9882-11CF-9FA9-00AA006C42C4}'
+			}
+			'Implemented Categories'
+			{
+				'{7DD95802-9882-11CF-9FA9-00AA006C42C4}'
+			}
+		}
+	}
+}
+
+</font></pre>
+<BR>
+<P><A NAME="MFC_and_Libraries_4aa"></A><B>Some ATL Object Stock Properties Must Be Initialized Before Use in Visual Basic 5.0 Containers</P>
+</B>
+
+<P>Visual Basic 5.0 expects all stock properties that are <B>IUnknown</B>-based (such as MousePointer, Picture, and Font) to contain a valid <B>IUnknown</B> pointer. Otherwise, Visual Basic will never allow the user to change the property. For example, if you have a stock Font property that you never fill in with a valid Font, Visual Basic will display the Font as being <B>NULL</B>, and will never allow the user to select a new Font through the Visual Basic property window.
+</P>
+<P>To avoid this problem, make sure your <B>IUnknown</B>-based stock properties have a valid value other than <B>NULL</B> before inserting your object into a Visual Basic container. There are many ways to do this, for example, get the ambient Font off the container and use that as your stock Font property.
+</P>
+
+</P><A NAME="MFC_and_Libraries_5"></A><B>ATL.DLL Replaces REGISTER.DLL</P>
+</B>
+<P>Register.dll, which shipped with Visual C++ Beta 1, has been replaced with Atl.dll. To use the new DLL with your existing ATL projects you will simply need to rebuild them. </P>
+
+
+</P><A NAME="MFC_and_Libraries_5a"></A><B>ATL Font and Picture Properties May Require Changes to the IDL File</P>
+</B>
+
+<P>To make a Font or Picture property work in some containers, the interface definition must be declared within the library section of the .idl file. You must cut the interface declarations from the .idl file and paste them into the library section of the same file. In addition, the import line for ocidl.idl needs to be commented out.
+</P>
+For example, the ATL Object Wizard generates the following .idl file for MyCtl with a Font property:
+<pre><font face="courier">
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(8697BC4C-7A38-11D0-9A38-00A0C90DC94B),
+		dual,
+		helpstring("IMyCtl Interface"),
+		pointer_default(unique)
+	]
+	interface IMyCtl : IDispatch
+	{
+		[propputref, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propput, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propget, id(DISPID_FONT)]
+		HRESULT Font([out, retval]IFontDisp** ppFont);
+	};
+[
+	uuid(8697BC3F-7A38-11D0-9A38-00A0C90DC94B),
+	version(1.0),
+	helpstring("MyControl 1.0 Type Library")
+]
+library MYCONTROLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(8697BC4D-7A38-11D0-9A38-00A0C90DC94B),
+		helpstring("MyCtl Class")
+	]
+	coclass MyCtl
+	{
+		[default] interface IMyCtl;
+	};
+};
+</font></pre>
+
+The corrected version of this .idl file is shown below: 
+<pre><font face="courier">
+import "oaidl.idl";
+// import "ocidl.idl";
+
+[
+	uuid(8697BC3F-7A38-11D0-9A38-00A0C90DC94B),
+	version(1.0),
+	helpstring("MyControl 1.0 Type Library")
+]
+library MYCONTROLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		object,
+		uuid(8697BC4C-7A38-11D0-9A38-00A0C90DC94B),
+		dual,
+		helpstring("IMyCtl Interface"),
+		pointer_default(unique)
+	]
+	interface IMyCtl : IDispatch
+	{
+		[propputref, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propput, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propget, id(DISPID_FONT)]
+		HRESULT Font([out, retval]IFontDisp** ppFont);
+	};
+
+	[
+		uuid(8697BC4D-7A38-11D0-9A38-00A0C90DC94B),
+		helpstring("MyCtl Class")
+	]
+	coclass MyCtl
+	{
+		[default] interface IMyCtl;
+	};
+};
+</font></pre>
+
+<B>
+<P><A NAME="MFC_and_Libraries_6"></A>ON_WM_SETTINGCHANGE</P>
+</B>
+<P>The windows message map entry <B>ON_WM_SETTINGCHANGE</B> corresponds to the MFC member function with this prototype:</P>
+<pre><font face="courier">
+afx_msg void OnSettingChange( UINT uFlags, LPCTSTR lpszSection );
+</font></pre>
+<B>
+<P>Parameters</P></B>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=637>
+<TR><TD WIDTH="14%" VALIGN="TOP"><font size=2>
+
+<P><I>uFlags</I></font></TD>
+<TD WIDTH="86%" VALIGN="TOP"><font size=2>
+
+<P>When the system sends the message as a result of a <B>SystemParametersInfo</B> call, this parameter is a flag that indicates the system parameter that was changed. For a list of values, see the <B>SystemParametersInfo</B> function in the Win32 Programmers Reference. When an application sends the message, this parameter must be 0.</font></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP"><font size=2>
+<I>
+<P>lpszSection</I></font></TD>
+<TD WIDTH="86%" VALIGN="TOP"><font size=2>
+
+<P>Points to a string that specifies the name of the section that has changed. (The string does not include the square brackets that enclose the section name.)</font></TD>
+</TR>
+</TABLE>
+
+<B>
+<P>Remarks</P>
+</B>
+<P>The framework calls <B>OnSettingChange</B> for all top-level windows when the Win32 <B>SystemParametersInfo</B> function changes a system-wide setting. An application should send the message to all top-level windows when it makes changes to system parameters, and Windows will send the message if the user changes settings via the Control Panel.</P>
+
+<P>The <B>ON_WM_SETTINGCHANGE</B> message is similar to the <B>ON_WM_WININICHANGE</B> message, with the following difference:</P>
+
+<UL>
+<LI>Use <B>ON_WM_SETTINGCHANGE</B> when running Windows NT 4.0 or newer, or under Windows 95. </LI>
+<LI>Use <B>ON_WININICHANGE</B> when running Windows NT 3.51 or older. This message is now obsolete.</LI></UL>
+
+
+<P>You should have only one of these macros in your message map. To write a program that works for both Windows 95 and Windows NT 4.0, write a handler for <B>ON_WM_SETTINGCHANGE</B>. Under Windows NT 3.51, your handler will be called by <I>uFlags</I> will always be zero.</P>
+<B>
+<P>See Also</B> <B>SystemParametersInfo</B> and <B>WM_SETTINGCHANGE</B> in the Win32 Programmers Reference, and <B>ON_WININICHANGE</B> and <B>CWnd::OnWinIniChange</B> in the MFC Reference.</P>
+<B>
+<P><A NAME="MFC_and_Libraries_7"></A>TN024 Doesn't Identify all Custom MFC Resource Types</P>
+</B>
+<P>MFC Technote TN024, titled "MFC-Defined Messages and Resources", states that: </P>
+
+<P>&#9;"There is currently only one MFC private resource format defined, <B>RT_DLGINIT</B>."</P>
+
+<P>This statement should read:</P>
+
+<P>&#9;"Currently, MFC defines two private resource formats: <B>RT_DLGINIT</B> and <B>RT_TOOLBAR</B>."</P>
+
+<P>The default toolbar supplied by AppWizard is based on an <B>RT_TOOLBAR</B> custom resource, which was introduced in MFC 4.0. </P>
+
+<P>You can edit this resource with the toolbar editor. </P>
+<B>
+<P><A NAME="MFC_and_Libraries_8"></A>MFC DAO Classes will Work with Either DAO 3.0 or DAO 3.5</P>
+</B>
+<P>However the MFC DAO classes have not been designed to take advantage of any new DAO 3.5 features, including ODBCDirect.</P>
+
+<P><A NAME="MFC_and_Libraries_9"></A><!--TOC=5--><B>Using DAO with a Secure Database</B> </P>
+
+<P><!--TOCEnd-->If you are writing a program that uses Data Access Objects (DAO) to access a secure database, you will receive an error if you use <B>CDaoRecordset</B> because MFC does not prompt the user for a user name and password. To find out how to call DAO directly to implement DAO security features, such as changing user passwords, see Technical Note 054 in the Microsoft Foundation Class Reference. The title is "TN054: Calling DAO Directly While Using MFC DAO Classes." </P>
+
+<P><A NAME="MFC_and_Libraries_10"></A><!--TOC=5--><B>The Hewlett Packard Standard Template Library</B> </P>
+
+<P><!--TOCEnd-->Visual C++ 5.0 ships a complete, fully supported C++ Standard Run-time Library, that includes the Microsoft implementation of the Standard Template Library. </P>
+
+<P>Setup installs the new C++ Standard Run-time Library with the other run-time libraries. </P>
+<B>
+<P>Note</B> The Hewlett Packard Standard Template Library that shipped with Visual C++ 4.0 does not ship with Visual C++ 5.0. Microsoft does not provide technical support for the Hewlett Packard<B> </B>version of the Standard Template Library. </P>
+
+<B>
+<P><A NAME="MFC_and_Libraries_12"></A>Incorrect Information in the " _spawn, _wspawn Functions" Topic</P>
+</B>
+<P>In the topic titled <B>"_spawn</B>, <B>_wspawn</B> Functions", a table in the Remarks section has wrong information. The table is labeled "Generic-Text Routine Mappings." The far right column of the table, which has the heading "_UNICODE Defined," should list all the _<B>wspawn</B> functions instead of the <B>spawn</B> functions. When the _UNICODE flag is defined, the wide-character (_w) versions of the functions are used. </P>
+
+<P><!--TOC=5--><B><A NAME="MFC_and_Libraries_13"></A>MFC Loads Wrong Resource in Extension .dll</B> </P>
+
+<P><!--TOCEnd-->The wrong resource is loaded when <B>CBitmap::LoadBitmap</B>, <B>CMenu::LoadMenu</B>, <B>CString::LoadString</B> or any other MFC resource-loading function is called in an MFC extension .dll (AFXDLL). In some cases, a resource in the application is loaded instead of the appropriate resource in the extension .dll. </P>
+
+<P><!--TOCEnd-->When a resource in the application or another extension .dll gets loaded instead of a resource in the current extension .dll, the cause is usually improper resource management. An MFC application and all of its extension DLLs are one global chain of resources. If there are multiple resources with the same ID value in any of the modules in the chain, MFC uses the first resource it finds with the desired ID value. The first resource is often found in the application, which is searched before any of the extension DLLs. </P>
+
+<P><!--TOCEnd-->Change the ID values of any conflicting resources so they are unique in both the application and any extension .dll that the application uses. These values are stored in the Resource.h file for each project and can be modified in the Resource Editor or in Developer Studio with the <B>Resource Symbols</B> command. </P>
+
+<P>To ensure that modules do not use conflicting symbol values, reserve different ranges of ID values for each module in the 1 through 0x6FFFF range. Set the _APS_NEXT_RESOURCE_VALUE definition in the Resource.h file for each module to the low end of that module's range before creating any resources. The Resource Editor uses this symbol to determine the ID value of the next resource created. </P>
+
+<P>This technique is documented in MFC Technical Note 35 and in the DLLHUSK sample included with Visual C++. </P>
+
+<P><!--TOCEnd-->In .exe or .dll files that link to MFC dynamically, MFC resource-loading functions call <B>AfxFindResourceHandle</B> to obtain the handle of the module where a resource is located. <B>AfxFindResourceHandle</B> searches for resources by type and symbol value in: </P>
+
+<UL>
+<LI>The module returned by <B>AfxGetResourceHandle</B>. This is usually the application. </LI>
+<LI>The extension DLLs through the chain of <B>CDynLinkLibrary</B> objects. </LI>
+<LI>Any language-specific resource DLLs. </LI>
+<LI>Any attached MFC system DLLs (MFCxx.dll, for example). </LI></UL>
+
+<B>
+<P>Note</B> Some 16-bit MFC resource loading functions do not call <B>AfxFindResourceHandle</B>, but instead use the value returned from <B>AfxCurrentResourceHandle</B>. </P>
+
+<P>Each extension .dll creates, initializes, and then passes a <B>CDynLinkLibrary</B> object to <B>AfxInitExtensionModule</B> that places the .dll in the resource chain. <B>AfxTermExtensionModule</B> removes the .dll from the chain when the .dll is detached from the application. </P>
+
+<P>A benefit of this design is that MFC automatically locates a resource for an application or extension .dll, even if that resource is located in a distant extension .dll or the application itself. All resources in the process are chained, so ID values are passed between DLLs and the application and the proper resources are loaded. A disadvantage is that there are no duplicate ID values between any of the extension DLLs or the application that uses them. </P>
+
+<P>To set the default location where <B>AfxFindResourceHandle</B> first checks for a resource, use <B>AfxSetResourceHandle</B>. Because <B>AfxFindResourceHandle</B> first checks the handle set by <B>AfxSetResourceHandle</B>, it can be used to circumvent the chain and load a resource from one particular .dll or application. The resource handle is restored to its original value immediately after loading the resources. The current default resource handle is found with <B>AfxGetResourceHandle</B>. </P>
+
+<P>The DLLHUSK sample included with Visual C++ also illustrates this technique. In Testdll2.cpp, <B>CListOutputFrame::Create</B> sets the resource handle to the module handle stored in the AFX_EXTENSION_MODULE structure extension .dll. This structure is initialized with the module handle when it is passed to the <B>CDynLinkLibrary</B> constructor in <B>InitTestDLL2</B>. </P>
+
+<P><!--TOCEnd-->For information on: </P>
+
+<UL>
+<LI>Extension DLLs, see the MFC Technical Note 33 and the DLLHUSK sample. </LI>
+<LI>Resource management in projects, see Technical Note 35. </LI></UL>
+
+
+<P><A NAME="MFC_and_Libraries_14"></A><!--TOC=5--><B>Call _findclose After Using _findfirst or _findnext</B> </P>
+
+<P><!--TOCEnd-->You must call _<B>findclose</B> after you are finished using either the _<B>findfirst</B> or <B>_findnext</B> function. This will free up resources used by these functions in your application. </P>
+
+<P><A NAME="MFC_and_Libraries_15"></A><B>_wgetcwd and _getcwd</P>
+</B>
+<P>The documentation for <B>_getcwd</B> and <B>_wgetcwd</B> should describe the second parameter (<I>maxlen</I>) as follows:</P>
+<I>
+<P>maxlen</I> Maximum length of path in characters<FONT FACE="Symbol" SIZE=2>-</font> <B>char</B> for <B>_getcwd</B> and <B>wchar_t</B> for <B>_wgetcwd</B> </P>
+
+<P><A NAME="MFC_and_Libraries_16"></A><B>_wtmpnam</P>
+</B>
+<P>The documentation for <B>_wtmpnam</B> should include the following:</P>
+
+<P>If string is not NULL, it is assumed to point to an array of at least L_tmpnam characters--or 2*L_tmpnam bytes. The value of L_tmpnam is defined in STDIO.H.</P>
+
+<P><A NAME="MFC_and_Libraries_17"></A><B>Incorrect Use of TZ Environment Variable</P>
+</B>
+<P>The online documentation for the <B>_tzset</B> function incorrectly defines the time bias for the TZ environment variable parameter (<I>tzn</I>) as being the "offset from UTC." It should define it as being the "offset from local time to UTC." The example for German time zone should be:</P>
+<pre><font face="courier">
+set TZ=GST-1GDT
+</font></pre><B>
+<BR>
+<P><A NAME="MFC_and_Libraries_18"></A>Using the _popen Function with a Windows Program</P>
+</B>
+<P>The <B>_popen</B> function, from the C Runtime Library, returns an invalid file handle if used in a Windows program which causes the program to hang indefinitely. It works properly in a Console application.</P>
+
+<P>To create a Windows application that redirects input and output, read the section "Creating a Child Process that Redirects Input and Output" in the Win32 SDK.</P>
+
+<P><!--TOC=5--><A NAME="MFC_and_Libraries_19"></A><B>C Runtime _expand Function Returns NULL Upon Failure</B> </P>
+
+<P><!--TOCEnd-->The _<B>expand</B> function returns <B>NULL</B> when an error is detected during operation. This may happen when there is sufficient memory. The current documentation implies that failures occur only when there is insufficient memory to expand the memory block. This is incorrect. For example, when _<B>expand</B> is used to shrink a memory block, it might detect a corruption in the small block heap or an invalid block pointer, and returns <B>NULL</B>. </P>
+<B>
+<P><A NAME="MFC_and_Libraries_20"></A>Format Specification Not Supported in COleDateTime and COleDateTimeSpan Classes</P>
+</B>
+<P>The description of the member function Format in both the <B>COleDateTime</B> and the <B>COleDateTimeSpan</B> erroneously states that you can use the %D format specification to display the number of days. Neither <B>COleDateTime::Format</B> nor <B>COleDateTimeSpan::Format</B> support that format specification.</P>
+<B>
+<P><A NAME="MFC_and_Libraries_21"></A>IsBadHugeReadPtr, IsBadHugeWritePtr, IsBadStringPtr, IsBadWritePtr, and Access Violations</P>
+</B>
+<P>A handled exception will occur inside of these functions if the specified memory region is not accessible to the process when these functions attempt to access it. If the code is being executed under a debugger, and the debugger is configured to get first chance at handling exceptions, the debugger will trap the access violation and stop program execution. At this point you can simply continue execution in the debugger and these functions will return the appropriate value. This behavior can help you find potential access violations in your code.</P>
+
+<B>
+<P><A NAME="MFC_and_Libraries_22"></A>ATL IPropertyPageImpl::Help is implemented incorrectly.</B></P>
+
+<B></B>In most cases, if you are using property pages, you should override <B>IPropertyPage::Help </B>and return <B>E_NOTIMPL</B>.  This will cause the container to use information returned from <B>GetPageInfo</B>.  You can also provide your own alternative implementation of this function if necessary.</B>
+
+
+<P>&nbsp;</P>
+<P><A NAME="Wizards_and UI"></A><!--TOC=3--></P>
+<H3>Wizard and Other User-Interface Issues</H3>
+<B>
+<P><A NAME="Wizards_and UI_0"></A>Use the ATL Object Wizard to Create ATL Objects</P></B>
+<P>Last-minute testing revealed that the ATL ClassWizard can reset properties while editing interfaces and that the ATL ClassWizard allows users to create different interfaces with the same name.  This is a known problem and Microsoft is working on it.
+</P>
+<B>Workaround
+</B>
+<P>Once you have used the ATL Com AppWizard, use the ATL Object Wizard  to create new ATL objects.
+</P>
+To Access the ATL Object Wizard:
+<OL>
+<LI>Right click your project's classes in ClassView to display the shortcut menu.
+<LI>Click the <B>New ATL Object</B> command.
+<LI>In the left pane of the <B>ATL Object Wizard</B> dialog box, click <B>Objects</B>.  
+<LI>Click the <B>Simple Object</B> icon.
+<LI>Click <B>Next</B>.
+<LI>Use the resulting <B>ATL Object Wizard Properties</B> dialog box to define your ATL object.
+</OL>
+
+<B>
+<P><A NAME="Wizards_and UI_0a"></A>ATL Proxy Generator May Not Properly Destroy VARIANTARGs</P></B>
+
+<P>If you have used the multicast component of the ATL Proxy Generator to generate ConnectionPoint broadcast code, (code that calls all active connections on a connection point), then one or more of the generated functions employs zero or more <B>VARIANTARG</B>s that are local to each function. (<B>VARIANTARG</B> is typed as <B>VARIANT</B> using <B>typedef</B> in oaidl.h.) Correct use of <B>VARIANT</B> includes a  <B>VariantInit</B> call on the <B>VARIANT</B> before its use and <B>VariantClear</B> afterward. (<B>VariantInit</B> sets a <B>VARIANTARG</B> to a known empty state, <B>VariantClear</B> sets it back to a known state and frees all memory used by the <B>VARIANTARG</B>.) The multicast component calls <B>VariantInit</B> for each <B>VARIANTARG</B> but does not call <B>VariantClear</B>. In some cases, this may result in memory leaks.
+</P>
+<B>Workaround</B>
+<P>Manually add call(s) to <B>VariantClear</B> to the code that is generated by the multicast component. An alternative is to change all uses of <B>VARIANTARG</B> to <B>CComVariant</B> and remove the calls to <B>VariantInit</B> because <B>CComVariant</B> calls <B>VariantInit</B> in the constructor and <B>VariantClear</B> in the destructor.
+</P><B>
+<P><A NAME="Wizards_and UI_1"></A>Two New Template Variables Available to Custom AppWizards</P></B>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=638>
+<TR><TD WIDTH="18%" VALIGN="TOP"><font size=2>
+
+<P>root_oem</font></TD>
+<TD WIDTH="82%" VALIGN="TOP"><font size=2>
+
+<P>Same as 'root' except translated to the OEM character set. Affects only upper ASCII characters in the project name (such as an umlauted character).</font></TD>
+</TR>
+<TR><TD WIDTH="18%" VALIGN="TOP"><font size=2>
+
+<P>HM_FILE_OEM</font></TD>
+<TD WIDTH="82%" VALIGN="TOP"><font size=2>
+
+<P>Same as 'HM_FILE' except translated to the OEM character set. Affects only upper ASCII characters in the project name (such as an umlauted character).</font></TD>
+</TR>
+</TABLE>
+
+
+<P>&nbsp; </P>
+
+<P>The Visual C++ tools work with the ANSI character set. Batch files, such as makehelp.bat, work with the OEM character set--a legacy from the days of DOS 1.0 that still exists. Most printable characters in these two sets are the same. However, there are some differences in some of the upper ASCII values used for European characters such as those that use an umlaut. </P>
+
+<P><!--TOC=5--><A NAME="Wizards_and UI_2"></A><B>Problems with ClassWizard-Generated Wrapper Classes for Visual Basic 5 ActiveX Servers</B> </P>
+
+<P>With <!--TOCEnd-->Visual Basic 5.0 you can create ActiveX Automation servers with methods that can take Optional and Default parameters of any Visual Basic intrinsic type. If you use MFC and want to access an object of a Visual Basic ActiveX Automation server, you would, typically, use ClassWizard to read the type information of the Visual Basic object and generate a class that wraps the functionality of the Visual Basic Automation object. C++ does not have optional or default parameters and so the wrapper class that ClassWizard generates will not mark parameters as Optional or Default. </P>
+
+<P>For example, if you have a Visual Basic Server with the following function: </P>
+<PRE><font face="courier">
+Function function2(Optional parm1 As Integer = 5)
+
+MsgBox parm1
+
+End Function
+</font></PRE>
+
+<P>ClassWizard will generate the following C++ wrapper function: </P>
+<PRE><font face="courier">
+VARIANT _MyVBObj::function2(short* parm1)
+
+{
+
+ VARIANT result;
+
+ static BYTE parms[] = VTS_PI2;
+
+ InvokeHelper(0x60030001, DISPATCH_METHOD, VT_VARIANT,
+
+  (void*)&amp;result, parms, parm1);
+
+ return result;
+
+}
+</font></PRE>
+
+<P>If you call the ClassWizard generated function from your MFC program, you will have to pass the argument even though Visual Basic marked it as Optional. </P>
+<B>
+<P>Workaround</B> </P>
+
+<P><!--TOCEnd-->Override the function that ClassWizard generates with versions of the function that take only the parameters you wish to pass. For example, in the preceding case, if you didn't want to pass the optional parameter, override the ClassWizard generated function as follows: </P>
+<PRE><font face="courier">
+VARIANT _MyVBObj::function2()
+
+{
+
+ VARIANT result;
+
+ InvokeHelper(0x60030001, DISPATCH_METHOD, VT_VARIANT,
+
+  (void*)&amp;result, NULL);
+
+ return result;
+
+}
+</font></PRE>
+
+<P>In the preceding case, the default parameter for the Visual Basic server's function2 would be used. </P>
+<B>
+<P><A NAME="Wizards_and UI_3"></A>Newly Added Classes May Not be Displayed in the ClassView</P>
+</B>
+<P>Dependency scanning in Visual C++ 5.0 has changed from earlier versions of Visual C++. Only files that are in the project will be scanned by ClassView. The External Dependency folder is automatically populated by the IDE and is not considered part of your project. If you want to see classes from header files that are in the External Dependencies folder, insert that file into your project. One easy way to insert a file from the External Dependencies folder is by dragging and dropping it into the project.</P>
+
+<B>
+<P><A NAME="Wizards_and UI_5"></A>ATL Controls in Visual Basic 5.0 Containers</P>
+</B>
+<P>If you're using the <B>IQuickActivate</B> interface in Visual Basic 5.0, you must also support <B>IPropertyNotifySink</B>. </P>
+
+<P>To use a control generated by the ATL Object Wizard in a Visual Basic 5.0 container, you must either add support for <B>IPropertyNotifySink</B> or remove dependence on the <B>IQuickActivate</B> interface. To remove <B>IQuickActivate</B> support, comment out the lines containing <B>IQuickActivateImpl</B> in the control's class inheritance list and in the COM interface map.</P>
+
+<P>For example, if you generate a Full Control called MyCtl with the ATL Object Wizard, then go to MyCtl.h and comment out the line containing <B>IQuickActivateImpl</B> in the CMyCtl class inheritance list:</P>
+<pre><font face="courier">
+class ATL_NO_VTABLE CMyCtl :
+...
+// public IQuickActivateImpl&lt;CMyCtl&gt;
+
+</font></pre>
+<P>Also, comment out the line containing <B>IQuickActivateImpl</B> in the COM interface map in MyCtl.h:</P>
+<pre><font face="courier">
+BEGIN_COM_MAP(CMyCtl)
+...
+// COM_INTERFACE_ENTRY_IMPL(IQuickActivate)
+
+</font></pre><B>
+<P><A NAME="Wizards_and UI_6"></A>Development Environment is Unresponsive While Processing a VBScript Macro</P>
+</B>
+<P>The Visual C++ user interface does not respond to mouse clicks or keystrokes until a macro finishes. Processing a lengthy macro gives the appearance that the user interface has hung. This design prevents indiscriminate interference between macros.</P>
+<B>
+<P><A NAME="Wizards_and UI_7"></A>Add Microsoft Transaction Server Libraries to Your Proxy/Stub Makefile</P>
+</B>
+<P>If you are using a separate Proxy/Stub DLL created with the ATL COM Wizard, add the library mtxih.lib as the first library on the link line.</P>
+<B>
+<P><A NAME="Wizards_and UI_8"></A>ClassView's Add Method and Add Property Dialogs Sometimes Allow Illegal Return Types for Custom Interfaces</p></b>
+
+<p>The return type dropdown for <B>Add Method</B> and <B>Add Property </B>should be active only for dispinterfaces and for custom interfaces with the attribute 'local'.  The return type is fixed at <B>HRESULT</B> for all other interface definitions--such as dual.  Unfortunately, it is active for all non-dual interfaces. The midl compiler will fail with error 2269 when you build your project if you change the return type to something other than <B>HRESULT</B> or <B>SCODE</B> for a property or method in a custom interface that doesn't have the 'local' attribute.</p>
+
+<A NAME="transaction_server"></A><H3>Microsoft Transaction Server Issues</H3>
+
+<P><!--TOCEnd--><B>Feature Only in Enterprise Edition</B> The Microsoft Transaction Server is supported only in Visual C++ Enterprise Editions. </P>
+
+<P><A NAME="TofC_27"></A><!--TOC=5--><B>Read Microsoft Transaction Server (MTS) Readme</B> </P>
+
+<P><!--TOCEnd-->After installing Microsoft Transaction Server, please consult the Microsoft Transaction Server readme file, located in the docs subdirectory of the Microsoft Transaction Server installation. The file contains information required to install, configure and run program components. The readme also contains descriptions of several useful samples and includes a list of known problems. </P>
+
+<P><A NAME="TofC_28"></A><!--TOC=5--><B>MTS Doesn't Install on Windows 95</B> </P>
+
+<P><!--TOCEnd-->The Beta version of Microsoft Transaction Server does not run on Windows 95. If you attempt to install it, you will get a message box stating that 'the setup did not complete.' No files or registry keys are affected. </P>
+
+<P><A NAME="TofC_29"></A><!--TOC=5--><B>Disable Transaction Time-Out While Debugging</B> </P>
+
+<P>Microsoft Transaction Server uses a time-out mechanism to keep components from deadlocking the system. If the transaction time-out is enabled while you are debugging the component, the transaction context may be destroyed, causing a protection fault. To avoid this, you can disable this time-out from the Microsoft Transaction Server Explorer. Select the My Computer icon and select its properties. Under the <B>Options</B> tab on the <B>Properties</B> dialog box, you will see a transaction time out section. To disable the timeout, set the timeout to 0. </P>
+
+<P><A NAME="TofC_30"></A><!--TOC=5--><B>Run Transaction Explorer Before Running Components</B> </P>
+
+<P><!--TOCEnd-->Microsoft Transaction Server components are inproc COM servers. Most inproc COM servers require that you run a utility called REGSVR32.exe. The utility places important information about the server into the systems registry. The default build step for MFC and ATL COM servers is to run REGSVR32.exe before completing the build. </P>
+
+<P>Microsoft Transaction Server components are different as they need special registry keys in order to execute. This means that you should run the Microsoft Transaction Server Explorer and install or import the component before executing it. Running REGSVR32.exe after installing or importing the component will change some of the registry keys and will prevent your component from running properly. There are two ways to get around this: </P>
+<OL>
+
+<LI>If you created your component with MFC, ATL 1.0, or ATL 1.1 and contains the REGSVR32.exe custom build step, you should refresh the component within the Microsoft Transaction Server Explorer after every build. You can tell if REGSVR32.exe is being run as you will see the message 'Registering OLE Server...' in the IDE output window. The registration process is defined in a custom build rule. If you go into the build settings for the component and look at its custom build rules you will see the registration step. You can choose to remove the registration custom build rule for the component. </LI>
+<LI>If you created the component with the Visual C++ 5.0 ATL Object Wizard and selected the 'Microsoft Transaction Server object', you only have to install the component with the Microsoft Transaction Server Explorer before executing. The REGSVR32.exe custom build rule has been removed with this option. You should still refresh the component in the Microsoft Transaction Server Explorer whenever you change any COM interfaces you support. </LI></OL>
+
+
+<P><A NAME="TofC_31"></A><!--TOC=5--><B>No Proxy/Stubs with Dual Interfaces</B> </P>
+
+<P><!--TOCEnd-->The Microsoft Transaction Server Beta software is not capable of inheriting interfaces. The usual example of this is dual interfaces. Dual interfaces inherit from the IDispatch interface. If you create a Microsoft Transaction Server component that uses dual interfaces, you must use type libraries to contain the interface information. If you build a proxy/stub marshaling .dll for your dual interface component, you will get errors from Microsoft Transaction Server. See the Microsoft Transaction Server Readme for more information. </P>
+<B>
+<P><A NAME="TofC_32"></A>SQL Debugging with Visual C++ 5.0 and Microsoft Transaction Server</P>
+</B>
+<P>You can perform SQL debugging through Microsoft Transaction Server Components. In this case, the component usually calls a stored procedure via ODBC or any other data-access methodology. The component needs to be running locally on the debugging machine as an inproc server. If the component is running remotely on a different machine or as a local server, you will be unable to engage the SQL debugging components. You will also not be able to perform SQL debugging if the transaction started on a different machine as part of the DTC functionality from SQL Server/Microsoft Transaction Server.</P>
+
+<P>To do SQL debugging, follow these steps:</P>
+<OL>
+
+<LI>Load the client .EXE as the active project workspace in Visual C++ 5.0. This is the client application that you've created.</LI>
+<LI>Use the <B>Project/Build Settings</B> dialog to add your inproc server DLL as an additional DLL.</LI>
+<LI>Set a breakpoint in each stored procedure that you wish to debug.</LI>
+<LI>Start debugging.</LI></OL>
+
+
+<P>You should hit the breakpoints in your stored procedures and should be able to debug them normally. If you have problems, ensure that you can debug the stored procedure directly (i.e. select debug stored procedure instead of running it through the component). Also, make sure that Microsoft Transaction Server is functioning properly. See the Microsoft Transaction Server README for further installation steps.</P>
+
+<B>
+<P><A NAME="TofC_33"></A>ATL Object Wizard Generates Extra Release for Microsoft Transaction Server Code</P>
+</B>
+If you select the icon of the MS Transaction Server Component from the right pane of the ATL Object Wizard, and choose to support IObjectControl and pooling from the resulting ATL Object Wizard Properties dialog, the wizard will generate code that performs an extra interface release. This extra release is detected and ignored by Microsoft Transaction Server 1.0 and will not cause your object to fault. Microsoft Transaction Server will log the following message in your event log indicating that it has detected the extra Release:
+<pre><font face="courier">
+An object released more references to its object context than it had acquired. The extra release is ignored.
+</font></pre>
+You can change the generated code to avoid this problem all together. In the Deactivate method within the generated object, look for code similiar to the following:
+<pre><font face="courier">
+void CYourClass::Deactivate()
+{
+	m_spObjectContext->Release();
+}
+</font></pre>
+Replace it with the correct code below, which will release the IObjectContext interface.
+<pre><font face="courier">
+void CYourClass::Deactivate()
+{
+	m_spObjectContext.Release();
+}
+</font></pre>
+
+<P>&nbsp;</P>
+<H3><A NAME="V_Data_Tools"></A>Microsoft Visual Data Tools</H3>
+
+<P><!--TOCEnd--><B>Feature Only in Enterprise Edition</B> The Microsoft Visual Data Tools are supported only in Visual C++ Enterprise Editions. </P>
+
+<P>See the <A HREF="readmedt.htm">Visual DataTools readme</A>. </P>
+
+<P>&nbsp;</P>
+<P><A NAME="Sample_Program_Issues"></A><!--TOC=3--></P>
+<H3>Sample Program Issues</H3>
+
+<P><!--TOCEnd-->The samples on the first Visual C++ CD are accessible from any directory browser (Windows Explorer or File Manager, for example). Sample code remains available for viewing and download from sample abstracts in the documentation. </P>
+
+<P><A NAME="Sample_Program_Issues_1"></A><!--TOC=5--><B>New Visual C++ 5.0 Samples</B> </P>
+
+<P><!--TOCEnd-->Try out the samples located in the \DEVSTUDIO\VC\SAMPLES directory of the first Visual C++ CD. These include examples of using the new compiler support for COM and samples for ATL. They also include a new Custom AppWizard sample. </P>
+ 
+<P><B><A NAME="Sample_Program_Issues_2"></A>Updated Samples</B></P>
+<P>The most recent versions of the following samples are in the DevStudio\Vc\Samples directory on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.) Do not use the versions that you can find in the InfoViewer's Samples abstracts. Instead, copy the files from the Microsoft Visual C++ disc to your hard drive.</P> 
+
+<B>MFC Samples</B>
+<UL>
+<LI>OLDBARS
+<LI>SUPERPAD
+<LI>OLEVIEW
+<LI>WORDPAD
+<LI>EXTBIND
+<LI>MDIBIND
+<LI>BINDENRL
+<LI>REGSVR
+<LI>SMILEY
+<LI>DAOCTL
+<LI>ODBCINFO
+</UL>
+
+<B>ATL Samples</B>
+<UL>
+<LI>CIRC
+<LI>POLYGON
+</UL>
+
+<B>Enterprise Samples</B>
+<UL>
+<LI>SENDTIME
+<LI>SETTIME
+</UL>
+
+<B>Com Samples</B>
+<UL>
+<LI>ALLINONE
+<LI>INPROC
+<LI>LABRADOR
+</UL>
+
+<B>SDK Samples</B>
+<UL>
+<LI>AXSCRIPT
+<LI>URLPAD
+</UL>
+
+<P><B><A NAME="Sample_Program_Issues_1a"></A>ATL Samples COMMAP, CONNECT, and DRAWSERV Do Not Register Correctly When Path Contains Spaces</B></P>
+
+<P>These ATL samples do not register correctly when their path contains spaces.</P>
+<B>Workaround</B>
+<P>Edit their corresponding .RGS files and add single quotes around all occurrences of %MODULE%. For example, you would change a line containing the following:</P>
+<P>&nbsp;&nbsp;&nbsp;InprocServer32 = s %MODULE%</P>
+<P>to the following:</P>
+<P>&nbsp;&nbsp;&nbsp;InprocServer32 = s '%MODULE%'</P>
+<P><B>Note</B>&nbsp;&nbsp;&nbsp;DRAWSERV is a sample program within the DCOM ATL sample.
+</P><B><A NAME="Sample_Program_Issues_2a"></A>CUSTOMWZ Sample Missing Files</B></P>
+<P>The CUSTOMWZ sample in the DevStudio\Vc\Samples\appwiz\ directory is missing some essential files.</P>
+<P>To obtain the entire sample, with all of its files, install it from the "CUSTOMWZ: A Custom AppWizard" topic in the online documentation. To find this topic, choose the <B>Search</B> command from the <B>Help</B> menu, enter the comma-delimited string, "CUSTOMWZ: A Custom AppWizard", on the <B>Query</B> tab, and then click the <B>Query</B> button.</P>
+
+<B>
+<P><A NAME="Sample_Program_Issues_2b"></A>Get Sendtime and Settime Samples From the Compact Disc</B></P>
+<P>The files for the Sendtime and Settime samples downloaded from the Enterprise sample abstracts in the online documentation will not compile. </P>
+
+<P><B>Workaround</P></B>
+Manually copy the correct files for these samples from the DevStudio\VC\Samples\Ent\time directory. This directory is on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.)</P>
+
+<B>
+<P><A NAME="Sample_Program_Issues_2bc"></A>ATL CIRC Sample Fails in Some Containers</B></P>
+
+<P>For correct functionality in certain containers, objects passing properties must support the <B>propputref</B> semantics. The CIRC sample as installed from the online abstract supports <B>propput</B> instead of <B>propputref</B>.  Therefore, you should use the CIRC sample from the DevStudio\Vc\Samples\Atl\circ directory. To see the correct <B>propputref</B> syntax, look in the Circ.idl file. This directory is on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.)
+</P>
+
+<P><A NAME="Sample_Program_Issues_2c"></A><B>ATLCON Sample Fails Under MinCRT Configurations</B></P>
+<P>To successfully run the ATL sample, ATLCON, under a <B>MinCRT</B> configuration, you must remove the <B>WinMain</B> entry point as follows:<P>
+<OL>
+<LI>Click <B>Settings</B> on the <B>Projects</B> menu.
+<LI>In the <B>Settings For:</B> drop-down list, choose one of the <B>MinCRT</B> configurations. 
+<LI>On the <B>Link</B> tab, choose the <B>Output</B> category. 
+<LI>Remove the text in the <B>Entry-point symbol</B> edit box.
+</OL>
+<P>&nbsp;</P>
+
+<B><P><A NAME="Sample_Program_Issues_2d"></A>ATLBUTTON Sample Returns Incorrect Property Values</P></B>
+
+<P>The ATLBUTTON sample returns incorrect values for the properties ImageHover and ImagePush. To correct the sample change the file AtlButton.h so that the function get_ImageHover uses m_bstrFilename[1].Copy() and change get_ImagePush so that it uses m_bstrFilename[2].Copy(). </P>
+
+<P><A NAME="Sample_Program_Issues_4"></A><B>ATL POLYGON Sample Does Not Build in Release Mode</b></p>
+
+<p>If you copy the ATL POLYGON sample from the online documentation, it will not build in Release mode as it incorrectly defines the <B>_ATL_MIN_CRT</B> macro. The sample on the disc does not have this problem. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.)
+
+<p><B>Workaround</B><br>
+<ol><li>Select the <B>Settings</B> command from the <B>Project</B> menu
+<li>Choose the <B>C/C++ tab</B>. In the <B>General</B> category, remove <B>_ATL_MIN_CRT</B> from the <B>Preprocessor definitions </B>edit box.
+<li>Choose the <B>Link</B> tab. In the <B>Output Category</B>, remove <B>DllMain</B> from the <B>Entry-point symbol </B>edit box.
+</ol>
+
+<P><A NAME="Sample_Program_Issues_4a"></A><B>Link Error in Debug Build of COM Sample acdual/mfcctrl</B> </P>
+
+<P>This sample will fail under debug builds looking for comsuppd.lib. To fix the problem, go into the the <B>Project Settings</B> dialog box and remove <B>_COM_DEBUG</B> from the <B>Preprocessor definitions</B> box in the <B>C/C++ Preprocessor</B> section.</P>
+
+<P><A NAME="Sample_Program_Issues_5"></A><B>Typo in tan and tanh Sample</B> </P>
+
+<P>In the documentation of tan and tanh, there is a typo in the sample. The current sample shows: </P>
+<pre><font face="courier">
+printf( "tan( %f ) = %f\n", x, y );
+
+printf( "tanh( %f ) = %f\n", y, x );
+</font></pre>
+<P>It should be: </P>
+<pre><font face="courier">
+printf( "tan( %f ) = %f\n", pi/4, x );
+
+printf( "tanh( %f ) = %f\n", x, y );
+</font></pre>
+<P>The correct output is: </P>
+<pre><font face="courier">
+tan( 0.785398 ) =  1.000000
+
+tanh( 1.000000 ) = 0.761594
+</font></pre>
+
+<P>See both the \DEVSTUDIO\VC\SAMPLES and the \OLEDB\SAMPLES directories on the first Visual C++ CD. </P>
+
+<P><A NAME="Sample_Program_Issues_6"></A><B>BINDENRL Sample Fails to Copy STDREG32.MDB</b></p>
+<p>To build the BINDENRL sample, you'll need to manually copy the database file stdreg32.mdb into the same local directory that you copy the samples source files. You will find stdreg32.mdb in the DEVSTUDIO\VC\Samples\mcl\mfc\database\daoenrol directory. This directory is on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.)</p>
+
+<P><A NAME="Sample_Program_Issues_6a"></A><B>Access Violation in Visual Basic 5.0 When Running COMEXCEL Sample</b></p>
+<P>If you get an access violation while running the COMEXCEL sample in Visual Basic 5.0 under Windows NT V4.0, please install the Windows NT Service Pack 2.</P>
+
+<P><A NAME="Sample_Program_Issues_6b"></A><B>Running OLE SDK Samples</b></p>
+
+<P>Before you run an OLE SDK sample, you should first copy the following subdirectories from the first VC++ product CD
+</P>
+<pre><font face="courier">
+&nbsp;&nbsp;&nbsp;DevStudio\VC\Samples\SDK\ole\include
+&nbsp;&nbsp;&nbsp;DevStudio\VC\Samples\SDK\ole\lib
+</font></pre>
+
+<P>to the following subdirectories on the disk (in this case c:) that will hold the OLE samples
+</P>
+<pre><font face="courier">
+&nbsp;&nbsp;&nbsp;c:\samples\ole\include
+&nbsp;&nbsp;&nbsp;c:\samples\ole\lib
+</font></pre>
+
+<P>You can now install the sample files in any directory on the disk (in this case c:) and compilation will find the include and lib directories.  If you have an MSTOOLS environment variable defined, you should put the include and lib directories in the following location on your hard disk: <I>MSTOOLS path</I>\samples.</P> 
+
+<P><A NAME="Sample_Program_Issues_6c"></A><B>Running InOLE2 SDK Samples</b></p>
+
+<P>Before you run an InOLE2 SDK sample, you should first copy the following subdirectories from the first VC++ product CD
+</P>
+<pre><font face="courier">
+&nbsp;&nbsp;&nbsp;DevStudio\VC\Samples\SDK\ole\inole2\inc
+&nbsp;&nbsp;&nbsp;DevStudio\VC\Samples\SDK\ole\inole2\lib
+</font></pre>
+
+<P>to the following subdirectories on the disk (in this case c:) that will hold the OLE samples
+</P>
+<pre><font face="courier">
+&nbsp;&nbsp;&nbsp;c:\samples\ole\inole2\inc
+&nbsp;&nbsp;&nbsp;c:\samples\ole\inole2\lib
+</font></pre>
+
+<P>You can now install the sample files in any directory on the disk (in this case c:) and compilation will find the inc and lib directories.  If you have an MSTOOLS environment variable defined, you should put the inc and lib directories in the following location on your hard disk: <I>MSTOOLS path</I>\samples. 
+</P>
+
+<P>&nbsp;</P>
+<P><A NAME="TofC_38"></A><!--TOC=3--></P>
+<H3>OLE DB SDK Issues</H3>
+
+<P><A NAME="TofC_39"></A><!--TOC=5--><B>OLE DB SDK</B> </P>
+
+<P><!--TOCEnd-->OLE DB is a set of OLE interfaces that provides applications with uniform access to data stored in diverse information sources. These interfaces support the amount of DBMS functionality appropriate to the Data Connection, enabling it to share its data. To learn more about OLE DB, please refer to the SDKGUIDE.hlp, OLEDB1.hlp, and RELNOTES.DOC files located in the \OLEDB\DOC directory on the disc. </P>
+
+<P>To install the OLE DB SDK, run the SETUP.exe program located in the OLEDB folder in the root of the Visual C++ compact disc. </P>
+
+<P><A NAME="TofC_40"></A><!--TOC=5--><B>ADO, OLE DB, and Visual C++</B> </P>
+
+<P><!--TOCEnd-->ADO is an object model on top of the OLE DB interfaces. It reduces the number of interfaces required to implement an application. ADO also provides a type library which OLE DB does not. If you wish to use OLE DB with the new compiler COM support, you must write to ADO. </P>
+
+<P>Visual C++ 5.0 ships two versions of ADO. The beta version in the OLE DB SDK and the shipping version in redist\ado. Use the shipping version to build and test your application before releasing it. You must also distribute the shipping version of ADO with your application. </P>
+<B>
+<P><A NAME="TofC_41"></A>Remove UUID2.LIB from link line of OLE DB SDK TableCopy Sample<!--TOC=3--></P>
+</B>
+<P>The TableCopy sample in the OLE DB SDK 1.1 will not compile correctly with Visual C++ 5.0. You will receive a link error stating that UUID2.LIB is not found. This is because UUID.LIB, UUID2.LIB, and UUID3.LIB have been combined in Visual C++ 5.0 in the UUID.LIB file. To fix the build problem, go to <B>Project Settings</B> for the sample, select the <B>Link</B> tab, select <B>All configurations</B>, and remove the UUID2.LIB entry from the <B>Obect/Library Modules</B> line. You should then be able to successfully compile and link this sample.</P>
+<B>
+<P><A NAME="TofC_42"></A>TableCopy Faults with Oracle Data Connections</P>
+</B>
+<P>The TableCopy sample will not function correctly with an Oracle Data Connection. Select a different Data Connection type to use this sample.</P>
+<P>&nbsp;</P>
+<A NAME="SQL"></A><H3>SQL and SQL Debugging</H3>
+
+<P><!--TOCEnd--><B>Feature Only in Enterprise Edition</B> SQL and SQL debugging are supported only in Visual C++ Enterprise Editions. </P>
+<B>
+<P><A NAME="SQL_1"></A>Enabling SQL Debugging</P>
+</B>
+<P>To enable SQL Debugging, you need to install the Visual C++ Enterprise Edition Server Components on your SQL Server machine. Before you run the setup program for the VC Server Components, you must first install the latest Service Pack for Windows NT, and the latest Service Pack for Microsoft SQL Server. Once these service packs are installed, you will be able to successfully install the Visual C++ Server Components. The setup program can be run directly from the VCServer directory, or from the master setup program in the root directory of Disc 2 (Disc 4 for Visual Studio).</P>
+<B>
+<P><A NAME="SQL_2"></A>One or More Breakpoints are Disabled Upon Starting Direct Database Debugging</P>
+</B>
+<P>If your workspace includes both a C++ and a database project it is possible to encounter a message that warns of one or more break points being disabled when you begin debugging the database. This happens when you have C++ breakpoint set in your C++ project and you begin debugging the database project before the C++ project. In some cases, the debugger will not be able to find the C++ symbols. The workaround is to first begin debugging the C++ project, which allows the debugger to load the C++ symbols, before you debug the database project.</P>
+
+<P><A NAME="SQL_2a"></A><!--TOC=5--><B>SQL Server Service Pack 2 Bug May Cause a Failure in CRecordset::Edit Mode</B> </P>
+<P>The SQL Server Service Pack 2 (06.50.0240) that ships with the Visual C++ Enterprise Edition has a bug that may cause a failure in <B>CRecordset::Edit</B> mode during the call to <B>CRecordset::Update</B>. 
+</P>
+The ODBC driver that ships with this version of SQL Server now gives you the option to turn ON or OFF the following items:
+<UL>
+<LI><B>Use ANSI Quoted Identifiers</B>
+<LI><B>Use ANSI Nulls, Padding, and Warnings</B>
+</UL>
+<P>Previous versions of the ODBC driver turned these items ON by default. 
+</P>
+If you encounter the following error
+<pre><font face="courier">
+	Syntax error or access violation
+	State:37000,Native:7134,Origin:[Microsoft][ODBC SQL Server Driver]
+</font></pre>
+and you have <B>Use ANSI Nulls, Padding, and Warnings</B> turned ON, try the following workaround:
+<OL>
+<LI>Open the ODBC Data Source Administrator using the icon in the Control Panel. 
+<LI>Select your SQL Server Data Connection and click the <B>Configure</B> button. 
+<LI>Click the <B>Options</B> button. 
+<LI>Clear the <B>Use ANSI Nulls, Padding and Warnings</B> option.
+</OL><P>&nbsp;</P>
+<B><P><A NAME="SQL_2b"></A>SQL Debugging Will Be Disabled Following a Lost Server Connection</B> </P>
+
+<P>If the SQL Server against which you are debugging fails during an SQL Debugging Session, you can reestablish the connection to the database. Go to the <B>View</B> menu and use the <B>Refresh</B> command. </P>
+
+<B><P><A NAME="SQL_2c"></A>SQL Debugging  a Disconnected Data Connection May Produce Unexpected Results</B></P>
+
+<P>If you delete or disconnect a Data Connection during a SQL Debugging session you may find the IDE in an unstable state. It is recommended that you do not delete or disconnect a Data Connection while you are using SQL Debugging.  Stop Debugging before you delete or disconnect the Data Connection.</P>
+
+<P><A NAME="SQL_3"></A><!--TOC=5--><B>Remote SQL Debugging with Automation Manager Registered as Interactive User</B> </P>
+
+<P><!--TOCEnd-->If you install SQL Server and then install Visual C++ Enterprise Edition (including the Visual C++ Enterprise server-side components) on the same computer, the automation manager's identity is registered as "Interactive User." In this scenario, if you log off from this machine but keep SQL server running as a service, you will not be able to remote debug against this server. Registering the automation manager's identity as "Interactive User" necessitates that someone be logged onto the computer to remotely debug SQL. </P>
+
+<P>Visual C++ setup registers the Automation manager as Interactive User, when installed with a preexisting SQL Server, with the assumption that you'll want to do local SQL debugging. SQL Debugging may not work if the automation manager's identity is registered as "Launching User" (the default) and SQL server and automation manager are already running in the service environment. </P>
+
+<P>To change the identity that the automation manager recognizes: </P>
+<OL>
+
+<LI>From the computer on which you installed SQL Server and then installed Visual C++ Enterprise Edition, run DCOMCNFG.exe . </LI>
+<LI>From the <B>Applications</B> list, select Remote Automation CLSID_StubMarshaler </LI>
+<LI>Click on the <B>Properties</B> button. </LI>
+<LI>Choose the <B>Identity</B> tab. </LI>
+<LI>Select the appropriate user account. </LI></OL>
+
+<P><A NAME="SQL_4"></A><B>Visual C++ Starts Automation Manager but Doesn't Shut it Down</B> </P>
+
+<P>Starting SQL Debugging automatically starts the Automation Manager to manage remote OLE objects. Automation Manager displays the current number of connections and objects that are instantiated on the remote machine. When Visual C++ shut downs, it does not shut down Automation Manager because there isn't any method of querying Automation Manager to determine if another application might also be using it.
+</P>
+<P>You can manually shut down Automation Manager when it displays that there are no connections left.
+</P>
+
+<P>&nbsp;</P>
+
+<P><A NAME="Compiler"></A></P>
+<H3>Compiler, Linker, Debugger, and MIDL Compiler</H3>
+<B>
+<P><A NAME="Compiler_1"></A>Windbg Cannot Use Visual C++ 5.0 Debugging Information.</P></B>
+
+<P>Because of changes to the format of debugging information in Visual C++ 5.0, you will not be able to use the Windbg debugger (distributed in the NT 4.0 Win32 SDK) to do source level debugging of programs created with Visual C++ 5.0.
+</P>
+<B><P><A NAME="Compiler_1a"></A>_declspec(novtable)</P>
+</B>
+<P>This form of <B>_declspec</B> can be applied to any class declaration, but should only be applied to pure interface classes, i.e. classes that will never be instantiated on their own. The <B>_declspec</B> stops the compiler from generating code to initialize the vfptr in the constructor(s) and destructor of the class. In many cases, this removes the only references to the vtable that are associated with the class and, thus, the linker will remove it. Using this form of <B>_declspec</B> can result in a significant reduction in code size.</P>
+
+<B><P><A NAME="Compiler_1b"></A>_ATL_MIN_CRT and Link Error "unresolved external symbol _main"</P></B>
+
+<P>When you build a Release version of an ATL project, you can get the following link error:
+<pre><font face="courier">
+LIBCMT.LIB(crt0.obj) : error LNK2001: unresolved external symbol _main
+</font></pre>
+<P>This error occurs if you are using CRT functions that require CRT startup code. The Release configuration defines <B>_ATL_MIN_CRT</B>, which excludes CRT startup code from your EXE or DLL.</P>
+
+<P>To avoid this error, do one of the following:</P>
+<UL>
+<LI>Remove <B>_ATL_MIN_CRT</B> from the list of preprocessor defines to allow CRT startup code to be included. On the <B>Project</B> menu, click <B>Settings</B>. In the <B>Settings For:</B> drop down list, choose <B>Multiple Configurations</B>. In the <B>Select project configuration(s) to modify</B> dialog box that appears, click the check boxes for all Release versions, and then click <B>OK</B>.  On the <B>C/C++</B> tab, choose the <B>General</B> category. Remove <B>_ATL_MIN_CRT</B> from the <B>Preprocessor definitions</B> edit box.</LI>
+
+<LI>If possible, remove calls to CRT functions that require CRT startup code. Instead, use their Win32 equivalents. For example, use <B>lstrcmp</B> instead of <B>strcmp</B>. Known functions that require CRT startup code are some of the string and floating point functions.</LI>
+</UL>
+<P>&nbsp;</P>
+<B><P><A NAME="Compiler_1c"></A>DCOM95 Available for Distributed Applications</P>
+</B>
+<P>The Microsoft Distributed COM (DCOM) files for Windows 95 are useful for creating distributed applications.  Some Visual C++ 5.0 samples require DCOM. You can find DCOM95 in the \dcom95 directory on the disc that includes "Microsoft Visual C++" on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased Visual Studio.)
+Check out the Visual C++ 5.0 Compiler COM support and Active Template Library ( ATL) with DCOM95. </P>
+
+<B><P><A NAME="Compiler_2"></A>/WS:AGGRESSIVE (Aggressively Trim Process Memory)</P>
+</B>
+<P>Use this linker option to add the WS_AGGRESSIVE attribute to your application's image. The Windows NT 4.0 loader will recognize this attribute and aggressively trim the working set of the process when it is not active. Using this option is similar to adding the following call throughout your application. </P>
+<pre><font face="courier">
+SetProcessWorkingSetSize(hThisProcess, -1, -1)
+
+</font></pre>
+<P>/WS:AGGRESSIVE can be used for applications that must have a low impact on the system's memory pool. </P>
+
+<P>If the speed of your application is important, do not use /WS:AGGRESSIVE without testing the resulting performance implications. Ideal candidates are processes that tend to operate in the background, such as services and screen savers.</P>
+<B>
+<P><A NAME="Compiler_3"></A>/FD (Generate File Dependencies)</P>
+</B>
+<P>The development environment's build system uses the /FD option to ensure that the most reliable dependency information is used when it builds your project.</P>
+<B>
+<P><A NAME="Compiler_4"></A>_MSC_EXTENSIONS Compiler Macro</P>
+</B>
+<P>This macro is defined unless you compile with /Za for ANSI compatibility. Its value, when defined, is 1.</P>
+<B>
+<P><A NAME="Compiler_5"></A>Option Precedence and the CL Environment Variable</P>
+</B>
+<P>Compiler options are processed "left to right", and when a conflict is detected, the last (right-most) option wins. The CL environment variable is processed before the command line, so in any conflicts between CL and the command line, the command line takes precedence.</P>
+<B>
+<P><A NAME="Compiler_6"></A>/Zm (Specify Memory Allocation Limit) </P>
+</B>
+<P>The compiler uses a number of discrete heaps, each of which has a finite limit. The total of the size limits for all heaps is about 105 MB, but when any one heap is exhausted, the compiler cannot continue. Memory is allocated only as needed; the 105 MB limit is just to keep from using too much memory. Exceeding any one of the discrete-heap size limits occurs only in rare circumstances involving very large or very complex programs. Should your program exceed one of these limits, use /Zm to scale the total size of all the limits. For example, when /Zm200 is specified, the total of all heap size limits is 210MB.</P>
+
+<P><!--TOCEnd--><A NAME="Compiler_7"></A><!--TOC=5--><B>Compiler Now Documents Type Library Dependencies</B> </P>
+
+<P><!--TOCEnd-->The compiler provides the full path to any typelib dependency required by the typelib it is currently processing. The path is written, in the form of comments, into the typelib header (.TLH) that the compiler generates for each processed typlib. </P>
+
+<P>If a typelib includes references to types defined in other typelibs, then the .TLH file will include comments of the following sort: </P>
+<PRE><font face="courier">
+//
+
+// Cross-referenced type libraries:
+
+//
+
+//  #import "c:\path\typelib0.tlb"
+
+//
+</font></PRE>
+
+<P>The actual filename in the #import comment is the full path of the cross-referenced typelib, as stored in the registry. If you encounter errors that are due to missing type definitions, check the comments at the head of the .TLH to see which dependent typelibs may need to be imported first. Likely errors are syntax errors (e.g. C2143, C2146, C2321), C2501 (missing decl-specifiers), or C2433 ('inline' not permitted on data declaration) while compiling the .TLI file. </P>
+
+<P><!--TOCEnd-->You must determine which of the dependency comments are not otherwise provided for by system headers and then provide an <B>#import</B> directive at some point before the <B>#import</B> directive of the dependent typelib in order to resolve the errors. </P>
+
+<P><A NAME="Compiler_8"></A><!--TOC=5--><B>Keywords _emul and _emulu Not Documented</B> </P>
+
+<P><!--TOCEnd-->Syntax: </P>
+<B>
+<P>_int64</B> <B>_emul</B>(l<B>ong</B>, <B>long</B>); </P>
+<B>
+<P>unsigned</B> <B>_int64</B> <B>_emulu</B>(<B>unsigned</B> <B>long</B>, <B>unsigned long</B>); </P>
+
+<P>Use these keywords to efficiently multiply two 32-bit integer numbers, which return a 64-bit result. </P>
+
+<P><A NAME="Compiler_9"></A><!--TOC=5--><B>New Linker Error: Linker Tools Error LNK1189</B> </P>
+
+<P><!--TOCEnd-->LIBTOOMANYMEMBERS:: library limit of number objects exceeded </P>
+
+<P>The limit of 65535 objects or members in a library has been exceeded. </P>
+
+<P><A NAME="Compiler_10"></A><!--TOC=5--><B>Benefit of Using the Linker's /OPT:ICF Option</B> </P>
+
+<P><!--TOCEnd-->The /OPT:ICF[,iterations] option removes identical COMDAT records in order to reduce the size of the executable produced by the linker. The iterations value specifies the number of times to repeat the search for identical COMDAT records.  If /OPT:REF is specified, /OPT:ICF
+is on by default unless you specify /OPT:NOICF as well. </P>
+<B>
+<P><A NAME="Compiler_11"></A>Debugging Windows API functions with NT Symbols Loaded</P>
+</B>
+<P>If you have the NT symbols loaded and you want to debug Windows API functions, you need to enter the decorated name of the function while setting a breakpoint on the function. For example, if you want to set breakpoint on the MessageBeep function, use the decorated name _MessageBeep@4. The decorated name can be obtained in the map file created through linker options.</P>
+<B>
+<P><A NAME="Compiler_12"></A>If Screen Flashes During Build or the Wrong Code Page is used When Debugging a Console Application </P>
+</B>
+<P>If you are using Windows 95, delete any of the following files from your computer:</P>
+
+<UL>
+<LI>_DEFAULT.PIF </LI>
+<LI>DEFAULT.PIF </LI>
+<LI>CONAGENT.PIF</LI></UL>
+
+<P>These files were used by Windows 3.x, and are not needed by Windows 95. If they are used, while you are debugging a console application, the country settings associated with the PIF files will be used, and could result in the wrong code page being loaded. A result of their use on Windows 95 may be screen flashing during a Build, if you have specified console windows to be full screen.</P>
+<B>
+
+<P><A NAME="Compiler_14"></A>Incorrect Documentation for the Clean Menu Command</P>
+</B>
+<P>The Clean command is incorrectly documented in the "Remove Intermediate Files" topic as follows:</P>
+
+<P>"You can remove all files from the intermediate directories in any project configuration in your project workspace."</P>
+
+<P>In actuality, the Clean command will not remove precompiled header (.PCH) files. This is by design, as the initial generation of .PCH files is time consuming. If the project is a server project that has been registered on the system, the registry entries will not be cleaned up. The final result of the of using the Clean command is to delete all executable (.EXE), dynamic link library (.DLL), and Control (.OCX) files.</P>
+
+<P><!--TOC=5--><B><A NAME="Compiler_15"></A>MIDL2020: error generating type library: save all changes failed</B> </P>
+
+<P><!--TOCEnd-->This error can result if the path to the .IDL file is longer than 126 characters, which is because oleaut32.dll does not currently support path names that are greater than 126 characters. The workaround is to reduce the path to the .IDL file so that it is less than 126 characters. </P>
+
+<P><A NAME="Compiler_16"></A><!--TOC=5--><B>Error RC2104 : undefined keyword or key name: MFT_STRING</B> </P>
+
+<P><!--TOCEnd-->If you encounter this error, open MCL\MFC\Include\AfxRes.h and add the following include directive: </P>
+<PRE><font face="courier">
+#include &lt;winresrc.h&gt;
+</font></PRE>
+
+<P><A NAME="Compiler_17"></A><B>
+Error Command Line Warning MIDL1009 : unknown argument ignored</B></P>
+
+<p>MIDL.exe version 3.01.75 generates this error if its arguments are passed  in a response file and one of the arguments is an MBCS-character file name that contains a space.</P>
+
+<B><p>Workarounds</B><br>
+Use a batch file to invoke MIDL with its arguments.<br>
+Delete the space from the MBCS file name.
+
+
+<B>
+<P><A NAME="Compiler_18"></A>Additional Information on the C2065 Compiler Error</P>
+</B>
+<P>The following information belongs in the tips section of the C2065 compiler error:</P>
+
+<P>Make sure you're using proper namespace scope. For example, in order to properly resolve ANSI C++ Standard Library functions and operators, you must state that you're using the <B>std</B> namespace with the <B>using</B> directive.</P>
+
+<P>For example, unless the <B>using</B> directive is uncommented, the following sample will fail to compile because the <B>cout</B> stream is defined in the <B>std</B> namespace:</P>
+<pre><font face="courier">
+#include &lt;iostream&gt;
+
+// using namespace std;&#9;
+
+void main()
+
+{
+
+cout &lt;&lt; "Hello" &lt;&lt; endl;
+
+}
+</font></pre><B>
+<P><A NAME="Compiler_19"></A>Documentation for Error C2712 Incomplete</P>
+</B>
+<P>The documentation for this error should also contain the following information:</P>
+
+<P>The error can be avoided when using the /GX option by not having local variables or parameters with types that have destructors in a function that uses structured exception handling (SEH). Furthermore, SEH cannot be used in constructors or destructors if using /GX. Code that requires SEH can also be moved to another function in order to avoid the error. </P>
+<B>
+<P><A NAME="Compiler_20"></A>Compiler Warning C2498</P>
+</B><pre><font face="courier">
+C2498 : "%$S' 'novtable' can only be applied to class declarations"
+</font></pre>
+<P>For example, using <B>__declspec(novtable)</B> with a function, as follows, is illegal:</P>
+
+<P>void __declspec(novtable) f() {</P>
+
+<P>}</P>
+<B>
+<P><A NAME="Compiler_21"></A>Compiler Warning (level 4) C4238</P>
+</B><pre><font face="courier">
+nonstandard extension used : class rvalue used as lvalue
+</font></pre>
+<P>This error occurs when you are using Microsoft language extensions (/Ze) and use a class type as is an rvalue in a context that implicitly or explicitly takes its address. For example:</P>
+<pre><font face="courier">
+struct C
+
+{
+
+C();
+
+};
+
+C * pC = &amp;C();&#9;// yields C4238
+
+</font></pre>
+<P>This usage is not permitted by the C++ Working Paper, and in some cases (such as the example above) can be quite dangerous. This usage is being permitted under /Ze for compatibility with previous versions of the compiler, which did not flag this error. This usage is not permitted under /Za.</P>
+<B>
+<P><A NAME="Compiler_22"></A>Compiler Warning (level 3) C4800</P>
+</B><pre><font face="courier">
+'type' : forcing value to bool 'true' or 'false' (performance warning)
+</font></pre>
+<P>This warning is generated when some non-<B>bool</B> value is assigned or coerced into type <B>bool</B>. Typically, this message is caused by  assigning <B>int</B> varables to <B>bool</B> variables where the <B>int</B> variable contains only values <B>true</B> and <B>false</B>, and could be redeclared as type <B>bool</B>. If you can't rewrite the expression to use type <B>bool</B>, then you can add "!=0" to the expression, which gives the expression type <B>bool</B>. Casting the exrpession to type <B>bool</B> will not disable the warning, which is by design.</P>
+
+<P>&nbsp;<B><A NAME="Compiler_23"></A>Compiler Warning (level 1) C4804</P>
+</B><pre><font face="courier">
+'%$L' : unsafe use of type 'bool' in operation
+</font></pre>
+<P>This warning  is for unary operations and is generated when you used a <B>bool</B> variable or value in an unexpected way. For example, if you use operators such as the negative unary operator (-) or the complement operator (~).
+
+<B>
+<P><A NAME="Compiler_24"></A>Compiler Warning (level 1) C4805</P>
+</B><pre><font face="courier">
+'%$L' : unsafe mix of type 'type' and type 'type' in operation
+</font></pre>
+<P>This message is similar to C4804, and it is limited to binary operations. It is generated for operations such as b &amp;= i, b+=i, b/=b, b%=i, etc., where b and i are <B>bool</B> and <B>int</B> respectively .</P>
+<B>
+<P><A NAME="Compiler_25"></A>Compiler Warning (level 1) C4806</P>
+</B><pre><font face="courier">
+'%$L' : unsafe operation: no value of type 'type' promoted to type 'type' can equal the given constant
+</font></pre>
+<P>This message warns against serious errors such as b == 3, where b has type <B>bool</B>. The promotion rules cause <B>bool</B> to be promoted to <B>int</B>. This is legal according to the ANSI C++ Working Paper, but it can never be true.</P>
+<B>
+<P><A NAME="Compiler_26"></A>Compiler Warning (level 1) C4807</P>
+</B><pre><font face="courier">
+'%$L' : unsafe mix of type 'type' and signed bitfield of type 'type'
+</font></pre>
+<P>This warning is generated when comparing a one-bit signed bit field to a <B>bool</B> variable. Since a one-bit signed bit field can only contain the values -1 or 0, it is dangerous to compare it to <B>bool</B>. No warnings are generated about mixing <B>bool</B> and one-bit unsigned bitfields since they are identical to <B>bool</B> and can only hold 0 or 1.</P>
+<B>
+<P><A NAME="Compiler_27"></A>Compiler Warnings (level 1) C4808</P>
+</B><pre><font face="courier">
+case '%d' is not a valid value for switch condition of type 'bool'
+</font></pre>
+<P>This warning occurs if a <B>switch</B> condition is of type <B>bool</B> and one of the <B>case</B> values is outside the range of <B>bool</B> (that is, <B>true</B> and <B>false</B>). Only <B>true</B>, <B>false</B>, 1, 0, and <B>default</B> are valid <B>case</B> values if the <B>switch</B> condition is of type <B>bool</B></P>.  
+
+<P>&nbsp;<B><A NAME="Compiler_28"></A>Compiler Warning (level 1) C4809</P>
+</B><pre><font face="courier">
+switch statement has redundant 'default' label; all possible 'case' labels are given
+</font></pre>
+<P>This message is generated in places where you have both 'true' and 'false' cases in addition to a default label.</P>
+<P>&nbsp;</P>
+<A NAME="VSS"></A><H3>Visual SourceSafe Issues</H3>
+<B>
+<P><A NAME="VSS_1"></A>Converting a Project Directly From Source Control</P>
+</B>
+<P>Visual C++ no longer allows you to open an old project from source control and convert it to the new project format from within Visual C++. Use the SourceSafe Explorer (or equivalent source control interface) to get the files to a local disc, then open the project in Visual C++ to do the conversion, and then check the files back in to source control. After this you may open the project out of source control as usual from Visual C++.</P>
+
+<B>
+<P><A NAME="VSS_2"></A>Using Visual SourceSafe With Keyword Expansion Disables the Ability to Check In or Add Multiple Files</P>
+</B>
+<P>The keyword expansion feature of Visual SourceSafe disables multiple-file actions for the Check In and Add commands. Using either of these commands with keyword expansion enabled causes only one file to be operated on. The other files are ignored.</P>
+<P>&nbsp;</P>
+<A NAME="EE"></A><H3>Enterprise Edition Issues</H3>
+<B><P><A NAME="EE_1a"></A>Change in Terminology for Data View and SQL Debugging</B></P>
+
+<P>In the context of Data View and SQL Debugging in Visual C++ 4.2 Enterprise Edition, the term "Data Source" was used to describe the set of data that a database application accesses. In Visual C++ 5.0 Enterprise Edition, this term was changed to "Data Connection" to be consistent with terminology used across Visual Studio Products.</P>
+
+<B><P><A NAME="EE_1b"></A>Database Projects</B> </P>
+<P>In Visual C++ 4.2 Enterprise Edition, you could add a Data Connection to any type of Visual C++ project by selecting <B>Data Connection</B> from the <B>Insert</B> menu.</P>
+
+<P>In Visual C++ 5.0 Enterprise Edition, a new project type has been created to allow more effective management of Data Connections. The new project type is called a Database Project. Data Connections can only be added to Database Projects by selecting <B>Add to Project</B>, then <B>Data Connection</B> from the <B>Project</B> menu.</P>
+
+<P>For more information about working with Database projects, see the following sections of the online documentation:
+
+<UL>
+<LI>Working with Database Projects in the Visual Database Tools node
+<LI>Microsoft Visual Database Tools Overview in the Visual Database Tools node
+<LI>Data View in the Developer Studio Environment User's Guide
+</P></UL>
+<BR>
+<B><P><A NAME="EE_1c">Default or Identity Values Are Not Displayed When You Enter New Records into a Table</B> </P>
+<P>To display these values, requery the table by choosing <B>Run</B> from either the <B>Query</B> toolbar or from the <B>Tools</B> menu.</P>
+
+<B><P><A NAME="EE_1d">Converting VC 4.2 Projects When the Data Connection is Offline</B> </P>
+<P>Opening a Visual C++ 4.2 project that contains a data connection in the Visual C++ 5 development environment will attempt to create a workspace that contains the converted project and a database project that contains the data connection. If the database that the data connection refers to is offline, error messages will be displayed and the database project will not be created.
+</P>
+<B>Workaround</B>
+<P>Manually add a database project that refers to the appropriate data connection.
+</P><P><!--DocFooterStart--><!--DocFooterEnd--></P></BODY>
+</FONT>
+</BODY>
+</HTML>

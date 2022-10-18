@@ -1,0 +1,232 @@
+<!--#include file="../../../../OVATION.INC"-->
+
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#00698C" VLINK="#3A4D52" ALINK="#FFA600">
+<P><TABLE WIDTH="570" CELLPADDING="10" CELLSPACING="0" BORDER="0">
+<TR>
+<TD VALIGN="TOP"><P><IMG SRC="images/ms_6000.GIF" WIDTH="387" HEIGHT="128" ALIGN="BOTTOM"
+NATURALSIZEFLAG="3" BORDER="0"><BR>
+</P>
+
+<P><B><I><BIG>Windows NT Systems</BIG></I></B><BR>
+<TABLE WIDTH="565" HEIGHT="283" BORDER="2" CELLSPACING="2" CELLPADDING=
+"2">
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2" VALIGN="BOTTOM"><P ALIGN=LEFT>Model</TH>
+<TD ALIGN="CENTER" BGCOLOR="#790f00"><B><FONT COLOR="#ffffff">4300C/NT</FONT></B></TD>
+<TD ALIGN="CENTER" BGCOLOR="#790f00"><B><FONT COLOR="#ffffff">4300C/NT</FONT></B></TD>
+<TD BGCOLOR="#790f00"><P><CENTER><B><FONT COLOR="#ffffff">4300C/NT</FONT></B>&nbsp;</CENTER></TD></TR>
+
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Part&nbsp;# 503xxx-xxx</FONT></TH>
+<TD ALIGN="CENTER"><SMALL>368-201</SMALL></TD>
+<TD ALIGN="CENTER"><SMALL>370-201</SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL>502-201</SMALL></CENTER></TD></TR>
+
+<% if session("source") = "ast" then %>
+
+<% PriceLevelCode = "1" %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Level 1</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-201")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-201")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-201")%></SMALL></CENTER></TD></TR>
+
+<% PriceLevelCode = "C" %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Level C</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-201")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-201")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-201")%></SMALL></CENTER></TD></TR>
+
+<% PriceLevelCode = "G" %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Est. Street Price</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-201")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-201")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-201")%></SMALL></CENTER></TD></TR>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Employee Purchase Price</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=EmployeePurchasePrice("503368-201")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=EmployeePurchasePrice("503370-201")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=EmployeePurchasePrice("503502-201")%></SMALL></CENTER></TD></TR>
+
+<% elseif session("source") = "ovation" then %>
+
+<% call GetPriceLevel %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000"><%=PriceLevelName%></FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-201")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-201")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-201")%></SMALL></CENTER></TD></TR>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Government/Educational Rebate</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartRebate("503368-201")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartRebate("503370-201")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartRebate("503502-201")%></SMALL></CENTER></TD></TR>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Demo Unit Purchase Price</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><A HREF="../../../sales_tools/demo_units/form.asp?pn=503368-201"><IMG SRC="images/tag.gif" BORDER=0></A><%=RealPartPrice("503368-201", "C", 0.85)%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><A HREF="../../../sales_tools/demo_units/form.asp?pn=503370-201"><IMG SRC="images/tag.gif" BORDER=0></A><%=RealPartPrice("503370-201", "C", 0.85)%></SMALL></TD>
+<TD ALIGN="center"><SMALL><A HREF="../../../sales_tools/demo_units/form.asp?pn=503502-201"><IMG SRC="images/tag.gif" BORDER=0></A><%=RealPartPrice("503502-201", "C", 0.85)%></SMALL></CENTER></TD></TR>
+
+<% end if %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Form Factor</FONT></TH>
+<TD><P><CENTER><SMALL>Desktop Case</SMALL></CENTER></TD>
+<TD COLSPAN="2"><P><CENTER>&nbsp;<SMALL>Mini-Tower Case</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="44" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Intel<SMALL>&REG;</SMALL> Pentium II<SMALL>&REG;</SMALL>
+Processor</FONT></TH>
+<TD COLSPAN="2"><P><CENTER>&nbsp;<SMALL>266Mhz</SMALL></CENTER></TD>
+<TD><P><CENTER>&nbsp;&nbsp;<SMALL>300Mhz</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Cache</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>512KB</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">RAM</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>32 MB</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Drive Capacity</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>4.3GB</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="23" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Graphics Memory</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>2 MB/6MB max</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="23" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">CD-ROM</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>24x max</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Operating System</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>Windows NT</SMALL></CENTER></TD></TR>
+</TABLE>
+</P>
+
+<P>&nbsp;</P>
+
+<P><B><I><BIG>Windows 95 Systems</BIG></I></B> <TABLE WIDTH="565" HEIGHT=
+"327" BORDER="2" CELLSPACING="2" CELLPADDING="2">
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT>Model</TH>
+<TD ALIGN="CENTER" BGCOLOR="#790f00"><B><FONT COLOR="#ffffff">4300C/95</FONT></B></TD>
+<TD ALIGN="CENTER" BGCOLOR="#790f00">&nbsp;<B><FONT COLOR="#ffffff">4300C/95</FONT></B></TD>
+<TD BGCOLOR="#790f00">&nbsp;<B><FONT COLOR="#ffffff">4300C/95</FONT></B></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Part&nbsp;# 503xxx-xxx</FONT></TH>
+<TD ALIGN="CENTER"><SMALL>368-101</SMALL></TD>
+<TD ALIGN="CENTER">&nbsp;<SMALL>370-101</SMALL></TD>
+<TD>&nbsp;<SMALL>502-101</SMALL></TD></TR>
+
+<% if session("source") = "ast" then %>
+
+<% PriceLevelCode = "1" %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Level 1</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-101")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-101")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-101")%></SMALL></CENTER></TD></TR>
+
+<% PriceLevelCode = "C" %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Level C</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-101")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-101")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-101")%></SMALL></CENTER></TD></TR>
+
+<% PriceLevelCode = "G" %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Est. Street Price</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-101")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-101")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-101")%></SMALL></CENTER></TD></TR>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Employee Purchase Price</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=EmployeePurchasePrice("503368-101")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=EmployeePurchasePrice("503370-101")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=EmployeePurchasePrice("503502-101")%></SMALL></CENTER></TD></TR>
+
+<% elseif session("source") = "ovation" then %>
+
+<% call GetPriceLevel %>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000"><%=PriceLevelName%></FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503368-101")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartPrice("503370-101")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartPrice("503502-101")%></SMALL></CENTER></TD></TR>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Government/Educational Rebate</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><%=PartRebate("503368-101")%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><%=PartRebate("503370-101")%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><%=PartRebate("503502-101")%></SMALL></CENTER></TD></TR>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="24" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Demo Unit Purchase Price</FONT></TH>
+<TD ALIGN="CENTER"><SMALL><A HREF="../../../sales_tools/demo_units/form.asp?pn=503368-101"><IMG SRC="images/tag.gif" BORDER=0></A><%=RealPartPrice("503368-101", "C", 0.85)%></SMALL></TD>
+<TD ALIGN="CENTER"><SMALL><A HREF="../../../sales_tools/demo_units/form.asp?pn=503370-101"><IMG SRC="images/tag.gif" BORDER=0></A><%=RealPartPrice("503370-101", "C", 0.85)%></SMALL></TD>
+<TD><P><CENTER>&nbsp;<SMALL><A HREF="../../../sales_tools/demo_units/form.asp?pn=503502-101"><IMG SRC="images/tag.gif" BORDER=0></A><%=RealPartPrice("503502-101", "C", 0.85)%></SMALL></CENTER></TD></TR>
+
+<% end if %>
+
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Form Factor</FONT></TH>
+<TD ALIGN="CENTER"><SMALL>Desktop Case</SMALL></TD>
+<TD COLSPAN="2"><P><CENTER>&nbsp;<SMALL>Mini-Tower Case</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="48" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Intel<SMALL>&REG;</SMALL> Pentium II<SMALL>&REG;</SMALL>
+Processor</FONT></TH>
+<TD COLSPAN="2"><P><CENTER>&nbsp;<SMALL>266Mhz</SMALL></CENTER></TD>
+<TD><P><CENTER>&nbsp;<SMALL>300Mhz</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Cache</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>512KB</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">RAM</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>32 MB</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Drive Capacity</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>4.3GB</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Graphics Memory</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>2 MB/6MB max</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">CD-ROM</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>24x max</SMALL></CENTER></TD></TR>
+<TR ALIGN="CENTER">
+<TH ALIGN="LEFT" HEIGHT="28" BGCOLOR="#fff4f2"><P ALIGN=LEFT><FONT COLOR="#000000">Operating System</FONT></TH>
+<TD COLSPAN="3"><P><CENTER>&nbsp;<SMALL>Windows '95</SMALL></CENTER></TD></TR>
+</TABLE>
+</P>
+
+<P>&nbsp;</TD></TR>
+</TABLE>
+</P>
+
+<PRE><CENTER>
+
+
+
+
+
+
+
+
+
+</CENTER></PRE>
+</BODY>
+</HTML>

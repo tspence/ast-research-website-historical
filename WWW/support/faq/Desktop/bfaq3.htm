@@ -1,0 +1,213 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="570">
+  <tr>
+    <td><h3><i>Video</i> </h3>
+    <form method="POST" action="../../../scripts/faqdrop.asp">
+      <p>I want to search through desktop FAQs <br>
+      about <select name="faqdrop" size="1">
+        <option>System Setup (CMOS and BIOS)</option>
+        <option>Upgrade and Configuration</option>
+        <option selected>Video</option>
+        <option>Troubleshooting</option>
+        <option>Networking</option>
+        <option>All</option>
+      </select>issues.<input type="submit" value="Go!" name="Portables"></p>
+    </form>
+    <table border="0" width="100%">
+      <tr>
+        <td width="50%"><ul>
+          <li><h5 align="left"><a href="#9"><b>How can I get more than 16 colors on my Premium II
+            computer?</b></a></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#10">When I turn my system on there is no video and I hear
+            two long beeps followed by three short beeps. What does this mean?</a></b></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#21">Where can I download Windows NT(TM) drivers for the
+            SiS 6205 video chipset?</a></b></h5>
+          </li>
+        </ul>
+        </td>
+        <td width="50%"><ul>
+          <li><h5 align="left"><b><a href="#22">How do I install/update the ATI mach64 video drivers
+            in a DOS/Windows® 3.x environment?</a></b></h5>
+          </li>
+          <li><h5 align="left"><b><a href="#23">How do I install the ATI mach64 video drivers in
+            Windows® 95?</a></b></h5>
+          </li>
+          <li><h5 align="left"><a href="#27"><b>What are the command line parameters for the CLMODE
+            Utility?</b></a></h5>
+          </li>
+        </ul>
+        </td>
+      </tr>
+    </table>
+    <b><hr>
+    <p><a name="9">How can I get more than 16 colors on my Premium II computer?</a></p>
+    </b><p>The system board in the Premium II shipped with 256KB of video RAM. This amount of
+    video RAM is not sufficient to display Super VGA images; it will not support more than
+    16 colors. It is not possible to upgrade the amount of video RAM on the system board.</p>
+    <p>However, it is possible to install a third-party, ISA-based display adapter to attain
+    the higher resolutions and greater number of colors. When you install the new card, you
+    should disable the integrated video chipset. To disable the video chipset, move SW1-1 in
+    the bank of eight switches to the OFF position.</p>
+    <p>If you have problems after you install the new card, the problem may be related to a
+    conflict with the system's BIOS. Access System Setup by pressing <b>&lt;Ctrl+Alt+Esc&gt;</b>
+    during a cold boot. In System Setup, press &lt;PageDown&gt; until you reach Setup Screen
+    Two; then look for the option that reads &quot;Shadow BIOS.&quot; If it is set to
+    &quot;Sys and Video,&quot; change it to read either &quot;Sys&quot; or &quot;None.&quot;
+    You may need to try both settings.</p>
+    <b><hr>
+    <p><a name="10">When I turn my system on there is no video and I hear two long beeps
+    followed by three short beeps. What does this mean?</a></p>
+    </b><p>The two long beeps followed by three short beeps often indicates that the CMOS is
+    corrupted. Often this issue occurs with systems that have a flash BIOS. To resolve the
+    issue, reflash the system&#146;s BIOS. If you require assistance with this procedure, or
+    are uncertain which file to use, check the <a href="biostbls.htm">flash BIOS tables</a> or
+    contact a <a href="suplines.htm">technical support representative</a> for assistance.</p>
+    <b><hr>
+    <p><a name="21">Where can I download Windows NT(TM) drivers for the SiS 6205 video
+    chipset?</a></p>
+    </b><p>You can download Windows NT&#153; drivers from the following Web site:</p>
+    <p><a href="http://www.sis.com.tw/html/driver.html#6205" target="_new">http://www.sis.com.tw/html/driver.html#6205</a></p>
+    <p>Listed below is the file that you can download:</p>
+    <p>205117-1.EXE Windows NT drivers</p>
+    <b><hr>
+    <p><a name="22">How do I install/update the ATI mach64 video drivers in a DOS/Windows®
+    3.x environment?</a></p>
+    </b><p>The latest DOS and Windows® 3.x video drivers for the ATI mach64 video chipset are
+    available in the Web site's Files Index. Listed below are the files that you can download:</p>
+    <p><a href="ftp://ftp.ast.com/D-VIDEO/11374317.EXE">11374317.EXE ATI mach64 v2.22 DOS/Win
+    3.1x/OS/2 1/2 </a><br>
+    <a href="ftp://ftp.ast.com/D-VIDEO/11374318.EXE">11374318.EXE ATI mach64 v2.22 DOS/Win
+    3.1x/OS/2 2/2</a></p>
+    <p>Once you download these files, follow this procedure to create the driver diskettes and
+    install the video drivers: <ol>
+      <li>Download the drivers to the hard drive. <i>Note: This procedure refers to the root
+        directory of the hard drive as C:\&gt; . If applicable, substitute a different drive
+        letter.</i> </li>
+      <li>Create two separate directories by entering the following commands at the DOS prompt:<br>
+        MD VIDEO1<br>
+        MD VIDEO2</li>
+      <li>Copy each file into its own directory. Start with the first directory; copy the
+        11374317.EXE file to VIDEO1. Continue with the 11374318.EXE file; copying this file into
+        VIDEO2.</li>
+      <li>Enter the following at the C:\&gt; prompt:</li>
+      <li>CD VIDEO1</li>
+      <li>Enter the following command at the C:\VIDEO1&gt; prompt:<br>
+        11374317.EXE<br>
+        This command will extract the compressed files within the 11374317.EXE file.</li>
+      <li>Insert a blank, formatted, 3.5&quot; diskette into the A:\ drive.</li>
+      <li>Enter the following command at the C:\VIDEO1&gt; prompt:<br>
+        EXTRACT<br>
+        This command create the driver disk for the first video driver.</li>
+      <li>Repeat this steps 4-7 to create the second driver diskette. <i>Note: Be sure that you
+        substitute C:\VIDEO2 for C:\VIDEO1.</i></li>
+      <li>Once you extract the drivers to the floppy disk, read the README file on the first
+        diskette for installation instructions. You can load the first diskette you created from
+        file 11374317.EXE at the A:\ prompt. Enter the following command at the C:\&gt; to load
+        the driver update:<br>
+        A:</li>
+      <li>At the A:\ prompt, enter the following command:<br>
+        INSTALL.EXE</li>
+    </ol>
+    <p>This command will start the Windows 3.x and DOS video drivers installation. Once you
+    install the driver update, access the Windows Setup utility in the Main directory of the
+    Program Manager and set the video mode of choice.</p>
+    <b><hr>
+    <p><a name="23">How do I install the ATI mach64 video drivers in Windows® 95?</a></p>
+    </b><p>The current Windows 95 drivers for the ATI Mach64 video chipset are contained in
+    the following files:</p>
+    <p><a href="ftp://ftp.ast.com/D-VIDEO/11374319.EXE">11374319.EXE ATI mach64 v2.22 Win95</a><br>
+    <a href="ftp://ftp.ast.com/D-VIDEO/11374321.EXE">11374321.EXE ATI mach64 v2.22 Win95</a><br>
+    <a href="ftp://ftp.ast.com/D-VIDEO/11374322.EXE">11374322.EXE ATI mach64 v2.22
+    Win3.1/Win95</a> </p>
+    <p>Once you download the files follow this procedure to make the driver diskettes: <ol>
+      <li>Right-click on the Windows Desktop. Choose New and then Folder from the menu. Name the
+        folder &quot;Driver.&quot; </li>
+      <li>Move file 11374319.EXE to the Driver folder.</li>
+      <li>Double-click on the icon for file 11374319.EXE to expand the compressed files.</li>
+      <li>Double-click on the Extract icon in the Driver folder.</li>
+      <li>Follow the on-screen procedures for creating the actual driver diskette.</li>
+      <li>Delete the contents of the folder.</li>
+    </ol>
+    <p>Repeat steps 1-6 to create the disks for the remaining files.</p>
+    <p>Now you can install the new video driver: <ol>
+      <li>Start Windows 95. </li>
+      <li>Insert the disk you created from file 11374319.EXE into the floppy drive.</li>
+      <li>Click on the Start button. Click on the Run menu item. Enter the following command in
+        the text entry area:<br>
+        A:\WIN95\SETUP.EXE </li>
+      <li>Follow the instructions displayed in the ATI Setup procedures.</li>
+    </ol>
+    <p>After you install the drivers, check the display adapter and monitor type settings in
+    Display Properties.</p>
+    <b><hr>
+    <p><a name="27">What are the command line parameters for the CLMODE Utility?</a> </p>
+    <p></b>Listed below are the command line parameters for the Cirrus Logic 543x CLMODE
+    Utility Program Version 2.60: </p>
+    <p>Usage: CLMODE [[modenum][+*-]] [m[montype] | t6=x t8=x t1=x t2=x] </p>
+    <p>[modenum] mode number <br>
+    [+*-] + selects 400 lines (default) <br>
+    * selects 350 lines <br>
+    - selects 200 lines </p>
+    <p>[montype] Monitor type <br>
+    t6=x(Hz) 640x480 @ (0 = 60, 1 = 72) <br>
+    t8=x(Hz) 800x600 @ (0 = 56, 1 = 60, 2 = 72) <br>
+    t1=x(Hz) 1024x768 @ (0 = 87i, 1 = 60, 2 = 70, 3 = 72) <br>
+    t2=x(Hz) 1280x1024 @ (0 = 87i, 1 = Not available <br>
+    Example: </p>
+    <p>CLMODE 3+ (sets mode 3+) <br>
+    CLMODE m2 (sets Super VGA monitor type) <br>
+    CLMODE t6=0 t8=2 (sets 640x480 at 60 Hz, 800x600 at 72 Hz) </p>
+    <p>Valid monitor types: </p>
+    <table border="1" align="DEFAULT" width="50%">
+      <tr>
+        <td align="LEFT" valign="TOP" width="10%">0</td>
+        <td align="LEFT" valign="TOP" width="90%">VGA</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP">1</td>
+        <td align="LEFT" valign="TOP">8514</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP">2</td>
+        <td align="LEFT" valign="TOP">Super VGA</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP">3</td>
+        <td align="LEFT" valign="TOP">Extended Super VGA</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP">4</td>
+        <td align="LEFT" valign="TOP">Multi-frequency </td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP">5</td>
+        <td align="LEFT" valign="TOP">Extended Multi-frequency</td>
+      </tr>
+      <tr>
+        <td align="LEFT" valign="TOP">6</td>
+        <td align="LEFT" valign="TOP">Super Multi-frequency</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Extended Super Multi-frequency<b> </td>
+        </b>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+

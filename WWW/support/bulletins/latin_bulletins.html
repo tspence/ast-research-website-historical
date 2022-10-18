@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+	<META NAME="GENERATOR" Content="Visual Page 1.0 for Windows">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<TITLE>Bulletin Query Utility </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#00698C" VLINK="#3A4D52" ALINK="#FFA600">
+<FORM ACTION="../scripts/bulletin.asp" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded">
+<P>
+<TABLE BORDER="0" WIDTH="570">
+	<TR>
+		<TD>
+			<H3><EM>Boletines</EM></H3>
+			<P>En esta p&aacute;gina encontrar&aacute; boletines informativos, t&eacute;cnicos y de software de los productos
+			AST. A continuaci&oacute;n encontrar&aacute; una descripci&oacute;n de la informaci&oacute;n contenida en esta
+			secci&oacute;n:</P>
+			<P><BR>
+			<B>Boletines T&eacute;cnicos de AST (TBs):</B> Estos documentos contienen las &uacute;ltimas soluciones a problemas
+			t&eacute;cnicos. Cada Bolet&iacute;n T&eacute;cnico tiene una descripci&oacute;n del problema, la causa y la soluci&oacute;n.<BR>
+			<BR>
+			<B>Boletines de Software de AST (SBs):</B> Estos documentos contienen informaci&oacute;n al d&iacute;a acerca del
+			software. Cada Bolet&iacute;n de Software describe el problema (si lo hay), la soluci&oacute;n (si aplicable) y
+			cualquier mejora al software existente.<BR>
+			<BR>
+			<B>Boletines Informativos de AST (IBs):</B> Estos documentos contienen informaci&oacute;n t&eacute;cnica usualmente
+			no relacionada con hardware o software de AST. Esta secci&oacute;n esta incluida para su informaci&oacute;n.<BR>
+			<BR>
+			Si conoce el nombre o la clave para el documento que necesita puede indicarlo en la secci&oacute;n &quot;&lt;--Search
+			For&quot; con el nombre del documento y su clave y oprimir el bot&oacute;n &quot;&lt;--Search For&quot;.</P>
+
+			<P><INPUT TYPE="HIDDEN" NAME="FirstVar" SIZE="-1" VALUE="1"><INPUT TYPE="HIDDEN" NAME="LastVar" SIZE="-1" VALUE="1"><INPUT
+			TYPE="HIDDEN" NAME="OldBul" SIZE="-1" VALUE="All"><INPUT TYPE="HIDDEN" NAME="OldTopic" SIZE="-1" VALUE="All Topics"><INPUT
+			TYPE="HIDDEN" NAME="OldProd" SIZE="-1" VALUE="All"><INPUT TYPE="HIDDEN" NAME="OldName" SIZE="-1"><INPUT TYPE="HIDDEN"
+			NAME="LastSearch" SIZE="-1" VALUE="Nul"><!-- ******************************************** --> <!--  Begin hidden variable input for list count  -->
+			<!-- ******************************************** --> <!-- ******************************************** --> <!--   End hidden variable input for list count   -->
+			<!-- ******************************************** --> 
+			<TABLE BORDER="0">
+				<TR>
+					<TD WIDTH="558">I want to look through <!-- ********************************************* --> <!-- Begin Form for Bulletin variable list box input -->
+						<!-- ********************************************* --> 						<SELECT NAME="BULLETIN">
+						<OPTION value="All" SELECTED>All</OPTION>
+						<OPTION value="Informational">Informational</OPTION>
+						<OPTION value="Software">Software</OPTION>
+						<OPTION value="Technical">Technical</OPTION>
+						</SELECT>
+ <!-- ******************************************* --> <!-- End Form for Bulletin variable list box input --> <!-- ******************************************* -->
+						bulletins about <!-- ********************************************* --> <!-- Begin Form for Topic variable list box input -->
+						<!-- ********************************************* --> 						<SELECT NAME="TOPIC">
+						<OPTION value="All Topics" SELECTED>All Topics</OPTION>
+						<OPTION value="Advanced Power Management (APM)">Advanced Power Management (APM)</OPTION>
+						<OPTION value="Applications">Applications</OPTION>
+						<OPTION value="Batteries">Batteries</OPTION>
+						<OPTION value="BIOS">BIOS</OPTION>
+						<OPTION value="Drives">Drives</OPTION>
+						<OPTION value="I/O Ports">I/O Ports</OPTION>
+						<OPTION value="Memory (Cache, Video, and RAM)">Memory (Cache, Video, and RAM)</OPTION>
+						<OPTION value="Modems">Modems</OPTION>
+						<OPTION value="Network Issues">Network Issues</OPTION>
+						<OPTION value="Operating Systems">Operating Systems</OPTION>
+						<OPTION value="Other Hardware">Other Hardware</OPTION>
+						<OPTION value="PCMCIA">PCMCIA</OPTION>
+						<OPTION value="Peripherals">Peripherals</OPTION>
+						<OPTION value="Sound">Sound</OPTION>
+						<OPTION value="System Boards">System Boards</OPTION>
+						<OPTION value="Third-Party Applications">Third-Party Applications</OPTION>
+						<OPTION value="Upgrades">Upgrades</OPTION>
+						<OPTION value="Video">Video</OPTION>
+						</SELECT>
+ <!-- ******************************************* --> <!-- End Form for Topic variable list box input --> <!-- ******************************************* -->
+						for <!-- ********************************************* --> <!-- Begin Form for Product variable list box input -->
+						<!-- ********************************************* --> 						<SELECT NAME="PRODUCT">
+						<OPTION value="All" SELECTED>All</OPTION>
+						<OPTION value="Desktop or Minitower">Desktop or Minitower</OPTION>
+						<OPTION value="Portable">Portable</OPTION>
+						<OPTION value="Server">Server</OPTION>
+						<OPTION value="Vintage">Vintage</OPTION>
+						</SELECT>
+ <!-- ******************************************* --> <!-- End Form for Product variable list box input --> <!-- ******************************************* -->
+						productos. <INPUT TYPE="SUBMIT" NAME="Button" VALUE="Submit"></TD>
+				</TR>
+				<TR>
+					<TD WIDTH="558">
+						<TABLE BORDER="0" WIDTH="100%">
+							<TR bgcolor="WHITE">
+								<TD WIDTH="33%" ALIGN="LEFT" VALIGN="TOP"></TD>
+								<TD></TD>
+								<TD WIDTH="33%" ALIGN="RIGHT" VALIGN="TOP">
+									<DIV ALIGN="RIGHT">
+									<P>List <INPUT TYPE="TEXT" NAME="NumofHits" SIZE="3" MAXLENGTH="3" VALUE="25"> Hits at a Time.
+</DIV>
+								</TD>
+							</TR>
+						</TABLE>
+
+<HR ALIGN="CENTER">
+					</TD>
+				</TR>
+				<TR>
+					<TD WIDTH="558">
+						<H4><B>O Indique el Nombre del Documento y Clave: </B><INPUT TYPE="TEXT" NAME="NameofFile" SIZE="17"> <INPUT TYPE="SUBMIT"
+						NAME="Button" VALUE="&lt;-- Search"></H4>
+						<P>
+<HR ALIGN="CENTER">
+
+					</TD>
+				</TR>
+			</TABLE>
+A continuaci&oacute;n indicamos la lista de documentos de soporte (download) que puede obtener con respecto a boletines
+			informativos, t&eacute;cnicos y de software.</P>
+
+			<P>
+			<TABLE BORDER="0" WIDTH="100%">
+				<TR>
+					<TD WIDTH="17%"><A HREF="ftp://ftp.ast.com/MISC/ALLTBS.ZIP">ALLTBS.ZIP</A></TD>
+					<TD WIDTH="83%">Todos los boletines t&eacute;cnicos en un solo archivo.</TD>
+				</TR>
+				<TR>
+					<TD WIDTH="17%"><A HREF="ftp://ftp.ast.com/MISC/ALLSBS.ZIP">ALLSBS.ZIP</A></TD>
+					<TD WIDTH="83%">Todos los boletines de software en un solo archivo.</TD>
+				</TR>
+				<TR>
+					<TD WIDTH="17%"><A HREF="ftp://ftp.ast.com/MISC/ALLIBS.ZIP">ALLIBS.ZIP</A></TD>
+					<TD WIDTH="83%">Todos los boletines informativos en un solo archivo.</TD>
+				</TR>
+			</TABLE>
+
+		</TD>
+	</TR>
+</TABLE>
+
+</FORM>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,30 @@
+<html><head>
+<title>ASC Handbook</title>
+</head>
+<body background="images/bAK1.GIF" bgcolor="#FFFFFF" text="#000000" topmargin="0" leftmargin="0">
+<p><a name="Top"></a></p>
+<CENTER>
+<!-- #INCLUDE FILE="TITLE.INC" -->
+</CENTER>
+<center>
+<h3>ASC Handbook</h3>
+<p><b> NOTICE </b>
+<hr>
+</center>
+<b>THE INFORMATION CONTAINED IN THIS HANDBOOK
+IS SUBJECT TO CHANGE WITHOUT NOTICE. AST RESEARCH, INC., SHALL
+NOT BE LIABLE FOR TECHNICAL OR EDITORIAL ERRORS OR OMISSIONS
+CONTAINED HEREIN; NOR FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES
+RESULTING FROM THE FURNISHING, PERFORMANCE, OR USE OF THIS
+MATERIAL. </b>
+
+<p><b>This document contains copywritten and proprietary
+information protected by copyright. All rights are reserved. No
+part of this document may be photocopied or reproduced in any
+form without prior written consent from AST Research, Inc.
+Unauthorized reproduction, distribution and/or sale may result in
+imprisonment of up to one year and a fine of up to $10,000.
+Copyright infringement may result in civil liability. </b>
+
+</body>
+</html>

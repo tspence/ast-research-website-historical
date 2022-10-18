@@ -1,0 +1,1432 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" width="570"><tr><td>
+<h3><i>All FAQs</i> </h3>
+
+<form method="POST" action="../../scripts/faqd.asp">
+  <p>I want to search through server FAQs about <select name="faqd" size="1">
+    <option selected value="sfaq1.htm">Hardware Upgrade</option>
+    <option value="sfaq2.htm">Configuration</option>
+    <option value="sfaq3.htm">Software</option>
+    <option value="sfaq4.htm">BIOS and Driver</option>
+    <option selected value="sfaqa.htm">All</option>
+  </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+</form>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="50%"><ul>
+      <b>
+      <li><h5><b><a href="#1"><b>I want to upgrade the processor in my Premium SE. What is the
+        fastest processor I can install?</b></a></h5>
+        </b></li>
+      <li><b><b><b><h5><a href="#2"><b>How do I Configure a Cupid Memory Expansion Board
+        202387-005? </b></a></h5>
+        </b></b></b></li>
+      <li><h5><a href="#3">How do I install DOS and Windows SCSI drivers for the Manhattan P, V,
+        and G?</a></h5>
+      </li>
+      <li><h5><a href="#4">I upgraded the memory in my Manhattan server. Why doesn&#146;t the
+        operating system recognize the new memory?</a></h5>
+      </li>
+      <li><h5><a href="#5">I want to upgrade the memory in a Manhattan P server. Do I have to use
+        ECC &amp; EDC memory?</a></h5>
+      </li>
+      <li><h5><a href="#6">I would like to install another processor in my Manhattan Server for a
+        dual-processor configuration. Can I upgrade both processors to a faster speed?</a></h5>
+      </li>
+      <li><h5><a href="#7">What part number should I use when I order additional hard drive trays
+        for my Manhattan SMP, Premmia SE, and Premium SE system?</a></h5>
+      </li>
+      <li><h5><a href="#8">I updated the BIOS on my Manhattan P &amp; V system to version 1.14 and
+        the README file suggests that I update my NCR drivers. Where can I find the latest NCR
+        drivers?</a></h5>
+      </li>
+      </b>
+    </ul>
+    </td>
+    <td valign="top" width="50%"><ul>
+      <b>
+      <li><h5><a href="#10">Why does Windows NT&#153; 3.51 fail to install on a Manhattan P / V
+        system?</a></h5>
+      </li>
+      <li><h5><a href="#11">What version of EISA Configuration Utility should I use?</a></h5>
+      </li>
+      <li><h5><a href="#12">How do I Install the Latest BIOS Revision and the latest version of
+        EISACU on the Manhattan P &amp; V?</a> </h5>
+      </li>
+      <li><h5><a href="#13">How do I install ArcServe 5.01g on the Manhattan P, V, and G Series? </a></h5>
+      </li>
+      <li><h5><a href="#14">How do I Move the NCR Chipset Out of Physical Memory Addresson the
+        Manhattan P and V?</a></h5>
+      </li>
+      <li><h5><a href="#15">How do I access System (CMOS) Setup on my server?</a></h5>
+      </li>
+      <li><h5><a href="#16">I downloaded a BIOS update; how do I use it?</a></h5>
+      </li>
+      <li><h5><a href="#17">I want to increase the amount of memory in my server; what options do
+        I have?</b></a></h5>
+        <b></li>
+      </b>
+      <li><h5><a href="#9"><b>Do I need to make any changes to the server before the year 2000?</b></a></h5>
+      </li>
+    </ul>
+  </td></tr></table>
+
+<hr>
+
+<p><a name="1"><b>I want to upgrade the processor in my Premium SE. What is the fastest
+processor I can install?</b></a> </p>
+
+<p>AST designed the Premium SE around its proprietary Cupid architecture. Cupid technology
+placed the components most likely to require upgrading, system memory and system
+processor, on a removable processor board. Components that typically remain constant
+resided on a separate system board. The user could upgrade the performance by simply
+replacing a plug-in processor board or adding SIMMs to a memory expansion board.</p>
+
+<p>AST introduced Cupid architecture well over ten years ago, which is an eternity in the
+computer industry. In 1987, a 486 system was street priced at $10,000, so a $3,000 upgrade
+was a viable alternative. Unfortunately, the cost of reproducing that technology remains
+the same, while the price of new technology is dropping drastically. These Cupid upgrade
+prices have not been well received by our customers. In the customer&#146;s own words,
+&#147;I could buy a whole new system for that price!&#148;.</p>
+
+<p>AST realizes that the feasibility of upgrading to the higher performance processors
+with Cupid architecture is not competitive in today&#146;s marketplace. After thoroughly
+evaluating both AST and non-AST solutions to provide price competitive alternatives to
+Cupid upgrades, AST has decided not to invest additional engineering resources researching
+Cupid board redesign and third party compatible alternatives. In essence, AST will no
+longer offer Cupid processor and memory board upgrades. AST regrets the inconvenience that
+this decision may cause our users with Cupid systems.</p>
+
+<hr>
+
+<p><a name="2"><b>How do I Configure a Cupid Memory Expansion Board 202387-005?</b></a> </p>
+
+<p>The memory expansion board uses 1MB or 4MB, 80ns or 70ns write per bit SIMMs and can be
+installed in single SIMM increments. 1MB SIMMs must be installed before 4MB SIMMs. A
+maximum of 32MB (4MB SIMMs x 8 SIMM sockets) can be installed. Up to two CUPID memory
+boards can be installed. SW2-3 must be turned ON when used with the 202465-XXX processor
+board. The total system memory is dependent on the processor and processor board. </p>
+
+<p>Starting Address Switch Settings - Switch Block One (plus SW2-6) <br>
+</p>
+
+<table border="1" align="DEFAULT" width="565">
+  <tr>
+    <th align="LEFT" valign="TOP" width="56">Starting<br>
+    Address (MB<br>
+    already in<br>
+    system)</th>
+    <th align="LEFT" valign="TOP" width="56">SW1-1</th>
+    <th align="LEFT" valign="TOP" width="56">SW1-2</th>
+    <th align="LEFT" valign="TOP" width="56">SW1-3</th>
+    <th align="LEFT" valign="TOP" width="56">SW1-4</th>
+    <th align="LEFT" valign="TOP" width="57">SW1-5</th>
+    <th align="LEFT" valign="TOP" width="57">SW1-6<br>
+    </th>
+    <th align="LEFT" valign="TOP" width="57">SW1-7</th>
+    <th align="LEFT" valign="TOP" width="57">SW1-8</th>
+    <th align="LEFT" valign="TOP" width="57">SW2-6</th>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">1</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">2</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">3</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">4</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">5</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">6</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">7</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">8</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">9</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">10</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">11</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">12</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">13</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">14</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">15</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">16</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">17</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="56">18</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">ON</td>
+    <td align="LEFT" valign="TOP" width="56">OFF</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+    <td align="LEFT" valign="TOP" width="57">ON</td>
+  </tr>
+  <tr>
+    <td width="56">etc...</td>
+    <td width="56">&nbsp;</td>
+    <td width="56">&nbsp;</td>
+    <td width="56">&nbsp;</td>
+    <td width="56">&nbsp;</td>
+    <td width="57">&nbsp;</td>
+    <td width="57">&nbsp;</td>
+    <td width="57">&nbsp;</td>
+    <td width="57">&nbsp;</td>
+    <td width="57">&nbsp;</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="1" align="DEFAULT" width="100%">
+  <tr>
+    <th align="LEFT" valign="TOP">Switch</th>
+    <th align="LEFT" valign="TOP">Default Setting</th>
+    <th align="LEFT" valign="TOP">Note</th>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">SW2-1</td>
+    <td align="LEFT" valign="TOP">ON</td>
+    <td align="LEFT" valign="TOP">Memory parity checking</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">SW2-2</td>
+    <td align="LEFT" valign="TOP">ON</td>
+    <td align="LEFT" valign="TOP">Turn off to disable memory access above 16MB.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">SW2-3</td>
+    <td align="LEFT" valign="TOP">OFF</td>
+    <td align="LEFT" valign="TOP">Starting address XX.25 (use with processor board
+    202397-XXX). <p>On for starting address XX.00 (use with processor board 202465-XXX).</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">SW2-4</td>
+    <td align="LEFT" valign="TOP">OFF</td>
+    <td align="LEFT" valign="TOP">Manufacturer's test switch (do not modify).</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">SW2-5</td>
+    <td align="LEFT" valign="TOP">OFF</td>
+    <td align="LEFT" valign="TOP">Manufacturer's test switch (do not modify).</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">SW2-6</td>
+    <td align="LEFT" valign="TOP">ON</td>
+    <td align="LEFT" valign="TOP">With SW1-1 through 1 - 8; Starting address (see table for
+    SW-1).</td>
+  </tr>
+</table>
+
+<p><font color="Red">IMPORTANT NOTE: </font></p>
+
+<p>In order for the memory board to work under most operating systems, including Novell
+NetWare and Windows NT, you must run the EISA configuration utility. Once in the
+configuration, select &quot;Configure Computer&quot; then &quot;View or Edit
+Details.&quot; Scroll down to the memory board in the list, highlight it, and press F6 to
+edit the resources for the card. Set the starting address for the memory board to the top
+of previously configured memory. Also, set the memory amount to the amount of memory
+installed on the memory board only. Example: If the processor board is configured with
+16MB and the memory board with 32MB, Starting Address = 16 and Memory Amount = 32. </p>
+
+<hr>
+
+<p><a name="3"><b>How do I install DOS and Windows SCSI drivers for the Manhattan P, V,
+and G?</b></a> </p>
+
+<p>The Manhattan P, V, and G systems include an integrated NCR SCSI interface. </p>
+
+<p>For the Manhattan G systems and Manhattan P, V systems with BIOS version 1.13 or older,
+load the following NCR drivers in the CONFIG.SYS file on the root directory of the boot
+drive, in the following order:</p>
+
+<p>DOSCAM.SYS: The basic SCSI driver for DOS and Windows.<br>
+SCSIDISK.SYS: Supports SCSI drives that do not have 512-byte sectors, as well as SCSI
+devices with removable media, such as SCSI floptical devices and cartridge hard drives.<br>
+CDROM.SYS: Supports SCSI CD-ROM drives.<br>
+ASPICAM.SYS: Supports ASPI applications, such as CorelSCSI! and Central Point Tape Backup.</p>
+
+<p>These drivers are contained in the DOS subdirectory of the NCR PCI SCSI <br>
+device drivers diskette (p/n 911283-313). If you do not have the NCR driver diskette,
+download the following file from our Web site: </p>
+
+<p><a href="ftp://ftp.ast.com/S-OTHER/283313.EXE">283313.EXE Manhattan P/V/G NCR SCSI
+Drivers V.1.06 </a><br>
+<br>
+<b>Installing DOSCAM.SYS:</b></p>
+
+<p>To install DOSCAM.SYS, use a text editor to add the following line to the CONFIG.SYS
+file in the root directory of the boot drive: </p>
+
+<p>DEVICE=C:\SCSI\DOSCAM.SYS /option </p>
+
+<p>/option is one or more of the following options: </p>
+
+<p><i>/RAMCOPY: Causes the driver to load the SCSI memory into system memory. This
+increases the performance of the SCSI memory, but uses more system memory. </i></p>
+
+<p><i>/T=n: Specifies the length of time, in seconds, that DOSCAM.SYS waits after sending
+a command to a SCSI device. When DOSCAM.SYS issues a command to a SCSI device, a timer is
+started. If the timer expires before the device sends a response back to DOSCAM.SYS,
+DOSCAM.SYS assumes that something has gone wrong with the device. DOSCAM.SYS then tries to
+re-establish contact with the device. By default, DOSCAM.SYS does not use this feature,
+which is called a time-out. If you want to set a time-out period, use the &#147;/T=n&#148;
+option, where &quot;n&quot; is the number of seconds you want DOSCAM.SYS to wait for the
+time-out. </i></p>
+
+<p><i>/ASK: Prompts you to indicate, each time the system starts, whether to load
+DOSCAM.SYS. This option is useful if you want to use the system without being able to
+access any SCSI devices. </i></p>
+
+<p><b>Installing SCSIDISK.SYS:</b></p>
+
+<p>You can use a text editor to install SCSIDISK.SYS. On the root directory of the boot
+drive, add the following line to the CONFIG.SYS file immediately after the line that
+contains the DOSCAM.SYS driver: </p>
+
+<p>DEVICE=C:\SCSI\SCSIDISK.SYS /option </p>
+
+<p>/option is one or more of the following options: </p>
+
+<p><i>/ASK: Prompts you to indicate, each time the system starts, whether to load
+SCSIDISK.SYS. This option is useful if you want to use the system without being able to
+access any SCSI devices that use SCSIDISK.SYS. </i></p>
+
+<p><i>/UNITS=n: SCSIDISK supports SCSI devices with removable media, such as floptical
+drives and cartridge hard drives. The /UNITS=n option reserves partitions for these
+devices by setting the number of logical drive units that are reported to the operating
+system. The maximum value for &quot;n&quot; is 8. The /UNITS=n switch is useful when the
+system is started without a cartridge or disk in the drive, or when the cartridge or disk
+that has more than one volume partition is inserted after the system is started. In
+addition, the /UNITS=n option enables you to remove a disk or cartidge and replace it with
+another drive or cartidge that is partitioned into a different number of volumes, without
+having to restart the system. Without the /UNITS=n option, you can start the system with a
+removable disk or cartidge in the device, but you cannot remove it until the system is
+turned off. A system with the SCSIDISK device driver installed allow you to boot the
+system with a removable disk or cartridge; however, you cannot remove the disk or cartidge
+until after you shutdown the system. If you want to remove the disk or cartridge without
+shutting down the system, then you need to start the system without a disk or cartridge in
+the drive. </i></p>
+
+<p><i>/PROTECT=x: Enables you to write-protect a DOS volume on a SCSI hard drive.
+&quot;x&quot; is the DOS volume, such as C or D. If you attempt to write to the volume,
+you will receive a write-protected media error code. It is possible to bypass the
+write-protection with a low-level program, such as FDISK. </i></p>
+
+<p><b>Installing CDROM.SYS:</b></p>
+
+<p>You can use a text editor to install CDROM.SYS. On the root directory of the boot
+drive, add the following line to the CONFIG.SYS file immediately after the line that
+contains the SCSIDISK.SYS driver:</p>
+
+<p>DEVICE=C:\SCSI\CDROM.SYS /x:name /ASK </p>
+
+<p>&#147;x:name&#148; is the name you want to assign to your CD-ROM, not a drive letter
+designation. You must include a name, which can be any combination of up to eight
+characters. </p>
+
+<p><i>/ASK: Prompts you to indicate, each time the system starts, whether to load
+CDROM.SYS. The /ASK switch is useful if you want to use the system without being able to
+access the CD-ROM drive. To ensure that enough drive letters are available to identify all
+devices connected to the SCSI adapter, add the MS-DOS LASTDRIVE command to the CONFIG.SYS
+file: </i></p>
+
+<p><b>LASTDRIVE=x </b></p>
+
+<p>x is a drive letter in the range C - Z. The letter assigned to LASTDRIVE represents the
+last logical drive DOS is able to recognize, and also represents the maximum number of
+logical drives available. For example, LASTDRIVE=K enables you to access up to 11 logical
+drives. For more information about LASTDRIVE command, see your DOS documentation. </p>
+
+<p>Unless the documentation for your CD-ROM software specifies otherwise, use a text
+editor to add the MSCDEX.EXE command from Microsoft to the AUTOEXEC.BAT file in the root
+directory of your boot drive: </p>
+
+<p><b>MSCDEX /D:name</b> </p>
+
+<p>name=name of CD-ROM drive. Name must match name give in CONFIG.SYS file entry for
+CDROM.SYS.</p>
+
+<p><br>
+<b>Installing ASPICAM.SYS:</b> </p>
+
+<p>You can use a text editor to install ASPICAM.SYS. On the root directory of the boot
+drive, add the following line to the CONFIG.SYS file after the line that contains the
+DOSCAM.SYS driver and after any other lines containing SCSI drivers: </p>
+
+<p>DEVICE=C:\SCSI\ASPICAM.SYS </p>
+
+<p>For Manhattan P and V systems with BIOS version 1.14 and later, obtain the new NCR SCSI
+drivers from Symbios Logic for the 4.0 SDMS PCI SCSI chipset. If you do not use the
+updated drivers for BIOS version 1.14, then you may corrupt or lose of data.</p>
+
+<p>You can obtain the drivers from Symbios Logic:</p>
+
+<p align="center"><a href="ftp://www.symbios.com/pub/symchips/scsi/drivers"
+target="target"><img border="0" src="../../images/Symbios.jpg" width="87" height="84"></a></p>
+
+<p>Load the following NCR drivers in the CONFIG.SYS file on the root directory of the boot
+drive, in the following order:</p>
+
+<p>ASPI8XX.SYS: The basic SCSI driver for DOS and Windows.<br>
+SYMDISK.SYS: Supports SCSI drives that do not have 512-byte sectors, as well as SCSI
+devices with removable media, such as SCSI floptical devices and cartridge hard drives.<br>
+SYMCD.SYS: Supports SCSI CD-ROM drives.</p>
+
+<p>For detailed instructions on installing the Symbios Logic SCSI drivers, view the
+DOS.TXT file included with the drivers.</p>
+
+<p><i>Note: To ensure that enough drive letters are available to identify all devices
+connected to the SCSI adapter, add the MS-DOS LASTDRIVE command to the CONFIG.SYS file: </i></p>
+
+<p><i>LASTDRIVE=x </i></p>
+
+<p><i>x is a drive letter in the range C - Z. The letter assigned to LASTDRIVE represents
+the last logical drive DOS is able to recognize, and also represents the maximum number of
+logical drives available. For example, LASTDRIVE=K enables you to access up to 11 logical
+drives. For more information about LASTDRIVE command, see your DOS documentation. </i></p>
+
+<p><i>Unless the documentation for the software that comes with your CD-ROM specifies
+otherwise, use a text editor to add the MSCDEX.EXE command from Microsoft to the
+AUTOEXEC.BAT file in the root directory of your boot drive: </i></p>
+
+<p><i>MSCDEX /D:name </i></p>
+
+<p><i>name=name of CD-ROM drive. Name must match name give in CONFIG.SYS file entry for
+SYMCD.SYS.</i></p>
+
+<hr>
+
+<p><a name="4"><b>I upgraded the memory in my Manhattan server. Why doesn&#146;t the
+operating system recognize the new memory?</b></a> </p>
+
+<p>If you have an EISA-based system and there is an EISA card installed or you have run
+the EISA Configuration Utility, you need to run the EISA Configuration Utility again to
+configure the new memory. The amount of memory shown in the EISA Configuration Utility
+should be modified to reflect the amount of physical memory in the system. The amount of
+memory can be set higher than the actual physical memory; it just can&#146;t be less than
+then the amount.</p>
+
+<p>Consider the following steps for updating the memory in the EISA Configuration Utility:
+
+<ol>
+  <li>Boot using the EISA configuration diskette and choose menu options Configure Computer,
+    View and Edit Details.</li>
+  <li>Press &lt;F6&gt; in order to edit the amount of memory installed.</li>
+  <li>Press &lt;10&gt; after you enter the desired amount of memory, </li>
+  <li>Save and Exit the configuration utility.</li>
+</ol>
+
+<p>Set the memory location of the NCR chipset well above physical memory. To do so, follow
+this procedure: 
+
+<ol>
+  <li>Locate the View and Edit Details section. Scroll to the bottom of the screen marked
+    Embedded PCI Controller. </li>
+  <li>Highlight PCI Function and press &lt;F6&gt;.</li>
+  <li>Change the memory address range to at least 20 megabyte higher than the total physical
+    memory installed in the server.</li>
+  <li>Change the memory address for all Embedded PCI controllers listed.</li>
+  <li>Press &lt;F10&gt; to save and exit the configuration utility.</li>
+</ol>
+<b>
+
+<hr>
+
+<p><a name="5">I want to upgrade the memory in a Manhattan P server. Do I have to use ECC
+&amp; EDC memory?</a> </p>
+</b>
+
+<p>When you upgrade the memory on a Manhattan P, use following RAM specifications:</p>
+
+<p>JEDEC 36-bit/ 72-pin / 70ns / tin-lead / ECC &amp; EDC</p>
+
+<p>* ECC-Error Correction Code<br>
+* EDC=Error Detection Code</p>
+
+<p>You can also install SIMMs that meet the following specifications:</p>
+
+<p>JEDEC/ parity (36-bit)/ Fast Page Mode/ 70ns/<br>
+tin-lead</p>
+
+<p>Do not mix ECC memory with Fast Page Mode memory. You will receive memory errors. </p>
+
+<p>You can install up to 256MB of memory using the following configurations:</p>
+
+<table border="1" align="DEFAULT" width="313">
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">&nbsp;</td>
+    <th align="LEFT" valign="TOP" width="62">Bank 0</th>
+    <th align="LEFT" valign="TOP" width="63">Bank 1</th>
+    <th align="LEFT" valign="TOP" width="63">Bank 2</th>
+    <th align="LEFT" valign="TOP" width="63">Bank 3</th>
+  </tr>
+  <tr>
+    <th align="LEFT" valign="TOP" width="62">Total </th>
+    <th align="LEFT" valign="TOP" width="62">U5/U6</th>
+    <th align="LEFT" valign="TOP" width="63">U3/U4</th>
+    <th align="LEFT" valign="TOP" width="63">U1/U2</th>
+    <th align="LEFT" valign="TOP" width="63">U8/U9 </th>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">16MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">32MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">32MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63">1x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">32MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">64MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">64MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">64MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">1x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">128MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">128MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">128MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">256MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+  </tr>
+</table>
+
+<p>While it is valid to partially fill both Bank 0 and Bank 1, system performance improves
+if you completely fill Bank 0 before populating Bank 1.</p>
+
+<p>You will need to run the EISA Configuration utility on your Manhattan P in order to
+change the amount of installed memory. </p>
+
+<p>Although we do not require that customers use proprietary SIMMs, AST cannot support
+problems that originate from third-party SIMMs. It is impossible for AST to guarantee that
+third-party SIMMs will work in every computer. There is no way to test every SIMM to see
+if it is compatible. Also, third-party, generic SIMMs may not always be manufactured with
+high quality standards.</p>
+<b>
+
+<hr>
+
+<p><a name="6">I would like to install another processor in my Manhattan Server for a
+dual-processor configuration. Can I upgrade both processors to a faster speed?</a> </p>
+</b>
+
+<p>The secondary processor socket in your Manhattan system is designed for dual processor
+or processor upgrade configurations. For multi-processing applications, the secondary chip
+must match the speed of the factory-installed processor. For example, you may not install
+a 200MHz secondary processor in a 133MHz system. Therefore, if the system shipped with a
+133MHz processor, the second processor must also be 133MHz.</p>
+
+<p>I am having problems with my Manhattan Server. What Diagnostics Utility should I use?</p>
+
+<p>Using the Server Advanced Diagnostics can help you to identify problems with your
+system's hardware. For Manhattan SMP systems, use Advanced Diagnostics for SMP systems
+version 1.12. You can download the following file:</p>
+
+<p><a href="ftp://ftp.ast.com/S-OTHER/SMP3.EXE">SMP3.EXE Advanced Diags For SMP v1.12</a></p>
+
+<p>For all other systems, use Server Advanced Diagnostics version 2.23. Download the
+following file:</p>
+
+<p><a href="ftp://ftp.ast.com/S-OTHER/10450316.EXE">10450316.EXE Server Advanced
+Diagnotics v2.23 </a></p>
+
+<p>For accurate results, remove all add-in cards before you run the diagnostics.</p>
+<b>
+
+<hr>
+
+<p><a name="7">What part number should I use when I order additional hard drive trays for
+my Manhattan SMP, Premmia SE, and Premium SE system?</a> </p>
+</b>
+
+<p>Listed below are the parts you need to add additional hard drives to the Manhattan SMP,
+Premmia SE, and Premium SE systems:</p>
+
+<p>500923-001 3.5&quot; Hard Drive Mounting Tray Kit<br>
+500922-002 Backplane Adapter Board Kit </p>
+
+<p>If one of the aforementioned kits are not in stock, you can order the individual
+components that make up the kit.</p>
+
+<p>The 3.5&quot; Hard Drive Mounting Tray Kit (500923-001) consists of the following
+components:</p>
+
+<p>200588-001 3.5&quot; Hard Drive Tray<br>
+200723-001 3.5&quot; Installation Sheet<br>
+183000-057 Screw w/Washer<br>
+183400-008 Fastener</p>
+
+<p>You need four screws with washers and two fasteners.</p>
+
+<p>The Backplane Adapter Board Kit (500922-002) consist of the following components:</p>
+
+<p>202461-005 Backplane edge connector<br>
+183100-010 Nut Hex w/star washer</p>
+
+<p>You will need two nuts with washers.</p>
+
+<p>For current pricing and availability information, contact one of the following AST
+spare parts vendors:</p>
+
+<p>PC ServiceSource<br>
+(800) 727-1278<br>
+prompts: 2, 1<br>
+<a href="http://www.pcservice.com" target="target"><img border="0"
+src="../../images/PCServ.jpg" width="124" height="31"></a></p>
+
+<p>AST Peripherals by IAD<br>
+(800) 727-1278<br>
+prompts: 2, 2<br>
+<a href="http://www.insight.com" target="target"><img border="0"
+src="../../images/Insight.jpg" width="68" height="31"></a></p>
+<b>
+
+<hr>
+
+<p><a name="8">I updated the BIOS on my Manhattan P &amp; V system to version 1.14 and the
+README file suggests that I update my NCR drivers. Where can I find the latest NCR
+drivers?</a></p>
+</b>
+
+<p>You can obtain the latest NCR drivers from Symbios Logic:</p>
+
+<p align="center"><a href="ftp://www.symbios.com/pub/symchips/scsi/drivers"
+target="target"><img border="0" src="../../images/Symbios.jpg" width="87" height="84"></a></p>
+
+<p><b><br>
+</b></p>
+
+<hr>
+
+<p><a name="9">Do I need to make any changes to the server before the year 2000?</a> </p>
+
+<p>You can refer to the following table for the flash BIOS update you need to make before
+the year 2000:</p>
+
+<table border="1" align="DEFAULT" width="100%">
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan P</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE
+    Manhattan P/V Flash BIOS Update, v1.13 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan V</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE
+    Manhattan P/V Flash BIOS Update, v1.13</a> </td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S6200</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05573038.EXE">05573038.EXE
+    Manhattan S6200, CommercePro BIOS v3.80 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan Commerce Pro</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05573038.EXE">05573038.EXE
+    Manhattan S6200, CommercePro BIOS v3.80 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S 6200 U</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Commerce Pro U</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan Presence Pro</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan D</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+</table>
+
+<p>All other servers manufactured by AST will require a manual year 2000 rollover. On
+January 1, 2000, DOS and Windows customers can: 
+
+<ul>
+  <li>Change the date via the DATE command at the MS-DOS prompt.<br>
+    or</li>
+  <li>Change the date via the DATE icon in the Windows Control Panel.</li>
+</ul>
+
+<p>The century byte in CMOS will be updated and the correct date will be kept through the
+year 2099. This update has been verified with DOS 6.2, Windows® 3.1, Windows® 95,
+Windows NT&#153; 3.51, and Windows NT&#153; 4.0.Customers that use OS/2 Warp will find
+that the system automatically adjusts for the year 2000.</p>
+<b>
+
+<hr>
+
+<p><a name="10">Why does Windows NT&#153; 3.51 fail to install on a Manhattan P / V
+system?</a> </p>
+</b>
+
+<p>When you install Windows NT 3.51 from a CD-ROM/floppy disk package, the Windows NT 3.51
+installation and setup programs may fail on the Manhattan P/V servers. The failure may
+exhibit itself in three ways: 
+
+<ul>
+  <li>After the setup program has copied the three (3) setup disks and the system performs its
+    first re-boot to load the operating system, the system will hang at the Windows NT blue
+    screen. You will see a fatal error message warning indicating that a hard disk error has
+    occurred.<br>
+  </li>
+  <li>While copying files from the third setup floppy, a message will indicate that a number
+    of files could not be copied. The files will have *.DLL extensions. If you continue the
+    installation by pressing the IGNORE button at each file-copy error, the installation will
+    indicate that it has completed successfully. When the system reboots, an error indicating
+    that GINA.DLL could not be found, and the Windows NT blue screen will appear with a fatal
+    error.<br>
+  </li>
+  <li>During the setup portion of installation, when Windows NT 3.51 attempts to begin copying
+    files to the hard disk, the system may issue an error indicating that a hard disk could
+    not be accessed. The system will instruct you that the installation has not been
+    successful.</li>
+</ul>
+
+<p>A temporary workaround is available, and is documented below. The workaround installs
+Windows NT 3.51 from the CD-ROM only. A floppyless installation may be done from the
+standard Windows NT 3.51 CD-ROM.</p>
+
+<p>You can follow this procedure to complete a floppyless installation of Windows NT 3.51:
+
+<ol>
+  <li>Boot from a DOS boot diskette, loading the NCR SCSI drivers in the CONFIG.SYS file of
+    the boot floppy. The NCR drivers are essential to access the CD-ROM drive attached to the
+    NCR controller.</li>
+  <li>For the Manhattan BIOS version 1.13 and older, load the NCR drivers (p/n 911283-313) for
+    CD-ROM support in the following order:<br>
+    DOSCAM.SYS<br>
+    SCSIDISK.SYS<br>
+    CDROM.SYS /D:name<br>
+    ASPICAM.SYS<br>
+    <em>name=name of CD-ROM drive (ex: drive1)</em><br>
+    These drivers are contained in the DOS subdirectory of the NCR PCI SCSI device drivers
+    diskette. If you do not have the NCR driver diskette, download <a
+    href="ftp://ftp.ast.com/S-OTHER/283313.EXE">283313.EXE Manhattan P/V/G NCR SCSI Drivers
+    V.1.06 </a></li>
+  <li>For Manhattan BIOS version 1.14 and later, obtain the new drivers from Symbios Logic for
+    the 4.0 SDMS PCI SCSI chipset. If you fail to use the updated drivers for BIOS version
+    1.14, you may corrupt or lose data. You can download these drivers from the Symbios Logic
+    Web site:<br>
+    <a href="ftp://www.symbios.com/pub/symchips/scsi/drivers" target="target"><img border="0"
+    src="../../images/Symbios.jpg" width="87" height="84"></a></li>
+  <li>Load the NCR drivers for CD-ROM support in the following order:<br>
+    ASPI8XX.SYS<br>
+    SYMDISK.SYS<br>
+    SYMCD.SYS /D:name<br>
+    <em>name=name of CD-ROM drive (ex: drive1)</em></li>
+  <li>Add the following DOS file to the AUTOEXEC.BAT on the boot disk:<br>
+    MSCDEX /D:name<br>
+    <em>name=name of CD-ROM drive. Name must match name given in CONFIG.SYS file entry for
+    CDROM.SYS or SYMCD.SYS.</em></li>
+  <li>Make sure that the boot disk contains the following DOS files:</li>
+  <li>FDISK.EXE<br>
+    FORMAT.EXE</li>
+  <li>Create a partition on the hard disk using FDISK. We recommend that the boot partition
+    for the first Windows NT drive be 500MB or less.</li>
+  <li>Format the partition.</li>
+  <li>Change to the CD-ROM drive and change directories to I386.</li>
+  <li>Enter the following command:<br>
+    WINNT /X /B</li>
+</ol>
+
+<p>This command will start a floppyless installation of Windows NT. The system should
+detect the DPT (if installed) and NCR controllers at the appropriate stage of the
+installation. </p>
+<b>
+
+<hr>
+
+<p><a name="11">What version of EISA Configuration Utility should I use?</a> </p>
+</b>
+
+<table border="1" align="DEFAULT" width="100%">
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan P/V</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/11371040.EXE">11371040.EXE
+    EISACU For Manhattan P/V,v1.09</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan SMP</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10603032.EXE">10603032.EXE
+    EISACU for Manhattan SMP v2.81</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Commerce Pro</td>
+    <td align="LEFT" valign="TOP"><a href="http://www.ast.com/support/suplines.htm">AMI
+    Configuration Utility Contact an AST Technical Representative</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S</td>
+    <td align="LEFT" valign="TOP"><a href="http://www.ast.com/support/suplines.htm">AMI
+    Configuration Utility Contact an AST Technical Representative</a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premmia SE (BIOS version previous to 2.00)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10522036.EXE">10522036.EXE
+    EISA Configuration Utility, v2.63 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premmia SE (BIOS version 2.00 or later)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10918031.EXE">10918031.EXE
+    EISACU 2.84 Non-PCI Systems w/BIOS &gt;= 2.0 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premium SE (BIOS version previous to 2.00)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10522036.EXE">10522036.EXE
+    EISA Configuration Utility, v2.63 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Premium SE (BIOS version 2.00 or later)</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/10918031.EXE">10918031.EXE
+    EISACU 2.84 Non-PCI Systems w/BIOS &gt;= 2.0 </a></td>
+  </tr>
+</table>
+<b>
+
+<hr>
+
+<p><a name="12">How do I Install the Latest BIOS Revision and the latest version of EISACU
+on the Manhattan P &amp; V? </a></p>
+</b>
+
+<p><i>NOTE: You should follow these procedures precisely and in the proper order to
+prevent any future problems once the system BIOS has been updated.</i></p>
+
+<p><b>Prepare the BIOS diskette and flash the BIOS:</b> 
+
+<ol>
+  <li>Prepare the BIOS 1.12 and EISACU 1.09 diskettes. Listed below are the BIOS updates you
+    can download:<br>
+    <a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE Manhattan P/V Flash BIOS
+    Update, v1.13</a><br>
+    <a href="ftp://ftp.ast.com/S-BIOS/11371040.EXE">11371040.EXE EISACU For Manhattan
+    P/V,v1.09 644076</a><br>
+    Each self-extracting file will contain a batch file called EXTRACT.BAT that will create a
+    single 3.5&quot; diskette. </li>
+  <li>Access System (CMOS) Setup by pressing &lt;F2&gt; at boot and press &lt;ESC&gt; once you
+    are in the main menu. </li>
+  <li>Choose &quot;SAVE CHANGES, EXIT, and UPDATE BIOS.&quot; </li>
+</ol>
+
+<p>After you see several on-screen instructions, the system will reboot causing the screen
+to go blank for a short time. The system will start a program that automatically updates
+the system's BIOS. Once the update is finished, you will see a prompt to restart the
+system. </p>
+
+<p><b>Clear the EISA CMOS configuration:</b> 
+
+<ol>
+  <li>Verify that the system did update to the appropriate BIOS revision. </li>
+  <li>Turn of the system and locate SW1 on the system board. You can find this switch block on
+    the system board below the power supply and floppy drive connectors. </li>
+  <li>Turn switch 4 to the ON position, and then turn on the system. </li>
+  <li>Let the system complete POST, and then turn off the system. </li>
+  <li>Return switch 4 to the OFF position and turn on the system. You should receive an
+    &quot;NVRAM bad&quot; error. </li>
+  <li>Enter System (CMOS) Setup by pressing &lt; F2&gt;, and then press &lt;ESC&gt; once you
+    arrive at the Main Menu. Choose the option to &quot;SAVE and EXIT.&quot; </li>
+  <li>Boot to the EISACU 1.09 diskette and follow the proper procedures for configuring the
+    EISA and PCI portion of the system. If prompted whether or not you wish to use a backup
+    *.SCI file, choose, &quot;Do Not Use Backup *.SCI File.&quot; </li>
+</ol>
+
+<hr>
+
+<p><a name="13"><b>How do I install ArcServe 5.01g on the Manhattan P, V, and G Series?</b></a>
+</p>
+
+<p>Follow the ArcServe installation procedures as documented by Cheyenne. When prompted
+for the tape driver that you want to load, choose &quot;Adaptec ASPI SCSI Manager&quot;
+from the list. <font color="Red">Do not specify any of the optional parameters that the
+installation provides.</font> 
+
+<ol>
+  <li>Make sure that NCRSDMS?.DSK is loaded first in your STARTUP.NCF. &quot;where ?&quot;
+    denotes the version of NetWare you are using (e.g., NCRSDMS3.DSK, NCRSDMS4.DSK). The DSK
+    drivers should be dated 09/24/94 or later. </li>
+  <li>Load ASPICAM?.NLM after your DSK driver. &quot;where the ?&quot; denotes the version of
+    NetWare you are using (e.g., ASPICAM3.NLM, ASPICAM4.NLM). Do not load any Adaptec SCSI
+    drivers and do not load TAPEDAI.DSK. They are unnecessary for proper usage of ArcServe on
+    the AST Manhattan Series. </li>
+  <li>Edit the ASTART.NCF file created by the ArcServe installation program and: <br>
+    After ARCSERVE.NLM, insert a 10 second delay <br>
+    After ASPI50.NLM, insert a 20 second delay <br>
+    After TAPESVR.NLM, insert a 30 second delay <br>
+    The following is a sample ASTART.NCF from a Manhattan server: <br>
+    Search Add SYS:\ARCSERVE\NLM <br>
+    LOAD SYS:\SYSTEM\STREAMS <br>
+    LOAD SYS:\SYSTEM\CLIB <br>
+    LOAD SYS:\SYSTEM\TLI <br>
+    LOAD SYS:\SYSTEM\SPXS <br>
+    LOAD SYS:\SYSTEM\NWSNUT <br>
+    LOAD BTRIEVE -p-4090 -f-20 -h-60 -l-20 -t-15 -u-0 -s-30 -m-512 <br>
+    LOAD BSPXCOM -d-8192 -s-15 -w-3 <br>
+    LOAD SYS:\ARCSERVE\NLM\ASDB <br>
+    LOAD SYS:\ARCSERVE\NLM\FAXLIB <br>
+    LOAD SYS:\ARCSERVE\NLM\ARCSERVE <br>
+    LOAD DELAYCMD 10 &quot;LOAD SYS:\ARCSERVE\NLM\ASPI50 HOST-0&quot; <br>
+    LOAD DELAYCMD 20 &quot;LOAD SYS:\ARCSERVE\NLM\TAPESVR&quot; <br>
+    LOAD DELAYCMD 30 &quot;LOAD SYS:\ARCSERVE\NLM\CLIENTS&quot; </li>
+</ol>
+
+<p>You need to obtain DELAY.ZIP to get DELAYCMD.NLM. This file is distributed by Cheyenne:</p>
+
+<p align="center"><a href="http://www.cheyenne.com/TestDrive/#public"><img border="0"
+src="../../images/Cheyenne.jpg" width="128" height="30"></a> </p>
+
+<p align="left">DELAY.ZIP is contained within the PUB directory on the FTP site. You can
+also obtain the file from their BBS: </p>
+
+<p>(516) 484-3445 File Area #12, Miscellaneous File Area </p>
+<b>
+
+<hr>
+
+<p><a name="14">How do I Move the NCR Chipset Out of Physical Memory Address on the
+Manhattan P and V? </a></p>
+</b>
+
+<p>The procedure listed below may address the following problems: 
+
+<ul>
+  <li>SCO UNIX hangs on the text file upon bootup.</li>
+  <li>Intermittent abends in Novell NetWare.</li>
+  <li>Intermittent screen dumps in Windows NT Server 3.5. </li>
+</ul>
+
+<ol>
+  <li>Boot the server to the AST EISA Configuration diskette. From the CONFIGURE COMPUTER
+    option, choose menu options, and then choose VIEW AND EDIT DETAILS. </li>
+  <li>Highlight PCI FUNCTION 1 ENABLED from the section marked EMBEDDED PCI CONTROLLER. Press
+    &lt;F6&gt; and change the memory address range to at least one megabyte (1MB) above the
+    total physical memory installed in the server. If you have a dual-channel Manhattan P,
+    then you must move the second channel one megabyte (1MB) above the previous channel. For
+    example: 32MB RAM in server = 33MB address for first, 34MB address for second channel. </li>
+  <li>Press &lt;F10&gt;, save, and exit the configuration utility once you have changed the
+    addresses for all the necessary channels.</li>
+</ol>
+<b>
+
+<hr>
+
+<p><a name="15">How do I access System (CMOS) Setup on my server?</a> </p>
+</b>
+
+<p>On most AST systems, you should see a message during a cold boot that prompts you for a
+keystroke or a series of keystrokes allowing you to access the System Setup. On some AST
+systems, this feature is available on warm and cold boots. You can refer to the following
+table as a reference guide:</p>
+
+<table border="1" align="DEFAULT" width="240">
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan G</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Premium SE</td>
+    <td width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Premmia SE </td>
+    <td width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan P</td>
+    <td width="120"><b>&lt;F2&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan V</td>
+    <td width="120"><b>&lt;F2&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan S</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Delete&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Commerce Pro</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Delete&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan D</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;F1&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Presence Pro</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;F1&gt;</b></td>
+  </tr>
+</table>
+<b>
+
+<hr>
+
+<p><a name="16">I downloaded a BIOS update; how do I use it?</a> </p>
+</b>
+
+<p>Before you install a BIOS update, you should always make sure you downloaded the
+appropriate file. Always consult BIOS.TXT for the latest BIOS update. If you are unsure
+about a BIOS update, then contact a technical support representative for more information.
+Listed below is the procedure you should follow once you download the BIOS update: </p>
+
+<p><i>Note: This procedure refers to the root directory of the hard drive as C:\&gt; . If
+applicable, substitute a different drive letter.</i> 
+
+<ol>
+  <li>Create a TEMP directory on your hard drive. </li>
+  <li>Copy the BIOS update file that you downloaded to this empty directory. </li>
+  <li>Enter the following command at the DOS prompt: <br>
+    CD\TEMP </li>
+  <li>Enter the name of the file that you downloaded at the C:\TEMP&gt; prompt. When you enter
+    this command you will extract the files contained within this compressed file. </li>
+  <li>Insert a formatted 3.5&quot; floppy diskette in your A: drive and enter the following
+    command at the DOS prompt:<br>
+    EXTRACT<br>
+    Entering this command will create the actual Flash BIOS update diskette.</li>
+</ol>
+
+<p>Consider the following procedures for completing the flash BIOS update on the Manhattan
+G, Premium SE, and Premmia SE systems: 
+
+<ol>
+  <li>Reboot the computer, and enter System (CMOS) Setup. </li>
+  <li>Insert the BIOS diskette in the A: drive, and then select the &quot;Update BIOS&quot;
+    option from the Main menu.</li>
+  <li>Select &quot;Save changes, exit, and update BIOS.&quot; Then, follow the on-screen
+    instructions for completing the BIOS update. If the BIOS update succeeds, the computer
+    will beep twice. After the beeps, you can remove the floppy disk and reboot the computer.</li>
+</ol>
+
+<p>When updating the BIOS on all other Manhattan Systems, view the README.TXT file for
+BIOS update information.</p>
+<b>
+
+<hr>
+
+<p><a name="17">I want to increase the amount of memory in my server; what options do I
+have?</a> </p>
+</b>
+
+<p>Although we do not require that our customers use proprietary SIMMs, AST cannot support
+problems that originate from third-party SIMMs. It is impossible for AST to guarantee that
+third-party SIMMs will work in every computer. There is not any way to test every SIMM to
+see if it is compatible. Also, third-party, generic SIMMs may not always be manufactured
+with high quality standards.</p>
+
+<p>To obtain AST approved memory, contact one of the following spare parts vendors:</p>
+
+<p>PC ServiceSource<br>
+(800) 727-1278<br>
+prompts: 2, 1<br>
+<a href="http://www.pcservice.com" target="target"><img border="0"
+src="../../images/PCServ.jpg" width="124" height="31"></a> </p>
+
+<p>AST Peripherals by IAD<br>
+(800) 727-1278<br>
+prompts: 2, 2<br>
+<a href="http://www.insight.com" target="target"><img border="0"
+src="../../images/Insight.jpg" width="68" height="31"></a></p>
+
+<h4>Manhattan V</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan V system:</p>
+
+<p>JEDEC / 72-pin / 70ns / tin-lead / parity</p>
+
+<p>Max: 256MB</p>
+
+<p>There are three rules to follow when adding RAM to this system: 
+
+<ul>
+  <li>Bank 0 must be filled</li>
+  <li>Memory must be added two SIMMs at a time</li>
+  <li>The SIMMs in a bank must match each other</li>
+</ul>
+
+<p>You will need to run the EISA Configuration Utility on your Manhattan V to change the
+amount of installed memory. </p>
+
+<p>Consider the memory option part numbers and specifications for the Manhattan V servers:</p>
+
+<p>501159-003 16MB (two 8MB SIMMs) <br>
+501159-004 32MB (two 16MB SIMMS) <br>
+501159-005 64MB (two 32MB SIMMs) </p>
+
+<h4>Manhattan P</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan P system:</p>
+
+<p>JEDEC 36-bit/ 72-pin / 70ns / tin-lead / ECC &amp; EDC</p>
+
+<p>* ECC-Error Correction Code<br>
+* EDC=Error Detection Code</p>
+
+<p>Max: 256MB</p>
+
+<p>While it is valid to partially fill both Bank 0 and Bank 1, system performance improves
+if you completely fill Bank 0 before populating Bank 1.</p>
+
+<p>You will need to run the EISA Configuration utility on your Manhattan P in order to
+change the amount of installed memory. </p>
+
+<p>Consider the memory option part numbers and specifications for the Manhattan P servers:</p>
+
+<p>501615-007 16MB (two 8MB ECC) <br>
+501615-008 32MB (two 16MB ECC) <br>
+501615-009 64MB (two 32MB ECC) </p>
+
+<h4>Manhattan G</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan G system:</p>
+
+<p>JEDEC / 72-pin / 70ns / tin-lead / parity</p>
+
+<p>Max: 128MB</p>
+
+<p>There are three rules to follow when adding RAM to this system: 
+
+<ul>
+  <li>Bank 0 must be filled.</li>
+  <li>Memory must be added two SIMMs at a time.</li>
+  <li>The SIMMs in a bank must match each other.</li>
+</ul>
+
+<p>Consider the memory option part numbers and specifications for the Manhattan G servers:</p>
+
+<p>4MB (two 2MB SIMMs) 501159-001<br>
+8MB (two 4MB SIMMs) 501159-002<br>
+16MB (two 8MB SIMMs) 501159-003<br>
+32MB (two 16MB SIMMs) 501159-004<br>
+64MB (two 32MB SIMMs) 501159-005</p>
+
+<h4>Manhattan S6200 and Manhattan Commerce Pro</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan S6200 and
+Manhattan Commerce Pro systems:</p>
+
+<p>DIMM/ 168-pin/ 60ns/ 5V/ tin-plated pins/ ECC/ Single or Double density</p>
+
+<p>Max: 256MB</p>
+
+<p>You will need to run the EISA Configuration utility on your Manhattan system in order
+to change the amount of installed memory. </p>
+
+<p>Consider the memory option part numbers:</p>
+
+<p>501615-004 16MB (two 8MB ECC DIMMs)<br>
+501615-005 32MB (two 16MB ECC DIMMs)<br>
+501615-006 64MB (two 32MB ECC DIMMs)</p>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan D and
+Manhattan Presence Pro systems:</p>
+
+<p>JEDEC EDO DRAM/ 168-pin/ 60ns</p>
+
+<p>Max: 512MB</p>
+
+<p><i>Note: Bank 0 must always be populated.</i></p>
+
+<p>Consider the memory option part numbers:</p>
+
+<p>501615-011 32MB (one 32MB EDO SIMM)<br>
+501615-012 64MB (one 64MB EDO SIMM)<br>
+501615-013 128MB (one 128MB EDO SIMM)</p>
+
+<h4>Premium SE</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Premium SE system:</p>
+
+<p>JEDEC / 72-pin / 60ns / tin-lead / parity</p>
+
+<p>The Premium SE processor board (202465) will support up to 128MB of RAM.<br>
+All other processor boards will support up to 16MB of RAM.</p>
+
+<p><i>Note: You must install four identical SIMMs for memory upgrades.</i></p>
+
+<p>You will need to run the EISA Configuration Utility on your system in order to change
+the amount of installed memory. </p>
+
+<p>Only the 4MB and 8MB SIMMs are available from an AST spare parts vendor. Use the
+following part numbers to order AST memory upgrades:</p>
+
+<p>104000-141 4MB SIMM<br>
+104000-140 8MB SIMM</p>
+
+<p>Contact a local computer vendor for 60 nanosecond, 36 bit, fast page mode, 72-pin, 16MB
+and 32MB SIMMs. </p>
+
+<h4>Premmia SE</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Premmia SE system:</p>
+
+<p>JEDEC / 72-pin / 70ns / tin-lead / parity</p>
+
+<p>Max: 128MB</p>
+
+<p>There are three rules to follow when adding RAM to this system: 
+
+<ul>
+  <li>Bank 0 must be filled.</li>
+  <li>Memory must be added two SIMMs at a time.</li>
+  <li>The SIMMs in a bank must match each other.</li>
+</ul>
+
+<p>You will need to run the EISA Configuration Utility on your system in order to change
+the amount of installed memory. </p>
+
+<p>Consider the memory option part numbers:</p>
+
+<p>4MB (two 2MB SIMMs) 501159-001<br>
+8MB (two 4MB SIMMs) 501159-002<br>
+16MB (two 8MB SIMMs) 501159-003<br>
+32MB (two 16MB SIMMs) 501159-004<br>
+64MB (two 32MB SIMMs) 501159-005</p>
+</td></tr></table>
+</body>
+</html>

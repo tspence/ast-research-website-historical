@@ -1,0 +1,37 @@
+<HTML><HEAD>
+<html><TITLE>LA ASC</TITLE>
+</HEAD>
+<body bgcolor='ffffff' text='000000' LINK="#0000FF" ALINK="#0000FF" VLINK="#0000FF">
+<b>Pronto! Pro <i>OnLine</I> Text Version</b>
+<CENTER>
+<!-- #INCLUDE FILE="TITLE.INC" -->
+</CENTER>
+<P>
+<H1>Servicio de Precios y Disponibilidad de Partes</H1>
+<H2>Como Utilizar la Forma de Precios y Disponibilidad</H2>
+<A HREF='FORM2.DOC'>Obtenga el formulario</A><BR>
+- Escriba el numero de pieza, cantidad
+y descripcion, cuando termine por favor enviar la Forma via fax
+a AST Spare Part Sales al (817) 230-5910.
+<P>
+- Si usted recibe esta forma y &quot;exchange&quot;
+o &quot;cambio&quot; esta escrito a continuacion del precio entonces
+el componente del cliente necesita ser regresado despues que usted
+ordene y reciba la parte.
+<P>
+- Por favor llene la informacion del
+cliente completamente.
+<P>
+- Para ordenar una parte despues de
+recibir el precio que usted necesite, Facsimile a AST una Orden
+de Compra (P.O. #) con  el numero de pieza y el precio que fue
+citado.
+<P>
+- Si usted tiene cualesquier preguntas,
+por favor llame a AST al (817) 230-6171.
+<br><br><br><br>
+
+
+</BODY>
+
+</HTML>

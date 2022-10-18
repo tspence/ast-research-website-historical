@@ -1,0 +1,153 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>What is 3D</TITLE>
+</HEAD>
+<BODY>
+
+<B><FONT FACE="Arial" SIZE=7><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">What is 3D Graphics and how does it affect Business Desktops</P>
+</B></FONT><FONT SIZE=2><P>&nbsp;</P>
+</FONT><B><I><FONT FACE="Arial" SIZE=4><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">White Paper</P>
+</B></I><P ALIGN="CENTER">Abizar Vakharia</P>
+<P ALIGN="CENTER">October 15, 1997</P>
+</FONT><FONT SIZE=2><P>&nbsp;</P>
+</FONT><FONT FACE="Arial"><P>Executive Summary</P>
+</FONT><FONT SIZE=2><P>The images that we are bombarded with from television, the movies, and now, our computers, are all testaments to the power of 3D graphics. The world is not flat. Neither is it monochrome. Neither is it smooth. It’s a colorful place; dry in parts, wet in others. It has its rough patches and it has its smooth spots. It is a feast for the senses. Computers have often tried to emulate the experience of the real world by creating a facsimile of it on their screens. With recent advances in technology, 3D has passed out of the hands of science fiction writers and jumped on to the desktop screen. The computer user of today is ready for a visual experience on the desktop that matches the wizardry of Hollywood special effects motion pictures</P>
+<P>&nbsp;</P>
+<P>The silicon that can make this all possible is now coming to market.  3D graphics subsystems are designed to handle the computationally intensive tasks of manipulating fully rendered, 3D objects in real time.  They have been designed to accelerate in hardware 3D images that bring a scene to life by creating effects such as texture that is almost touchable, atmosphere that is almost breathable, and light that is almost blinding in its brilliance, or subtle in its nuance. The goal of 3D accelerators is to bring true interactivity to multimedia.</P>
+</FONT><FONT FACE="Arial"><P>A little history…</P>
+</FONT><FONT SIZE=2><P>The market for graphics subsystems was, until the advent of multimedia, relatively simple to follow. First there was VGA, developed by IBM in 1987, which made it possible for graphics card manufacturers to offer higher resolutions (640 x 480) and more on screen colors. With the growth in popularity of Windows there came a strong demand for 2D hardware acceleration to offload the host Central Processing Unit  (CPU) of graphics processing tasks, and increase the overall performance of the Graphical User Interface (GUI). The operating system of Windows and its applications needed as much of the CPU time as possible, and that was slowing down the graphics.   Manufacturers added 2D graphics functions to move Windows around the screen much faster, hardware cursors to track the movement of pointers across the display, and processing power to fill areas of the screen with color at much faster rates. Hence, the Accelerated VGA  (AVGA) chip was born, also known as the Windows accelerator, or GUI accelerator. The Windows accelerator is the staple product in mainstream computing. </P>
+<P>&nbsp;</P>
+<P>Multimedia provided a new set of graphics challenges by adding audio, and digital video components to the 2D graphics mix.  Today it is common to find that many AVGA products also support digital video functions in hardware.  Therefore, if you have been used to seeing postage sized video on your computer screen you need to move up to the multimedia accelerator.  The multimedia accelerator normally has functions that allow scaling of video in x and y directions with hardware, and convert the video signal of digital video into computer graphic RGB components in hardware. Some may also have hardware decompression of digital video as well. </P>
+<P>&nbsp;</P>
+<P>The development of graphics subsystem has followed a simple pattern partly dictated by the size of the computer’s screen, partly influenced by the GUI, and partly influenced by graphics chips. The early VGA standard of 640 x 480-pixel resolution was adequate for the 14-inch monitors that existed on most systems at that time. As displays got bigger, resolutions got higher. Today, 17-inch monitors are quite common as are the 1024 x 768 resolution images that fill them up. </P>
+<P>&nbsp;</P>
+<P>From VGA to multimedia accelerators the trend has been towards putting more visual information on the screen. 3D is a continuation of that trend. Large amounts of visual data can be compressed into the physical space of a computer screen if it is displayed in 3D. Real time 3D graphics then lets users navigate through that information with ease.</P>
+</FONT><FONT FACE="Arial"><P>What is 3D? </P>
+</FONT><FONT SIZE=2><P>3D graphics is the graphical representation of a scene or object along three axes of reference: height, width and depth to make it look more realistic. This technique, which tricks the PC user into seeing a 3D image on a flat screen, is increasingly popular in business presentations and training videos, adding a more realistic and interactive aspect to graphical applications. </P>
+</FONT><FONT FACE="Arial"><P>How does 3D work on a PC?</P>
+</FONT><FONT SIZE=2><P>The display of 3D images requires a series of processes (usually referred to as a pipeline) and then the translation of the results into 2D for display on a monitor screen. An object is first represented as a set of points, or coordinates, in a 3D coordinate system. The 3D coordinate system is defined by horizontal, vertical, and depth axes, commonly known as the x, y, and z-axes. An object may represent a house, a person, car, plane, or complete 3D world, and the coordinates define the position of the objects vertices in space. Connect the coordinate vertices with lines and the image becomes known as a wire frame because, only the edges of the shapes that form the object are visible. The wire frame model bounds surface areas that can be filled with color, texture, and upon which light can shine.</P>
+<P>&nbsp;</P>
+<P><IMG SRC="Image9.gif" WIDTH=562 HEIGHT=201></P>
+<P>&nbsp;</P>
+<P>Even with such a simple explanation of a 3D graphics pipeline it is obvious that many calculations must occur in order to render a 3D object onto a 2D display. Imagine how much more calculation has to be done with the coordinate system when an object moves.</P>
+<P>&nbsp;</P>
+<P>The computer image is made up of small points called pixels, which are the smallest resolvable point of a computer image. A higher number of pixels gives a higher resolution picture. In order to display a 3D object on the flat 2D monitor, the object must then be rendered. </P>
+<P>&nbsp;</P>
+<P>Rendering is the act of calculating, on a per pixel basis, the different color and position information which will fool the viewer into perceiving depth on the 2D screen. Rendering fills in the points on the surface of the object that previously were stored only as a set of vertices. In this way, a solid object, shaded for 3D effect, will be drawn on the screen. This is done using perspective algorithms that say that if an object is farther away it will appear smaller, and if it is closer it will seem larger. These steps provide the color and position information necessary to render one triangle in the scene. The actual rendering process is the longest portion in the pipeline as the processor is dealing on a per pixel basis instead of only with sparse vertices. The depth value and unique color intensities for each of the pixels must be interpolated from the already calculated values at the three vertices. A per-pixel Z-compare must be performed and then the pixels are written to the frame buffer.</P>
+<P>&nbsp;</P>
+<P>There are many ways to render an image. Gouraud Shading and texture mapping are the most common in mainstream applications.</P>
+</FONT><FONT FACE="Arial"><P>Why is hardware acceleration necessary for 3D on the PC?</P>
+</FONT><FONT SIZE=2><P>Rendering 3D scenes on a PC is a processor intensive task. PCs without a graphics accelerator are usually capable of rendering up to 320 x 200 pixel resolutions at 256 colors, with an acceptable number of polygons at an acceptable frame rate. However, the processor alone cannot provide real-time 3D animation of more complicated scenes. Quality graphics require enormous detail (higher resolutions, higher color depths and higher frame rates). A 3D hardware accelerator is necessary to achieve this detail.  What are the price/performance issues in hardware accelerated 3D?</P>
+<P>&nbsp;</P>
+<P>Basically, the more 3D tasks performed by the 3D engine, the faster the performance will be. Of course, the more capabilities (or 3D features) added to the 3D engine, the greater the number of gates, or circuits, required and the higher the cost to the end user. </P>
+<P>&nbsp;</P>
+<P>The top portion of the 3D tasks including the transformations, clipping and lighting, as well as the map-to-screen is called the geometry portion of the pipeline. This portion consists of many floating-point-matrix-math operations and accounts for at most 40% of the total time spent in the 3D pipeline. </P>
+<P>&nbsp;</P>
+<P>Today's computers are well suited to performing this portion of the pipeline. In order for a 3D graphics engine to accelerate, it would be necessary to integrate a floating-point unit into the 3D engine, which would increase the price. </P>
+<P>&nbsp;</P>
+<P>The rendering portion of the task is the longest (at least 60% of the total time). Rendering takes more time as display resolutions increase. The 3D engine is appropriate for the rendering task, as it does not require a floating-point unit and it provides the greatest performance boost at the lowest additional cost. </P>
+<P>&nbsp;</P>
+<P>The ultimate goal is the highest performance at the most affordable price.</P>
+</FONT><FONT FACE="Arial"><P>How important is speed?</P>
+</FONT><FONT SIZE=2><P>Higher Frame Rates create more compelling, absorbing, and realistic graphics. Rendering speed is the main factor in providing better interactivity. The image quality is important as well, as long as it does not compromise the speed of the game.</P>
+<P>&nbsp;</P>
+<P>A graphic engine's 3D speed is sometimes rated in terms of millions of texels per second (Mtexels/second) or in polygons per second. This refers to the number of textured pixels or the number of 3D polygons the graphics chip renders each second. </P>
+<P>&nbsp;</P>
+<P>Implementing PCI Bus Mastering within the graphics chip is essential in achieving high frame rates. Two levels of bus mastering can be supported in typical 3D graphics engines: </P>
+<P>&nbsp;</P>
+<OL>
+
+<LI>Bus mastering command lists allows the graphics engine and the CPU to synchronize rendering commands. For example, while polygon information is computed by the CPU and sent to the graphics engine to be rendered; the host will start calculating the next frame of polygon information. Allowing the graphics processor and the CPU to process information at the same time translates into a large performance gain over rendering engines that do not support this level of bus. Today's standard 3D APIs also support this  feature allowing content to take advantage of increased performance. Of the engines that support bus mastering, there are two different implementations: Basic bus mastering and scatter-gather bus mastering. Basic bus mastering is capable of operating independently from the CPU. It can only do so for short periods of time, before it must interrupt the host and ask for direction. In data-intensive operations like 3D, this can minimize the advantages of bus mastering. </LI>
+<P>&nbsp;</P>
+<LI>Scatter-gather bus mastering, is able to operate almost independently from the host, therefore achieving the full performance benefits illustrated below. Mystique can achieve up to 50 per cent performance improvement over products with no bus master and 30 per cent over products with basic bus mastering.</LI></OL>
+
+</FONT><FONT FACE="Arial"><P>What are other important factors affecting the quality of 3D graphics?</P>
+
+<UL>
+</FONT><FONT SIZE=2><LI>Gouraud shading draws smooth shadows across the face of an object, causing the viewer to perceive depth and curvature information from the surface of the object Z-buffering helps to create a more realistic depth perspective.</LI>
+<LI>Double-buffering allows for the appearance of smooth animation on-screen </LI>
+<LI>Color dithering mixes defined colors in order to create a wider spectrum of color options. </LI>
+<LI>Texture mapping enhances realism by drawing texture onto 3D objects</LI></UL>
+
+</FONT><FONT FACE="Arial"><P>What are the application areas for 3D?</P>
+
+<UL>
+</FONT><FONT SIZE=2><LI>3D application areas include:</LI>
+<LI>Computer Assisted Design (CAD)</LI>
+<LI>Computer Assisted Engineering (CAE)</LI>
+<LI>Business documents, presentations and videos In productivity programs such as Word, data mining for chart generation, and video editing for promotional and training videos </LI>
+<LI>Arcade quality games</LI>
+<LI>Edutainment</LI>
+<LI>Scientific Visualization</LI>
+<LI>Virtual Reality</LI>
+<LI>Web Browsing</LI></UL>
+
+</FONT><FONT FACE="Arial"><P>What is an API? </P>
+</FONT><FONT SIZE=2><P>An Applications Programmer's Interface (API) is a specification that allows software developers to write their software without concern for the underlying hardware. It provides a standard set of function calls allowing the applications developer to access device drivers. One good example of an existing API is the  MS-Windows GDI. All Windows desktop development is done by programming to the 2D graphics GDI specification, while every graphics vendor writes a driver for their product to accelerate GDI function calls. </P>
+<P>&nbsp;</P>
+<P> Similarly, API's can exist to take advantage of 3D hardware acceleration. Because not every system will have an installed 3D hardware accelerator, the 3D APIs must also provide a software only solution for 3D such as a software 3D driver. With the purchase of RenderMorphics and the implementation of DirectX and ActiveX APIs, Microsoft is heavily supporting 3D under Windows.</P>
+<P>&nbsp;</P>
+<P>Applications Programming Interfaces (APIs) exist that handle the functions of the 3D pipeline in software only, but can take advantage of 3D hardware where it exists. If hardware acceleration is there the API uses its features, but if no acceleration exists, the API has been optimized to run on the most common systems. So any number of software programs can be supported by any number of hardware accelerators for 3D, providing they use some API. </P>
+<P>&nbsp;</P>
+<P>3D software is supported by Microsoft’s Direct3D, Criterion’s Renderware, Argonaut’s BRender, and Intel’s 3DR, to name but four. For professional applications, OpenGL dominates and runs under Windows NT. SoftImage, a popular animation and 3D design application running on Silicon Graphics workstations, is spearheading the migration of many high-end workstation applications to Windows NT based PCs. Autodesk, the largest maker of computer aided design software, has developed its own API, called Heidi. </P>
+<P>&nbsp;</P>
+<P>The availability of 3D APIs that can support many graphics subsystems, and many applications, is increasing the demand for real time 3D hardware acceleration. Entertainment is a major driving force on the PC, but Windows NT based applications, that have migrated to the PC from high end workstations, are also fueling the development of very powerful graphics subsystems for professional 3D graphics. Applications on the Internet are set to benefit from the greater maneuverability that a 3D interface would provide. After all, it is the world wide web which has been the biggest proponent of virtual communities on-line. These communities may be much easier to access if they can exist in a 3D universe.</P>
+<P>&nbsp;</P>
+</FONT><FONT FACE="Arial"><P>What is Direct 3D?</P>
+</FONT><FONT SIZE=2><P>One of the Microsoft DirectX interactive media technologies, Direct 3D is a comprehensive set of API services for real-time 3D graphics. It—along with other DirectX technologies—extend to developers all of the performance the underlying hardware can deliver. Features include an optimized software-only rendering engine, transparent access to 3D hardware acceleration, and integral support for mapping of photographic textures and videos to animated 3D objects.</P>
+</FONT><FONT FACE="Arial"><P>32-Bit Z-Buffer </P>
+</FONT><FONT SIZE=2><P>The performance of 3D graphics relies on a powerful Z-buffer, which checks the z-value, or depth, of each pixel to be drawn against other pixels. This determines which pixels or polygons will be drawn and which will be hidden. The z-buffer is a portion of off-screen memory reserved to store the z-value of each pixel. The ability of graphics accelerator hardware to support a full 32-bit Z-buffer is an important requirement of many design applications which require a high degree of depth precision.</P>
+<P>&nbsp;</P>
+<P>Z-buffer is important for games as well as professional applications. For higher end 3D applications like 3D Studio Max and OGL applications, a 32-bit Z-buffer is mandatory. If the hardware does not support a 32-bit Z-buffer, the application will be done in software. </P>
+</FONT><FONT FACE="Arial"><P>Anti-aliasing?</P>
+</FONT><FONT SIZE=2><P>&nbsp;</P>
+<P><IMG SRC="Image10.gif" WIDTH=261 HEIGHT=134></P>
+<P>&nbsp;</P>
+<P>Anti-aliasing removes the jaggies from images. Looking at the above diagram it’s clear that any anti aliasing calculation has to be performed on a pixel by pixel basis. It’s a feature of hardware acceleration that may not be noticed if its not there, but is certainly noticeable when it is there. The enhanced experience of anti-aliased images lets users suspend disbelief and become immersed in the game.</P>
+</FONT><FONT FACE="Arial"><P>Fogging </P>
+</FONT><FONT SIZE=2><P>In order to maintain high performance, developers created "tricks" to reduce the amount of rendering needed for a scene. One of these tricks is called fogging. It is mostly used in landscape scenes, such as flight simulators. Fogging allows the developer to "hide" the background of a scene behind a layer of "fog"; therefore mixing the textures' color values with a monochrome color, such as white. Some graphics chips support fogging in hardware, which allows the developer to use this trick. A similar visual effect can also be achieved through depth-cued lighting tricks.</P>
+</FONT><FONT FACE="Arial"><P>Alpha - Blending</P>
+</FONT><FONT SIZE=2><P>Blending is a visual effect that mixes two textures on the same object. Different levels of blending can be implemented to create visual effects. The simplest method is called screen door or "stippling". Only some pixels making up the object are rendered to produce a "see-through" effect. For example, the developer would decide that an object would be 50% transparent. The graphics accelerator would therefore draw the background image, and then write only every second pixel of the object. This approach is easy to implement in hardware and delivers a reasonable quality at a low cost. By contrast, true alpha blending is a data-intensive operation, which involves reading the values of two source textures and performing the perspective calculations on both textures simultaneously. This effect is very taxing on performance, especially with a low-bandwidth frame buffer, and costly to implement. The resulting effect does not warrant the loss in performance and therefore is not essential for 3D games.</P>
+</FONT><FONT FACE="Arial"><P>Point sampling: </P>
+</FONT><FONT SIZE=2><P>This is the most common way to map a texture on a given polygon. Point sampling allows the graphics engine to approximate the color value of a given pixel on the resulting texture map by replicating the value of the closest existing pixel on the source texture. Point sampling provides very good results when used in conjunction with tile-based MIP mapping (see below), and maintains high performance levels at a low cost.</P>
+</FONT><FONT FACE="Arial"><P>MIP mapping: </P>
+</FONT><FONT SIZE=2><P>Mip-mapping is another way to improve the quality of the 3D texture mapped. The more alterations made to a texture to "fit" an object, the less it will resemble the source texture. One way to avoid this severe deviation from the original texture is to create three copies, or MIP levels, of the same source texture, in different sizes. MIP-mapping can be implemented in three ways: </P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+<B><P>Tile-based MIP-mapping: </P>
+</B><P>The application will determine - depending on the size of the polygon -the MIP-level that is closest in size. The MIP-level is provided to the graphics accelerator to be used as the source texture for that polygon. Tile-based MIP-mapping, does not require extra circuitry, as it is programmed in software by the game developer. It results in better overall quality, while its effect on performance and cost is minimal. </P>
+<P>&nbsp;</P>
+<B><P>Per-Pixel MIP mapping: </P>
+</B><P>The graphics accelerator calculates, on a per pixel basis, which MIP-level provides the best source. In this way, the graphics accelerator can use different MIP levels on the same tile. Any change in the size of the polygon being drawn is accommodated. When performed in hardware, per-pixel MIP mapping results in a significant hit on performance, or if designed to perform quickly, results in a dramatic increase in cost. </P>
+<P>&nbsp;</P>
+<B><P>Tri-linear MIP-mapping: </P>
+</B><P>The graphics accelerator reads source pixels from two different MIP levels, performing bilinear interpolation between the values of each MIP level to calculate the resulting pixel. This requires a lot of bandwith, because two source texture maps need to be read simultaneously. When performed in hardware, it results in a significant reduction in performance, or if implemented to effect speed, results in a dramatic increase in cost.</P></DIR>
+</DIR>
+
+</FONT><FONT FACE="Arial"><P>Filtering: </P>
+</FONT><FONT SIZE=2><P>Some source textures may need a considerable amount of warping, which may lead to blockiness.</P>
+<P>&nbsp;</P>
+<P>Some graphics accelerator manufacturers use a technique called bi-linear filtering to make the textures appear smoother. Bi-linear filtering of textures is similar to digital video; four-source texel values are read, and their color values are then blended together based on proximity. The resulting values will be used for the texel to be drawn. While this technique is useful, the resulting quality is not comparable to using high-resolution source textures. These larger source textures use higher portions of off-screen memory, and therefore, can only be done effectively with a graphics accelerator, which supports palletized textures. Graphics accelerators without support for palletized textures have to scale down the textures to store them, and apply filtering to map them onto polygons. This results in poor quality rendering.</P>
+</FONT><FONT FACE="Arial"><P>Gouraud shading </P>
+</FONT><FONT SIZE=2><P>Gouraud shading (or smooth shading) draws smooth shadows across the face of an object. This causes the viewer's eyes to perceive depth and curvature information from the surface of the object. Gouraud shading works by reading the color information at the three vertices of a triangle and interpolating the intensities in red, green and blue smoothly between the three vertices. Gouraud shading is the most popular algorithm used to draw 3D objects on a 2D screen. Most objects can be rendered with amazing realism in 3D by using Gouraud Shading. </P>
+</FONT><FONT FACE="Arial"><P>Double-buffering</P>
+</FONT><FONT SIZE=2><P>Everyone has seen the old animation trick of drawing a cartoon character on the corner of a page of paper, and altering the drawing slightly on following pages of paper. When the sheaf of paper is complete and the pages flipped rapidly, the cartoon character appears to move smoothly. </P>
+<P>&nbsp;</P>
+<P>Double-buffered 3D animation on the PC works in the same way: the next position of the character is being drawn before the page is flipped. Viewing 3D animation without double buffering would be like looking at the animated cartoon if the character were being redrawn with every flip of the page; the animation would appear to "flicker." </P>
+<P>&nbsp;</P>
+<P>Double-buffering requires having two areas reserved on the frame buffer of the 3D graphics card; both regions need to be the size of the visible screen and one buffer is used to render the next frame of the animation. He other frame displays the previously rendered animation frame on the monitor. Under Windows, double-buffering requires the use of Bitblitting to copy the animation from buffer to buffer. </P>
+</FONT><FONT FACE="Arial"><P>Color dithering </P>
+</FONT><FONT SIZE=2><P>The number of colors that can be drawn to the visible screen depends on the number of bits-per-pixel that carry color information. For instance, with 8 bits per pixel of color information, only 256 colors can exist on the desktop at any one time. Color dithering is the process of mixing these defined colors into small patterns to produce a wider spectrum of color without requiring extra video memory. This is especially important in 3D, as Gouraud shading requires many shades of each color used in each scene. If dithering were not handled in hardware, in 256-color mode, a 3D scene could only contain eight different main colors, as each color would require 32 shades to be programmed into the color lookup table to roughly approximate Gouraud shading (8x32=256 entries in lookup table). With hardware support for color dithering, a scene with many more colors may be rendered without requiring extra video RAM.</P>
+<P>&nbsp;</P>
+</FONT><FONT FACE="Arial"><P>Summary </P>
+</FONT><FONT SIZE=2><P>In the end, a good 3D graphics accelerator aimed at satisfying the business desktop market must offer a wealth of functions at the right price. The appropriate mix of features, including resolution, color depth and perspective-correct texture mapping should also be implemented as long as frame rate is not negatively affected. It is important to note that consumers need more than 3D graphics acceleration. Excellent acceleration for 3D applications, high performance for Windows, video and DOS, a multimedia solution, and superior service at an aggressive price point, will all be part of the decision making process of the business-buyer.</P></FONT></BODY>
+</HTML>

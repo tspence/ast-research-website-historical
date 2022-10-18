@@ -1,0 +1,421 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" width="570"><tr><td>
+<h3><i>BIOS &amp; Driver</i> </h3>
+
+<form method="POST" action="../scripts/faqd.asp">
+  <p>I want to search through server FAQs about <select name="faqd" size="1">
+    <option value="sfaq1.htm">Hardware Upgrade</option>
+    <option value="sfaq2.htm">Configuration</option>
+    <option value="sfaq3.htm">Software</option>
+    <option selected value="sfaq4.htm">BIOS and Driver</option>
+    <option value="sfaqa.htm">All</option>
+  </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+</form>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="50%"><ul>
+      <li><h5><a href="#3"><strong>How do I install DOS and Windows SCSI drivers for the Manhattan
+        P, V, and G?</strong></a></h5>
+      </li>
+      <li><h5><strong><a href="#8">I updated the BIOS on my Manhattan P &amp; V system to version
+        1.14 and the README file suggests that I update my NCR drivers. Where can I find the
+        latest NCR drivers?</a></strong></h5>
+      </li>
+      <li><h5><strong><a href="#9">Do I need to make any changes to the server before the year
+        2000?</a></strong></h5>
+      </li>
+    </ul>
+    </td>
+    <td valign="top" width="50%"><ul>
+      <li><h5><strong><a href="#12">How do I Install the Latest BIOS Revision and the latest
+        version of EISACU on the Manhattan P &amp; V?</a> </strong></h5>
+      </li>
+      <li><h5><strong><a href="#15">How do I access System (CMOS) Setup on my server?</a></strong></h5>
+      </li>
+      <li><h5><strong><a href="#16">I downloaded a BIOS update; how do I use it?</a></strong></h5>
+      </li>
+    </ul>
+  </td></tr></table>
+
+<hr>
+
+<p><a name="3"><b>How do I install DOS and Windows SCSI drivers for the Manhattan P, V,
+and G?</b></a> </p>
+
+<p>The Manhattan P, V, and G systems include an integrated NCR SCSI interface. </p>
+
+<p>For the Manhattan G systems and Manhattan P, V systems with BIOS version 1.13 or older,
+load the following NCR drivers in the CONFIG.SYS file on the root directory of the boot
+drive, in the following order:</p>
+
+<p>DOSCAM.SYS: The basic SCSI driver for DOS and Windows.<br>
+SCSIDISK.SYS: Supports SCSI drives that do not have 512-byte sectors, as well as SCSI
+devices with removable media, such as SCSI floptical devices and cartridge hard drives.<br>
+CDROM.SYS: Supports SCSI CD-ROM drives.<br>
+ASPICAM.SYS: Supports ASPI applications, such as CorelSCSI! and Central Point Tape Backup.</p>
+
+<p>These drivers are contained in the DOS subdirectory of the NCR PCI SCSI <br>
+device drivers diskette (p/n 911283-313). If you do not have the NCR driver diskette,
+download the following file from our Web site: </p>
+
+<p><a href="ftp://ftp.ast.com/S-OTHER/283313.EXE">283313.EXE Manhattan P/V/G NCR SCSI
+Drivers V.1.06 </a><br>
+<br>
+<b>Installing DOSCAM.SYS:</b></p>
+
+<p>To install DOSCAM.SYS, use a text editor to add the following line to the CONFIG.SYS
+file in the root directory of the boot drive: </p>
+
+<p>DEVICE=C:\SCSI\DOSCAM.SYS /option </p>
+
+<p>/option is one or more of the following options: </p>
+
+<p><i>/RAMCOPY: Causes the driver to load the SCSI memory into system memory. This
+increases the performance of the SCSI memory, but uses more system memory. </i></p>
+
+<p><i>/T=n: Specifies the length of time, in seconds, that DOSCAM.SYS waits after sending
+a command to a SCSI device. When DOSCAM.SYS issues a command to a SCSI device, a timer is
+started. If the timer expires before the device sends a response back to DOSCAM.SYS,
+DOSCAM.SYS assumes that something has gone wrong with the device. DOSCAM.SYS then tries to
+re-establish contact with the device. By default, DOSCAM.SYS does not use this feature,
+which is called a time-out. If you want to set a time-out period, use the &#147;/T=n&#148;
+option, where &quot;n&quot; is the number of seconds you want DOSCAM.SYS to wait for the
+time-out. </i></p>
+
+<p><i>/ASK: Prompts you to indicate, each time the system starts, whether to load
+DOSCAM.SYS. This option is useful if you want to use the system without being able to
+access any SCSI devices. </i></p>
+
+<p><b>Installing SCSIDISK.SYS:</b></p>
+
+<p>You can use a text editor to install SCSIDISK.SYS. On the root directory of the boot
+drive, add the following line to the CONFIG.SYS file immediately after the line that
+contains the DOSCAM.SYS driver: </p>
+
+<p>DEVICE=C:\SCSI\SCSIDISK.SYS /option </p>
+
+<p>/option is one or more of the following options: </p>
+
+<p><i>/ASK: Prompts you to indicate, each time the system starts, whether to load
+SCSIDISK.SYS. This option is useful if you want to use the system without being able to
+access any SCSI devices that use SCSIDISK.SYS. </i></p>
+
+<p><i>/UNITS=n: SCSIDISK supports SCSI devices with removable media, such as floptical
+drives and cartridge hard drives. The /UNITS=n option reserves partitions for these
+devices by setting the number of logical drive units that are reported to the operating
+system. The maximum value for &quot;n&quot; is 8. The /UNITS=n switch is useful when the
+system is started without a cartridge or disk in the drive, or when the cartridge or disk
+that has more than one volume partition is inserted after the system is started. In
+addition, the /UNITS=n option enables you to remove a disk or cartidge and replace it with
+another drive or cartidge that is partitioned into a different number of volumes, without
+having to restart the system. Without the /UNITS=n option, you can start the system with a
+removable disk or cartidge in the device, but you cannot remove it until the system is
+turned off. A system with the SCSIDISK device driver installed allow you to boot the
+system with a removable disk or cartridge; however, you cannot remove the disk or cartidge
+until after you shutdown the system. If you want to remove the disk or cartridge without
+shutting down the system, then you need to start the system without a disk or cartridge in
+the drive. </i></p>
+
+<p><i>/PROTECT=x: Enables you to write-protect a DOS volume on a SCSI hard drive.
+&quot;x&quot; is the DOS volume, such as C or D. If you attempt to write to the volume,
+you will receive a write-protected media error code. It is possible to bypass the
+write-protection with a low-level program, such as FDISK. </i></p>
+
+<p><b>Installing CDROM.SYS:</b></p>
+
+<p>You can use a text editor to install CDROM.SYS. On the root directory of the boot
+drive, add the following line to the CONFIG.SYS file immediately after the line that
+contains the SCSIDISK.SYS driver:</p>
+
+<p>DEVICE=C:\SCSI\CDROM.SYS /x:name /ASK </p>
+
+<p>&#147;x:name&#148; is the name you want to assign to your CD-ROM, not a drive letter
+designation. You must include a name, which can be any combination of up to eight
+characters. </p>
+
+<p><i>/ASK: Prompts you to indicate, each time the system starts, whether to load
+CDROM.SYS. The /ASK switch is useful if you want to use the system without being able to
+access the CD-ROM drive. To ensure that enough drive letters are available to identify all
+devices connected to the SCSI adapter, add the MS-DOS LASTDRIVE command to the CONFIG.SYS
+file: </i></p>
+
+<p><b>LASTDRIVE=x </b></p>
+
+<p>x is a drive letter in the range C - Z. The letter assigned to LASTDRIVE represents the
+last logical drive DOS is able to recognize, and also represents the maximum number of
+logical drives available. For example, LASTDRIVE=K enables you to access up to 11 logical
+drives. For more information about LASTDRIVE command, see your DOS documentation. </p>
+
+<p>Unless the documentation for your CD-ROM software specifies otherwise, use a text
+editor to add the MSCDEX.EXE command from Microsoft to the AUTOEXEC.BAT file in the root
+directory of your boot drive: </p>
+
+<p><b>MSCDEX /D:name</b> </p>
+
+<p>name=name of CD-ROM drive. Name must match name give in CONFIG.SYS file entry for
+CDROM.SYS.</p>
+
+<p><br>
+<b>Installing ASPICAM.SYS:</b> </p>
+
+<p>You can use a text editor to install ASPICAM.SYS. On the root directory of the boot
+drive, add the following line to the CONFIG.SYS file after the line that contains the
+DOSCAM.SYS driver and after any other lines containing SCSI drivers: </p>
+
+<p>DEVICE=C:\SCSI\ASPICAM.SYS </p>
+
+<p>For Manhattan P and V systems with BIOS version 1.14 and later, obtain the new NCR SCSI
+drivers from Symbios Logic for the 4.0 SDMS PCI SCSI chipset. If you do not use the
+updated drivers for BIOS version 1.14, then you may corrupt or lose of data.</p>
+
+<p>You can obtain the drivers from Symbios Logic:</p>
+
+<p align="center"><a href="ftp://www.symbios.com/pub/symchips/scsi/drivers"
+target="target"><img border="0" src="../../images/Symbios.jpg"></a></p>
+
+<p>Load the following NCR drivers in the CONFIG.SYS file on the root directory of the boot
+drive, in the following order:</p>
+
+<p>ASPI8XX.SYS: The basic SCSI driver for DOS and Windows.<br>
+SYMDISK.SYS: Supports SCSI drives that do not have 512-byte sectors, as well as SCSI
+devices with removable media, such as SCSI floptical devices and cartridge hard drives.<br>
+SYMCD.SYS: Supports SCSI CD-ROM drives.</p>
+
+<p>For detailed instructions on installing the Symbios Logic SCSI drivers, view the
+DOS.TXT file included with the drivers.</p>
+
+<p><i>Note: To ensure that enough drive letters are available to identify all devices
+connected to the SCSI adapter, add the MS-DOS LASTDRIVE command to the CONFIG.SYS file: </i></p>
+
+<p><i>LASTDRIVE=x </i></p>
+
+<p><i>x is a drive letter in the range C - Z. The letter assigned to LASTDRIVE represents
+the last logical drive DOS is able to recognize, and also represents the maximum number of
+logical drives available. For example, LASTDRIVE=K enables you to access up to 11 logical
+drives. For more information about LASTDRIVE command, see your DOS documentation. </i></p>
+
+<p><i>Unless the documentation for the software that comes with your CD-ROM specifies
+otherwise, use a text editor to add the MSCDEX.EXE command from Microsoft to the
+AUTOEXEC.BAT file in the root directory of your boot drive: </i></p>
+
+<p><i>MSCDEX /D:name </i></p>
+
+<p><i>name=name of CD-ROM drive. Name must match name give in CONFIG.SYS file entry for
+SYMCD.SYS.</i></p>
+
+<hr>
+
+<p><strong><a name="8">I updated the BIOS on my Manhattan P &amp; V system to version 1.14
+and the README file suggests that I update my NCR drivers. Where can I find the latest NCR
+drivers?</a></strong></p>
+
+<p>You can obtain the latest NCR drivers from Symbios Logic:</p>
+
+<p align="center"><a href="ftp://www.symbios.com/pub/symchips/scsi/drivers"
+target="target"><img border="0" src="../../images/Symbios.jpg" width="87" height="84"></a></p>
+
+<hr>
+
+<p><strong><a name="9">Do I need to make any changes to the server before the year 2000?</a>
+</strong></p>
+
+<p>You can refer to the following table for the flash BIOS update you need to make before
+the year 2000:</p>
+
+<table border="1" align="DEFAULT" width="100%">
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan P</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE
+    Manhattan P/V Flash BIOS Update, v1.13 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan V</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE
+    Manhattan P/V Flash BIOS Update, v1.13</a> </td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S6200</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05573038.EXE">05573038.EXE
+    Manhattan S6200, CommercePro BIOS v3.80 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan Commerce Pro</td>
+    <td align="LEFT" valign="TOP"><a href="ftp://ftp.ast.com/S-BIOS/05573038.EXE">05573038.EXE
+    Manhattan S6200, CommercePro BIOS v3.80 </a></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan S 6200 U</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Commerce Pro U</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan Presence Pro</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP">Manhattan D</td>
+    <td align="LEFT" valign="TOP">Year 2000-compliant. No update necessary.</td>
+  </tr>
+</table>
+
+<p>All other servers manufactured by AST will require a manual year 2000 rollover. On
+January 1, 2000, DOS and Windows customers can: 
+
+<ul>
+  <li>Change the date via the DATE command at the MS-DOS prompt.<br>
+    or</li>
+  <li>Change the date via the DATE icon in the Windows Control Panel.</li>
+</ul>
+
+<p>The century byte in CMOS will be updated and the correct date will be kept through the
+year 2099. This update has been verified with DOS 6.2, Windows® 3.1, Windows® 95,
+Windows NT&#153; 3.51, and Windows NT&#153; 4.0.Customers that use OS/2 Warp will find
+that the system automatically adjusts for the year 2000.</p>
+<b>
+
+<hr>
+
+<p><a name="12">How do I Install the Latest BIOS Revision and the latest version of EISACU
+on the Manhattan P &amp; V? </a></p>
+</b>
+
+<p><i>NOTE: You should follow these procedures precisely and in the proper order to
+prevent any future problems once the system BIOS has been updated.</i></p>
+
+<p><b>Prepare the BIOS diskette and flash the BIOS:</b> 
+
+<ol>
+  <li>Prepare the BIOS 1.12 and EISACU 1.09 diskettes. Listed below are the BIOS updates you
+    can download:<br>
+    <a href="ftp://ftp.ast.com/S-BIOS/05547311.EXE">05547311.EXE Manhattan P/V Flash BIOS
+    Update, v1.13</a><br>
+    <a href="ftp://ftp.ast.com/S-BIOS/11371040.EXE">11371040.EXE EISACU For Manhattan
+    P/V,v1.09 644076</a><br>
+    Each self-extracting file will contain a batch file called EXTRACT.BAT that will create a
+    single 3.5&quot; diskette. </li>
+  <li>Access System (CMOS) Setup by pressing &lt;F2&gt; at boot and press &lt;ESC&gt; once you
+    are in the main menu. </li>
+  <li>Choose &quot;SAVE CHANGES, EXIT, and UPDATE BIOS.&quot; </li>
+</ol>
+
+<p>After you see several on-screen instructions, the system will reboot causing the screen
+to go blank for a short time. The system will start a program that automatically updates
+the system's BIOS. Once the update is finished, you will see a prompt to restart the
+system. </p>
+
+<p><b>Clear the EISA CMOS configuration:</b> 
+
+<ol>
+  <li>Verify that the system did update to the appropriate BIOS revision. </li>
+  <li>Turn of the system and locate SW1 on the system board. You can find this switch block on
+    the system board below the power supply and floppy drive connectors. </li>
+  <li>Turn switch 4 to the ON position, and then turn on the system. </li>
+  <li>Let the system complete POST, and then turn off the system. </li>
+  <li>Return switch 4 to the OFF position and turn on the system. You should receive an
+    &quot;NVRAM bad&quot; error. </li>
+  <li>Enter System (CMOS) Setup by pressing &lt; F2&gt;, and then press &lt;ESC&gt; once you
+    arrive at the Main Menu. Choose the option to &quot;SAVE and EXIT.&quot; </li>
+  <li>Boot to the EISACU 1.09 diskette and follow the proper procedures for configuring the
+    EISA and PCI portion of the system. If prompted whether or not you wish to use a backup
+    *.SCI file, choose, &quot;Do Not Use Backup *.SCI File.&quot; </li>
+</ol>
+
+<hr>
+
+<p><strong><a name="15">How do I access System (CMOS) Setup on my server?</a></strong> </p>
+
+<p>On most AST systems, you should see a message during a cold boot that prompts you for a
+keystroke or a series of keystrokes allowing you to access the System Setup. On some AST
+systems, this feature is available on warm and cold boots. You can refer to the following
+table as a reference guide:</p>
+
+<table border="1" align="DEFAULT" width="240">
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan G</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Premium SE</td>
+    <td width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Premmia SE </td>
+    <td width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan P</td>
+    <td width="120"><b>&lt;F2&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan V</td>
+    <td width="120"><b>&lt;F2&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan S</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Delete&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Commerce Pro</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Delete&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan D</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;F1&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Presence Pro</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;F1&gt;</b></td>
+  </tr>
+</table>
+<b>
+
+<hr>
+
+<p><a name="16">I downloaded a BIOS update; how do I use it?</a> </p>
+</b>
+
+<p>Before you install a BIOS update, you should always make sure you downloaded the
+appropriate file. Always consult BIOS.TXT for the latest BIOS update. If you are unsure
+about a BIOS update, then contact a technical support representative for more information.
+Listed below is the procedure you should follow once you download the BIOS update: 
+
+<ol>
+  <li>Create a TEMP directory on your hard drive. </li>
+  <li>Copy the BIOS update file that you downloaded to this empty directory. </li>
+  <li>Enter the following command at the DOS prompt: <br>
+    CD\TEMP </li>
+  <li>Enter the name of the file that you downloaded at the C:\TEMP&gt; prompt. When you enter
+    this command you will extract the files contained within this compressed file. </li>
+  <li>Insert a formatted 3.5&quot; floppy diskette in your A: drive and enter the following
+    command at the DOS prompt:<br>
+    EXTRACT<br>
+    Entering this command will create the actual Flash BIOS update diskette.</li>
+</ol>
+
+<p>Consider the following procedures for completing the flash BIOS update on the Manhattan
+G, Premium SE, and Premmia SE systems: 
+
+<ol>
+  <li>Reboot the computer, and enter System (CMOS) Setup. </li>
+  <li>Insert the BIOS diskette in the A: drive, and then select the &quot;Update BIOS&quot;
+    option from the Main menu.</li>
+  <li>Select &quot;Save changes, exit, and update BIOS.&quot; Then, follow the on-screen
+    instructions for completing the BIOS update. If the BIOS update succeeds, the computer
+    will beep twice. After the beeps, you can remove the floppy disk and reboot the computer.</li>
+</ol>
+
+<p>When updating the BIOS on all other Manhattan Systems, view the README.TXT file for
+BIOS update information.</p>
+</td></tr></table>
+</body>
+</html>

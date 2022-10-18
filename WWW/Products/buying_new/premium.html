@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Thursday, January 15, 1998 10:43 AM -->
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<META NAME="Author" Content="AST Computer, Inc.">
+	<TITLE>Sales Help Form</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#00698C" VLINK="#3A4D52" ALINK="#FFA600">
+
+<FORM ACTION="order.asp" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded" NAME="configurator">
+<P>
+<TABLE BORDER="0" WIDTH="500">
+	<TR>
+		<TD>
+			<P><IMG SRC="images/server_premium.GIF" WIDTH="387" HEIGHT="128" ALIGN="BOTTOM" ALT="server heading" BORDER="0"
+			HSPACE="10" VSPACE="10"><B><I><BR>
+			<BR>
+			</I></B>The new AST Premium line of application servers brings together the latest in high performance server technology
+			with an easy to service and highly reliable platform. With our exclusive AST Server FlexChassis for remarkably
+			easy servicing, fault-tolerant monitoring features for uninterrupted productivity and remarkable service and support,
+			the Premium Server offers more for your money than any server on the market.</P>
+			<CENTER>
+			<P><BR>
+			<IMG SRC="../../images/border_lines_3.GIF" WIDTH="470" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"> <INPUT TYPE="HIDDEN"
+			NAME="brand" SIZE="-1" VALUE="premium"></P>
+</CENTER>
+			<P>I'd like information on a Premium Server with the following features:<BR>
+			&nbsp;<BR>
+			
+			<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="3">
+				<TR BGCOLOR="#E0E0A0">
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Model</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC">						<SELECT NAME="Model" onchange="FlowChanges(this.form)">
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Processor</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC"><INPUT TYPE="TEXT" NAME="processor" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>SMP Capability</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC"><INPUT TYPE="TEXT" NAME="smp" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF"></TD>
+					<TD BGCOLOR="#FFF5EC"><FONT SIZE="2"><I>extra CPU</I></FONT> 						<SELECT NAME="plussmp">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Operating System</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC"><INPUT TYPE="TEXT" NAME="OS" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Memory</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC"><INPUT TYPE="TEXT" NAME="memory" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF"></TD>
+					<TD BGCOLOR="#FFF5EC"><FONT SIZE="2"><I>additional memory</I></FONT> 						<SELECT NAME="plusmemory">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Hard Disk Size</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC"><INPUT TYPE="TEXT" NAME="disk" SIZE="40" MAXLENGTH="40" onfocus="this.form.Model.focus()"></TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF"></TD>
+					<TD BGCOLOR="#FFF5EC"><FONT SIZE="2"><I>extra Hard Disk</I></FONT> 						<SELECT NAME="plusdisk">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF"></TD>
+					<TD BGCOLOR="#FFF5EC"><FONT SIZE="2"><I>extra drive trays</I></FONT>&nbsp;						<SELECT NAME="plusdisktray">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Accessories</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC">						<SELECT NAME="accessory">
+						<OPTION>None</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR BGCOLOR="#E0E0A0">
+					<TD ALIGN="RIGHT" BGCOLOR="#CD7407">
+						<P ALIGN="RIGHT"><FONT COLOR="#FFFFFF"><B>Monitor</B></FONT>
+					</TD>
+					<TD BGCOLOR="#FFF5EC">						<SELECT NAME="MONITOR">
+						<OPTION>None </OPTION>
+						<OPTION VALUE="503475-001: ASTVision 400">ASTVision 400, 14&quot; Viewable TFT </OPTION>
+						<OPTION VALUE="503513-001: ASTVision 4E">ASTVision 4E, 13.2&quot; Viewable .28dp CRT </OPTION>
+						<OPTION VALUE="503499-001: ASTVision 5B">ASTVision 5B, 13.8&quot; Viewable .28dp CRT </OPTION>
+						<OPTION VALUE="503500-001: ASTVision 7B">ASTVision 7B, 15.75&quot; Viewable .28dp CRT </OPTION>
+						<OPTION VALUE="503232-001: ASTVision 7P">ASTVision 7P, 15.75&quot; Viewable .26dp CRT </OPTION>
+						<OPTION VALUE="503399-001: ASTVision 20P">ASTVision 20P, 20&quot; Viewable .22dp CRT </OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+					<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD COLSPAN="2" BGCOLOR="#CD7407">
+						<P ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>Additional Features / comments</B></FONT>
+					</TD>
+				</TR>
+				<TR BGCOLOR="#E0E0A0">
+					<TD ALIGN="RIGHT" COLSPAN="2" BGCOLOR="#FFF5EC">
+						<CENTER>
+						<P><TEXTAREA NAME="additional" ROWS="7" COLS="45"></TEXTAREA>
+</CENTER>
+					</TD>
+				</TR>
+			</TABLE>
+</P>
+			<P ALIGN="CENTER"><BR>
+			<IMG SRC="../../images/border_lines_3.GIF" WIDTH="470" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"></P>
+			<P><BR>
+			Press &quot;Request Quote&quot; to request a quote or further information on this computer. Further details on
+			AST's Premium line of workgroup and enterprise servers can be obtained at <A HREF="../server/main.html" target="body">http://www.ast.com/products/server</A>.</P>
+			<CENTER>
+			<P><IMG SRC="../../welcome/images/spacer.gif" WIDTH="1" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"></P>
+
+			<P><INPUT TYPE="SUBMIT" VALUE="Request Quote"><BR>
+			<IMG SRC="../../welcome/images/spacer.gif" WIDTH="1" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"></P>
+
+			<P><FONT SIZE="4"><B>Thank you for contacting AST Sales!</B></FONT></P>
+</CENTER>
+			<P ALIGN="CENTER"><FONT SIZE="2">For further information, call AST Research, Inc. at 1-800-876-4278;<BR>
+			international inquiries call (+1) (714) 727-9292.</FONT></P>
+			<P ALIGN="CENTER">&nbsp;</P>
+
+			<P ALIGN="CENTER"><FONT SIZE="2">1998 AST Corporate Sales - </FONT><A HREF="mailto:sales.corporate@ast.com"><FONT
+			SIZE="2">sales.corporate@ast.com</FONT></A>
+		</TD>
+	</TR>
+</TABLE>
+</P>
+
+<P><SCRIPT>
+
+var systemlist = new Array(new Array("KS","AST Premium KS 6200, Model 8003","AST Premium KS 6200","Model 8003","503478-101","2x4.0 GB","128 MB","Dual Intel Pentium Pro 200 w/512K L2 Cache","Quad-Processor ready","None"),
+  new Array("HS","AST Premium HS, 4 GB","AST Premium HS","4 GB","503461-401","4.0 GB","64 MB","Single Intel Pentium II 300 w/ 512K L2 Cache","Dual-Processor ready","None"),
+  new Array("HS","AST Premium HS, 9 GB","AST Premium HS","9 GB","503461-101","9.0 GB","64 MB","Single Intel Pentium II 300 w/ 512K L2 Cache","Dual-Processor ready","None"),
+  new Array("HS","AST Premium HS, 9 GB & Windows NT Server 4.0","AST Premium HS","9 GB & Windows NT Server 4.0","503461-201","9.0 GB","64 MB","Single Intel Pentium II 300 w/ 512K L2 Cache","Dual-Processor ready","Windows NT Server 4.0"),
+  new Array("GS","AST Premium GS 6266, Model 4003","AST Premium GS 6266","Model 4003","503447-201","4.0 GB","32 MB","Single Intel Pentium II 266 w/512K L2 Cache","Dual-Processor ready","None"),
+  new Array("GS","AST Premium GS 6266, Model 9003","AST Premium GS 6266","Model 9003","503447-301","9.0 GB","32 MB","Single Intel Pentium II 266 w/512K L2 Cache","Dual-Processor ready","None"),
+  new Array("GS","AST Premium GS 6233, Model 4003","AST Premium GS 6233","Model 4003","503453-101","4.0 GB","32 MB","Single Intel Pentium II 233 w/512K L2 Cache","Dual-Processor ready","None")
+)
+
+var optionlist = new Array(new Array("1","128 MB SDRAM (4x32 ECC SIMMs)","503491-001","KS"),
+  new Array("1","256 MB SDRAM (4x64 ECC SIMMs)","503491-002","KS"),
+  new Array("1","512 MB SDRAM (4x128 ECC SIMMs)","503491-003","KS"),
+  new Array("1","512 MB SDRAM (4x128 DIMMs)1","503491-004","KS"),
+  new Array("1","Memory Card 4 GB capacity-DIMM2","503492-001","KS"),
+  new Array("1","32 MB SDRAM ECC DIMM","503456-002","HS"),
+  new Array("1","64 MB SDRAM ECC DIMM","503456-003","HS"),
+  new Array("1","128 MB SDRAM ECC DIMM","503456-004","HS"),
+  new Array("1","32 MB SDRAM ECC DIMM","503544-001","GS"),
+  new Array("1","64 MB SDRAM ECC DIMM","503544-002","GS"),
+  new Array("1","128 MB SDRAM ECC DIMM","503544-003","GS"),
+  new Array("2","4.0 GB Ultra/Wide SCSI 7200RPM3","503483-001","KS"),
+  new Array("2","9.0 GB Ultra/Wide SCSI 7200RPM3","503483-002","KS"),
+  new Array("2","4 GB Ultra/Wide SCSI 10,000 RPM3","503483-003","HS"),
+  new Array("2","9 GB Ultra/Wide SCSI 10,000 RPM3","503483-004","HS"),
+  new Array("2","4.0 GB Ultra/Wide SCSI-3 7200RPM","503545-001","GS"),
+  new Array("2","9.0 GB Ultra/Wide SCSI-3 7200RPM","503545-002","GS"),
+  new Array("3","Hard Disk Tray - Spare","503487-001","KS"),
+  new Array("3","Hard Disk Tray - Spare","503488-001","HS"),
+  new Array("4","Dual 200 MHz Intel® Pentium® Pro w/512KB Cache","503493-001","KS"),
+  new Array("4","Dual 200 MHz Intel Pentium Pro w/1024KB Cache","503494-001","KS"),
+  new Array("4","266 MHz Intel Pentium II ECC","503485-001","HS"),
+  new Array("4","300 MHz Intel Pentium II ECC","503486-001","HS"),
+  new Array("4","233 MHz Intel Pentium II w/512 KB L2 Cache","503546-001","GS"),
+  new Array("4","266 MHz Intel Pentium II w/512 KB L2 Cache","503547-001","GS"),
+  new Array("5","Power Supply Module","503495-001","KS"),
+  new Array("5","Mylex RAID Ultra 3-Channel Disk Array Controller","503549-001","KS"),
+  new Array("5","AMI MegaRAID Ultra 3-Channel Disk Array Controller","503334-001","HS"),
+  new Array("5","Adaptec 2940UW SCSI Card","503507-001","KSHSGS"),
+  new Array("5","Olicom Token Ring NIC","503505-001","KSHSGS"),
+  new Array("5","3Com 10/100 NIC","503506-001","KSHSGS"),
+  new Array("5","Intel EtherExpress SA","503489-001","KSHS"),
+  new Array("5","Intel EtherExpressTM PRO 10/100B","503074-001","KSGS"),
+  new Array("5","DAT DDS-3 24 GB Tape","503455-001","KSHS")
+)                       
+
+function Populate(inForm)
+{
+  var someoptions = new Array(systemlist.length);
+  
+  for (var i = 0;i < systemlist.length;i++) {
+    someoptions[i] = new Option(systemlist[i][1], systemlist[i][4] + ": " + systemlist[i][1]);
+    eval("inForm.Model.options[i]=someoptions[" + i + "]");
+    if (i == 0) {
+      inForm.Model.options[i].selected=true;
+    }
+  }
+}
+
+
+function Refill(listbox,optiontype,code)
+{
+  var i;
+  var j = 1;
+  var someoptions = new Array(10);
+
+  for (i=1;i < listbox.options.length;i++) {
+    listbox.options[i] = null;
+  }
+  listbox.options[0].selected=true;
+  
+  for (i = 0;i < optionlist.length;i++) {
+    if (optionlist[i][0] == optiontype) {
+      if (optionlist[i][3].indexOf(code) != -1) {
+        someoptions[j] = new Option(optionlist[i][1],optionlist[i][2] + ": " + optionlist[i][1]);
+        eval("listbox.options[" + j + "]=someoptions[" + j + "]");
+        j = j + 1;
+      }
+    }
+  }
+}
+
+function FlowChanges(inForm)
+{
+  var system = inForm.Model.selectedIndex;
+  
+  inForm.processor.value=systemlist[system][7];
+  inForm.smp.value=systemlist[system][8];
+  inForm.OS.value=systemlist[system][9];
+  inForm.memory.value=systemlist[system][6];
+  inForm.disk.value=systemlist[system][5];
+  
+  system = systemlist[system][0];
+  
+  Refill(inForm.plusmemory,"1",system)
+  Refill(inForm.plusdisk,"2",system)
+  Refill(inForm.plusdisktray,"3",system)
+  Refill(inForm.plussmp,"4",system)
+  Refill(inForm.accessory,"5",system)
+  
+  inForm.Model.focus();
+}
+
+Populate(document.forms["configurator"])
+FlowChanges(document.forms["configurator"])
+
+</SCRIPT>
+</FORM>
+
+</BODY>
+
+</HTML>

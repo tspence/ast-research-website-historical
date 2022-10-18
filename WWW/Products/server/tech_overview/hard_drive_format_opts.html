@@ -1,0 +1,167 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <TITLE>Hard Drive Format Options</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<H3>HARD DRIVE FORMAT OPTIONS</H3>
+
+<P>There are several formatting options available for hard disk storage
+depending on the operating system used. This section provides a description
+of the benefits and drawbacks of the options subdivided by operating system.
+Examples of situations in which each option may be the most advantageous
+are provided.</P>
+
+<H4>&nbsp;</H4>
+
+<H4><A NAME="netware"></A>NOVELL NETWARE</H4>
+
+<P>Novell NetWare 4.11 supports the following file systems:</P>
+
+<P><BR>
+</P>
+
+<BLOCKQUOTE>
+  <BLOCKQUOTE>
+    <P><TABLE WIDTH="492" BORDER="0" CELLSPACING="2" CELLPADDING="0" HEIGHT=
+    "187">
+<TR>
+<TD WIDTH="19%" VALIGN="TOP">    <I>&nbsp;FAT</I></TD>
+<TD WIDTH="81%" VALIGN="TOP">    FAT stands for file allocation table and is the standard filing system
+    used by DOS and DOS applications. Its primary advantage is that it is common
+    and can be accessed by most applications. However, it suffers from limitations
+    in block size and efficiency. If the server will be running older applications
+    or DOS-based applications, you may need to use the FAT file system.</TD></TR>
+</TABLE>
+</P>
+    <P><TABLE WIDTH="492" BORDER="0" CELLSPACING="2" CELLPADDING="0" HEIGHT=
+    "149">
+<TR>
+<TD WIDTH="18%" VALIGN="TOP">    <I>HCSS</I></TD>
+<TD WIDTH="82%" VALIGN="TOP">    NetWare's high-capacity storage system provides automatic data compression,
+    which operates as a background task to avoid affecting server performance,
+    and block sub-allocation, which allows you to use allocated, but unused,
+    storage space for other files. Between these two functions, disk storage
+    requirements can be reduced by as much as half. Because IntranetWare is
+    an extension of NetWare 4.11, HCSS is used in both versions.</TD></TR>
+</TABLE>
+</P>
+    <P>&nbsp;</P>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+
+<H4><A NAME="intranetware"></A>NOVELL INTRANETWARE</H4>
+
+<P>Novell IntranetWare supports the following file systems:</P>
+
+<P><BR>
+</P>
+
+<BLOCKQUOTE>
+  <BLOCKQUOTE>
+    <P><TABLE WIDTH="492" BORDER="0" CELLSPACING="2" CELLPADDING="0" HEIGHT=
+    "149">
+<TR>
+<TD WIDTH="16%" VALIGN="TOP">    &nbsp;<I>FAT</I></TD>
+<TD WIDTH="84%" VALIGN="TOP">    FAT stands for file allocation table and is the standard filing system
+    used by DOS and DOS applications. Its primary advantage is that it is common
+    and can be accessed by most applications. However, it suffers from limitations
+    in block size and efficiency. If the server will be running older applications
+    or DOS-based applications, you may need to use the FAT file system.</TD></TR>
+</TABLE>
+</P>
+    <P><TABLE WIDTH="492" BORDER="0" CELLSPACING="2" CELLPADDING="0" HEIGHT=
+    "149">
+<TR>
+<TD WIDTH="16%" VALIGN="TOP">    <I>&nbsp;HCSS</I></TD>
+<TD WIDTH="84%" VALIGN="TOP">    NetWare's high-capacity storage system provides automatic data compression,
+    which operates as a background task to avoid affecting server performance,
+    and block sub-allocation, which allows you to use allocated, but unused,
+    storage space for other files. Between these two functions, disk storage
+    requirements can be reduced by as much as half. Because IntranetWare is
+    an extension of NetWare 4.11, HCSS is used in both versions.</TD></TR>
+</TABLE>
+</P>
+    <P>&nbsp;</P>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+
+<H4><A NAME="microsoft_nt_server"></A>MICROSOFT WINDOWS NT 4.0 SERVER</H4>
+
+<P>Microsoft Windows NT 4.0 Server supports the following file systems:</P>
+
+<P><BR>
+</P>
+
+<BLOCKQUOTE>
+  <BLOCKQUOTE>
+    <P><TABLE WIDTH="492" BORDER="0" CELLSPACING="2" CELLPADDING="0" HEIGHT=
+    "149">
+<TR>
+<TD WIDTH="16%" VALIGN="TOP">    &nbsp;<I>FAT</I></TD>
+<TD WIDTH="84%" VALIGN="TOP">    FAT stands for file allocation table and is the standard filing system
+    used by DOS and DOS applications. Its primary advantage is that it is common
+    and can be accessed by most applications. However, it suffers from limitations
+    in block size and efficiency. If the server will be running older applications
+    or DOS-based applications, you may need to use the FAT file system.</TD></TR>
+</TABLE>
+</P>
+    <P><TABLE WIDTH="492" BORDER="0" CELLSPACING="2" CELLPADDING="0" HEIGHT=
+    "149">
+<TR>
+<TD WIDTH="16%" VALIGN="TOP">    <I>NTFS</I></TD>
+<TD WIDTH="84%" VALIGN="TOP">    NTFS stands for NT file system. NTFS is a high-performance file system
+    developed for the Windows NT operating system. NTFS avoids most of the
+    limitations of the FAT file system, but only Window NT applications can
+    access file stored on disks formatted with NTFS. Older applications or
+    DOS-based applications cannot access these files. Other advantages of the
+    NTFS include automatic data compression and security features which can
+    be set at either the directory or file level.</TD></TR>
+</TABLE>
+<BR>
+    </P>
+    <P><TABLE WIDTH="492" BORDER="0" CELLSPACING="2" CELLPADDING="0" HEIGHT=
+    "149">
+<TR>
+<TD WIDTH="16%" VALIGN="TOP">    <I>DFS</I></TD>
+<TD WIDTH="84%" VALIGN="TOP">    DFS stands distributed file system and is one of the planned upgrades for
+    Windows NT 5.0. The primary advancement of DFS is the ability to treat
+    multiple volumes, including some on other machines, as a single logical
+    volume. For more information on DFS and Windows NT 5.0, contact the Microsoft
+    Corporation.</TD></TR>
+</TABLE>
+</P>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+
+<H4><A NAME="i_i_ethernet"></A>NETWORK INTERFACE CARDS</H4>
+
+<P>The Premium HS includes an integrated intelligent Intel EtherExpress
+PRO/100 Server Adapter in the basic configuration. However, large networks
+and those with extensive traffic may require additional bandwidth to support
+the load. This section describes some of the concerns which will influence
+the decision to add networking capability through add-in network interface
+cards (NICs).</P>
+
+<P>If the system is running, check the performance monitors and determine
+if the network is fully utilized. If network usage is up at or near 100%
+most of the time, additional network capability may be required.</P>
+
+<P>If the system is not yet running, you can assume that each network card
+running at 10 Mb/s supports up to 16 users per hub on average. Increased
+network usage reduces this number and applications that require little network
+access increase this number. The 100 Mb/s ethernet will support proportionately
+more users.</P>
+
+<P>Simply adding NICs may not solve the network bottleneck. Other network
+components may produce a more effective solution. A network analysis may
+be necessary to determine your exact networking needs. The server can support
+additional NICs to the capacity of its add-in board slots.</P>
+
+<P>Note that some NICs do not work well in conjunction with others. Compatibility
+issues between cards must be addressed on a card by card basis. AST tests
+the cards offered by its Preferred Partners for compatibility with AST servers.
+Compatibility between cards is the responsibility of the card manufacturers.
+</BODY>
+</HTML>

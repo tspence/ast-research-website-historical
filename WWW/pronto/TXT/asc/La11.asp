@@ -1,0 +1,45 @@
+<HTML><HEAD>
+<html><TITLE>US ASC</TITLE>
+</HEAD>
+<body bgcolor='ffffff' text='000000' LINK="#0000FF" ALINK="#0000FF" VLINK="#0000FF">
+<b>Pronto! Pro <i>OnLine</I> Text Version</b>
+<CENTER>
+<!-- #INCLUDE FILE="TITLE.INC" -->
+</CENTER>
+<P>
+<H1>Numeros de Servicio y Acceso:  <BR></H1>
+Llame a estos numeros para comunicarse
+directamente con sus Socios de Servicio y Soporte:
+<H2>Soporte Tecnico:</H2>
+(817) 232-9824 (Opcion 9)
+<P>
+<A HREF='mailto:service.latinamerica@ast.com'> Internet: service.latinamerica@ast.com</a>
+<H2>Info-FAX:</H2>
+<BR>
+(800) 926-1278
+<BR>
+(817) 230-6187
+<H2>Servicio y Apoyo Administrativo:</H2>
+(817) 230-6171
+<H2>Numero de FAX:</H2>
+<BR>
+Para ordenar partes de repuesto para
+maquinas en garantia o Soporte Tecnico en Espa&ntilde;ol:
+<BR>
+<B>FAX: (817) 230-5910</B>
+<H2>PC Service Source</H2>
+Para comprar partes de repuesta para
+upgrades o maquinas fuera de garantia puede llamar a:
+<BR>
+<B>(800) 464-2781</B>
+<BR>
+<B>(214) 406-8583</B>
+<BR>
+<B>FAX: (214) 406-9081</B>
+<BR><BR><BR><BR>
+
+
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+<script language="javascript">
+function validate(theform)
+	{
+		if (theform.email.value == "")
+            {
+            alert("You forgot to fill in the \"E-mail address\" field.");
+            return (false);
+            }
+ 
+		if (theform.pn.value == "50????-???")
+            {
+            alert("You forgot to fill in the \"Part Number\" field.");
+            return (false);
+            }
+
+		if (theform.pn.value == "")
+            {
+            alert("You forgot to fill in the \"Part Number\" field.");
+            return (false);
+            }
+	}
+</script>
+
+	<META NAME="GENERATOR" Content="Visual Page 1.0 for Windows">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<TITLE>AST Technical Support Mailback</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<FORM ACTION="../scripts/submit1.asp?" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded" name="techasst"
+onsubmit="return validate(techasst)">
+<P><BR>
+
+<TABLE BORDER="0" WIDTH="570">
+	<TR>
+		<TD WIDTH="100%" VALIGN="TOP">
+			<H3><EM>Soporte E-Mail</EM></H3>
+			<P>Si necesita ayuda t&eacute;cnica con cualquier producto de AST, simplemente haga un clic en la secci&oacute;n
+			de <A HREF="support/faq/latin_faq.html"><B>Respuestas a Preguntas M&aacute;s Comunes o p&aacute;gina FAQ</B></A>.
+			Tambi&eacute;n encontrar&aacute; soluciones a sus problemas en la secci&oacute;n de <A HREF="support/bulletins/latin_bulletins.html"><B>Boletines
+			T&eacute;cnicos</B></A>. Si tiene problemas enviando este formulario, puede tambi&eacute;n enviar un <BR>
+			E-mail a <A HREF="mailto:web.support@ast.com"><STRONG>web.support@ast.com</STRONG></A>.&nbsp;</P>
+			<P>El Servicio En L&iacute;nea de AST responde a sus mensajes durante horas regulares de trabajo, de Lunes a Viernes,
+			excluyendo fines de semana y d&iacute;as festivos. Debido a la gran cantidad de mensajes que recibimos durante
+			los d&iacute;as festivos, por favor espere una semana h&aacute;bil para recibir su respuesta.<BR>
+			<BR>
+			<A HREF="ast/feedback/spanish_feedback.html"><STRONG>Si tiene alguna pregunta no t&eacute;cnica, comentario o sugerencia,
+			puede hacer un clic aqu&iacute;.</STRONG></A></P>
+			<P>Para asegurarnos que obtendr&aacute; respuesta debida a a sus mensajes, por favor llene la siguiente informaci&oacute;n:</P>
+			<P>
+			<TABLE BORDER="0" CELLPADDING="5" CELLSPACING="5" WIDTH="100%">
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Nombre</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP"><INPUT TYPE="TEXT" NAME="name" SIZE="37"></TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Direcci&oacute;n E-mail</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP"><INPUT TYPE="TEXT" NAME="email" SIZE="37"></TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Compa&ntilde;&iacute;a</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP"><INPUT TYPE="TEXT" NAME="company" SIZE="37"></TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Direcci&oacute;n de la Compa&ntilde;&iacute;a (incluya c&oacute;digo postal)</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP"><TEXTAREA NAME="addr" ROWS="5" COLS="37"></TEXTAREA></TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Qu&eacute; producto de AST tiene?</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP">
+						<TABLE BORDER="0" WIDTH="100%">
+							<TR>
+								<TD WIDTH="56%" VALIGN="TOP"><INPUT TYPE="RADIO" NAME="system" VALUE="Advantage!"> Advantage! <BR>
+									<INPUT TYPE="RADIO" NAME="system" VALUE="Desktop"> Computador Escritorio<BR>
+									<INPUT TYPE="RADIO" NAME="system" VALUE="Monitor"> Monitor</TD>
+								<TD WIDTH="44%" VALIGN="TOP"><INPUT TYPE="RADIO" NAME="system" VALUE="portable"> Port&aacute;til<BR>
+									<INPUT TYPE="RADIO" NAME="system" VALUE="Server"> Servidor<BR>
+									<INPUT TYPE="RADIO" NAME="system" VALUE="other"> Otro</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>N&uacute;merode Parte</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP"><INPUT TYPE="TEXT" NAME="pn" SIZE="37" VALUE="50????-???">&nbsp;<BR>
+						<A HREF="help.htm#pn"><STRONG>No s&eacute; el n&uacute;mero de parte!</STRONG></A></TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Tipo de pregunta?</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP">						<SELECT NAME="question">
+						<OPTION SELECTED>Nature of Question</OPTION>
+						<OPTION>How to set up system</OPTION>
+						<OPTION>Options</OPTION>
+						<OPTION>Upgrade</OPTION>
+						<OPTION>Network</OPTION>
+						<OPTION>Modem/communications</OPTION>
+						<OPTION>Operational</OPTION>
+						<OPTION>Multimedia</OPTION>
+						<OPTION>Windows 95</OPTION>
+						<OPTION>Set-up of notebook</OPTION>
+						<OPTION>PC Card (PCMCIA)</OPTION>
+						<OPTION>AST Works</OPTION>
+						<OPTION>Other</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Cu&aacute;l es el sistema operativo?</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP">						<SELECT NAME="os">
+						<OPTION SELECTED>Operating System</OPTION>
+						<OPTION>Windows 3.x</OPTION>
+						<OPTION>Windows 95</OPTION>
+						<OPTION>Windows NT</OPTION>
+						<OPTION>Windows NTAS</OPTION>
+						<OPTION>OS/2</OPTION>
+						<OPTION>OS/2 Warp</OPTION>
+						<OPTION>SCO/Unix</OPTION>
+						<OPTION>Novell NetWare 3.x</OPTION>
+						<OPTION>Novell NetWare 4.x</OPTION>
+						<OPTION>Banyan Vines</OPTION>
+						<OPTION>DOS</OPTION>
+						</SELECT>
+					</TD>
+				</TR>
+				<TR>
+					<TD WIDTH="50%" VALIGN="TOP"><FONT SIZE="3"><STRONG>Tipo de pantalla? (Para los productos port&aacute;tiles &uacute;nicamente)</STRONG></FONT></TD>
+					<TD WIDTH="50%" VALIGN="TOP">						<SELECT NAME="display" align="TOP">
+						<OPTION SELECTED>Display type</OPTION>
+						<OPTION>Monochrome</OPTION>
+						<OPTION>Dual-Scan (STN)</OPTION>
+						<OPTION>Active Matrix (TFT)</OPTION>
+						</SELECT>
+ &nbsp;</TD>
+				</TR>
+			</TABLE>
+<BR>
+			Puede escribir un mensaje en breve en esta secci&oacute;n:<BR>
+			<TEXTAREA NAME="msg" ROWS="10" COLS="50"></TEXTAREA></P>
+			<P>&nbsp;<INPUT TYPE="SUBMIT" VALUE="Send to AST"> <INPUT TYPE="RESET" VALUE="Clear and Start Again"></P>
+
+			<P><BR>
+			<STRONG>Le agradecemos por usar el Servicio en L&iacute;nea de AST!</STRONG><BR>
+			<FONT SIZE="1">&copy; Copyright 1997 AST Research, Inc.</FONT>
+		</TD>
+	</TR>
+</TABLE>
+
+</FORM>
+
+</BODY>
+
+</HTML>

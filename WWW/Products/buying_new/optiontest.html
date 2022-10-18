@@ -1,0 +1,35 @@
+<SCRIPT>
+function populate(inForm) 
+{   
+  colorArray = new Array("Red", "Blue", "Yellow", "Green")
+  
+  var option0 = new Option("Red", "color_red")
+  var option1 = new Option("Blue", "color_blue")
+  var option2 = new Option("Yellow", "color_yellow")   
+  var option3 = new Option("Green", "color_green")
+  
+  for (var i=0; i < 4; i++) {      
+    eval("inForm.selectTest.options[i]=option" + i)      
+    if (i==0) {         
+      inForm.selectTest.options[i].selected=true;
+    }   
+  }
+}
+
+</SCRIPT>
+
+<H3>Select Option() constructor</H3>
+<FORM>
+  <SELECT NAME="selectTest"></SELECT><P>
+  
+  <INPUT TYPE="button" VALUE="Populate Select List" onClick="populate(this.form)"><P>
+</FORM>
+
+<HR>
+
+<H3>Select-Multiple Option() constructor</H3>
+<FORM>
+  <SELECT NAME="selectTest" multiple></SELECT><P>
+  
+  <INPUT TYPE="button" VALUE="Populate Select List" onClick="populate(this.form)">
+</FORM>

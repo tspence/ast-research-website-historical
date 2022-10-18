@@ -1,0 +1,556 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" width="570">
+  <tr><td>
+<h3><i>Hardware Upgrades</i> </h3>
+
+<form method="POST" action="../../scripts/faqd.asp">
+  <p>I want to search through server FAQs about <select name="faqd" size="1">
+    <option selected value="sfaq1.htm">Hardware Upgrade</option>
+    <option value="sfaq2.htm">Configuration</option>
+    <option value="sfaq3.htm">Software</option>
+    <option value="sfaq4.htm">BIOS and Driver</option>
+    <option value="sfaqa.htm">All</option>
+  </select> issues.<input type="submit" value="Go!" name="Portables"></p>
+</form>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top" width="50%"><ul>
+      <b>
+      <li><h5 align="left"><b><a href="#1"><b>I want to upgrade the processor in my Premium SE.
+        What is the fastest processor I can install?</b></a></h5>
+        </b></li>
+      <li><h5 align="left"><a href="#4">I upgraded the memory in my Manhattan server. Why
+        doesn&#146;t the operating system recognize the new memory?</a></h5>
+      </li>
+      <li><h5 align="left"><a href="#5">I want to upgrade the memory in a Manhattan P server. Do I
+        have to use ECC &amp; EDC memory?</a></h5>
+      </li>
+      <li><h5 align="left"><a href="#6">I would like to install another processor in my Manhattan
+        Server for a dual-processor configuration. Can I upgrade both processors to a faster
+        speed?</a></h5>
+      </li>
+      </b>
+    </ul>
+    </td>
+    <td valign="top" width="50%"><ul>
+      <b>
+      <li><h5 align="left"><a href="#7">What part number should I use when I order additional hard
+        drive trays for my Manhattan SMP, Premmia SE, and Premium SE system?</a></h5>
+      </li>
+      <li><h5 align="left"><a href="#15">How do I access System (CMOS) Setup on my server?</a></h5>
+      </li>
+      <li><h5 align="left"><a href="#17">I want to increase the amount of memory in my server;
+        what options do I have?</b></a></h5>
+        <b></li>
+      </b>
+    </ul>
+    <p align="left">&nbsp;</p>
+    <p align="left">&nbsp;</p>
+    <p align="left">&nbsp;</td>
+  </tr>
+</table>
+
+<hr>
+
+<p><a name="1"><b>I want to upgrade the processor in my Premium SE. What is the fastest
+processor I can install?</b></a> </p>
+
+<p>AST designed the Premium SE around its proprietary Cupid architecture. Cupid technology
+placed the components most likely to require upgrading, system memory and system
+processor, on a removable processor board. Components that typically remain constant
+resided on a separate system board. The user could upgrade the performance by simply
+replacing a plug-in processor board or adding SIMMs to a memory expansion board.</p>
+
+<p>AST introduced Cupid architecture well over ten years ago, which is an eternity in the
+computer industry. In 1987, a 486 system was street priced at $10,000, so a $3,000 upgrade
+was a viable alternative. Unfortunately, the cost of reproducing that technology remains
+the same, while the price of new technology is dropping drastically. These Cupid upgrade
+prices have not been well received by our customers. In the customer&#146;s own words,
+&#147;I could buy a whole new system for that price!&#148;.</p>
+
+<p>AST realizes that the feasibility of upgrading to the higher performance processors
+with Cupid architecture is not competitive in today&#146;s marketplace. After thoroughly
+evaluating both AST and non-AST solutions to provide price competitive alternatives to
+Cupid upgrades, AST has decided not to invest additional engineering resources researching
+Cupid board redesign and third party compatible alternatives. In essence, AST will no
+longer offer Cupid processor and memory board upgrades. AST regrets the inconvenience that
+this decision may cause our users with Cupid systems.</p>
+
+<hr>
+
+<p><a name="4"><b>I upgraded the memory in my Manhattan server. Why doesn&#146;t the
+operating system recognize the new memory?</b></a> </p>
+
+<p>If you have an EISA-based system and there is an EISA card installed or you have run
+the EISA Configuration Utility, you need to run the EISA Configuration Utility again to
+configure the new memory. The amount of memory shown in the EISA Configuration Utility
+should be modified to reflect the amount of physical memory in the system. The amount of
+memory can be set higher than the actual physical memory; it just can&#146;t be less than
+then the amount.</p>
+
+<p>Consider the following steps for updating the memory in the EISA Configuration Utility:
+
+<ol>
+  <li>Boot using the EISA configuration diskette and choose menu options Configure Computer,
+    View and Edit Details.</li>
+  <li>Press &lt;F6&gt; in order to edit the amount of memory installed.</li>
+  <li>Press &lt;10&gt; after you enter the desired amount of memory, </li>
+  <li>Save and Exit the configuration utility.</li>
+  <li>Set the memory location of the NCR chipset well above physical memory. To do so, follow
+    this procedure:</li>
+  <li>Locate the View and Edit Details section. Scroll to the bottom of the screen marked
+    Embedded PCI Controller. </li>
+  <li>Highlight PCI Function and press &lt;F6&gt;.</li>
+  <li>Change the memory address range to at least 20 megabyte higher than the total physical
+    memory installed in the server.</li>
+  <li>Change the memory address for all Embedded PCI controllers listed.</li>
+  <li>Press &lt;F10&gt; to save and exit the configuration utility.</li>
+</ol>
+<b>
+
+<hr>
+
+<p><a name="5">I want to upgrade the memory in a Manhattan P server. Do I have to use ECC
+&amp; EDC memory?</a> </p>
+</b>
+
+<p>When you upgrade the memory on a Manhattan P, use following RAM specifications:</p>
+
+<p>JEDEC 36-bit/ 72-pin / 70ns / tin-lead / ECC &amp; EDC</p>
+
+<p>* ECC-Error Correction Code<br>
+* EDC=Error Detection Code</p>
+
+<p>You can also install SIMMs that meet the following specifications:</p>
+
+<p>JEDEC/ parity (36-bit)/ Fast Page Mode/ 70ns/<br>
+tin-lead</p>
+
+<p>Do not mix ECC memory with Fast Page Mode memory. You will receive memory errors. </p>
+
+<p>You can install up to 256MB of memory using the following configurations:</p>
+
+<table border="1" align="DEFAULT" width="313">
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">&nbsp;</td>
+    <th align="LEFT" valign="TOP" width="62">Bank 0</th>
+    <th align="LEFT" valign="TOP" width="63">Bank 1</th>
+    <th align="LEFT" valign="TOP" width="63">Bank 2</th>
+    <th align="LEFT" valign="TOP" width="63">Bank 3</th>
+  </tr>
+  <tr>
+    <th align="LEFT" valign="TOP" width="62">Total </th>
+    <th align="LEFT" valign="TOP" width="62">U5/U6</th>
+    <th align="LEFT" valign="TOP" width="63">U3/U4</th>
+    <th align="LEFT" valign="TOP" width="63">U1/U2</th>
+    <th align="LEFT" valign="TOP" width="63">U8/U9 </th>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">16MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">32MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">32MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63">1x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">32MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">64MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">64MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">64MB</td>
+    <td align="LEFT" valign="TOP" width="62">1x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">1x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">128MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x16MB</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">128MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">128MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63"><p align="center">- -</td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="62">256MB</td>
+    <td align="LEFT" valign="TOP" width="62">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+    <td align="LEFT" valign="TOP" width="63">2x32MB</td>
+  </tr>
+</table>
+
+<p>While it is valid to partially fill both Bank 0 and Bank 1, system performance improves
+if you completely fill Bank 0 before populating Bank 1.</p>
+
+<p>You will need to run the EISA Configuration utility on your Manhattan P in order to
+change the amount of installed memory. </p>
+
+<p>Although we do not require that customers use proprietary SIMMs, AST cannot support
+problems that originate from third-party SIMMs. It is impossible for AST to guarantee that
+third-party SIMMs will work in every computer. There is no way to test every SIMM to see
+if it is compatible. Also, third-party, generic SIMMs may not always be manufactured with
+high quality standards.</p>
+<b>
+
+<hr>
+
+<p><a name="6">I would like to install another processor in my Manhattan Server for a
+dual-processor configuration. Can I upgrade both processors to a faster speed?</a> </p>
+</b>
+
+<p>The secondary processor socket in your Manhattan system is designed for dual processor
+or processor upgrade configurations. For multi-processing applications, the secondary chip
+must match the speed of the factory-installed processor. For example, you may not install
+a 200MHz secondary processor in a 133MHz system. Therefore, if the system shipped with a
+133MHz processor, the second processor must also be 133MHz.</p>
+
+<p>I am having problems with my Manhattan Server. What Diagnostics Utility should I use?</p>
+
+<p>Using the Server Advanced Diagnostics can help you to identify problems with your
+system's hardware. For Manhattan SMP systems, use Advanced Diagnostics for SMP systems
+version 1.12. You can download the following file:</p>
+
+<p><a href="ftp://ftp.ast.com/S-OTHER/SMP3.EXE">SMP3.EXE Advanced Diags For SMP v1.12</a></p>
+
+<p>For all other systems, use Server Advanced Diagnostics version 2.23. Download the
+following file:</p>
+
+<p><a href="ftp://ftp.ast.com/S-OTHER/10450316.EXE">10450316.EXE Server Advanced
+Diagnotics v2.23 </a></p>
+
+<p>For accurate results, remove all add-in cards before you run the diagnostics.</p>
+<b>
+
+<hr>
+
+<p><a name="7">What part number should I use when I order additional hard drive trays for
+my Manhattan SMP, Premmia SE, and Premium SE system?</a> </p>
+</b>
+
+<p>Listed below are the parts you need to add additional hard drives to the Manhattan SMP,
+Premmia SE, and Premium SE systems:</p>
+
+<p>500923-001 3.5&quot; Hard Drive Mounting Tray Kit<br>
+500922-002 Backplane Adapter Board Kit </p>
+
+<p>If one of the aforementioned kits are not in stock, you can order the individual
+components that make up the kit.</p>
+
+<p>The 3.5&quot; Hard Drive Mounting Tray Kit (500923-001) consists of the following
+components:</p>
+
+<p>200588-001 3.5&quot; Hard Drive Tray<br>
+200723-001 3.5&quot; Installation Sheet<br>
+183000-057 Screw w/Washer<br>
+183400-008 Fastener</p>
+
+<p>You need four screws with washers and two fasteners.</p>
+
+<p>The Backplane Adapter Board Kit (500922-002) consist of the following components:</p>
+
+<p>202461-005 Backplane edge connector<br>
+183100-010 Nut Hex w/star washer</p>
+
+<p>You will need two nuts with washers.</p>
+
+<p>For current pricing and availability information, contact one of the following AST
+spare parts vendors:</p>
+
+<p>PC ServiceSource<br>
+(800) 727-1278<br>
+prompts: 2, 1<br>
+<a href="http://www.pcservice.com" target="_new"><img border="0"
+src="../../images/PCServ.jpg" width="124" height="31"></a></p>
+
+<p>AST Peripherals by IAD<br>
+(800) 727-1278<br>
+prompts: 2, 2<br>
+<a href="http://www.insight.com" target="_new"><img border="0"
+src="../../images/Insight.jpg" width="68" height="31"></a></p>
+<b>
+
+<hr>
+
+<p><a name="15">How do I access System (CMOS) Setup on my server?</a> </p>
+</b>
+
+<p>On most AST systems, you should see a message during a cold boot that prompts you for a
+keystroke or a series of keystrokes allowing you to access the System Setup. On some AST
+systems, this feature is available on warm and cold boots. You can refer to the following
+table as a reference guide:</p>
+
+<table border="1" align="DEFAULT" width="240">
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan G</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Premium SE</td>
+    <td width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Premmia SE </td>
+    <td width="120"><b>&lt;Ctrl+Alt+Esc&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan P</td>
+    <td width="120"><b>&lt;F2&gt;</b></td>
+  </tr>
+  <tr>
+    <td width="120">Manhattan V</td>
+    <td width="120"><b>&lt;F2&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan S</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Delete&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Commerce Pro</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;Delete&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan D</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;F1&gt;</b></td>
+  </tr>
+  <tr>
+    <td align="LEFT" valign="TOP" width="120">Manhattan Presence Pro</td>
+    <td align="LEFT" valign="TOP" width="120"><b>&lt;F1&gt;</b></td>
+  </tr>
+</table>
+<b>
+
+<hr>
+
+<p><a name="17">I want to increase the amount of memory in my server; what options do I
+have?</a> </p>
+</b>
+
+<p>Although we do not require that our customers use proprietary SIMMs, AST cannot support
+problems that originate from third-party SIMMs. It is impossible for AST to guarantee that
+third-party SIMMs will work in every computer. There is not any way to test every SIMM to
+see if it is compatible. Also, third-party, generic SIMMs may not always be manufactured
+with high quality standards.</p>
+
+<p>To obtain AST approved memory, contact one of the following spare parts vendors:</p>
+
+<p>PC ServiceSource<br>
+(800) 727-1278<br>
+prompts: 2, 1<br>
+<a href="http://www.pcservice.com" target="_new"><img border="0"
+src="../../images/PCServ.jpg" width="124" height="31"></a> </p>
+
+<p>AST Peripherals by IAD<br>
+(800) 727-1278<br>
+prompts: 2, 2<br>
+<a href="http://www.insight.com" target="_new"><img border="0"
+src="../../images/Insight.jpg" width="68" height="31"></a></p>
+
+<h4>Manhattan V</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan V system:</p>
+
+<p>JEDEC / 72-pin / 70ns / tin-lead / parity</p>
+
+<p>Max: 256MB</p>
+
+<p>There are three rules to follow when adding RAM to this system: 
+
+<ul>
+  <li>Bank 0 must be filled</li>
+  <li>Memory must be added two SIMMs at a time</li>
+  <li>The SIMMs in a bank must match each other</li>
+</ul>
+
+<p>You will need to run the EISA Configuration Utility on your Manhattan V to change the
+amount of installed memory. </p>
+
+<p>Consider the memory option part numbers and specifications for the Manhattan V servers:</p>
+
+<p>501159-003 16MB (two 8MB SIMMs) <br>
+501159-004 32MB (two 16MB SIMMS) <br>
+501159-005 64MB (two 32MB SIMMs) </p>
+
+<h4>Manhattan P</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan P system:</p>
+
+<p>JEDEC 36-bit/ 72-pin / 70ns / tin-lead / ECC &amp; EDC</p>
+
+<p>* ECC-Error Correction Code<br>
+* EDC=Error Detection Code</p>
+
+<p>Max: 256MB</p>
+
+<p>While it is valid to partially fill both Bank 0 and Bank 1, system performance improves
+if you completely fill Bank 0 before populating Bank 1.</p>
+
+<p>You will need to run the EISA Configuration utility on your Manhattan P in order to
+change the amount of installed memory. </p>
+
+<p>Consider the memory option part numbers and specifications for the Manhattan P servers:</p>
+
+<p>501615-007 16MB (two 8MB ECC) <br>
+501615-008 32MB (two 16MB ECC) <br>
+501615-009 64MB (two 32MB ECC) </p>
+
+<h4>Manhattan G</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan G system:</p>
+
+<p>JEDEC / 72-pin / 70ns / tin-lead / parity</p>
+
+<p>Max: 128MB</p>
+
+<p>There are three rules to follow when adding RAM to this system: 
+
+<ul>
+  <li>Bank 0 must be filled.</li>
+  <li>Memory must be added two SIMMs at a time.</li>
+  <li>The SIMMs in a bank must match each other.</li>
+</ul>
+
+<p>Consider the memory option part numbers and specifications for the Manhattan G servers:</p>
+
+<p>4MB (two 2MB SIMMs) 501159-001<br>
+8MB (two 4MB SIMMs) 501159-002<br>
+16MB (two 8MB SIMMs) 501159-003<br>
+32MB (two 16MB SIMMs) 501159-004<br>
+64MB (two 32MB SIMMs) 501159-005</p>
+
+<h4>Manhattan S6200 and Manhattan Commerce Pro</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan S6200 and
+Manhattan Commerce Pro systems:</p>
+
+<p>DIMM/ 168-pin/ 60ns/ 5V/ tin-plated pins/ ECC/ Single or Double density</p>
+
+<p>Max: 256MB</p>
+
+<p>You will need to run the EISA Configuration utility on your Manhattan system in order
+to change the amount of installed memory. </p>
+
+<p>Consider the memory option part numbers:</p>
+
+<p>501615-004 16MB (two 8MB ECC DIMMs)<br>
+501615-005 32MB (two 16MB ECC DIMMs)<br>
+501615-006 64MB (two 32MB ECC DIMMs)</p>
+
+<p>Use the following RAM specifications when upgrading the memory in Manhattan D and
+Manhattan Presence Pro systems:</p>
+
+<p>JEDEC EDO DRAM/ 168-pin/ 60ns</p>
+
+<p>Max: 512MB</p>
+
+<p><i>Note: Bank 0 must always be populated.</i></p>
+
+<p>Consider the memory option part numbers:</p>
+
+<p>501615-011 32MB (one 32MB EDO SIMM)<br>
+501615-012 64MB (one 64MB EDO SIMM)<br>
+501615-013 128MB (one 128MB EDO SIMM)</p>
+
+<h4>Premium SE</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Premium SE system:</p>
+
+<p>JEDEC / 72-pin / 60ns / tin-lead / parity</p>
+
+<p>The Premium SE processor board (202465) will support up to 128MB of RAM.<br>
+All other processor boards will support up to 16MB of RAM.</p>
+
+<p><i>Note: You must install four identical SIMMs for memory upgrades.</i></p>
+
+<p>You will need to run the EISA Configuration Utility on your system in order to change
+the amount of installed memory. </p>
+
+<p>Only the 4MB and 8MB SIMMs are available from an AST spare parts vendor. Use the
+following part numbers to order AST memory upgrades:</p>
+
+<p>104000-141 4MB SIMM<br>
+104000-140 8MB SIMM</p>
+
+<p>Contact a local computer vendor for 60 nanosecond, 36 bit, fast page mode, 72-pin, 16MB
+and 32MB SIMMs. </p>
+
+<h4>Premmia SE</h4>
+
+<p>Use the following RAM specifications when upgrading the memory in Premmia SE system:</p>
+
+<p>JEDEC / 72-pin / 70ns / tin-lead / parity</p>
+
+<p>Max: 128MB</p>
+
+<p>There are three rules to follow when adding RAM to this system: 
+
+<ul>
+  <li>Bank 0 must be filled.</li>
+  <li>Memory must be added two SIMMs at a time.</li>
+  <li>The SIMMs in a bank must match each other.</li>
+</ul>
+
+<p>You will need to run the EISA Configuration Utility on your system in order to change
+the amount of installed memory. </p>
+
+<p>Consider the memory option part numbers:</p>
+
+<p>4MB (two 2MB SIMMs) 501159-001<br>
+8MB (two 4MB SIMMs) 501159-002<br>
+16MB (two 8MB SIMMs) 501159-003<br>
+32MB (two 16MB SIMMs) 501159-004<br>
+64MB (two 32MB SIMMs) 501159-005</p>
+</td></tr></table>
+</body>
+</html>

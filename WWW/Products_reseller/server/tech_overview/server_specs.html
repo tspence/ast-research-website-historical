@@ -1,0 +1,162 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <TITLE>RAID Configuration Performance</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#00698c" VLINK="#3a4d52" ALINK="#ffa600">
+
+<H3><A NAME="raid_config"></A>RAID CONFIGURATION PERFORMANCE</H3>
+
+<P>&nbsp;</P>
+
+<P>The 3-channel RAID controller provides a wide array of options for RAID
+support and control. This section describes the characteristics of the various
+RAID levels and gives examples of cases in which a particular RAID level
+may prove the most advantageous.</P>
+
+<H4>&nbsp;</H4>
+
+<H4>RAID LEVEL 0</H4>
+
+<P>Level 0 RAID provides block striping across multiple drives, but provides
+no data redundancy. Because the data is striped across all drives in the
+array, any drive access of sufficient size will be read from all devices
+simultaneously. Therefore the data will be retrieved much faster than if
+it were all on the same drive. RAID 0 offers significant performance and
+storage efficiency improvements over individual drives.</P>
+
+<P>However, RAID 0 offers no data redundancy and therefore no protection
+against loss of data. In fact, if a file is distributed across several devices,
+the failure of any one drive in the array renders the file irretrievable.</P>
+
+<P>RAID 0 should be used only in time or space critical applications where
+data redundancy is not required and maximum performance is required. Any
+situation where data integrity is an issue should not use RAID 0. Spindle
+synchronized drives are helpful in RAID 0 environments.</P>
+
+<H4>&nbsp;</H4>
+
+<H4>RAID LEVEL 1</H4>
+
+<P>Level 1 RAID is also called drive mirroring. Drives are paired and all
+data is written to both drives in the pair simultaneously. RAID 1 offers
+maximum security because a complete, up-to-the-minute hot backup is available
+at all times. Mirroring is only susceptible to the loss of both drives in
+a pair simultaneously. Writes to a RAID 1 must write to both drives, but
+reads can access the drives independently. Therefore read time can be halved
+using a RAID 1 array though write times remain unchanged.</P>
+
+<P>Because RAID 1 offers no striping, there is little performance improvement
+over using individual, independent drives. Each data read accesses only
+the two drives of the pair and can only double read time, while leaving
+write times unchanged.</P>
+
+<P>RAID 1 is most useful in applications where the expense of purchasing
+twice the number of drives is acceptable and performance in relation to
+independent drives is not an issue. Applications that require extreme data
+integrity benefit from the security of RAID 1. RAID 1 can provide the best
+performance of any redundant array type in multi-user environments.</P>
+
+<H4>&nbsp;</H4>
+
+<H4>RAID LEVEL 3</H4>
+
+<P>Level 3 RAID stripes data across groups of drives with one drive in the
+array dedicated to storing parity information. Much like RAID 0, RAID 3
+arrays provide increased read performance because records can be read from
+all drives simultaneously. However, all writes must access both the data
+drives and the parity drive, which prevents overlapping writes and inhibits
+performance. Data security is provided by the drive containing the parity
+data, which allows reconstruction of data stored on a failed drive.</P>
+
+<P>RAID 3 is vulnerable to the loss of the parity drive in the array. Since
+all parity information is kept on a single drive, the loss of this drive
+results in an extended period of degraded performance while all records
+on the remaining drives are read and the parity data is regenerated. RAID
+3 also fails to provide peak performance in multi-user environments and
+those with many small files.</P>
+
+<P>RAID 3 functions best in environments where only one user is accessing
+data at a time and the file sizes are large. Systems with a large number
+of users or those with many small files will experience only a minor performance
+increase over independent drives. Spindle synchronized drives are required
+to prevent the loss of performance with small files. RAID 3 requires at
+least three drives to complete the array.</P>
+
+<H4>&nbsp;</H4>
+
+<H4>RAID LEVEL 5</H4>
+
+<P>Sometimes called a rotating parity array, RAID 5 uses record striping
+and saves parity data like RAID 3. However, it stores the parity data on
+each drive in turn so that no one drive is dedicated entirely to parity
+storage. RAID 5 allows both reads and writes to be overlapped, increasing
+performance. Since RAID 5 also provides parity data, redundancy is maintained
+and data can be restored fairly quickly whichever drive fails.</P>
+
+<P>RAID 5 has few weaknesses, however, it is also a compromise between the
+more extreme RAID levels. RAID 0 offers superior performance and efficiency,
+but does not provide the redundancy of RAID 5. RAID 1 offers superior redundancy
+and therefore superior data integrity, but does not provide the ability
+to overlap write commands. RAID 5 also provides superior storage efficiency
+to RAID 1. RAID 5 can use a large number of drives and sacrifice space equivalent
+to only one drive for parity data.</P>
+
+<P>Because RAID 5 stores parity data for redundancy, that data must be updated
+at every write. The necessity of regenerating parity data at every write
+keeps RAID 5 performance below that of RAID 1 in most cases. Like RAID 3,
+RAID 5 also requires a minimum of three drives to function.</P>
+
+<H4>&nbsp;</H4>
+
+<H4>RAID LEVEL 10</H4>
+
+<P>RAID 10 is a combination of levels 1 and 0. RAID 10 pairs drives and
+then stripes data across the pairs as if each pair was a single drive. This
+combination provides great data redundancy and takes advantage of the performance
+and efficiency of data striping.</P>
+
+<P>However,RAID 10 suffers from the same high cost as RAID 1. Each disk
+is mirrored providing 100% data redundancy, but requiring twice the number
+of physical drives as a pure RAID 0. RAID 0 striping increases the overall
+efficiency and performance of the array but does not necessarily equal a
+smaller array or another level.</P>
+
+<P>RAID 10 is best used in environments where data redundancy is critical,
+but performance and efficiency cannot be entirely sacrificed.</P>
+
+<H4>&nbsp;</H4>
+
+<H4>RAID LEVEL 30</H4>
+
+<P>RAID is a combination of levels 3 and 0. Redundant arrays, each with
+a dedicated parity drive, are arrayed together and striped. RAID 30 makes
+use of the parity information of the dedicated parity drive and lessens
+the danger of losing that drive by striping the parity data across all of
+the dedicated parity drives.</P>
+
+<P>Multi-user environments that require multiple simultaneous reads and
+writes do not do well under RAID 30. Small files are also a problem for
+this RAID level and result in less spectacular performance.</P>
+
+<P>RAID 30 is most useful in environments where non-interactive applications
+process large files sequentially, requiring fault tolerance and high speed.
+RAID 30 requires a minimum of 6 drives to complete the array.</P>
+
+<H4>&nbsp;</H4>
+
+<H4>RAID LEVEL 50</H4>
+
+<P>RAID 50 combines levels 5 and 0. Rotating parity arrays are established
+and then combined into a striped array, without additional parity data.
+This scheme increases the performance and efficiency of the RAID 5, but
+does nothing to improve the data redundancy.</P>
+
+<P>RAID 50 requires at least 6 drives to function and provides only slight
+improvements in performance over RAID 5. RAID 50 provided improvements in
+performance and efficiency, while still providing fault tolerance.</P>
+
+<P>RAID 50 is most useful in environments where performance, efficiency,
+and security are of equal importance.
+</BODY>
+</HTML>
