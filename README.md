@@ -1,6 +1,8 @@
 # AST Research 1998 Website
 This repository contains the source code for a major computer manufacturer's website as it existed in 1998.  The code is dated and not well written for the era, but it was a successful website at the time and it is preserved here for historical purposes.
 
+I wrote about this repository in this article about [AST Computer's 1998 website](https://tedspence.com/postmortem-the-1998-ast-computer-website-7ee381c63b4c) on my personal blog.
+
 This website was built by a small team and reflects many of the flaws of website development during the Web 1.0 era.  Among its engineering flaws:
 * The website relied on firewalls and content blockers for security.
 * Connection strings were baked into the code.
